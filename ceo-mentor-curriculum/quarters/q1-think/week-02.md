@@ -30,6 +30,8 @@ What if your goal this year wasn't to be brilliant, but to avoid being stupid? W
 **CEO Application:**
 List three ways your company could fail in the next year. Now examine: Are any of these failure modes currently active?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-02-day-01-case-for-backwards-thinking.md)
+
 ---
 
 ### Day 2 — Avoiding Stupidity
@@ -41,6 +43,8 @@ Where might envy be driving decisions in your organization? What choices are bei
 
 **CEO Application:**
 Before your next strategic decision, explicitly list the ways it could fail. Redesign to avoid those failure modes.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-02-day-02-avoiding-stupidity.md)
 
 ---
 
@@ -54,6 +58,8 @@ Think of a failed initiative or decision in the past. What did the "post-mortem"
 **CEO Application:**
 For your next major initiative, run a pre-mortem: Assume it's one year later and the project failed spectacularly. Write the story of why. Now prevent that story.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-02-day-03-the-pre-mortem.md)
+
 ---
 
 ### Day 4 — What Would a Smart Enemy Do?
@@ -65,6 +71,8 @@ If a brilliant competitor wanted to destroy your business, how would they do it?
 
 **CEO Application:**
 Spend 15 minutes thinking like your smartest competitor. What strategy would you use to take market share from your company? Now defend against it.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-02-day-04-smart-enemy.md)
 
 ---
 
@@ -78,6 +86,8 @@ What is your most important goal right now? Invert it: What would guarantee you 
 **CEO Application:**
 Take your company's top strategic priority. List 10 ways to ensure it fails. Review the list—how many of those things are happening?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-02-day-05-inverting-goals.md)
+
 ---
 
 ### Day 6 — Inversion in Daily Decisions
@@ -89,6 +99,8 @@ In your daily work, what should you avoid doing as much as what you should do? W
 
 **CEO Application:**
 Create a "not to-do" list alongside your to-do list. What actions, habits, or tendencies consistently hurt your effectiveness?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-02-day-06-inversion-daily-decisions.md)
 
 ---
 
@@ -102,6 +114,8 @@ Create a "not to-do" list alongside your to-do list. What actions, habits, or te
 
 **Weekly Synthesis:**
 Write 2-3 sentences capturing your key insight from inversion thinking.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-02-day-07-weekly-integration.md)
 
 ---
 
