@@ -44,6 +44,8 @@ Think of a recent complex decision. How many different mental models did you app
 **CEO Application:**
 Before your next significant decision, deliberately apply at least three different mental models. Write down what each reveals.
 
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/day-02-power-of-multiple-models.md)
+
 ---
 
 ### Day 3 — The Economics Model: Incentives
@@ -55,6 +57,8 @@ Who in your organization has incentives misaligned with what you want them to do
 
 **CEO Application:**
 Map the incentives of your top 5 stakeholders. What behavior does each incentive structure actually encourage (not what it's intended to encourage)?
+
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/day-03-economics-model-incentives.md)
 
 ---
 
@@ -68,6 +72,8 @@ Where in your business or industry are you following the crowd without independe
 **CEO Application:**
 Identify one decision you've made recently because "that's what everyone does" or "that's industry standard." Re-examine it from first principles.
 
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/day-04-psychology-model-social-proof.md)
+
 ---
 
 ### Day 5 — The Physics Model: Critical Mass
@@ -79,6 +85,8 @@ What in your business might be approaching a tipping point—either positive or 
 
 **CEO Application:**
 Identify one area where consistent small investments could compound to a breakthrough. Are you investing consistently, or starting and stopping?
+
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/day-05-physics-model-critical-mass.md)
 
 ---
 
@@ -92,6 +100,8 @@ How well does your organization adapt to changing conditions? Are there areas wh
 **CEO Application:**
 Identify one process or practice that was designed for conditions that have changed. What would it look like redesigned for current reality?
 
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/day-06-biology-model-evolution.md)
+
 ---
 
 ### Day 7 — Weekly Integration
@@ -104,6 +114,8 @@ Identify one process or practice that was designed for conditions that have chan
 
 **Weekly Synthesis:**
 Write 2-3 sentences capturing your key insight from this week.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/day-07-weekly-integration.md)
 
 ---
 
