@@ -30,6 +30,8 @@ What framework or lens do you default to when analyzing problems? Finance? Opera
 **CEO Application:**
 In your next meeting, notice which framework your team defaults to. Are there perspectives being systematically ignored because no one in the room carries that model?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/day-01-danger-of-single-models.md)
+
 ---
 
 ### Day 2 — The Power of Multiple Models
