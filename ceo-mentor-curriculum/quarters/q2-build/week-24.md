@@ -28,6 +28,8 @@ How do you make decisions? Quickly or slowly? Once made, how easily do you aband
 **CEO Application:**
 Identify a decision you've been postponing. Make it today. Then commit to it.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-24-day-01-the-habit-of-decision.md)
+
 ---
 
 ### Day 2 — Decision Despite Uncertainty
@@ -39,6 +41,8 @@ Most decisions must be made with incomplete information. How do you decide when 
 
 **CEO Application:**
 For a current uncertain decision: What would you need to be 80% confident? Is that achievable? If so, decide.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-24-day-02-decision-despite-uncertainty.md)
 
 ---
 
@@ -52,6 +56,8 @@ Think of a time you persisted through significant difficulty. What enabled you t
 **CEO Application:**
 What's currently testing your persistence? What would quitting cost? What does continuing require?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-24-day-03-persistence-defined.md)
+
 ---
 
 ### Day 4 — The Enemy of Persistence
@@ -63,6 +69,8 @@ What most tempts you to quit? Discouragement? Fatigue? Better opportunities? Sel
 
 **CEO Application:**
 Identify your primary persistence threat. Create a specific counter-strategy for when it appears.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-24-day-04-the-enemy-of-persistence.md)
 
 ---
 
@@ -76,6 +84,8 @@ Hill distinguished between temporary defeat and failure. Failure only happens wh
 **CEO Application:**
 Reframe a current setback: What's the seed of equal or greater benefit? What would persistence reveal?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-24-day-05-persistence-through-temporary-defeat.md)
+
 ---
 
 ### Day 6 — Building Persistence
@@ -87,6 +97,8 @@ Persistence is a muscle. How do you strengthen it? Small acts of discipline? Rem
 
 **CEO Application:**
 Design a persistence-building practice. What daily discipline would strengthen your capacity to persist?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-24-day-06-building-persistence.md)
 
 ---
 
@@ -100,6 +112,8 @@ Design a persistence-building practice. What daily discipline would strengthen y
 
 **Weekly Synthesis:**
 Write 2-3 sentences on decision and persistence in your leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-24-day-07-weekly-integration.md)
 
 ---
 

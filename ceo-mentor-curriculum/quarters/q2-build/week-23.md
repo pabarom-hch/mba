@@ -28,6 +28,8 @@ How concrete is your plan for achieving your Definite Major Purpose? Could someo
 **CEO Application:**
 Rate your current plan (1-10) for concreteness and completeness. What's missing?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-23-day-01-the-plan-as-bridge.md)
+
 ---
 
 ### Day 2 — Working Backwards
@@ -39,6 +41,8 @@ Hill advised working backwards from the goal. What must be true for you to achie
 
 **CEO Application:**
 Work backwards from your achieved purpose. List the milestones in reverse order. What's the sequence?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-23-day-02-working-backwards.md)
 
 ---
 
@@ -52,6 +56,8 @@ A plan made alone has blind spots. Who should inform your planning? Who sees wha
 **CEO Application:**
 Share your draft plan with someone who can challenge it. What do they see that you don't?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-23-day-03-the-mastermind-in-planning.md)
+
 ---
 
 ### Day 4 — Flexibility in Planning
@@ -63,6 +69,8 @@ Plans must be adapted when reality intervenes. How do you balance organized plan
 
 **CEO Application:**
 Where is your plan most likely to need adaptation? What are your contingencies?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-23-day-04-flexibility-in-planning.md)
 
 ---
 
@@ -76,6 +84,8 @@ Your plan must account for time and resources. Are your estimates realistic? Hav
 **CEO Application:**
 Review timeline and resource estimates. Apply margin of safety (from Q1). Are they still viable?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-23-day-05-time-and-resources.md)
+
 ---
 
 ### Day 6 — Accountability Structure
@@ -87,6 +97,8 @@ Plans without accountability often stay on paper. What accountability structure 
 
 **CEO Application:**
 Design accountability for your plan: Who checks? How often? What consequences for drift?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-23-day-06-accountability-structure.md)
 
 ---
 
@@ -100,6 +112,8 @@ Design accountability for your plan: Who checks? How often? What consequences fo
 
 **Weekly Synthesis:**
 Write a summary of your organized plan for your Definite Major Purpose.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-23-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ How long have you been developing as a leader? What has that development journey
 **CEO Application:**
 Draw your leadership development timeline. What were the key development periods? What caused growth?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-48-day-01-leadership-takes-time.md)
+
 ---
 
 ### Day 2 — Daily Investment
@@ -39,6 +41,8 @@ What are you doing daily to develop as a leader? Not occasionally—daily. What'
 
 **CEO Application:**
 Review your daily schedule. How much time is invested in developing your leadership capability? Is it enough?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-48-day-02-daily-investment.md)
 
 ---
 
@@ -52,6 +56,8 @@ Leadership development compounds like money. Small daily investments become mass
 **CEO Application:**
 Calculate: If you invested 15 minutes daily in leadership development for 5 years, that's 450+ hours. What would that yield?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-48-day-03-compound-effect.md)
+
 ---
 
 ### Day 4 — Learning from Experience
@@ -63,6 +69,8 @@ Experience without reflection doesn't develop leadership. How do you evaluate yo
 
 **CEO Application:**
 Establish a reflection practice: Daily or weekly review of leadership experiences. What happened? What did you learn?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-48-day-04-learning-from-experience.md)
 
 ---
 
@@ -76,6 +84,8 @@ Maxwell identifies phases: I don't know what I don't know → I know what I don'
 **CEO Application:**
 In different leadership areas, you're at different phases. Map yourself. Where do you need to move to the next phase?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-48-day-05-phases-of-leadership-development.md)
+
 ---
 
 ### Day 6 — The Long Game of Development
@@ -87,6 +97,8 @@ Leadership development is a lifetime pursuit. Where do you want to be as a leade
 
 **CEO Application:**
 Set a 10-year leadership development vision. What kind of leader do you want to become? What will it take?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-48-day-06-long-game-of-development.md)
 
 ---
 
@@ -100,6 +112,8 @@ Set a 10-year leadership development vision. What kind of leader do you want to 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your commitment to the daily process of leadership development.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-48-day-07-weekly-integration.md)
 
 ---
 

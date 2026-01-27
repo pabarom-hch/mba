@@ -28,6 +28,8 @@ Rate your desire for your Definite Major Purpose: wish (passive), want (active),
 **CEO Application:**
 If your desire isn't burning, why not? What would have to change for it to consume you?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-21-day-01-wishing-vs-wanting-vs-burning.md)
+
 ---
 
 ### Day 2 — The Cost of Lukewarm Desire
@@ -39,6 +41,8 @@ What opportunities have you missed because desire wasn't strong enough to overco
 
 **CEO Application:**
 Think of someone you know with truly burning desire. What's different about how they operate compared to you?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-21-day-02-the-cost-of-lukewarm-desire.md)
 
 ---
 
@@ -52,6 +56,8 @@ Desire can be cultivated. What intensifies your desire? Vivid visualization? Hig
 **CEO Application:**
 Identify one technique for intensifying desire. Practice it today with your Definite Major Purpose.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-21-day-03-intensifying-desire.md)
+
 ---
 
 ### Day 4 — Burning Bridges
@@ -63,6 +69,8 @@ Some burn bridges behind them to intensify commitment. Others keep options open.
 
 **CEO Application:**
 Is there a commitment you're hedging that, if you fully committed, would intensify your burning desire?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-21-day-04-burning-bridges.md)
 
 ---
 
@@ -76,6 +84,8 @@ Desire often comes from dissatisfaction with the status quo. What are you dissat
 **CEO Application:**
 Connect your Definite Major Purpose to what you're running from, not just what you're running toward. Does this intensify desire?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-21-day-05-the-role-of-dissatisfaction.md)
+
 ---
 
 ### Day 6 — Protecting the Flame
@@ -87,6 +97,8 @@ Burning desire can be extinguished by negativity, doubt, and discouraging people
 
 **CEO Application:**
 Who or what dampens your desire? What can you do about it?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-21-day-06-protecting-the-flame.md)
 
 ---
 
@@ -100,6 +112,8 @@ Who or what dampens your desire? What can you do about it?
 
 **Weekly Synthesis:**
 Write 2-3 sentences describing the quality and intensity of your desire.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-21-day-07-weekly-integration.md)
 
 ---
 

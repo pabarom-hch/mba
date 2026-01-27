@@ -28,6 +28,8 @@ Where has complexity accumulated in your life? Possessions? Commitments? Relatio
 **CEO Application:**
 List 5-10 sources of complexity in your work life. For each: What's the benefit? What's the cost?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-38-day-01-the-weight-of-complexity.md)
+
 ---
 
 ### Day 2 — Simplicity as Clarity
@@ -39,6 +41,8 @@ Complexity often hides confusion. Where might simplifying reveal clearer thinkin
 
 **CEO Application:**
 Take one complex strategy or process. Try to explain it in two sentences. Can you? If not, what does that indicate?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-38-day-02-simplicity-as-clarity.md)
 
 ---
 
@@ -52,6 +56,8 @@ Gandhi's simplicity came through elimination. What could you eliminate from your
 **CEO Application:**
 Identify three things to eliminate: a possession, a commitment, and a process. What would happen if you did?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-38-day-03-elimination.md)
+
 ---
 
 ### Day 4 — Simple Living
@@ -63,6 +69,8 @@ How simple is your personal lifestyle? Does your lifestyle serve your purpose, o
 
 **CEO Application:**
 Audit one area of personal lifestyle (home, possessions, schedule). Where has it become more complex than it needs to be?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-38-day-04-simple-living.md)
 
 ---
 
@@ -76,6 +84,8 @@ Simple communication is more powerful than complex communication. Where do you o
 **CEO Application:**
 Review a recent communication. Could it have been said in half the words? What got in the way of simplicity?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-38-day-05-simple-communication.md)
+
 ---
 
 ### Day 6 — Resisting Complexity
@@ -87,6 +97,8 @@ Complexity creeps in constantly. Systems, possessions, commitments accumulate. H
 
 **CEO Application:**
 Create a practice for maintaining simplicity—regular purges, one-in-one-out rules, complexity budgets. What would work for you?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-38-day-06-resisting-complexity.md)
 
 ---
 
@@ -100,6 +112,8 @@ Create a practice for maintaining simplicity—regular purges, one-in-one-out ru
 
 **Weekly Synthesis:**
 Write 2-3 sentences on simplicity as a leadership practice.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-38-day-07-weekly-integration.md)
 
 ---
 

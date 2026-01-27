@@ -28,6 +28,8 @@ What's the difference between unity and uniformity? How do you create unity whil
 **CEO Application:**
 Where does your organization try to create uniformity when it should create unity? What's the cost?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-44-day-01-unity-not-uniformity.md)
+
 ---
 
 ### Day 2 — Finding Common Ground
@@ -39,6 +41,8 @@ Mandela learned Afrikaans to understand his opponents. What common ground exists
 
 **CEO Application:**
 Identify a group in your organization that feels like "other." What's the common ground? How might you find it?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-44-day-02-finding-common-ground.md)
 
 ---
 
@@ -52,6 +56,8 @@ Mandela included former opponents in his government. When have you successfully 
 **CEO Application:**
 Is there someone who has opposed you who might be a valuable ally? What would inclusion look like?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-44-day-03-including-former-opponents.md)
+
 ---
 
 ### Day 4 — The Power of Symbols
@@ -63,6 +69,8 @@ The Springbok jersey was a symbol of unity. What symbols in your organization co
 
 **CEO Application:**
 What symbols, rituals, or shared experiences could strengthen unity in your organization?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-44-day-04-power-of-symbols.md)
 
 ---
 
@@ -76,6 +84,8 @@ Mandela famously listened before speaking. Do all voices feel heard in your orga
 **CEO Application:**
 Who in your organization doesn't feel heard? How could you create space for their voice?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-44-day-05-listening-to-all-voices.md)
+
 ---
 
 ### Day 6 — Unity Under Pressure
@@ -87,6 +97,8 @@ Unity is tested under pressure. How does your team's unity hold up when things g
 
 **CEO Application:**
 Think of the last crisis. Did it reveal unity or expose divisions? What would strengthen unity for next time?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-44-day-06-unity-under-pressure.md)
 
 ---
 
@@ -100,6 +112,8 @@ Think of the last crisis. Did it reveal unity or expose divisions? What would st
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of building unity.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-44-day-07-weekly-integration.md)
 
 ---
 

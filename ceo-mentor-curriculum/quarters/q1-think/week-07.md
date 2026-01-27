@@ -28,6 +28,8 @@ What's your actual time horizon for major decisions? Be honest. When you're stre
 **CEO Application:**
 Take your most significant current decision. How would your analysis change if you had to live with the consequences for 30 years?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-07-day-01-time-horizon-advantage.md)
+
 ---
 
 ### Day 2 — Short-Term Pressure
@@ -39,6 +41,8 @@ What short-term pressures (quarterly results, stakeholder expectations, personal
 
 **CEO Application:**
 Identify one decision you've made recently that optimized for short-term optics at the expense of long-term value. What would you do differently?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-07-day-02-short-term-pressure.md)
 
 ---
 
@@ -52,6 +56,8 @@ Buffett warns of the "institutional imperative"—the tendency of organizations 
 **CEO Application:**
 What is your organization doing because competitors do it, not because it's right? What would you stop if you could start fresh?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-07-day-03-institutional-imperative.md)
+
 ---
 
 ### Day 4 — Patient Capital
@@ -63,6 +69,8 @@ Where in your business are you being too active (making changes, pursuing opport
 
 **CEO Application:**
 Identify one area where "doing nothing" is actually the optimal strategy. Can you resist the urge to act?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-07-day-04-patient-capital.md)
 
 ---
 
@@ -76,6 +84,8 @@ If your company were frozen for 10 years and you returned, would it be stronger 
 **CEO Application:**
 What are you building today that will still generate value in 20 years? What are you doing that's purely extractive and won't last?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-07-day-05-building-for-permanence.md)
+
 ---
 
 ### Day 6 — Teaching Long-Term Thinking
@@ -87,6 +97,8 @@ How do you communicate long-term thinking to your team? Does your reward system 
 
 **CEO Application:**
 Review one incentive or evaluation system. Does it reward long-term value creation or short-term performance? How could you adjust it?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-07-day-06-teaching-long-term-thinking.md)
 
 ---
 
@@ -100,6 +112,8 @@ Review one incentive or evaluation system. Does it reward long-term value creati
 
 **Weekly Synthesis:**
 Write 2-3 sentences on how long-term thinking would change your current priorities.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-07-day-07-weekly-integration.md)
 
 ---
 

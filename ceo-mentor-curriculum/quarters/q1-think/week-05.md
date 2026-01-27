@@ -43,6 +43,8 @@ Who have you agreed with or helped recently primarily because they helped you fi
 **CEO Application:**
 Consider your key relationships (investors, partners, customers). Are any being maintained through reciprocity rather than genuine value? What's the long-term risk?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-05-day-01-reciprocation-tendency.md)
+
 ---
 
 ### Day 2 — Influence from Mere Association
@@ -56,6 +58,8 @@ How easy is it for people to bring you bad news? Have you ever "shot the messeng
 
 **CEO Application:**
 Create an explicit channel for bad news that rewards rather than punishes the messenger. Examine whether you've inadvertently trained people to hide problems.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-05-day-02-influence-from-mere-association.md)
 
 ---
 
@@ -73,6 +77,8 @@ What unpleasant reality might you be denying? What evidence exists that you're c
 **CEO Application:**
 Ask three trusted people: "What do I overestimate about myself?" Listen without defending.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-05-day-03-denial-and-self-regard.md)
+
 ---
 
 ### Day 4 — Over-Optimism Tendency
@@ -87,6 +93,8 @@ What project or initiative are you overly optimistic about? What would a skeptic
 **CEO Application:**
 For your current top priority, add 50% to the time estimate and 30% to the cost estimate. Does it still make sense? This isn't pessimism—it's calibration.
 
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-05-day-04-over-optimism-tendency.md)
+
 ---
 
 ### Day 5 — Deprival Super-Reaction
@@ -100,6 +108,8 @@ What are you holding onto (job, strategy, relationship) primarily because losing
 
 **CEO Application:**
 Identify a sunk cost trap in your business—something you're continuing because you've invested heavily, not because it's the best path forward. What would you do if starting fresh?
+
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-05-day-05-deprival-super-reaction.md)
 
 ---
 
@@ -117,6 +127,8 @@ Where in your business are you following industry norms without independent anal
 **CEO Application:**
 Take a major expense. Remove it from context. Evaluate its absolute value, not relative to similar expenses or to what it was before. Is it worth it?
 
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-05-day-06-social-proof-and-contrast.md)
+
 ---
 
 ### Day 7 — Weekly Integration
@@ -129,6 +141,8 @@ Take a major expense. Remove it from context. Evaluate its absolute value, not r
 
 **Weekly Synthesis:**
 Write 2-3 sentences on how these biases operate in your current business situation.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-05-day-07-weekly-integration.md)
 
 ---
 

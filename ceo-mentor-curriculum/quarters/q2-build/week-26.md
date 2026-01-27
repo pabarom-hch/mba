@@ -26,6 +26,8 @@ What forms of energy do you have? Physical, emotional, mental, creative. How wel
 **CEO Application:**
 Audit your energy. Where is it going? How much is aligned with your Definite Major Purpose? How much is scattered or wasted?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-26-day-01-energy-as-resource.md)
+
 ---
 
 ### Day 2 — Transmuting Negative Energy
@@ -37,6 +39,8 @@ Hill taught that negative emotions (anger, frustration, fear) could be transmute
 
 **CEO Application:**
 Identify a current frustration or difficulty. How could you transmute that energy into productive action toward your purpose?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-26-day-02-transmuting-negative-energy.md)
 
 ---
 
@@ -50,6 +54,8 @@ Creative energy is among the most powerful. How do you cultivate and channel cre
 **CEO Application:**
 When are you most creative? How do you protect that time and channel that energy productively?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-26-day-03-creative-energy.md)
+
 ---
 
 ### Day 4 — The Carnegie Principles
@@ -61,6 +67,8 @@ Review the Carnegie weeks (14-19): Mastermind, Excellence, Delegation, Integrati
 
 **CEO Application:**
 Of Carnegie's teachings, what one principle will you carry forward most deliberately?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-26-day-04-the-carnegie-principles.md)
 
 ---
 
@@ -74,6 +82,8 @@ Review the Hill weeks (20-25): Definiteness of Purpose, Burning Desire, Faith, P
 **CEO Application:**
 Of Hill's teachings, what one principle will you carry forward most deliberately?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-26-day-05-the-hill-principles.md)
+
 ---
 
 ### Day 6 — Q2 Achievement Assessment
@@ -85,6 +95,8 @@ What did you actually build during Q2? What progress did you make toward your De
 
 **CEO Application:**
 Honestly assess Q2 progress. What worked? What didn't? What will you do differently in Q3?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-26-day-06-q2-achievement-assessment.md)
 
 ---
 
@@ -121,6 +133,8 @@ Over 13 weeks, you've studied:
 
 **Quarterly Synthesis:**
 Write a one-page summary of your Q2 learning and achievements.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-26-day-07-q2-integration.md)
 
 ---
 

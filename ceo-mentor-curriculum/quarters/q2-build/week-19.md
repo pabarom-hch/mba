@@ -28,6 +28,8 @@ What is your wealth for? Is it an end in itself or a means to something greater?
 **CEO Application:**
 Define "enough" for yourself. At what point does accumulation shift from necessary to purposeless?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-19-day-01-wealth-as-means-not-end.md)
+
 ---
 
 ### Day 2 — The Responsibility of Capacity
@@ -39,6 +41,8 @@ Those who can build wealth have a capacity that most don't. What responsibility 
 
 **CEO Application:**
 Beyond shareholders and employees, who benefits from your company's existence? Is that benefit intentional or accidental?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-19-day-02-the-responsibility-of-capacity.md)
 
 ---
 
@@ -52,6 +56,8 @@ Carnegie believed in helping people help themselves—libraries, universities, i
 **CEO Application:**
 If you were to direct significant resources to public benefit, what form would it take? What would create lasting impact?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-19-day-03-building-vs-giving.md)
+
 ---
 
 ### Day 4 — Wealth and Character
@@ -63,6 +69,8 @@ How has wealth (or the pursuit of it) affected your character? For better? For w
 
 **CEO Application:**
 What values guide your accumulation and use of wealth? Are they explicit? Do your actions align with them?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-19-day-04-wealth-and-character.md)
 
 ---
 
@@ -76,6 +84,8 @@ Carnegie's legacy isn't the steel empire—it's the 2,500 libraries, Carnegie Me
 **CEO Application:**
 If you were remembered for one thing beyond your business success, what would you want it to be?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-19-day-05-legacy-beyond-accumulation.md)
+
 ---
 
 ### Day 6 — Giving While Living
@@ -87,6 +97,8 @@ Carnegie argued for giving while living, not just through estates. Why does that
 
 **CEO Application:**
 What could you give now that would have more impact than giving later? Time? Money? Expertise? Access?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-19-day-06-giving-while-living.md)
 
 ---
 
@@ -100,6 +112,8 @@ What could you give now that would have more impact than giving later? Time? Mon
 
 **Weekly Synthesis:**
 Write 2-3 sentences articulating your philosophy of wealth and its purpose.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-19-day-07-weekly-integration.md)
 
 ---
 

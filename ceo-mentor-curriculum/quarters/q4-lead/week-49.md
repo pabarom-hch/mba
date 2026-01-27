@@ -38,6 +38,8 @@ Review the 5 levels. At what level are you operating with most people? With diff
 **CEO Application:**
 Map yourself: With direct reports, what level? With peers? With board? With industry?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-49-day-01-understanding-the-levels.md)
+
 ---
 
 ### Day 2 — Level 1: Position
@@ -49,6 +51,8 @@ Level 1 is where leadership begins—people follow because of your title. When d
 
 **CEO Application:**
 Where are you stuck at Level 1 with people who should be at Level 2 or higher? What's preventing advancement?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-49-day-02-level-1-position.md)
 
 ---
 
@@ -62,6 +66,8 @@ Level 2 is relationship-based. People follow because they want to, not because t
 **CEO Application:**
 Identify relationships where you need to move from Level 1 to Level 2. What would that require?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-49-day-03-level-2-permission.md)
+
 ---
 
 ### Day 4 — Level 3: Production
@@ -73,6 +79,8 @@ Level 3 is results-based. People follow because of your track record. Does your 
 
 **CEO Application:**
 What results do you need to achieve to advance to Level 3 with key people?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-49-day-04-level-3-production.md)
 
 ---
 
@@ -86,6 +94,8 @@ Level 4 is where you develop others. People follow because of what you've done f
 **CEO Application:**
 Name people you've significantly developed as leaders. What did you do? How can you do more?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-49-day-05-level-4-people-development.md)
+
 ---
 
 ### Day 6 — Level 5: Pinnacle
@@ -97,6 +107,8 @@ Level 5 is rare—where your reputation precedes you and people follow because o
 
 **CEO Application:**
 Who in your life is a Level 5 leader? What makes them that? What can you learn?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-49-day-06-level-5-pinnacle.md)
 
 ---
 
@@ -110,6 +122,8 @@ Who in your life is a Level 5 leader? What makes them that? What can you learn?
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your current level and your path upward.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-49-day-07-weekly-integration.md)
 
 ---
 

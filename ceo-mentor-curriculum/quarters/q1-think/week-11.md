@@ -28,6 +28,8 @@ What is your reputation worth in dollars? How much more business, talent, and op
 **CEO Application:**
 Make a decision today that protects reputation at the expense of short-term gain. Notice how it feels.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-11-day-01-reputation-premium.md)
+
 ---
 
 ### Day 2 — The Newspaper Test
@@ -39,6 +41,8 @@ What current practices would be uncomfortable if reported on the front page? Why
 
 **CEO Application:**
 Apply the newspaper test to your three most sensitive current decisions. Do they pass?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-11-day-02-newspaper-test.md)
 
 ---
 
@@ -52,6 +56,8 @@ How much time and money do you spend on contracts, verification, and protection 
 **CEO Application:**
 Where does low trust create friction in your business? What would it take to build higher-trust relationships?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-11-day-03-trust-as-efficiency.md)
+
 ---
 
 ### Day 4 — The Long Game of Integrity
@@ -63,6 +69,8 @@ Have you ever sacrificed integrity for short-term gain? What was the long-term c
 
 **CEO Application:**
 Identify one relationship where you could invest in long-term trust by being more generous or transparent than strictly required.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-11-day-04-long-game-of-integrity.md)
 
 ---
 
@@ -76,6 +84,8 @@ Does your organization's behavior reflect integrity at every level? Where might 
 **CEO Application:**
 Walk through your organization. Where are there integrity gaps? What systemic changes could close them?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-11-day-05-organizational-integrity.md)
+
 ---
 
 ### Day 6 — When Integrity is Expensive
@@ -87,6 +97,8 @@ When is integrity most expensive? When you have leverage and could exploit it? W
 
 **CEO Application:**
 Identify a situation where taking the high road is costly. Do it anyway. Note the long-term effects.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-11-day-06-when-integrity-is-expensive.md)
 
 ---
 
@@ -100,6 +112,8 @@ Identify a situation where taking the high road is costly. Do it anyway. Note th
 
 **Weekly Synthesis:**
 Write 2-3 sentences describing integrity's role in your competitive strategy.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-11-day-07-weekly-integration.md)
 
 ---
 

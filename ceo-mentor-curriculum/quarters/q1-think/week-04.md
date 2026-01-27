@@ -43,6 +43,8 @@ Where in your organization might incentives be producing unintended behaviors? W
 **CEO Application:**
 Audit one incentive structure in your organization today. Map: What behavior is it supposed to produce? What behavior does it actually produce? What would need to change?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-04-day-01-reward-punishment-super-response.md)
+
 ---
 
 ### Day 2 — Liking/Loving Tendency
@@ -56,6 +58,8 @@ Is there someone on your team whose flaws you minimize because you like them per
 
 **CEO Application:**
 When evaluating your next proposal, explicitly separate the idea from the person presenting it. Would you feel the same if it came from someone you liked less?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-04-day-02-liking-loving-tendency.md)
 
 ---
 
@@ -71,6 +75,8 @@ Is there someone whose ideas you dismiss too quickly because you don't like them
 **CEO Application:**
 Identify someone (person or company) you instinctively dislike. List three things they do well that you could learn from. Notice your resistance.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-04-day-03-disliking-hating-tendency.md)
+
 ---
 
 ### Day 4 — Doubt-Avoidance Tendency
@@ -85,6 +91,8 @@ When do you feel the urge to decide quickly just to resolve uncertainty? What de
 **CEO Application:**
 For the next significant decision, deliberately delay by 24 hours after you think you've decided. Use that time to test your conclusion. Does it hold?
 
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-04-day-04-doubt-avoidance-tendency.md)
+
 ---
 
 ### Day 5 — Inconsistency-Avoidance Tendency
@@ -98,6 +106,8 @@ What positions or decisions are you defending past their expiration date? Where 
 
 **CEO Application:**
 Identify one "sacred cow" in your organization—something that continues because "that's how we've always done it." Examine it fresh. Does it still make sense?
+
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-04-day-05-inconsistency-avoidance-tendency.md)
 
 ---
 
@@ -116,6 +126,8 @@ Where might envy be driving decisions—yours or your team's? What are you doing
 **CEO Application:**
 Examine your competitive strategy. How much is driven by genuine opportunity vs. envy of competitors? Are you chasing their game or playing your own?
 
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-04-day-06-curiosity-fairness-envy.md)
+
 ---
 
 ### Day 7 — Weekly Integration
@@ -128,6 +140,8 @@ Examine your competitive strategy. How much is driven by genuine opportunity vs.
 
 **Weekly Synthesis:**
 Write 2-3 sentences on how cognitive biases have affected your leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-04-day-07-weekly-integration.md)
 
 ---
 

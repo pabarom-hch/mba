@@ -7,12 +7,12 @@ Creating expanded deep-dive lessons for all 52 weeks (364 daily lessons total).
 
 | Quarter | Weeks | Status | Lessons Created |
 |---------|-------|--------|-----------------|
-| Q1 THINK | 1-13 | In Progress | 21/91 |
+| Q1 THINK | 1-13 | In Progress | 49/91 |
 | Q2 BUILD | 14-26 | Pending | 0/91 |
 | Q3 BE | 27-39 | Pending | 0/91 |
 | Q4 LEAD | 40-52 | Pending | 0/91 |
 
-**Total: 21/364 lessons created**
+**Total: 49/364 lessons created**
 
 ---
 

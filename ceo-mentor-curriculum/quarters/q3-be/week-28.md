@@ -26,6 +26,8 @@ What season is your business/life in right now? Spring, summer, fall, or winter?
 **CEO Application:**
 Assess your current season honestly. Are you applying strategies appropriate for this season, or strategies for a different one?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-28-day-01-the-four-seasons.md)
+
 ---
 
 ### Day 2 — Winter Wisdom
@@ -37,6 +39,8 @@ Think of a difficult "winter" period in your life. What did it teach you? How di
 
 **CEO Application:**
 If you're in winter now: What is this season teaching? If not: What reserves are you building for the next winter?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-28-day-02-winter-wisdom.md)
 
 ---
 
@@ -50,6 +54,8 @@ When was your last "spring"—a period of new opportunity? How well did you capi
 **CEO Application:**
 What opportunities exist right now that won't last forever? Are you seizing them with appropriate urgency?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-28-day-03-spring-opportunity.md)
+
 ---
 
 ### Day 4 — Summer Growth
@@ -61,6 +67,8 @@ During growth periods, threats emerge—competition, complacency, distraction. H
 
 **CEO Application:**
 What's threatening your current growth? Bugs (external threats) or weeds (internal problems)? What protection is needed?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-28-day-04-summer-growth.md)
 
 ---
 
@@ -74,6 +82,8 @@ How do you handle success? Do you harvest without apology, or do you minimize or
 **CEO Application:**
 What harvest are you entitled to that you're not claiming fully? What would "harvesting without apology" look like?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-28-day-05-fall-harvest.md)
+
 ---
 
 ### Day 6 — Working With Seasons
@@ -85,6 +95,8 @@ The seasons are inevitable—you can't skip winter or extend summer forever. How
 
 **CEO Application:**
 What are you fighting that's simply a season to be endured? What would accepting the season enable?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-28-day-06-working-with-seasons.md)
 
 ---
 
@@ -98,6 +110,8 @@ What are you fighting that's simply a season to be endured? What would accepting
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your relationship with life's seasons.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-28-day-07-weekly-integration.md)
 
 ---
 

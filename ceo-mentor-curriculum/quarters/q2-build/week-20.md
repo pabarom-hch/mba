@@ -28,6 +28,8 @@ What do you actually want? Not what you think you should want, or what's expecte
 **CEO Application:**
 Write down your most important goal in one sentence. Is it definite? Specific? Could someone else know exactly what you mean?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-20-day-01-the-power-of-definiteness.md)
+
 ---
 
 ### Day 2 — Vague vs. Definite
@@ -39,6 +41,8 @@ What goals have you pursued vaguely? "Be successful." "Make money." "Build a gre
 
 **CEO Application:**
 Take your most important goal and add: How much? By when? Measurable by what? Make it definite.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-20-day-02-vague-vs-definite.md)
 
 ---
 
@@ -52,6 +56,8 @@ Hill distinguishes between many goals and one Definite Major Purpose—the centr
 **CEO Application:**
 If you could only achieve one thing in the next 5 years, what would it be? Why that one?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-20-day-03-the-definite-major-purpose.md)
+
 ---
 
 ### Day 4 — Purpose and Sacrifice
@@ -63,6 +69,8 @@ A true purpose requires sacrifice—other goals subordinated. Are you willing to
 
 **CEO Application:**
 What would you have to give up or de-prioritize to achieve your definite major purpose? Are you willing?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-20-day-04-purpose-and-sacrifice.md)
 
 ---
 
@@ -76,6 +84,8 @@ Is your purpose yours, or inherited from others' expectations? Does it excite yo
 **CEO Application:**
 Apply these tests to your purpose: Is it specific? Is it yours? Does it excite you? Is it possible? Is the sacrifice worth it?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-20-day-05-testing-your-purpose.md)
+
 ---
 
 ### Day 6 — Communicating Purpose
@@ -87,6 +97,8 @@ A leader's purpose must be communicated and shared. How clearly have you articul
 
 **CEO Application:**
 Explain your definite major purpose to someone this week. Can they repeat it back? Do they understand why it matters?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-20-day-06-communicating-purpose.md)
 
 ---
 
@@ -100,6 +112,8 @@ Explain your definite major purpose to someone this week. Can they repeat it bac
 
 **Weekly Synthesis:**
 Write your Definite Major Purpose in one sentence. This becomes a reference point for the curriculum.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-20-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ Why do you lead? For power? For achievement? For service? Be honest about your m
 **CEO Application:**
 Complete this sentence honestly: "I lead because ____________." What does your answer reveal?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-37-day-01-the-purpose-of-leadership.md)
+
 ---
 
 ### Day 2 — Who Serves Whom?
@@ -39,6 +41,8 @@ Does your organization exist to serve you, or do you exist to serve your organiz
 
 **CEO Application:**
 List ways your organization serves you. List ways you serve your organization. Which list is longer?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-37-day-02-who-serves-whom.md)
 
 ---
 
@@ -52,6 +56,8 @@ Gandhi cleaned latrines visibly. What visible acts of service do you perform tha
 **CEO Application:**
 This week, perform a visible act of service that demonstrates you're not above any task.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-37-day-03-visible-service.md)
+
 ---
 
 ### Day 4 — Serving Followers' Growth
@@ -63,6 +69,8 @@ Servant leaders are measured by how much their followers grow. Are your people g
 
 **CEO Application:**
 For each direct report, answer: How have they grown in the last year? What did you do to enable it?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-37-day-04-serving-followers-growth.md)
 
 ---
 
@@ -76,6 +84,8 @@ Servant leadership requires humility—placing others' needs before your ego. Wh
 **CEO Application:**
 Identify one place where ego is getting in the way of serving your team. What would humility require?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-37-day-05-humility-in-leadership.md)
+
 ---
 
 ### Day 6 — Service Beyond the Organization
@@ -87,6 +97,8 @@ Gandhi served not just his organization but his nation and humanity. Who beyond 
 
 **CEO Application:**
 How does your leadership serve stakeholders beyond shareholders? Employees, community, society?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-37-day-06-service-beyond-the-organization.md)
 
 ---
 
@@ -100,6 +112,8 @@ How does your leadership serve stakeholders beyond shareholders? Employees, comm
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of servant leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-37-day-07-weekly-integration.md)
 
 ---
 

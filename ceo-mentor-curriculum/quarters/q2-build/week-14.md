@@ -28,6 +28,8 @@ When have you experienced synergy—where collaboration produced something no in
 **CEO Application:**
 Identify a challenge you're facing alone. Who could you bring together to create a "third mind" that would see solutions you can't?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-14-day-01-the-third-mind.md)
+
 ---
 
 ### Day 2 — Harmony is Essential
@@ -39,6 +41,8 @@ Where is your team in harmony? Where is there friction that prevents the masterm
 
 **CEO Application:**
 Examine one relationship where friction prevents full collaboration. What would it take to create harmony without compromising on substance?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-14-day-02-harmony-is-essential.md)
 
 ---
 
@@ -52,6 +56,8 @@ Does your ego allow others to be better than you? Can you genuinely celebrate wh
 **CEO Application:**
 Identify someone on your team who's better than you at something important. How do you ensure they're fully empowered?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-14-day-03-ego-vs-mastermind.md)
+
 ---
 
 ### Day 4 — The Deliberate Mastermind
@@ -63,6 +69,8 @@ Is your leadership team a true mastermind, or just a collection of individuals? 
 
 **CEO Application:**
 Grade your leadership team as a mastermind (1-10). What would raise that score by 2 points?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-14-day-04-the-deliberate-mastermind.md)
 
 ---
 
@@ -76,6 +84,8 @@ Beyond your team, who forms your external mastermind? Advisors, peers, mentors? 
 **CEO Application:**
 Map your external mastermind network. Who challenges you? Who supports you? Who brings expertise you lack? Where are the gaps?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-14-day-05-external-masterminds.md)
+
 ---
 
 ### Day 6 — Maintaining the Mastermind
@@ -87,6 +97,8 @@ Masterminds require maintenance—ongoing alignment, trust-building, and purpose
 
 **CEO Application:**
 When did you last invest in your mastermind relationships without a specific agenda? Schedule time this month for pure relationship building.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-14-day-06-maintaining-the-mastermind.md)
 
 ---
 
@@ -100,6 +112,8 @@ When did you last invest in your mastermind relationships without a specific age
 
 **Weekly Synthesis:**
 Write 2-3 sentences describing your mastermind philosophy.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-14-day-07-weekly-integration.md)
 
 ---
 

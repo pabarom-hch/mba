@@ -28,6 +28,8 @@ What are you doing that someone else could do? What are you not doing because yo
 **CEO Application:**
 List everything on your plate this week. Mark each item: Must be me / Should delegate / Should eliminate. Act accordingly.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-16-day-01-delegation-as-multiplication.md)
+
 ---
 
 ### Day 2 — Trust Before Delegation
@@ -39,6 +41,8 @@ Do you trust your team? Truly? If not, why not? Is it their competence, their ch
 
 **CEO Application:**
 Identify one person you trust completely. What makes them trustworthy? Can you build that trust with others?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-16-day-02-trust-before-delegation.md)
 
 ---
 
@@ -52,6 +56,8 @@ When you delegate, do you delegate authority or just tasks? Is there a differenc
 **CEO Application:**
 Take one area where you've delegated tasks but retained authority. Give real authority. Define the boundaries, then step back.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-16-day-03-authority-not-just-tasks.md)
+
 ---
 
 ### Day 4 — The Accountability Balance
@@ -63,6 +69,8 @@ How do you hold people accountable without micromanaging? What's the right balan
 
 **CEO Application:**
 Review how you track delegated work. Are you focused on outcomes or methods? Could you reduce check-ins while maintaining accountability?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-16-day-04-the-accountability-balance.md)
 
 ---
 
@@ -76,6 +84,8 @@ How do you feel when your team gets credit for something you contributed to? Can
 **CEO Application:**
 Find an opportunity this week to publicly give credit to someone on your team for something you could have claimed.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-16-day-05-letting-go-of-credit.md)
+
 ---
 
 ### Day 6 — Delegation and Development
@@ -87,6 +97,8 @@ Is your delegation developing people, or just distributing work? What's the diff
 
 **CEO Application:**
 Delegate something slightly beyond someone's current capability—a stretch assignment. Provide support but let them own it.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-16-day-06-delegation-and-development.md)
 
 ---
 
@@ -100,6 +112,8 @@ Delegate something slightly beyond someone's current capability—a stretch assi
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of delegation.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-16-day-07-weekly-integration.md)
 
 ---
 

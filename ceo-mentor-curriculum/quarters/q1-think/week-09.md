@@ -39,6 +39,8 @@ What is your company's competitive advantage? Is it truly durable, or could it b
 **CEO Application:**
 Draw your economic moat. What protects your business from competition? How wide is it? How deep?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-09-day-01-identifying-your-moat.md)
+
 ---
 
 ### Day 2 — The Moat's Enemy: Erosion
@@ -50,6 +52,8 @@ What forces are working to erode your moat? Technology changes? New competitors?
 
 **CEO Application:**
 Identify the top three threats to your competitive advantage. What's your defense plan?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-09-day-02-moat-erosion.md)
 
 ---
 
@@ -63,6 +67,8 @@ What actions widen your moat vs. just generating short-term revenue? Are you inv
 **CEO Application:**
 List three investments you could make that would widen your moat. How do they compare to your current investment priorities?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-09-day-03-widening-the-moat.md)
+
 ---
 
 ### Day 4 — Brand as Moat
@@ -74,6 +80,8 @@ What is your brand's true value? Is it strengthening or weakening? Are your acti
 
 **CEO Application:**
 Your brand is a form of stored trust. What are you doing to deposit into this account vs. withdraw from it?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-09-day-04-brand-as-moat.md)
 
 ---
 
@@ -87,6 +95,8 @@ How hard is it for customers to leave you? What switching costs exist? Are they 
 **CEO Application:**
 Map your customer switching costs. Are they increasing or decreasing over time? What could strengthen them ethically?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-09-day-05-switching-costs-and-lock-in.md)
+
 ---
 
 ### Day 6 — Moats That Strengthen Over Time
@@ -98,6 +108,8 @@ Does your competitive advantage strengthen with scale and time, or weaken? What 
 
 **CEO Application:**
 Project your moat's trajectory. In 10 years, will it be wider or narrower than today? What determines the answer?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-09-day-06-moats-that-strengthen.md)
 
 ---
 
@@ -111,6 +123,8 @@ Project your moat's trajectory. In 10 years, will it be wider or narrower than t
 
 **Weekly Synthesis:**
 Write 2-3 sentences describing your moat and your plan to protect it.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-09-day-07-weekly-integration.md)
 
 ---
 

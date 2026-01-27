@@ -28,6 +28,8 @@ In what ways do you behave like an owner of your organization? In what ways do y
 **CEO Application:**
 Make one decision today as if you personally owned 100% of the company and would pass it to your grandchildren.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-08-day-01-owner-vs-renter.md)
+
 ---
 
 ### Day 2 — Skin in the Game
@@ -39,6 +41,8 @@ How aligned are your personal outcomes with the organization's long-term success
 
 **CEO Application:**
 Examine your incentive structure. What percentage of your compensation is tied to genuine long-term value creation vs. short-term metrics?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-08-day-02-skin-in-the-game.md)
 
 ---
 
@@ -52,6 +56,8 @@ How thoughtfully do you allocate capital (money, time, attention)? Do you treat 
 **CEO Application:**
 Review one significant expenditure through owner eyes. Would you spend this money if it were your personal wealth?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-08-day-03-capital-allocation.md)
+
 ---
 
 ### Day 4 — Maintaining the Asset
@@ -63,6 +69,8 @@ What assets (physical, human, intellectual, reputational) are you maintaining? W
 
 **CEO Application:**
 Identify one asset that's been neglected. Create a maintenance plan. Owners maintain; renters deplete.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-08-day-04-maintaining-the-asset.md)
 
 ---
 
@@ -76,6 +84,8 @@ How honestly do you report results—to yourself, your board, your team? Where m
 **CEO Application:**
 Draft a report on your organization's status that you'd want to receive if you were an absentee owner who valued candor above comfort.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-08-day-05-honest-reporting.md)
+
 ---
 
 ### Day 6 — Thinking About Successors
@@ -87,6 +97,8 @@ If you left tomorrow, what condition would you leave the organization in? Would 
 
 **CEO Application:**
 List three things you're doing that a future CEO will appreciate. List three things you're deferring that a future CEO will have to fix.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-08-day-06-thinking-about-successors.md)
 
 ---
 
@@ -100,6 +112,8 @@ List three things you're doing that a future CEO will appreciate. List three thi
 
 **Weekly Synthesis:**
 Write 2-3 sentences defining what owner mentality means for your leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-08-day-07-weekly-integration.md)
 
 ---
 

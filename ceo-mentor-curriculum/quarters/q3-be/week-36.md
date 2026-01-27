@@ -28,6 +28,8 @@ What desires or impulses control you? Where do you lack self-discipline? How doe
 **CEO Application:**
 Identify your primary self-discipline challenge. Not your weakest area, but the one that most affects your leadership.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-36-day-01-the-leaders-self-mastery.md)
+
 ---
 
 ### Day 2 — Mastering Impulses
@@ -39,6 +41,8 @@ What impulses do you act on without thinking? Anger? Distraction? Comfort? How d
 
 **CEO Application:**
 Today, notice impulses before acting on them. Create a gap between impulse and action.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-36-day-02-mastering-impulses.md)
 
 ---
 
@@ -52,6 +56,8 @@ Discipline feels like constraint but creates freedom. What does freedom through 
 **CEO Application:**
 Identify one constraint (discipline) that would create freedom (capacity, options, results).
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-36-day-03-discipline-as-freedom.md)
+
 ---
 
 ### Day 4 — The Practice of Fasting
@@ -63,6 +69,8 @@ Gandhi fasted as a practice of self-discipline and clarity. What's your equivale
 
 **CEO Application:**
 Consider a mini-fast—from food, technology, or a habit—for one day. Notice what it reveals about your self-discipline.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-36-day-04-the-practice-of-fasting.md)
 
 ---
 
@@ -76,6 +84,8 @@ How do unchecked desires affect your decisions? Where has wanting (rather than t
 **CEO Application:**
 Review a recent decision. How much was driven by desire (wanting) versus deliberation (thinking)? Was that appropriate?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-36-day-05-desire-and-decision.md)
+
 ---
 
 ### Day 6 — Modeling Self-Discipline
@@ -87,6 +97,8 @@ Your self-discipline is visible to your team. What does your example teach about
 
 **CEO Application:**
 Consider what your team observes about your self-discipline. What do they learn from watching you?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-36-day-06-modeling-self-discipline.md)
 
 ---
 
@@ -100,6 +112,8 @@ Consider what your team observes about your self-discipline. What do they learn 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on self-mastery as foundation for leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-36-day-07-weekly-integration.md)
 
 ---
 

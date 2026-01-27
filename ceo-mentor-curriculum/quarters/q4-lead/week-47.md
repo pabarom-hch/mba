@@ -28,6 +28,8 @@ Where do you have real influence? Not positional authority, but the ability to m
 **CEO Application:**
 Map your influence: Who follows you because of position? Who follows you because they want to? What's the difference?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-47-day-01-influence-defined.md)
+
 ---
 
 ### Day 2 — Sources of Influence
@@ -39,6 +41,8 @@ Influence comes from many sources: expertise, relationships, track record, chara
 
 **CEO Application:**
 Identify your three strongest influence sources and your three weakest. How can you build the weak ones?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-47-day-02-sources-of-influence.md)
 
 ---
 
@@ -52,6 +56,8 @@ Position grants authority; character grants influence. Which do you rely on more
 **CEO Application:**
 If you lost your title tomorrow, who would still follow you? Why? What does this reveal?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-47-day-03-positional-vs-personal.md)
+
 ---
 
 ### Day 4 — Building Influence
@@ -63,6 +69,8 @@ Influence is built over time through consistent demonstration of competence and 
 
 **CEO Application:**
 What are you doing to build influence that will pay off in 2-3 years? Are you investing in long-term influence?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-47-day-04-building-influence.md)
 
 ---
 
@@ -76,6 +84,8 @@ CEOs need influence beyond their direct team—with boards, investors, partners,
 **CEO Application:**
 Map your external influence landscape. Where do you need more influence? How will you build it?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-47-day-05-influence-beyond-team.md)
+
 ---
 
 ### Day 6 — The Ethics of Influence
@@ -87,6 +97,8 @@ Influence can be used well or poorly. What's the difference between influence an
 
 **CEO Application:**
 Reflect on how you use influence. Is it for the benefit of those you lead, or primarily for yourself?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-47-day-06-ethics-of-influence.md)
 
 ---
 
@@ -100,6 +112,8 @@ Reflect on how you use influence. Is it for the benefit of those you lead, or pr
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your understanding of leadership as influence.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-47-day-07-weekly-integration.md)
 
 ---
 

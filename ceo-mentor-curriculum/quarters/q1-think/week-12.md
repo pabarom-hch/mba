@@ -28,6 +28,8 @@ What have you said yes to this week that you should have declined? What's on you
 **CEO Application:**
 Say no to something today that you would normally accept. Notice what space opens up.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-12-day-01-power-of-no.md)
+
 ---
 
 ### Day 2 — Complexity as a Warning Sign
@@ -39,6 +41,8 @@ Where in your business are you making things more complicated than necessary? Wh
 
 **CEO Application:**
 Identify one process or project that's overly complex. Simplify it by 50%. What would you eliminate?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-12-day-02-complexity-warning-sign.md)
 
 ---
 
@@ -52,6 +56,8 @@ What is your core focus? If you had to eliminate 50% of your activities, what wo
 **CEO Application:**
 List your top 10 priorities. Now circle only 3. Those are your priorities. What happens to the other 7?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-12-day-03-focus-as-strategy.md)
+
 ---
 
 ### Day 4 — Protecting White Space
@@ -63,6 +69,8 @@ How much unscheduled time do you have? When do you think? When do you just sit?
 
 **CEO Application:**
 Block two hours this week for thinking—no agenda, no inputs. Protect it. Use it.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-12-day-04-protecting-white-space.md)
 
 ---
 
@@ -76,6 +84,8 @@ What aspects of your business or strategy can't you explain to a child? What mig
 **CEO Application:**
 Take your strategy and explain it in three sentences using no jargon. If you can't, clarify your strategy.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-12-day-05-simple-explanations.md)
+
 ---
 
 ### Day 6 — The Courage to Simplify
@@ -87,6 +97,8 @@ What's stopping you from simplifying? Fear of missing out? Political considerati
 
 **CEO Application:**
 What would you simplify if there were no political consequences? What's the real cost of that complexity?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-12-day-06-courage-to-simplify.md)
 
 ---
 
@@ -100,6 +112,8 @@ What would you simplify if there were no political consequences? What's the real
 
 **Weekly Synthesis:**
 Write 2-3 sentences on simplicity as a leadership discipline.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-12-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ What has adversity taught you that success couldn't? What capabilities do you ha
 **CEO Application:**
 Identify your greatest professional setback. What did it teach you that you couldn't have learned otherwise?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-40-day-01-adversity-as-teacher.md)
+
 ---
 
 ### Day 2 — Using the Wilderness
@@ -39,6 +41,8 @@ Mandela used prison for reading, reflection, and relationship building. How do y
 
 **CEO Application:**
 If you're in a difficult period now, ask: What is this season for? What should I be developing?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-40-day-02-using-the-wilderness.md)
 
 ---
 
@@ -52,6 +56,8 @@ During 27 years in prison, Mandela never lost sight of his vision. How do you ma
 **CEO Application:**
 What's your vision for the next 10 years? Does current adversity threaten it, or is it a waypoint?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-40-day-03-maintaining-vision-in-adversity.md)
+
 ---
 
 ### Day 4 — Composure Under Pressure
@@ -63,6 +69,8 @@ Mandela maintained dignity and composure throughout his imprisonment. How do you
 
 **CEO Application:**
 Think of a recent high-pressure situation. How did you show up? What did your team observe?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-40-day-04-composure-under-pressure.md)
 
 ---
 
@@ -76,6 +84,8 @@ Mandela used prison to prepare—learning Afrikaans, understanding his opponents
 **CEO Application:**
 What should you be learning or developing right now that will matter when circumstances change?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-40-day-05-preparation-through-adversity.md)
+
 ---
 
 ### Day 6 — Leading Others Through Adversity
@@ -87,6 +97,8 @@ Your team faces adversity too. How do you help them use difficulty as developmen
 
 **CEO Application:**
 Who on your team is struggling with adversity right now? How can you help them find the development opportunity in it?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-40-day-06-leading-others-through-adversity.md)
 
 ---
 
@@ -100,6 +112,8 @@ Who on your team is struggling with adversity right now? How can you help them f
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of adversity.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-40-day-07-weekly-integration.md)
 
 ---
 

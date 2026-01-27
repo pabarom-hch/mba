@@ -26,6 +26,8 @@ What do you do every single day? Not occasionally, not when you remember—every
 **CEO Application:**
 List your current daily disciplines. Are they the ones that will compound into the success you want?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-29-day-01-the-power-of-daily.md)
+
 ---
 
 ### Day 2 — Discipline vs. Regret
@@ -37,6 +39,8 @@ Where have you chosen short-term comfort over discipline? What regret has accumu
 
 **CEO Application:**
 Identify one discipline you've been avoiding. What's the pain of doing it? What's the pain of not doing it over 10 years?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-29-day-02-discipline-vs-regret.md)
 
 ---
 
@@ -50,6 +54,8 @@ The disciplines that create success are usually simple. Reading, exercising, ref
 **CEO Application:**
 Choose one simple discipline you know would help. Why haven't you been doing it? What would make it non-negotiable?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-29-day-03-simple-not-easy.md)
+
 ---
 
 ### Day 4 — The Compound Effect
@@ -61,6 +67,8 @@ Small disciplines compound over time. What would happen if you read 30 minutes d
 
 **CEO Application:**
 Calculate the compound effect of one discipline practiced daily for 5 years. Is it worth 15-30 minutes per day?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-29-day-04-the-compound-effect.md)
 
 ---
 
@@ -74,6 +82,8 @@ Which disciplines are truly non-negotiable for you? What would have to happen fo
 **CEO Application:**
 Define 3-5 non-negotiable daily disciplines. What makes something non-negotiable? How do you protect them?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-29-day-05-non-negotiables.md)
+
 ---
 
 ### Day 6 — Building the Habit
@@ -85,6 +95,8 @@ How do you turn disciplines into habits? What's made past habit changes stick or
 
 **CEO Application:**
 For a discipline you want to establish, design the habit loop: cue, routine, reward. When will you start?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-29-day-06-building-the-habit.md)
 
 ---
 
@@ -98,6 +110,8 @@ For a discipline you want to establish, design the habit loop: cue, routine, rew
 
 **Weekly Synthesis:**
 List your committed daily disciplines and why each matters.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-29-day-07-weekly-integration.md)
 
 ---
 

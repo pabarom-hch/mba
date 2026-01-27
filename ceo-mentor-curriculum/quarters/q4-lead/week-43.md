@@ -28,6 +28,8 @@ Who have you not forgiven? What is the weight of that unforgiveness? How does it
 **CEO Application:**
 Map your unforgiveness. For each item, estimate the mental energy it consumes. Is that cost justified?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-43-day-01-the-weight-of-unforgiveness.md)
+
 ---
 
 ### Day 2 — Forgiveness as Release
@@ -39,6 +41,8 @@ Forgiveness is for you, not the other person. They may not know or care. But you
 
 **CEO Application:**
 Identify one unforgiveness that, if released, would give you the greatest freedom. What would release require?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-43-day-02-forgiveness-as-release.md)
 
 ---
 
@@ -52,6 +56,8 @@ You can forgive someone without reconciling with them. Forgiveness is internal r
 **CEO Application:**
 Is there someone you should forgive but not reconcile with? What would that look like?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-43-day-03-forgiveness-without-reconciliation.md)
+
 ---
 
 ### Day 4 — Self-Forgiveness
@@ -63,6 +69,8 @@ Sometimes the hardest forgiveness is self-forgiveness. What mistakes are you sti
 
 **CEO Application:**
 What failure or mistake have you not forgiven yourself for? What would self-forgiveness require?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-43-day-04-self-forgiveness.md)
 
 ---
 
@@ -76,6 +84,8 @@ Forgiveness is often a process, not a moment. How do you work through forgivenes
 **CEO Application:**
 For something you want to forgive, design a process: acknowledgment, processing, release. What are the steps?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-43-day-05-the-process-of-forgiving.md)
+
 ---
 
 ### Day 6 — Teaching Forgiveness
@@ -87,6 +97,8 @@ Organizations hold grudges too—between departments, against former members, to
 
 **CEO Application:**
 Where does your organization hold collective unforgiveness? What would releasing it enable?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-43-day-06-teaching-forgiveness.md)
 
 ---
 
@@ -100,6 +112,8 @@ Where does your organization hold collective unforgiveness? What would releasing
 
 **Weekly Synthesis:**
 Write 2-3 sentences on forgiveness as a leadership practice.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-43-day-07-weekly-integration.md)
 
 ---
 

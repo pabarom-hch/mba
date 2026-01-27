@@ -28,6 +28,8 @@ How truthful are you in your daily interactions? Not just avoiding lies, but spe
 **CEO Application:**
 Today, notice every moment you shade the truth—through omission, spin, or deflection. Don't judge; just notice.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-34-day-01-truth-as-foundation.md)
+
 ---
 
 ### Day 2 — The Cost of Untruth
@@ -39,6 +41,8 @@ What has untruth—yours or others'—cost you in your career? What's the hidden
 
 **CEO Application:**
 Identify one situation where untruth created downstream problems. What would truth have cost upfront? What did untruth cost eventually?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-34-day-02-the-cost-of-untruth.md)
 
 ---
 
@@ -52,6 +56,8 @@ Are you honest with yourself? About your strengths and weaknesses? About your mo
 **CEO Application:**
 Write down a truth about yourself that you often avoid acknowledging. Sit with it.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-34-day-03-truth-to-self.md)
+
 ---
 
 ### Day 4 — Truth to Others
@@ -63,6 +69,8 @@ How does radical honesty with others affect relationships? Does it damage or str
 
 **CEO Application:**
 Identify one truth you've been withholding from someone important. Consider what speaking it would require.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-34-day-04-truth-to-others.md)
 
 ---
 
@@ -76,6 +84,8 @@ Is truth-telling safe in your organization? Do people tell you uncomfortable tru
 **CEO Application:**
 Ask someone: "What truth is our organization avoiding right now?" Listen without defending.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-34-day-05-creating-truth-telling-culture.md)
+
 ---
 
 ### Day 6 — Truth and Courage
@@ -87,6 +97,8 @@ Truth-telling requires courage. When is truth most difficult for you? What fears
 
 **CEO Application:**
 Identify one truth that requires courage to speak. Prepare to speak it.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-34-day-06-truth-and-courage.md)
 
 ---
 
@@ -100,6 +112,8 @@ Identify one truth that requires courage to speak. Prepare to speak it.
 
 **Weekly Synthesis:**
 Write 2-3 sentences on truth as a leadership practice.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-34-day-07-weekly-integration.md)
 
 ---
 

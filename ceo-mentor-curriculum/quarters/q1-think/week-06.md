@@ -44,6 +44,8 @@ How do you behave under heavy stress? What decisions have you made while stresse
 **CEO Application:**
 Identify your stress signals (physical, behavioral). Create a rule: No significant decisions when stress is elevated. Build in cooling-off periods.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-06-day-01-stress-influence-tendency.md)
+
 ---
 
 ### Day 2 — Availability Misweighing
@@ -57,6 +59,8 @@ What recent event might be distorting your current judgment? Are you overweighti
 
 **CEO Application:**
 Before a major decision, explicitly ask: What data am I missing because it's not vivid or recent? What would a proper statistical analysis show?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-06-day-02-availability-misweighing.md)
 
 ---
 
@@ -72,6 +76,8 @@ Whose opinions do you accept without sufficient scrutiny because of their status
 **CEO Application:**
 As CEO, your statements carry disproportionate weight. Be explicit about confidence levels. Say "I think" vs. "I know." Encourage pushback.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-06-day-03-authority-misinfluence.md)
+
 ---
 
 ### Day 4 — Reason-Respecting Tendency
@@ -85,6 +91,8 @@ Do your directives include clear reasoning? Do you accept others' directives wit
 
 **CEO Application:**
 Always explain why. "We need this report because..." even if the reason seems obvious. It dramatically increases buy-in and execution quality.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-06-day-04-reason-respecting-tendency.md)
 
 ---
 
@@ -102,6 +110,8 @@ Where might multiple biases be combining in your organization to create outsized
 **CEO Application:**
 Analyze a past failure or success. Map the biases at work. Were multiple biases reinforcing each other? What was the combination?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-06-day-05-lollapalooza-effect.md)
+
 ---
 
 ### Day 6 — Designing Against Bias
@@ -116,6 +126,8 @@ What structural changes could you make to your decision-making processes to coun
 **CEO Application:**
 Choose one process (hiring, strategy review, investment decisions). Redesign it to include at least two bias-counteracting mechanisms.
 
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-06-day-06-designing-against-bias.md)
+
 ---
 
 ### Day 7 — Weekly Integration
@@ -128,6 +140,8 @@ Choose one process (hiring, strategy review, investment decisions). Redesign it 
 
 **Weekly Synthesis:**
 Write a summary of the top 5 biases you need to watch in yourself.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-06-day-07-weekly-integration.md)
 
 ---
 

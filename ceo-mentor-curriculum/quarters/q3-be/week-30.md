@@ -26,6 +26,8 @@ How much time do you spend improving your business versus improving yourself? Wh
 **CEO Application:**
 Track your time this week. How many hours are invested in your personal development versus operational work?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-30-day-01-self-as-primary-asset.md)
+
 ---
 
 ### Day 2 — The Ceiling of Self
@@ -37,6 +39,8 @@ Your organization has a ceiling, and that ceiling is often you. Where might you 
 
 **CEO Application:**
 Identify one area where your personal limitations constrain organizational growth. What development would raise the ceiling?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-30-day-02-the-ceiling-of-self.md)
 
 ---
 
@@ -50,6 +54,8 @@ What are you learning right now? Not passively absorbing, but actively studying?
 **CEO Application:**
 Define your top learning priority for the next quarter. What skill, domain, or capability would most advance your goals?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-30-day-03-learning-as-priority.md)
+
 ---
 
 ### Day 4 — The Reading Imperative
@@ -61,6 +67,8 @@ How many books have you read in the last year? How many have directly contribute
 
 **CEO Application:**
 Set a reading goal. How many books per month? What's the reading time built into your daily routine?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-30-day-04-the-reading-imperative.md)
 
 ---
 
@@ -74,6 +82,8 @@ Who are your current mentors—formal or informal, living or through books? Are 
 **CEO Application:**
 Evaluate your mentor portfolio. Who do you need that you don't have? How could you access them?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-30-day-05-mentors-and-models.md)
+
 ---
 
 ### Day 6 — The Development Investment
@@ -85,6 +95,8 @@ How much money do you invest in your own development annually? Coaching, courses
 
 **CEO Application:**
 Calculate your personal development budget. Is it worthy of your aspirations? What would doubling it enable?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-30-day-06-the-development-investment.md)
 
 ---
 
@@ -98,6 +110,8 @@ Calculate your personal development budget. Is it worthy of your aspirations? Wh
 
 **Weekly Synthesis:**
 Write 2-3 sentences on personal development as a leadership discipline.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-30-day-07-weekly-integration.md)
 
 ---
 

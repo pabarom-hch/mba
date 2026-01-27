@@ -26,6 +26,8 @@ What's the purpose of goals for you? Achievement? Direction? Motivation? Measure
 **CEO Application:**
 Review your current goals. Are they written? Specific? Dated? If not, they're wishes, not goals.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-32-day-01-why-goals-matter.md)
+
 ---
 
 ### Day 2 — Goal Categories
@@ -37,6 +39,8 @@ Rohn set goals across categories: economic, material, personal development, fami
 
 **CEO Application:**
 Ensure you have goals in at least four life categories. An imbalanced life eventually undermines even business success.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-32-day-02-goal-categories.md)
 
 ---
 
@@ -50,6 +54,8 @@ Do you have goals at multiple time horizons? 90-day, 1-year, 5-year, lifetime? H
 **CEO Application:**
 For your most important goal, cascade it: What's the lifetime vision? 5-year milestone? 1-year target? 90-day objective?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-32-day-03-short-medium-long.md)
+
 ---
 
 ### Day 4 — The Pull of Goals
@@ -61,6 +67,8 @@ The best goals pull you—they're exciting enough that you run toward them. Do y
 
 **CEO Application:**
 Rate each goal on pull (1-10). Goals below 7 may need to be reframed or replaced.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-32-day-04-the-pull-of-goals.md)
 
 ---
 
@@ -74,6 +82,8 @@ How often do you review your goals? Daily? Weekly? Or are they forgotten after b
 **CEO Application:**
 Establish a goal review rhythm: daily glance, weekly review, monthly assessment, quarterly revision.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-32-day-05-review-and-adjustment.md)
+
 ---
 
 ### Day 6 — Achievement and Celebration
@@ -85,6 +95,8 @@ Do you celebrate achieved goals, or immediately move to the next? What does achi
 
 **CEO Application:**
 Look at recent accomplishments. Did you celebrate? If not, how does that affect your motivation?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-32-day-06-achievement-and-celebration.md)
 
 ---
 
@@ -98,6 +110,8 @@ Look at recent accomplishments. Did you celebrate? If not, how does that affect 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of goal-setting.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-32-day-07-weekly-integration.md)
 
 ---
 

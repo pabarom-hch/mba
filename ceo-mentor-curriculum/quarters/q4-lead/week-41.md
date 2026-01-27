@@ -28,6 +28,8 @@ What is your 20-year vision? Not a specific plan, but a direction? Can you hold 
 **CEO Application:**
 Write down what you want to be true in 20 years. How does today's work connect to that?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-41-day-01-decades-mindset.md)
+
 ---
 
 ### Day 2 — Patience as Strategy
@@ -39,6 +41,8 @@ Mandela waited 27 years. What are you waiting for that tests your patience? Is t
 
 **CEO Application:**
 Identify something you're impatiently pursuing. What would happen if you extended the timeline?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-41-day-02-patience-as-strategy.md)
 
 ---
 
@@ -52,6 +56,8 @@ What pressures you toward short-term thinking? Investors? Ego? Competition? Fear
 **CEO Application:**
 Identify the strongest short-term pressure you face. What long-term value is it threatening?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-41-day-03-short-term-pressure.md)
+
 ---
 
 ### Day 4 — Milestones on the Long Road
@@ -63,6 +69,8 @@ The long game requires milestones—markers of progress. How do you celebrate pr
 
 **CEO Application:**
 What milestones mark progress toward your long-term vision? Are you tracking and celebrating them?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-41-day-04-milestones-on-the-long-road.md)
 
 ---
 
@@ -76,6 +84,8 @@ The long game requires endurance—physical, emotional, mental. How do you susta
 **CEO Application:**
 Assess your endurance practices: health, relationships, meaning, renewal. Are they sufficient for the long game?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-41-day-05-endurance.md)
+
 ---
 
 ### Day 6 — Teaching Long-Term Thinking
@@ -87,6 +97,8 @@ Your organization needs long-term thinking too. How do you develop this capacity
 
 **CEO Application:**
 How does your organization reward long-term thinking versus short-term results? What would change if you adjusted incentives?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-41-day-06-teaching-long-term-thinking.md)
 
 ---
 
@@ -100,6 +112,8 @@ How does your organization reward long-term thinking versus short-term results? 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of the long game.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-41-day-07-weekly-integration.md)
 
 ---
 

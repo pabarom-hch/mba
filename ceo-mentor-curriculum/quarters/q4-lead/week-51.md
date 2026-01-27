@@ -52,6 +52,8 @@ Which of the 21 laws are you strong in? Which are you weak in?
 **CEO Application:**
 Rate yourself (1-10) on each of the 21 laws. Identify your top 5 and bottom 5.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-51-day-01-laws-assessment.md)
+
 ---
 
 ### Day 2 — Navigation and Victory
@@ -63,6 +65,8 @@ Are you navigating effectively for your organization? Are you finding ways to wi
 
 **CEO Application:**
 Apply Laws 4 (Navigation) and 15 (Victory) to your current biggest challenge. What does each law suggest?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-51-day-02-navigation-and-victory.md)
 
 ---
 
@@ -76,6 +80,8 @@ How well are you connecting with people? How solid is trust?
 **CEO Application:**
 Apply Laws 6 (Solid Ground) and 10 (Connection) to a key relationship that needs strengthening.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-51-day-03-connection-and-trust.md)
+
 ---
 
 ### Day 4 — Empowerment and Inner Circle
@@ -87,6 +93,8 @@ Are you empowering others or hoarding control? Is your inner circle elevating or
 
 **CEO Application:**
 Apply Laws 11 (Inner Circle) and 12 (Empowerment). Who's in your inner circle? How are you empowering?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-51-day-04-empowerment-and-inner-circle.md)
 
 ---
 
@@ -100,6 +108,8 @@ Are you focused on what matters most? Is your timing right?
 **CEO Application:**
 Apply Laws 17 (Priorities) and 19 (Timing). What should you stop doing? What's the right timing for key initiatives?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-51-day-05-priorities-and-timing.md)
+
 ---
 
 ### Day 6 — Growth and Legacy
@@ -111,6 +121,8 @@ Are you growing leaders for multiplication? What legacy are you building?
 
 **CEO Application:**
 Apply Laws 20 (Explosive Growth) and 21 (Legacy). Who are you developing? What will remain?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-51-day-06-growth-and-legacy.md)
 
 ---
 
@@ -124,6 +136,8 @@ Apply Laws 20 (Explosive Growth) and 21 (Legacy). Who are you developing? What w
 
 **Weekly Synthesis:**
 Write 2-3 sentences on how you'll apply the 21 laws going forward.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-51-day-07-weekly-integration.md)
 
 ---
 

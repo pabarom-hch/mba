@@ -28,6 +28,8 @@ What is your value chain? From raw inputs to final customer, who controls each s
 **CEO Application:**
 Draw your value chain. Mark each step: control it, depend on a partner, or commodity market. Where are you vulnerable?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-17-day-01-mapping-your-value-chain.md)
+
 ---
 
 ### Day 2 — The Integration Advantage
@@ -39,6 +41,8 @@ What would controlling more of your value chain enable? Cost reduction? Quality 
 
 **CEO Application:**
 Identify one upstream or downstream step you don't control. What would change if you owned it?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-17-day-02-the-integration-advantage.md)
 
 ---
 
@@ -52,6 +56,8 @@ Integration has costs: capital, complexity, distraction from core. When does int
 **CEO Application:**
 Examine a value chain step you've considered integrating. Apply the circle of competence test: Do you have the expertise to run it well?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-17-day-03-the-integration-trap.md)
+
 ---
 
 ### Day 4 — Strategic vs. Commodity Inputs
@@ -63,6 +69,8 @@ Which inputs are strategic (affect differentiation) and which are commodity (cos
 
 **CEO Application:**
 Categorize your key inputs as strategic or commodity. Where might integration create advantage vs. just adding complexity?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-17-day-04-strategic-vs-commodity-inputs.md)
 
 ---
 
@@ -76,6 +84,8 @@ Carnegie integrated vertically rather than diversifying horizontally. What's the
 **CEO Application:**
 Are there opportunities to deepen your position vertically rather than expanding horizontally? Which builds more defensible advantage?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-17-day-05-vertical-vs-horizontal.md)
+
 ---
 
 ### Day 6 — Modern Integration
@@ -87,6 +97,8 @@ Integration today isn't just about owning assets—it can be about data, relatio
 
 **CEO Application:**
 Beyond physical assets, what could you integrate? Customer data? Distribution relationships? Platform position?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-17-day-06-modern-integration.md)
 
 ---
 
@@ -100,6 +112,8 @@ Beyond physical assets, what could you integrate? Customer data? Distribution re
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your approach to value chain control.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-17-day-07-weekly-integration.md)
 
 ---
 

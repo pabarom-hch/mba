@@ -26,6 +26,8 @@ A mastermind alliance differs from a team. Teams execute; masterminds multiply i
 **CEO Application:**
 Distinguish your team (execution) from your mastermind (strategic intelligence). Are they the same? Should they be?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-25-day-01-alliance-vs-team.md)
+
 ---
 
 ### Day 2 — Selecting Members
@@ -37,6 +39,8 @@ Who should be in your mastermind alliance? What qualities matter? Complementary 
 
 **CEO Application:**
 Draft criteria for mastermind members. List 5 candidates who meet the criteria.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-25-day-02-selecting-members.md)
 
 ---
 
@@ -50,6 +54,8 @@ Hill emphasized that the mastermind only works in "spirit of harmony." What crea
 **CEO Application:**
 Assess your current key relationships for harmony. Where is it strong? Where is it weak? What can you do?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-25-day-03-the-spirit-of-harmony.md)
+
 ---
 
 ### Day 4 — Operating the Alliance
@@ -61,6 +67,8 @@ How should a mastermind alliance operate? How often meet? What structure? What n
 
 **CEO Application:**
 Design operating principles for a mastermind: frequency, format, expectations, confidentiality, commitment.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-25-day-04-operating-the-alliance.md)
 
 ---
 
@@ -74,6 +82,8 @@ A mastermind must benefit all members. What do you offer? Why would excellent pe
 **CEO Application:**
 Write down what you bring to a mastermind. Is it enough? How could you increase your value to potential members?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-25-day-05-mutual-benefit.md)
+
 ---
 
 ### Day 6 — Maintaining the Alliance
@@ -85,6 +95,8 @@ Masterminds require maintenance—attention, renewal, conflict resolution. What 
 
 **CEO Application:**
 If you have a mastermind, assess its health. If not, what's preventing you from forming one?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-25-day-06-maintaining-the-alliance.md)
 
 ---
 
@@ -98,6 +110,8 @@ If you have a mastermind, assess its health. If not, what's preventing you from 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your mastermind strategy.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-25-day-07-weekly-integration.md)
 
 ---
 

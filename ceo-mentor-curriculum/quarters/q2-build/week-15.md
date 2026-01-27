@@ -28,6 +28,8 @@ Do you genuinely seek people better than yourself? Or do you unconsciously hire 
 **CEO Application:**
 Think about your last three hires. Did you seek people who would challenge you and raise the bar? Or people who would fit comfortably?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-15-day-01-humility-to-hire-better.md)
+
 ---
 
 ### Day 2 — What to Look For
@@ -39,6 +41,8 @@ What qualities matter most in the people you surround yourself with? How do you 
 
 **CEO Application:**
 Write down your hiring criteria for senior roles. Are they focused on credentials, or on demonstrated capability and character?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-15-day-02-what-to-look-for.md)
 
 ---
 
@@ -52,6 +56,8 @@ What makes excellent people want to work with you? Is it compensation alone, or 
 **CEO Application:**
 Interview (informally) your best team member about why they joined and why they stay. What does it reveal about your value proposition?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-15-day-03-attracting-excellence.md)
+
 ---
 
 ### Day 4 — Retaining Excellence
@@ -63,6 +69,8 @@ Excellent people have options. What keeps them? Challenge? Growth? Purpose? Comp
 
 **CEO Application:**
 Identify your top 3 critical performers. Do you know what keeps them engaged? If not, find out this week.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-15-day-04-retaining-excellence.md)
 
 ---
 
@@ -76,6 +84,8 @@ Are you developing your people, or just using them? What investment are you maki
 **CEO Application:**
 For each direct report, answer: What have I done in the last month to develop them? Is it enough?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-15-day-05-developing-excellence.md)
+
 ---
 
 ### Day 6 — The Excellence Standard
@@ -87,6 +97,8 @@ What's your standard for excellence? Is it clear? Is it consistent? Does your or
 
 **CEO Application:**
 Articulate your standard of excellence in one paragraph. Is this standard known and lived throughout your organization?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-15-day-06-the-excellence-standard.md)
 
 ---
 
@@ -100,6 +112,8 @@ Articulate your standard of excellence in one paragraph. Is this standard known 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of attracting and developing excellence.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-15-day-07-weekly-integration.md)
 
 ---
 

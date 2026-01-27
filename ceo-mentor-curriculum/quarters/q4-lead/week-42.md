@@ -28,6 +28,8 @@ Where are you holding onto resentment? What is it costing you? What would reconc
 **CEO Application:**
 Identify a relationship damaged by conflict where reconciliation might be possible. What would it take?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-42-day-01-the-choice.md)
+
 ---
 
 ### Day 2 — Strategic Reconciliation
@@ -39,6 +41,8 @@ Mandela's reconciliation wasn't just moral—it was strategic. A vengeful transi
 
 **CEO Application:**
 Think of an "enemy"—competitor, former partner, dissatisfied employee. What would strategic reconciliation look like?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-42-day-02-strategic-reconciliation.md)
 
 ---
 
@@ -52,6 +56,8 @@ Freedom requires releasing bitterness. What mental prisons do you maintain throu
 **CEO Application:**
 What are you holding onto that's keeping you imprisoned? What would releasing it enable?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-42-day-03-leaving-prison-behind.md)
+
 ---
 
 ### Day 4 — The Springbok Moment
@@ -63,6 +69,8 @@ Mandela wore the Springbok jersey—the symbol of his oppressors—to unite a na
 
 **CEO Application:**
 What gesture would signal reconciliation to someone you've been in conflict with? What would it cost you? What might it gain?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-42-day-04-the-springbok-moment.md)
 
 ---
 
@@ -76,6 +84,8 @@ Reconciliation requires strength, not weakness. Mandela could have sought reveng
 **CEO Application:**
 Where have you avoided reconciliation because it felt like weakness? What would it look like to reconcile from a position of strength?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-42-day-05-reconciliation-is-not-weakness.md)
+
 ---
 
 ### Day 6 — When to Reconcile
@@ -87,6 +97,8 @@ Not every conflict should be reconciled. Some people are toxic; some bridges sho
 
 **CEO Application:**
 Create criteria for when to pursue reconciliation versus when to maintain distance. Apply to a current situation.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-42-day-06-when-to-reconcile.md)
 
 ---
 
@@ -100,6 +112,8 @@ Create criteria for when to pursue reconciliation versus when to maintain distan
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of reconciliation.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-42-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ Where might your leadership ability be the constraint on your organization's pot
 **CEO Application:**
 Rate your leadership ability (1-10) honestly. Now rate your organization's success. Maxwell suggests: Dedication (8) × Leadership (2) = Effectiveness (16).
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-46-day-01-understanding-the-lid.md)
+
 ---
 
 ### Day 2 — Diagnosing Your Lid
@@ -39,6 +41,8 @@ What specific leadership capabilities are you lacking? Where do you struggle to 
 
 **CEO Application:**
 Identify your three weakest leadership capabilities. How are they limiting your organization?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-46-day-02-diagnosing-your-lid.md)
 
 ---
 
@@ -52,6 +56,8 @@ What is your low leadership lid costing you and your organization? In missed opp
 **CEO Application:**
 Estimate the cost of your leadership limitations in concrete terms. What would raising your lid be worth?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-46-day-03-cost-of-low-lid.md)
+
 ---
 
 ### Day 4 — Raising the Lid
@@ -63,6 +69,8 @@ Leadership can be developed. The lid can be raised. What would you need to do to
 
 **CEO Application:**
 Create a specific plan to raise your leadership lid. What skill, behavior, or capacity will you develop?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-46-day-04-raising-the-lid.md)
 
 ---
 
@@ -76,6 +84,8 @@ One way to address your lid is to hire people with higher lids in specific areas
 **CEO Application:**
 Identify a leadership capability where you should hire someone stronger than yourself. Is that person on your team?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-46-day-05-hiring-above-your-lid.md)
+
 ---
 
 ### Day 6 — The Organizational Lid
@@ -87,6 +97,8 @@ Beyond your personal lid, your organization has a collective leadership lid. Wha
 
 **CEO Application:**
 Assess your leadership team's collective lid. Where are the limitations? How can you address them?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-46-day-06-organizational-lid.md)
 
 ---
 
@@ -100,6 +112,8 @@ Assess your leadership team's collective lid. Where are the limitations? How can
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your leadership lid and your plan to raise it.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-46-day-07-weekly-integration.md)
 
 ---
 

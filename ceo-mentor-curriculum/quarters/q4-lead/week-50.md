@@ -28,6 +28,8 @@ Are you primarily leading followers or developing leaders? What's the difference
 **CEO Application:**
 Count: How many leaders have you developed in the last five years who now develop others?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-50-day-01-addition-vs-multiplication.md)
+
 ---
 
 ### Day 2 — Identifying Potential Leaders
@@ -39,6 +41,8 @@ How do you identify leadership potential? What qualities do you look for? Who on
 
 **CEO Application:**
 List 3-5 people with leadership potential you could develop. What do you see in them?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-50-day-02-identifying-potential-leaders.md)
 
 ---
 
@@ -52,6 +56,8 @@ Maxwell's development process moves from modeling to releasing to reproducing. H
 **CEO Application:**
 For one potential leader, map a development plan using Maxwell's process.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-50-day-03-the-development-process.md)
+
 ---
 
 ### Day 4 — Time Investment
@@ -63,6 +69,8 @@ Leadership development requires time—your most precious resource. How much tim
 
 **CEO Application:**
 Review your calendar. How many hours last month were dedicated to developing others? Is it enough?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-50-day-04-time-investment.md)
 
 ---
 
@@ -76,6 +84,8 @@ The goal is leaders who develop leaders. Are the leaders you develop developing 
 **CEO Application:**
 Of the leaders you've developed, how many are now developing leaders? What does that indicate?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-50-day-05-reproducing-yourself.md)
+
 ---
 
 ### Day 6 — Creating a Leadership Culture
@@ -87,6 +97,8 @@ Beyond individual development, how do you create a culture where leadership deve
 
 **CEO Application:**
 Assess your organization's leadership development culture. Is it systematic or accidental?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-50-day-06-creating-a-leadership-culture.md)
 
 ---
 
@@ -100,6 +112,8 @@ Assess your organization's leadership development culture. Is it systematic or a
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your commitment to developing leaders.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-50-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ What are you compounding right now? What small advantages are you building daily
 **CEO Application:**
 Calculate: If you improved 1% daily in one skill, you'd be 37 times better in a year. What skill deserves that investment?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-13-day-01-mathematics-of-compounding.md)
+
 ---
 
 ### Day 2 — Knowledge Compounds
@@ -39,6 +41,8 @@ How is your knowledge compounding? Are you adding to it daily, or is it stagnant
 
 **CEO Application:**
 Track your learning input this week. Pages read. Podcasts consumed. Conversations with smart people. Is it sufficient for compounding?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-13-day-02-knowledge-compounds.md)
 
 ---
 
@@ -52,6 +56,8 @@ Which relationships are appreciating over time? Which are depreciating? What det
 **CEO Application:**
 Identify three relationships to invest in this week. Not for immediate return, but for long-term compounding.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-13-day-03-relationships-compound.md)
+
 ---
 
 ### Day 4 — Reputation Compounds
@@ -63,6 +69,8 @@ How is your reputation compounding? What deposits are you making daily? What wit
 
 **CEO Application:**
 Make one deposit into your reputation account today—something that builds trust without expecting immediate return.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-13-day-04-reputation-compounds.md)
 
 ---
 
@@ -76,6 +84,8 @@ What interrupts your compounding? Starting over? Giving up? Short-term thinking?
 **CEO Application:**
 Identify one area where you've repeatedly "reset to zero." What would it take to maintain continuity and let compounding work?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-13-day-05-enemy-of-compounding.md)
+
 ---
 
 ### Day 6 — Designing for Compounding
@@ -87,6 +97,8 @@ Is your business designed to compound? Does time make it stronger or weaker? Are
 
 **CEO Application:**
 List three assets (tangible or intangible) in your business that compound over time. Are you investing in them appropriately?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-13-day-06-designing-for-compounding.md)
 
 ---
 
@@ -115,6 +127,8 @@ This week completes Q1: THINK. Over 13 weeks, you've studied:
 
 **Quarterly Synthesis:**
 Write a one-page summary of your key learnings from Q1.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-13-day-07-q1-integration.md)
 
 ---
 

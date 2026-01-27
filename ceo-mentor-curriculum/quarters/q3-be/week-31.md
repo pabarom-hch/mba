@@ -26,6 +26,8 @@ Who are the five people you spend the most time with? What do they value? How do
 **CEO Application:**
 List your five closest associations. For each, note: What do they contribute to who you're becoming?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-31-day-01-the-five-people.md)
+
 ---
 
 ### Day 2 — Expanded vs. Limited
@@ -37,6 +39,8 @@ Do your associations expand you or limit you? Do they raise the bar or lower it?
 
 **CEO Application:**
 Categorize your regular associations: Expanders (pull you up), Maintainers (neutral), or Limiters (pull you down).
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-31-day-02-expanded-vs-limited.md)
 
 ---
 
@@ -50,6 +54,8 @@ Are there associations you need to reduce or eliminate? What makes that difficul
 **CEO Application:**
 Identify one association that consistently drains you or limits your growth. What would reducing that association require?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-31-day-03-the-disassociation-challenge.md)
+
 ---
 
 ### Day 4 — Seeking Expanders
@@ -61,6 +67,8 @@ Who do you know (or could know) who would expand you? What's preventing more tim
 
 **CEO Application:**
 List three people who are where you want to be. How could you increase association with them?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-31-day-04-seeking-expanders.md)
 
 ---
 
@@ -74,6 +82,8 @@ You're in someone else's five people too. What do you contribute to them? Are yo
 **CEO Application:**
 For your key relationships, ask: Am I contributing to their growth? How could I add more value?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-31-day-05-your-contribution.md)
+
 ---
 
 ### Day 6 — Deliberate Association Design
@@ -85,6 +95,8 @@ Most people's associations are accidental—proximity and history. What would de
 
 **CEO Application:**
 Design your ideal association portfolio. Who would be in your five? How would you cultivate those relationships?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-31-day-06-deliberate-association-design.md)
 
 ---
 
@@ -98,6 +110,8 @@ Design your ideal association portfolio. Who would be in your five? How would yo
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of associations.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-31-day-07-weekly-integration.md)
 
 ---
 

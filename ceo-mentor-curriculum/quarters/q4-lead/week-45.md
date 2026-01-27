@@ -28,6 +28,8 @@ What do you want to remain when you're gone? What impact matters most to you?
 **CEO Application:**
 Write a description of the legacy you want to leave. What would you want said at your retirement or memorial?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-45-day-01-defining-legacy.md)
+
 ---
 
 ### Day 2 — Building Beyond Yourself
@@ -39,6 +41,8 @@ Mandela built institutions, not just achievements. What are you building that wi
 
 **CEO Application:**
 What systems, institutions, or capabilities are you building that don't depend on you?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-45-day-02-building-beyond-yourself.md)
 
 ---
 
@@ -52,6 +56,8 @@ Mandela knew he wouldn't lead forever. Are you preparing successors? Could the o
 **CEO Application:**
 If you left tomorrow, who would succeed you? Are they ready? If not, what development is needed?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-45-day-03-succession-imperative.md)
+
 ---
 
 ### Day 4 — Knowing When to Step Aside
@@ -63,6 +69,8 @@ Mandela served one term, then stepped aside. What would indicate it's time for y
 
 **CEO Application:**
 Define your exit criteria. How will you know when it's time to step aside?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-45-day-04-knowing-when-to-step-aside.md)
 
 ---
 
@@ -76,6 +84,8 @@ Part of legacy is the leaders you develop. Who are you mentoring? What are you p
 **CEO Application:**
 Identify the people you're actively mentoring. What wisdom are you transferring?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-45-day-05-mentoring-next-generation.md)
+
 ---
 
 ### Day 6 — Legacy in Daily Actions
@@ -87,6 +97,8 @@ Legacy is built daily, not in a single moment. How do today's actions contribute
 
 **CEO Application:**
 Evaluate this week's actions against your desired legacy. Are they aligned?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-45-day-06-legacy-in-daily-actions.md)
 
 ---
 
@@ -100,6 +112,8 @@ Evaluate this week's actions against your desired legacy. Are they aligned?
 
 **Weekly Synthesis:**
 Write 2-3 sentences on your philosophy of legacy and succession.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-45-day-07-weekly-integration.md)
 
 ---
 

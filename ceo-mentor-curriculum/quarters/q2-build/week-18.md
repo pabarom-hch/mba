@@ -28,6 +28,8 @@ How well do you know your cost structure? Could you describe your unit economics
 **CEO Application:**
 Identify one cost category you don't understand deeply. Dig into it this week. Know it precisely.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-18-day-01-know-your-costs.md)
+
 ---
 
 ### Day 2 — Cost vs. Value
@@ -39,6 +41,8 @@ Not all costs are bad—some create value. How do you distinguish between costs 
 
 **CEO Application:**
 Categorize your major costs: value-creating investment, necessary operations, or waste. Are you investing enough in the first? Reducing the third?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-18-day-02-cost-vs-value.md)
 
 ---
 
@@ -52,6 +56,8 @@ Carnegie's cost advantage drove lower prices, which drove volume, which drove mo
 **CEO Application:**
 Map your potential cost leadership flywheel. Where could cost reduction drive growth which drives further cost reduction?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-18-day-03-the-virtuous-cycle.md)
+
 ---
 
 ### Day 4 — Continuous Improvement
@@ -63,6 +69,8 @@ Cost leadership isn't a one-time project—it's a continuous discipline. How do 
 
 **CEO Application:**
 What system or rhythm ensures costs are continuously examined and reduced? If none exists, design one.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-18-day-04-continuous-improvement.md)
 
 ---
 
@@ -76,6 +84,8 @@ Carnegie invested heavily in the latest technology for cost reduction. Where cou
 **CEO Application:**
 Identify one technology investment that could reduce costs long-term. Is it in your plan? Should it be?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-18-day-05-technology-and-cost.md)
+
 ---
 
 ### Day 6 — Cost Culture
@@ -87,6 +97,8 @@ Is cost consciousness part of your culture, or just a finance function? Do peopl
 
 **CEO Application:**
 How do you signal cost consciousness? What behaviors get rewarded? What behaviors get tolerated that shouldn't?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-18-day-06-cost-culture.md)
 
 ---
 
@@ -100,6 +112,8 @@ How do you signal cost consciousness? What behaviors get rewarded? What behavior
 
 **Weekly Synthesis:**
 Write 2-3 sentences on cost leadership as a competitive strategy for your business.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-18-day-07-weekly-integration.md)
 
 ---
 

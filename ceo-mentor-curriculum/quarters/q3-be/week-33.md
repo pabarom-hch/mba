@@ -28,6 +28,8 @@ What do you ask of your team that you don't fully model? Where is there a gap be
 **CEO Application:**
 List three things you want from your organization. For each: Do you model it perfectly? If not, what's the gap?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-33-day-01-the-credibility-of-example.md)
+
 ---
 
 ### Day 2 — The Gap
@@ -39,6 +41,8 @@ People watch what you do, not what you say. What do your actions tell them about
 
 **CEO Application:**
 Ask someone you trust: "What do my actions say about my priorities?" Listen without defending.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-33-day-02-the-gap.md)
 
 ---
 
@@ -52,6 +56,8 @@ Gandhi cleaned latrines to demonstrate that no work was beneath anyone. What "sm
 **CEO Application:**
 This week, do something you would normally ask others to do. Something visible. Something that demonstrates "nothing is beneath me."
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-33-day-03-small-things-matter.md)
+
 ---
 
 ### Day 4 — Consistency
@@ -63,6 +69,8 @@ Are you the same person in all contexts? Or do you adjust your behavior based on
 
 **CEO Application:**
 Identify where you're inconsistent between what you say and do, or between different contexts. What would consistency require?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-33-day-04-consistency.md)
 
 ---
 
@@ -76,6 +84,8 @@ Gandhi went first into danger, first into discomfort, first into sacrifice. Wher
 **CEO Application:**
 What difficult thing do you need to model before asking others? A difficult conversation? A sacrifice? A change?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-33-day-05-going-first.md)
+
 ---
 
 ### Day 6 — The Ripple Effect
@@ -87,6 +97,8 @@ When you change, others notice and may change too. What change in yourself would
 
 **CEO Application:**
 Identify one change in yourself that would most positively impact your organization. Commit to it.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-33-day-06-the-ripple-effect.md)
 
 ---
 
@@ -100,6 +112,8 @@ Identify one change in yourself that would most positively impact your organizat
 
 **Weekly Synthesis:**
 Write 2-3 sentences on what "be the change" means for your leadership.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-33-day-07-weekly-integration.md)
 
 ---
 

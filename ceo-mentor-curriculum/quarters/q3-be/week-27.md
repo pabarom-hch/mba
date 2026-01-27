@@ -28,6 +28,8 @@ What is your philosophy of life? If someone observed you for a month without you
 **CEO Application:**
 Write down your actual operating philosophy—not what you'd like it to be, but what your behavior demonstrates.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-27-day-01-philosophy-defined.md)
+
 ---
 
 ### Day 2 — Philosophy and Results
@@ -39,6 +41,8 @@ Look at an area where your results are strong. What philosophy drives the action
 
 **CEO Application:**
 Connect one unsatisfactory result to the underlying philosophy. What belief, if changed, would change the result?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-27-day-02-philosophy-and-results.md)
 
 ---
 
@@ -52,6 +56,8 @@ Where did your current philosophy come from? Family? Experience? Culture? Books?
 **CEO Application:**
 Identify one belief you hold that you've never consciously examined. Where did it come from? Is it serving you?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-27-day-03-where-philosophy-comes-from.md)
+
 ---
 
 ### Day 4 — Upgrading Philosophy
@@ -63,6 +69,8 @@ Rohn constantly upgraded his philosophy through reading, mentors, and reflection
 
 **CEO Application:**
 What book, mentor, or experience most shaped your current philosophy? What would be the next upgrade?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-27-day-04-upgrading-philosophy.md)
 
 ---
 
@@ -76,6 +84,8 @@ What's your philosophy of discipline? Do you see it as constraint or freedom? Ho
 **CEO Application:**
 State your philosophy of discipline in one sentence. Does this philosophy serve your goals?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-27-day-05-philosophy-and-discipline.md)
+
 ---
 
 ### Day 6 — Philosophy and Responsibility
@@ -87,6 +97,8 @@ What's your philosophy of responsibility? Do you see yourself as cause or effect
 
 **CEO Application:**
 On a 1-10 scale, how much do you believe you control your outcomes? What would change if you moved it toward 10?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-27-day-06-philosophy-and-responsibility.md)
 
 ---
 
@@ -100,6 +112,8 @@ On a 1-10 scale, how much do you believe you control your outcomes? What would c
 
 **Weekly Synthesis:**
 Write your core personal philosophy in 3-5 sentences.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-27-day-07-weekly-integration.md)
 
 ---
 

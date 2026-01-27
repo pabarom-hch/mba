@@ -28,6 +28,8 @@ Violence exists in words, manipulation, and competitive destruction. Where might
 **CEO Application:**
 Notice today: Where do you cause harm through tone, criticism, or pressure? This isn't about being soft—it's about awareness.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-35-day-01-beyond-physical-violence.md)
+
 ---
 
 ### Day 2 — Strength, Not Weakness
@@ -39,6 +41,8 @@ Ahimsa is not passive or weak. Gandhi's non-violent resistance required immense 
 
 **CEO Application:**
 Think of a situation requiring firmness. How can you be strong without being destructive?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-35-day-02-strength-not-weakness.md)
 
 ---
 
@@ -52,6 +56,8 @@ How do you approach competition? To win by building yourself up, or by tearing c
 **CEO Application:**
 Review your competitive strategy. Does it create value, or primarily destroy rivals? What would non-violent competition look like?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-35-day-03-competition-and-ahimsa.md)
+
 ---
 
 ### Day 4 — Handling Underperformance
@@ -63,6 +69,8 @@ How do you handle underperformers? With dignity and development, or with shame a
 
 **CEO Application:**
 Think about a recent difficult conversation about performance. Was it handled with ahimsa? What could improve?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-35-day-04-handling-underperformance.md)
 
 ---
 
@@ -76,6 +84,8 @@ When wronged—by partners, employees, competitors—how do you respond? Retalia
 **CEO Application:**
 Identify a current conflict. What would a non-violent resolution look like? Not avoiding the conflict—resolving it without unnecessary harm.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-35-day-05-conflict-resolution.md)
+
 ---
 
 ### Day 6 — Inner Violence
@@ -87,6 +97,8 @@ Ahimsa begins within. Do you treat yourself with violence—harsh self-criticism
 
 **CEO Application:**
 Notice your inner dialogue today. Is it constructive or violent? What would self-compassion without self-indulgence look like?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-35-day-06-inner-violence.md)
 
 ---
 
@@ -100,6 +112,8 @@ Notice your inner dialogue today. Is it constructive or violent? What would self
 
 **Weekly Synthesis:**
 Write 2-3 sentences on ahimsa as a leadership practice.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-35-day-07-weekly-integration.md)
 
 ---
 

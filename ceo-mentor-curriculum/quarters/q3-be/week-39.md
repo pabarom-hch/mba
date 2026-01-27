@@ -28,6 +28,8 @@ Review the Rohn weeks (27-32): Philosophy, Seasons, Disciplines, Self-Developmen
 **CEO Application:**
 Identify your strongest Rohn takeaway and your weakest. What would strengthen the weak one?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-39-day-01-the-rohn-foundation.md)
+
 ---
 
 ### Day 2 — The Gandhi Foundation
@@ -39,6 +41,8 @@ Review the Gandhi weeks (33-38): Be the Change, Truth, Non-Violence, Self-Discip
 
 **CEO Application:**
 Identify your strongest Gandhi takeaway and your weakest. What would strengthen the weak one?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-39-day-02-the-gandhi-foundation.md)
 
 ---
 
@@ -52,6 +56,8 @@ Your character determines what you can build and sustain. Where might your chara
 **CEO Application:**
 If your organization's ceiling is your character, what aspect of character most needs development?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-39-day-03-character-as-ceiling.md)
+
 ---
 
 ### Day 4 — Integrating Practical and Ethical
@@ -63,6 +69,8 @@ Rohn is practical; Gandhi is ethical. How do they complement each other? Where m
 
 **CEO Application:**
 Review your Q3 development. Are you stronger in practical self-improvement or ethical foundation? Which needs more attention?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-39-day-04-integrating-practical-and-ethical.md)
 
 ---
 
@@ -76,6 +84,8 @@ Character is developed through daily practice, not dramatic moments. What daily 
 **CEO Application:**
 Design (or refine) a daily practice that integrates both practical discipline (Rohn) and ethical foundation (Gandhi).
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-39-day-05-character-in-daily-practice.md)
+
 ---
 
 ### Day 6 — Q3 Achievement Assessment
@@ -87,6 +97,8 @@ What has actually changed in you during Q3? What practices are now established? 
 
 **CEO Application:**
 Honestly assess your Q3 transformation. What's different now versus Week 27?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-39-day-06-q3-achievement-assessment.md)
 
 ---
 
@@ -125,6 +137,8 @@ Over 13 weeks, you've studied:
 
 **Quarterly Synthesis:**
 Write a one-page summary of your Q3 transformation.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-39-day-07-q3-complete-integration.md)
 
 ---
 

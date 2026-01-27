@@ -54,6 +54,8 @@ Review Q1: Mental models, inversion, circle of competence, biases, long-term thi
 **CEO Application:**
 Write your key takeaways from Munger and Buffett in 3-5 sentences.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-52-day-01-the-thinking-foundation.md)
+
 ---
 
 ### Day 2 — The Building Capacity
@@ -65,6 +67,8 @@ Review Q2: Mastermind, excellence, delegation, definiteness of purpose, persiste
 
 **CEO Application:**
 Write your key takeaways from Carnegie and Hill in 3-5 sentences.
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-52-day-02-the-building-capacity.md)
 
 ---
 
@@ -78,6 +82,8 @@ Review Q3: Philosophy, disciplines, associations, truth, non-violence, service. 
 **CEO Application:**
 Write your key takeaways from Rohn and Gandhi in 3-5 sentences.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-52-day-03-the-being-foundation.md)
+
 ---
 
 ### Day 4 — The Leadership Capacity
@@ -89,6 +95,8 @@ Review Q4: Adversity, long game, reconciliation, influence, development, legacy.
 
 **CEO Application:**
 Write your key takeaways from Mandela and Maxwell in 3-5 sentences.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-52-day-04-the-leadership-capacity.md)
 
 ---
 
@@ -102,6 +110,8 @@ How do all four quarters connect? Think → Build → Be → Lead. What's the th
 **CEO Application:**
 Write a one-page integrated CEO philosophy drawing from all eight mentors.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-52-day-05-the-integrated-ceo.md)
+
 ---
 
 ### Day 6 — Year Assessment
@@ -113,6 +123,8 @@ What has actually changed in you over 52 weeks? What's different about how you t
 
 **CEO Application:**
 Honestly assess your transformation. What's the evidence?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-52-day-06-year-assessment.md)
 
 ---
 
@@ -131,6 +143,8 @@ You've completed 52 weeks of daily practice with 8 mentors.
 
 **Final Synthesis:**
 Write your complete CEO philosophy—integrating all you've learned into a document that will guide you going forward.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-52-day-07-looking-forward.md)
 
 ---
 

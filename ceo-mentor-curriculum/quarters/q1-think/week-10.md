@@ -28,6 +28,8 @@ Where in your planning do you build in cushions? Where do you plan to the edge o
 **CEO Application:**
 Review your current budget/projections. What margin of safety is built in? What happens if revenue is 20% below forecast?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-10-day-01-case-for-cushions.md)
+
 ---
 
 ### Day 2 — When Wrong Is Expensive
@@ -39,6 +41,8 @@ What decisions have you made that left no room for error? What was the outcome w
 
 **CEO Application:**
 Identify your highest-stakes current decision. What margin of safety have you built in? Is it enough?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-10-day-02-when-wrong-is-expensive.md)
 
 ---
 
@@ -52,6 +56,8 @@ How precisely do you try to forecast? What's the cost of that precision seeking?
 **CEO Application:**
 Take a complex forecast you rely on. Replace precise numbers with ranges. Does the decision change?
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-10-day-03-price-of-precision.md)
+
 ---
 
 ### Day 4 — Cash as Margin of Safety
@@ -63,6 +69,8 @@ How much runway do you maintain? Is it enough to survive an unexpected shock? Wh
 
 **CEO Application:**
 Calculate how many months you could operate if revenue dropped to zero tomorrow. Is that margin of safety sufficient?
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-10-day-04-cash-as-margin-of-safety.md)
 
 ---
 
@@ -76,6 +84,8 @@ Beyond cash, what structural margins of safety exist in your business? Redundanc
 **CEO Application:**
 Identify your single point of failure—the one thing that would devastate your business if it failed. What's your margin of safety there?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-10-day-05-structural-margin-of-safety.md)
+
 ---
 
 ### Day 6 — The Tension with Optimization
@@ -87,6 +97,8 @@ Modern business often prizes optimization—eliminating slack, running lean. Whe
 
 **CEO Application:**
 Where have you optimized away your margin of safety in pursuit of efficiency? What would you do if that area experienced a shock?
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-10-day-06-tension-with-optimization.md)
 
 ---
 
@@ -100,6 +112,8 @@ Where have you optimized away your margin of safety in pursuit of efficiency? Wh
 
 **Weekly Synthesis:**
 Write 2-3 sentences describing your philosophy on margin of safety.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-10-day-07-weekly-integration.md)
 
 ---
 

@@ -28,6 +28,8 @@ Do you believe your Definite Major Purpose is achievable? Truly? Or are there do
 **CEO Application:**
 Write down your doubts about achieving your purpose. Now examine each: Is it evidence-based or fear-based?
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-22-day-01-faith-as-active-belief.md)
+
 ---
 
 ### Day 2 — The Subconscious Mind
@@ -39,6 +41,8 @@ What is your subconscious currently feeding on? What thoughts dominate your ment
 
 **CEO Application:**
 Audit your mental inputs today. News? Social media? Conversations? Are they building faith or eroding it?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-22-day-02-the-subconscious-mind.md)
 
 ---
 
@@ -52,6 +56,8 @@ Hill prescribed reading your purpose statement aloud twice daily with emotion. H
 **CEO Application:**
 Create an auto-suggestion practice: Write your purpose, read it aloud with emotion morning and evening. Try it today.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-22-day-03-the-practice-of-auto-suggestion.md)
+
 ---
 
 ### Day 4 — Visualization
@@ -63,6 +69,8 @@ Can you vividly see yourself having achieved your purpose? In detail? With emoti
 
 **CEO Application:**
 Spend 5 minutes in detailed visualization of having achieved your purpose. Engage all senses. Feel the emotions.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-22-day-04-visualization.md)
 
 ---
 
@@ -76,6 +84,8 @@ What doubts recur when you think about your purpose? Where do they come from? Ho
 **CEO Application:**
 For each recurring doubt, write a counter-statement of faith. Use these in your auto-suggestion practice.
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-22-day-05-overcoming-doubt.md)
+
 ---
 
 ### Day 6 — Environment and Faith
@@ -87,6 +97,8 @@ Your environment shapes your subconscious. What in your environment supports fai
 
 **CEO Application:**
 Make one change to your environment that supports faith in your purpose. Remove something negative or add something positive.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-22-day-06-environment-and-faith.md)
 
 ---
 
@@ -100,6 +112,8 @@ Make one change to your environment that supports faith in your purpose. Remove 
 
 **Weekly Synthesis:**
 Write 2-3 sentences on faith and your practice for cultivating it.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-22-day-07-weekly-integration.md)
 
 ---
 
