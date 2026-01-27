@@ -30,6 +30,8 @@ What do you truly understand at a deep level? What topics could you explain to a
 **CEO Application:**
 List the 5 domains where your expertise is genuine and deep. Be honest—exclude areas where you know the vocabulary but not the substance.
 
+**Deep Dive:** [Expanded Day 1 Lesson →](lessons/week-03-day-01-defining-your-circle.md)
+
 ---
 
 ### Day 2 — The Edges of Competence
@@ -41,6 +43,8 @@ What business decisions have you made outside your genuine expertise? What was t
 
 **CEO Application:**
 For decisions in your "out" or "too tough" basket, who could you bring in whose circle of competence covers that area?
+
+**Deep Dive:** [Expanded Day 2 Lesson →](lessons/week-03-day-02-edges-of-competence.md)
 
 ---
 
@@ -54,6 +58,8 @@ Where does your ego push you to pretend expertise you don't have? Where do you n
 **CEO Application:**
 This week, practice saying "I don't understand that well enough—can you explain?" Notice how it changes conversations.
 
+**Deep Dive:** [Expanded Day 3 Lesson →](lessons/week-03-day-03-the-ego-problem.md)
+
 ---
 
 ### Day 4 — Expanding vs. Respecting the Circle
@@ -65,6 +71,8 @@ What's the difference between appropriately expanding your competence (learning)
 
 **CEO Application:**
 Identify one area outside your current competence that genuinely matters for your business. Create a learning plan to bring it inside your circle over the next 6-12 months.
+
+**Deep Dive:** [Expanded Day 4 Lesson →](lessons/week-03-day-04-expanding-the-circle.md)
 
 ---
 
@@ -78,6 +86,8 @@ Who on your team or in your network has competence you lack? How well do you lev
 **CEO Application:**
 Map your team's circles of competence. Where are the gaps? Where do circles overlap (redundancy) or not touch critical areas (exposure)?
 
+**Deep Dive:** [Expanded Day 5 Lesson →](lessons/week-03-day-05-surrogate-competence.md)
+
 ---
 
 ### Day 6 — The Humility Dividend
@@ -89,6 +99,8 @@ Think of a leader you respect. How do they handle areas outside their competence
 
 **CEO Application:**
 In your next meeting where you're out of your depth, lead with questions rather than opinions. Note how the dynamic changes.
+
+**Deep Dive:** [Expanded Day 6 Lesson →](lessons/week-03-day-06-the-humility-dividend.md)
 
 ---
 
@@ -102,6 +114,8 @@ In your next meeting where you're out of your depth, lead with questions rather 
 
 **Weekly Synthesis:**
 Write 2-3 sentences capturing your understanding of your own circle of competence.
+
+**Deep Dive:** [Expanded Day 7 Lesson →](lessons/week-03-day-07-weekly-integration.md)
 
 ---
 
