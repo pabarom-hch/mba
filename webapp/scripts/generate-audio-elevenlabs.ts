@@ -1,15 +1,15 @@
 /**
- * Audio Generation Script for CEO Learning Platform
+ * Audio Generation Script for CEO Learning Platform (ElevenLabs)
  *
- * This script generates audio files for all lessons using OpenAI TTS API
+ * This script generates audio files for all lessons using ElevenLabs TTS API
  * and uploads them to Supabase Storage.
  *
  * Prerequisites:
- * - OPENAI_API_KEY environment variable
+ * - ELEVENLABS_API_KEY environment variable
  * - SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY environment variables
  *
  * Usage:
- * npx tsx scripts/generate-audio.ts [--dry-run] [--lesson-id <id>] [--limit <n>]
+ * npx tsx scripts/generate-audio-elevenlabs.ts [--dry-run] [--lesson-id <id>] [--limit <n>]
  */
 
 import * as dotenv from "dotenv";
@@ -19,17 +19,22 @@ import { createClient } from "@supabase/supabase-js";
 dotenv.config({ path: ".env.local" });
 
 // Configuration
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-// OpenAI TTS configuration
-const TTS_MODEL = "tts-1-hd"; // Higher quality model
-const TTS_VOICE = "fable"; // British accent, expressive - engaging storytelling
-const MAX_CHARS_PER_REQUEST = 4096; // OpenAI's limit
+// ElevenLabs voice configuration
+const VOICE_ID = "goT3UYdM9bhm0n2lmKQx"; // Edward voice
+const MODEL_ID = "eleven_multilingual_v2";
+const VOICE_SETTINGS = {
+  stability: 0.5,
+  similarity_boost: 0.75,
+  style: 0.0,
+  use_speaker_boost: true,
+};
 
 // Rate limiting
-const REQUESTS_PER_MINUTE = 20;
+const REQUESTS_PER_MINUTE = 10;
 const DELAY_MS = 60000 / REQUESTS_PER_MINUTE;
 
 interface Lesson {
@@ -97,111 +102,32 @@ function markdownToPlainText(markdown: string): string {
 }
 
 /**
- * Split text into chunks that fit within OpenAI's character limit
- * Tries to split at sentence boundaries
+ * Generate audio using ElevenLabs API
  */
-function splitTextIntoChunks(text: string): string[] {
-  const chunks: string[] = [];
-
-  if (text.length <= MAX_CHARS_PER_REQUEST) {
-    return [text];
-  }
-
-  // Split by paragraphs first
-  const paragraphs = text.split(/\n\n/);
-  let currentChunk = "";
-
-  for (const paragraph of paragraphs) {
-    if (currentChunk.length + paragraph.length + 2 <= MAX_CHARS_PER_REQUEST) {
-      currentChunk += (currentChunk ? "\n\n" : "") + paragraph;
-    } else {
-      // Current chunk is full, save it
-      if (currentChunk) {
-        chunks.push(currentChunk);
-      }
-
-      // If single paragraph is too long, split by sentences
-      if (paragraph.length > MAX_CHARS_PER_REQUEST) {
-        const sentences = paragraph.match(/[^.!?]+[.!?]+/g) || [paragraph];
-        currentChunk = "";
-
-        for (const sentence of sentences) {
-          if (currentChunk.length + sentence.length <= MAX_CHARS_PER_REQUEST) {
-            currentChunk += sentence;
-          } else {
-            if (currentChunk) {
-              chunks.push(currentChunk);
-            }
-            currentChunk = sentence;
-          }
-        }
-      } else {
-        currentChunk = paragraph;
-      }
+async function generateAudio(text: string): Promise<Buffer> {
+  const response = await fetch(
+    `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
+    {
+      method: "POST",
+      headers: {
+        "xi-api-key": ELEVENLABS_API_KEY!,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text,
+        model_id: MODEL_ID,
+        voice_settings: VOICE_SETTINGS,
+      }),
     }
-  }
-
-  if (currentChunk) {
-    chunks.push(currentChunk);
-  }
-
-  return chunks;
-}
-
-/**
- * Generate audio using OpenAI TTS API
- */
-async function generateAudioChunk(text: string): Promise<Buffer> {
-  const response = await fetch("https://api.openai.com/v1/audio/speech", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: TTS_MODEL,
-      voice: TTS_VOICE,
-      input: text,
-      response_format: "mp3",
-    }),
-  });
+  );
 
   if (!response.ok) {
     const error = await response.text();
-    throw new Error(`OpenAI API error: ${response.status} - ${error}`);
+    throw new Error(`ElevenLabs API error: ${response.status} - ${error}`);
   }
 
   const arrayBuffer = await response.arrayBuffer();
   return Buffer.from(arrayBuffer);
-}
-
-/**
- * Generate audio for full text, handling chunking if needed
- */
-async function generateAudio(text: string): Promise<Buffer> {
-  const chunks = splitTextIntoChunks(text);
-
-  if (chunks.length === 1) {
-    return generateAudioChunk(chunks[0]);
-  }
-
-  console.log(`    Splitting into ${chunks.length} chunks...`);
-
-  const audioBuffers: Buffer[] = [];
-
-  for (let i = 0; i < chunks.length; i++) {
-    console.log(`    Processing chunk ${i + 1}/${chunks.length} (${chunks[i].length} chars)...`);
-    const buffer = await generateAudioChunk(chunks[i]);
-    audioBuffers.push(buffer);
-
-    // Rate limiting between chunks
-    if (i < chunks.length - 1) {
-      await sleep(DELAY_MS);
-    }
-  }
-
-  // Concatenate MP3 buffers (simple concatenation works for MP3)
-  return Buffer.concat(audioBuffers);
 }
 
 /**
@@ -290,8 +216,8 @@ async function main() {
   const limit = limitIndex !== -1 ? parseInt(args[limitIndex + 1]) : null;
 
   // Validate environment
-  if (!OPENAI_API_KEY) {
-    console.error("Error: OPENAI_API_KEY environment variable is required");
+  if (!ELEVENLABS_API_KEY) {
+    console.error("Error: ELEVENLABS_API_KEY environment variable is required");
     process.exit(1);
   }
   if (!SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
@@ -305,9 +231,9 @@ async function main() {
   console.log("CEO Learning Platform - Audio Generation Script");
   console.log("=".repeat(60));
   console.log(`Mode: ${dryRun ? "DRY RUN" : "LIVE"}`);
-  console.log(`Provider: OpenAI TTS`);
-  console.log(`Model: ${TTS_MODEL}`);
-  console.log(`Voice: ${TTS_VOICE}`);
+  console.log(`Provider: ElevenLabs`);
+  console.log(`Voice: Edward (${VOICE_ID})`);
+  console.log(`Model: ${MODEL_ID}`);
   if (lessonId) console.log(`Specific lesson: ${lessonId}`);
   if (limit) console.log(`Limit: ${limit} lessons`);
   console.log("=".repeat(60));
@@ -425,7 +351,7 @@ async function main() {
   console.log(`Errors: ${errors}`);
   console.log(`Total characters: ${totalChars.toLocaleString()}`);
   console.log(
-    `Estimated cost: $${((totalChars / 1000) * 0.015).toFixed(2)} (at $0.015/1K chars)`
+    `Estimated cost: $${((totalChars / 1000) * 0.03).toFixed(2)} (at $0.03/1K chars)`
   );
   console.log("=".repeat(60));
 }
