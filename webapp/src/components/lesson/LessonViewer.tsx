@@ -24,6 +24,7 @@ import { Separator } from "@/components/ui/separator";
 import { HighlightableContent } from "./HighlightableContent";
 import { HighlightsSidebar } from "./HighlightsSidebar";
 import { ExerciseContent } from "./ExerciseContent";
+import { AudioPlayer } from "./AudioPlayer";
 import type { Lesson, UserLessonProgress, UserNote } from "@/types/database";
 
 interface Highlight {
@@ -173,6 +174,17 @@ export function LessonViewer({
             <div className="flex gap-8">
               {/* Main Content Column */}
               <div className="flex-1 max-w-4xl">
+                {/* Audio Player */}
+                {lesson.audio_url && (
+                  <div className="mb-6">
+                    <AudioPlayer
+                      src={lesson.audio_url}
+                      title={`Listen to: ${lesson.title}`}
+                      lessonId={lesson.id}
+                    />
+                  </div>
+                )}
+
                 {/* Highlighting Tip */}
                 <div className="flex items-center gap-2 text-sm text-zinc-500 mb-6 p-3 rounded-lg bg-zinc-900/50 border border-zinc-800">
                   <Highlighter className="h-4 w-4 text-orange-500" />

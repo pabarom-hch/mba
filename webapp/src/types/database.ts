@@ -71,6 +71,8 @@ export type Database = {
       }
       lessons: {
         Row: {
+          audio_duration_seconds: number | null
+          audio_url: string | null
           content: string | null
           created_at: string | null
           curriculum_id: string | null
@@ -94,6 +96,8 @@ export type Database = {
           week_id: string | null
         }
         Insert: {
+          audio_duration_seconds?: number | null
+          audio_url?: string | null
           content?: string | null
           created_at?: string | null
           curriculum_id?: string | null
@@ -117,6 +121,8 @@ export type Database = {
           week_id?: string | null
         }
         Update: {
+          audio_duration_seconds?: number | null
+          audio_url?: string | null
           content?: string | null
           created_at?: string | null
           curriculum_id?: string | null
