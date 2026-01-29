@@ -101,10 +101,64 @@ function markdownToPlainText(markdown: string): string {
   return text;
 }
 
+const MAX_CHARS_PER_REQUEST = 9500; // ElevenLabs limit is 10K, use 9.5K for safety
+
 /**
- * Generate audio using ElevenLabs API
+ * Split text into chunks that fit within ElevenLabs' character limit
+ * Tries to split at paragraph/sentence boundaries
  */
-async function generateAudio(text: string): Promise<Buffer> {
+function splitTextIntoChunks(text: string): string[] {
+  const chunks: string[] = [];
+
+  if (text.length <= MAX_CHARS_PER_REQUEST) {
+    return [text];
+  }
+
+  // Split by paragraphs first
+  const paragraphs = text.split(/\n\n/);
+  let currentChunk = "";
+
+  for (const paragraph of paragraphs) {
+    if (currentChunk.length + paragraph.length + 2 <= MAX_CHARS_PER_REQUEST) {
+      currentChunk += (currentChunk ? "\n\n" : "") + paragraph;
+    } else {
+      // Current chunk is full, save it
+      if (currentChunk) {
+        chunks.push(currentChunk);
+      }
+
+      // If single paragraph is too long, split by sentences
+      if (paragraph.length > MAX_CHARS_PER_REQUEST) {
+        const sentences = paragraph.match(/[^.!?]+[.!?]+/g) || [paragraph];
+        currentChunk = "";
+
+        for (const sentence of sentences) {
+          if (currentChunk.length + sentence.length <= MAX_CHARS_PER_REQUEST) {
+            currentChunk += sentence;
+          } else {
+            if (currentChunk) {
+              chunks.push(currentChunk);
+            }
+            currentChunk = sentence;
+          }
+        }
+      } else {
+        currentChunk = paragraph;
+      }
+    }
+  }
+
+  if (currentChunk) {
+    chunks.push(currentChunk);
+  }
+
+  return chunks;
+}
+
+/**
+ * Generate audio chunk using ElevenLabs API
+ */
+async function generateAudioChunk(text: string): Promise<Buffer> {
   const response = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
     {
@@ -128,6 +182,35 @@ async function generateAudio(text: string): Promise<Buffer> {
 
   const arrayBuffer = await response.arrayBuffer();
   return Buffer.from(arrayBuffer);
+}
+
+/**
+ * Generate audio for full text, handling chunking if needed
+ */
+async function generateAudio(text: string): Promise<Buffer> {
+  const chunks = splitTextIntoChunks(text);
+
+  if (chunks.length === 1) {
+    return generateAudioChunk(chunks[0]);
+  }
+
+  console.log(`    Splitting into ${chunks.length} chunks...`);
+
+  const audioBuffers: Buffer[] = [];
+
+  for (let i = 0; i < chunks.length; i++) {
+    console.log(`    Processing chunk ${i + 1}/${chunks.length} (${chunks[i].length} chars)...`);
+    const buffer = await generateAudioChunk(chunks[i]);
+    audioBuffers.push(buffer);
+
+    // Rate limiting between chunks
+    if (i < chunks.length - 1) {
+      await sleep(DELAY_MS);
+    }
+  }
+
+  // Concatenate MP3 buffers (simple concatenation works for MP3)
+  return Buffer.concat(audioBuffers);
 }
 
 /**
