@@ -1,0 +1,18 @@
+{
+  "name": "mba-curriculum-scripts",
+  "version": "1.0.0",
+  "description": "Migration scripts for MBA and CEO Mentor curriculum",
+  "type": "module",
+  "scripts": {
+    "migrate": "tsx migrate-content.ts",
+    "migrate:dry-run": "DRY_RUN=true tsx migrate-content.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}

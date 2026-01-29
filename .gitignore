@@ -1,4 +1,20 @@
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor files
 *.swp
 *.swo
 *~
+.idea/
+.vscode/
+
+# Environment files (contain secrets)
+.env*
+env.txt
+
+# MCP config (contains API keys)
+.mcp.json
+
+# Node modules
+node_modules/
