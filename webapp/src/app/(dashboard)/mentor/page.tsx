@@ -25,11 +25,6 @@ async function getMentorData(userId: string) {
     .eq("curriculum_id", curriculum.id)
     .order("number");
 
-  // Get all mentors
-  const { data: mentors } = await supabase
-    .from("mentors")
-    .select("*");
-
   // Get all weeks with mentor info
   const { data: weeks } = await supabase
     .from("weeks")
@@ -39,7 +34,7 @@ async function getMentorData(userId: string) {
     `)
     .order("number");
 
-  // Get user's enrollment and progress
+  // Get user's enrollment
   const { data: enrollment } = await supabase
     .from("user_curriculum_enrollments")
     .select("*")
@@ -47,31 +42,33 @@ async function getMentorData(userId: string) {
     .eq("curriculum_id", curriculum.id)
     .single();
 
-  // Calculate progress per week
+  // Get all lesson counts per week in a single query
+  const { data: lessonCounts } = await supabase
+    .rpc("get_week_lesson_counts");
+
+  // Get user's completed lessons per week in a single query
+  const { data: userProgress } = await supabase
+    .rpc("get_user_week_progress", { p_user_id: userId });
+
+  // Build progress map from aggregated data
   const weekProgress: Record<string, { completed: number; total: number }> = {};
 
-  if (weeks) {
-    for (const week of weeks) {
-      const { count: totalCount } = await supabase
-        .from("lessons")
-        .select("*", { count: "exact", head: true })
-        .eq("week_id", week.id);
+  // Initialize with totals
+  lessonCounts?.forEach((row: { week_id: string; total_lessons: number }) => {
+    weekProgress[row.week_id] = {
+      total: row.total_lessons,
+      completed: 0,
+    };
+  });
 
-      const { count: completedCount } = await supabase
-        .from("user_lesson_progress")
-        .select("*, lessons!inner(*)", { count: "exact", head: true })
-        .eq("user_id", userId)
-        .eq("status", "completed")
-        .eq("lessons.week_id", week.id);
-
-      weekProgress[week.id] = {
-        completed: completedCount || 0,
-        total: totalCount || 0,
-      };
+  // Add completed counts
+  userProgress?.forEach((row: { week_id: string; completed_lessons: number }) => {
+    if (weekProgress[row.week_id]) {
+      weekProgress[row.week_id].completed = row.completed_lessons;
     }
-  }
+  });
 
-  return { curriculum, quarters, mentors, weeks, enrollment, weekProgress };
+  return { curriculum, quarters, weeks, enrollment, weekProgress };
 }
 
 export default async function MentorPage() {

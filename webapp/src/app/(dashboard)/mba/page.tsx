@@ -34,33 +34,31 @@ async function getMBAData(userId: string) {
     .eq("curriculum_id", curriculum.id)
     .order("number");
 
-  // Calculate progress per module
+  // Get all lesson counts per module in a single query
+  const { data: lessonCounts } = await supabase
+    .rpc("get_module_lesson_counts");
+
+  // Get user's completed lessons per module in a single query
+  const { data: userProgress } = await supabase
+    .rpc("get_user_module_progress", { p_user_id: userId });
+
+  // Build progress map from aggregated data
   const moduleProgress: Record<string, { completed: number; total: number }> = {};
 
-  if (phases) {
-    for (const phase of phases) {
-      for (const module of phase.modules || []) {
-        // Get lesson count for this module
-        const { count: totalCount } = await supabase
-          .from("lessons")
-          .select("*", { count: "exact", head: true })
-          .eq("module_id", module.id);
+  // Initialize with totals
+  lessonCounts?.forEach((row: { module_id: string; total_lessons: number }) => {
+    moduleProgress[row.module_id] = {
+      total: row.total_lessons,
+      completed: 0,
+    };
+  });
 
-        // Get completed count for this module
-        const { count: completedCount } = await supabase
-          .from("user_lesson_progress")
-          .select("*, lessons!inner(*)", { count: "exact", head: true })
-          .eq("user_id", userId)
-          .eq("status", "completed")
-          .eq("lessons.module_id", module.id);
-
-        moduleProgress[module.id] = {
-          completed: completedCount || 0,
-          total: totalCount || 0,
-        };
-      }
+  // Add completed counts
+  userProgress?.forEach((row: { module_id: string; completed_lessons: number }) => {
+    if (moduleProgress[row.module_id]) {
+      moduleProgress[row.module_id].completed = row.completed_lessons;
     }
-  }
+  });
 
   return { curriculum, phases, moduleProgress };
 }
