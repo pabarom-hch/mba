@@ -173,7 +173,7 @@ export function LessonViewer({
           <div className="p-6 lg:p-8">
             <div className="flex gap-8">
               {/* Main Content Column */}
-              <div className="flex-1 max-w-4xl">
+              <div className="flex-1 max-w-4xl min-w-0">
                 {/* Audio Player */}
                 {lesson.audio_url && (
                   <div className="mb-6">
