@@ -12,6 +12,7 @@ import {
   BarChart3,
   Home,
   Flame,
+  Briefcase,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -32,6 +33,11 @@ const navigation = [
     name: "Mentor Curriculum",
     href: "/mentor",
     icon: Users,
+  },
+  {
+    name: "Case Studies",
+    href: "/cases",
+    icon: Briefcase,
   },
 ];
 

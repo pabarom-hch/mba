@@ -14,6 +14,7 @@ import {
   Home,
   Menu,
   X,
+  Briefcase,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -22,6 +23,7 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "MBA Curriculum", href: "/mba", icon: GraduationCap },
   { name: "Mentor Curriculum", href: "/mentor", icon: Users },
+  { name: "Case Studies", href: "/cases", icon: Briefcase },
   { name: "Morning Ritual", href: "/rituals/morning", icon: Sun },
   { name: "Evening Reflection", href: "/rituals/evening", icon: Moon },
   { name: "Reading List", href: "/books", icon: BookOpen },
