@@ -108,6 +108,45 @@ const simulations = [
     color: "emerald",
     datasets: ["pe-turnaround"],
   },
+  {
+    slug: "pe-addon-analyzer",
+    name: "Add-On Acquisition Analyzer",
+    type: "Private Equity",
+    description:
+      "Evaluate strategic fit, calculate synergies, and model accretion/dilution for potential add-on acquisitions in a buy-and-build strategy.",
+    duration: 90,
+    difficulty: "advanced",
+    skills: ["M&A Analysis", "Synergy Modeling", "Strategic Fit Assessment"],
+    icon: Building2,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
+  {
+    slug: "pe-covenant-monitor",
+    name: "Covenant Compliance Monitor",
+    type: "Private Equity",
+    description:
+      "Calculate financial covenants, project compliance, identify breach risks, and develop remediation strategies for a leveraged portfolio company.",
+    duration: 60,
+    difficulty: "intermediate",
+    skills: ["Covenant Analysis", "Financial Projections", "Lender Relations"],
+    icon: FileSpreadsheet,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
+  {
+    slug: "pe-value-creation-tracker",
+    name: "Value Creation Tracker",
+    type: "Private Equity",
+    description:
+      "Track portfolio company performance vs. investment thesis, diagnose variances, build value bridges, and recommend corrective actions.",
+    duration: 75,
+    difficulty: "advanced",
+    skills: ["Performance Tracking", "Variance Analysis", "Value Attribution"],
+    icon: Target,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
 ];
 
 const colorClasses: Record<string, { bg: string; text: string; border: string }> = {
