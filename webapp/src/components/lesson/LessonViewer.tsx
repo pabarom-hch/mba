@@ -214,7 +214,7 @@ export function LessonViewer({
                 )}
 
                 {/* Main Content - with Interactive Tables */}
-                <Card className="border-zinc-800 bg-zinc-900/50 mb-6 overflow-hidden">
+                <Card className="border-zinc-800 bg-zinc-900/50 mb-6 overflow-x-hidden">
                   <CardContent className="p-4 sm:p-6">
                     <HighlightableContent lessonId={lesson.id} highlights={highlights}>
                       <ExerciseContent
