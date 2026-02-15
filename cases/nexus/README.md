@@ -45,7 +45,8 @@ The data in these case studies is anonymized but reflects real business patterns
 │   ├── sales-pipeline.json        # Opportunities, stages
 │   ├── utilization.json           # Resource assignments
 │   ├── rate-cards.json            # Pricing, costs
-│   └── turnaround.json            # Crisis data, stakeholders
+│   ├── turnaround.json            # Crisis data, stakeholders
+│   └── pe-turnaround.json         # NEW: PE transaction, LBO, ESOP data
 │
 ├── case-studies/                  # Full case study files
 │   ├── case-01-miller-heiman-methodology.md
@@ -53,12 +54,15 @@ The data in these case studies is anonymized but reflects real business patterns
 │   ├── case-03-turnaround-advisory.md
 │   ├── case-04-services-pricing-strategy.md
 │   ├── case-05-resource-optimization.md
-│   └── case-06-stakeholder-negotiation.md
+│   ├── case-06-stakeholder-negotiation.md
+│   └── case-07-pe-turnaround-buyout.md    # NEW: PE buy-and-build
 │
 ├── simulations/                   # Interactive exercises
 │   ├── blue-sheet-builder.md      # Strategic selling practice
 │   ├── financial-modeling.md      # Engagement P&L
-│   └── utilization-optimizer.md   # Capacity planning
+│   ├── utilization-optimizer.md   # Capacity planning
+│   ├── pe-lbo-model.md            # NEW: Interactive LBO modeling
+│   └── esop-structures-comparison.md # NEW: Employee ownership deep-dive
 │
 └── live-business-lab/             # CEO Mentor integration
     └── README.md                  # Quarterly exercises
@@ -135,6 +139,26 @@ Negotiate with employees, banks, clients, and vendors simultaneously during a bu
 
 ---
 
+### Case 7: Private Equity Turnaround & Buy-and-Build
+**Phase:** 9 (CEO Mastery) + Phase 3 (Corporate Finance)
+**Time:** 4-5 hours (comprehensive)
+**Difficulty:** Advanced
+**Focus:** LBO structuring, M&A roll-up, ESOP design, exit strategy
+
+> **Connects to Case 3**: What if PE acquired TechServices post-stabilization?
+
+Lead a PE-backed turnaround from acquisition through exit. Structure the deal, execute 5 tuck-in acquisitions, implement employee ownership, and package the company for strategic sale. Includes:
+
+- **Deal Structuring**: Sources/uses, debt terms, CEO buyout
+- **Value Creation**: 100-day plan, operational improvements
+- **M&A Roll-Up**: 5 acquisitions to scale from $15M to $55M revenue
+- **ESOP Comparison**: Traditional ESOP vs. Direct Equity vs. ESPP
+- **Exit Planning**: Waterfall, returns analysis, employee payouts
+
+[Start Case 7 →](case-studies/case-07-pe-turnaround-buyout.md)
+
+---
+
 ## Simulations
 
 ### Blue Sheet Builder
@@ -164,6 +188,28 @@ Build a full P&L model for a professional services engagement. Conduct sensitivi
 Analyze utilization data and develop a capacity plan. Make staffing decisions and build an improvement roadmap.
 
 [Start Simulation →](simulations/utilization-optimizer.md)
+
+---
+
+### PE LBO Model (Interactive)
+**Time:** 60-90 minutes
+**Type:** Corporate Finance
+**Prerequisite:** Case 7
+
+Build a complete leveraged buyout model from scratch. Calculate IRR, MOIC, and sensitivity analysis. Model debt schedules, exit waterfalls, and stakeholder returns.
+
+[Start Simulation →](simulations/pe-lbo-model.md)
+
+---
+
+### ESOP Structures Deep Dive
+**Time:** 45-60 minutes
+**Type:** HR/Compensation
+**Prerequisite:** Case 7
+
+Compare three employee ownership structures: Traditional ESOP, Direct Equity Grants (Options/RSUs), and ESPP. Understand tax implications, governance requirements, and PE compatibility.
+
+[Start Simulation →](simulations/esop-structures-comparison.md)
 
 ---
 
@@ -200,6 +246,7 @@ The `/datasets/` folder contains JSON files with anonymized business data. You c
 | `utilization.json` | 5+ | Assignments, capacity, skills gaps |
 | `rate-cards.json` | 8+ | Roles, rates, margins |
 | `turnaround.json` | 1 | Cash, stakeholders, levers |
+| `pe-turnaround.json` | 1 | LBO structure, M&A targets, ESOP, exit waterfall |
 
 ---
 
@@ -208,11 +255,11 @@ The `/datasets/` folder contains JSON files with anonymized business data. You c
 | MBA Phase | Relevant Cases | Datasets Used |
 |-----------|----------------|---------------|
 | Phase 0: Consulting Mindset | Case 1 | sales-pipeline |
-| Phase 2-3: Finance | Case 2 | financial-data, rate-cards |
-| Phase 5: Strategy | Case 3 | turnaround |
+| Phase 2-3: Finance | Case 2, **Case 7** | financial-data, rate-cards, pe-turnaround |
+| Phase 5: Strategy | Case 3, **Case 7** | turnaround, pe-turnaround |
 | Phase 6: Marketing | Case 4 | rate-cards |
 | Phase 7: Operations | Case 5 | utilization |
-| Phase 8-9: Leadership | Case 3, 6 | turnaround |
+| Phase 8-9: Leadership | Case 3, 6, **Case 7** | turnaround, pe-turnaround |
 
 ---
 
