@@ -68,7 +68,8 @@ export function InteractiveTable({
 
   return (
     <div className="my-6 space-y-2">
-      <div className="overflow-x-auto rounded-lg border border-zinc-700">
+      {/* Desktop: traditional table */}
+      <div className="hidden md:block overflow-x-auto rounded-lg border border-zinc-700">
         <table className="min-w-full">
           <thead>
             <tr>
@@ -106,6 +107,35 @@ export function InteractiveTable({
             ))}
           </tbody>
         </table>
+      </div>
+
+      {/* Mobile: stacked cards */}
+      <div className="md:hidden space-y-3">
+        {rows.map((row, rowIdx) => (
+          <div
+            key={rowIdx}
+            className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4 space-y-3"
+          >
+            {row.cells.map((cell, colIdx) => (
+              <div key={colIdx}>
+                <label className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
+                  {headers[colIdx]}
+                </label>
+                {row.isEditable[colIdx] ? (
+                  <input
+                    type="text"
+                    value={getValue(rowIdx, colIdx)}
+                    onChange={(e) => handleChange(rowIdx, colIdx, e.target.value)}
+                    placeholder="Enter your response..."
+                    className="mt-1 w-full bg-zinc-900 border border-zinc-700 rounded px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none transition-colors"
+                  />
+                ) : (
+                  <p className="mt-1 text-sm text-zinc-300">{cell}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
 
       {/* Save indicator */}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { ResponsiveTable } from "@/components/ui/responsive-table";
 
 interface MarkdownContentProps {
   content: string;
@@ -140,9 +141,7 @@ export function MarkdownContent({ content, className = "", basePath }: MarkdownC
           },
           hr: () => <hr className="border-zinc-700 my-6" />,
           table: ({ children }) => (
-            <div className="overflow-x-auto my-4">
-              <table className="min-w-full border border-zinc-800">{children}</table>
-            </div>
+            <ResponsiveTable>{children}</ResponsiveTable>
           ),
           th: ({ children }) => (
             <th className="bg-zinc-800 px-4 py-2 text-left text-zinc-100 font-semibold border-b border-zinc-700">
