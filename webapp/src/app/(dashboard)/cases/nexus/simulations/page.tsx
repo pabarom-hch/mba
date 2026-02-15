@@ -1,0 +1,231 @@
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  ChevronLeft,
+  ChevronRight,
+  PlayCircle,
+  Clock,
+  Target,
+  DollarSign,
+  Users,
+  Building2,
+  FileSpreadsheet,
+  ArrowRight,
+} from "lucide-react";
+
+// Simulations metadata - stored as markdown files in /cases/nexus/simulations/
+const simulations = [
+  {
+    slug: "blue-sheet-builder",
+    name: "Blue Sheet Builder",
+    type: "Strategic Selling",
+    description:
+      "Build a complete Blue Sheet analysis for a complex sales opportunity. Practice Miller Heiman methodology with real account data.",
+    duration: 60,
+    difficulty: "intermediate",
+    skills: ["Opportunity Analysis", "Buying Influences", "Strategic Planning"],
+    icon: Target,
+    color: "blue",
+    datasets: ["sales-pipeline"],
+  },
+  {
+    slug: "financial-modeling",
+    name: "Engagement Financial Modeling",
+    type: "Financial Analysis",
+    description:
+      "Build a full P&L model for a professional services engagement. Calculate margins, utilization impact, and profitability scenarios.",
+    duration: 60,
+    difficulty: "advanced",
+    skills: ["Financial Modeling", "Unit Economics", "Scenario Analysis"],
+    icon: DollarSign,
+    color: "green",
+    datasets: ["financial-data", "rate-cards"],
+  },
+  {
+    slug: "utilization-optimizer",
+    name: "Utilization Optimizer",
+    type: "Operations",
+    description:
+      "Analyze utilization data and develop a capacity plan. Balance billable work, bench time, and professional development.",
+    duration: 60,
+    difficulty: "intermediate",
+    skills: ["Capacity Planning", "Resource Optimization", "Data Analysis"],
+    icon: Users,
+    color: "purple",
+    datasets: ["utilization"],
+  },
+  {
+    slug: "pe-lbo-model",
+    name: "LBO Model Builder",
+    type: "Private Equity",
+    description:
+      "Build a leveraged buyout model with debt schedules, operating scenarios, and returns analysis for a PE turnaround situation.",
+    duration: 90,
+    difficulty: "advanced",
+    skills: ["LBO Modeling", "Debt Structuring", "IRR Analysis"],
+    icon: Building2,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
+];
+
+const colorClasses: Record<string, { bg: string; text: string; border: string }> = {
+  blue: { bg: "bg-blue-500/10", text: "text-blue-400", border: "border-blue-500/30" },
+  green: { bg: "bg-green-500/10", text: "text-green-400", border: "border-green-500/30" },
+  purple: { bg: "bg-purple-500/10", text: "text-purple-400", border: "border-purple-500/30" },
+  emerald: { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/30" },
+};
+
+export default function SimulationsPage() {
+  return (
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
+      {/* Breadcrumb */}
+      <div className="flex items-center gap-2 text-sm text-zinc-400 mb-6">
+        <Link href="/cases" className="hover:text-zinc-100 flex items-center gap-1">
+          <ChevronLeft className="h-4 w-4" />
+          Cases
+        </Link>
+        <ChevronRight className="h-4 w-4" />
+        <Link href="/cases/nexus" className="hover:text-zinc-100">
+          Nexus
+        </Link>
+        <ChevronRight className="h-4 w-4" />
+        <span className="text-zinc-100">Simulations</span>
+      </div>
+
+      {/* Header */}
+      <div className="mb-8">
+        <div className="flex items-center gap-3 mb-3">
+          <div className="p-2 rounded-lg bg-purple-500/10">
+            <PlayCircle className="h-6 w-6 text-purple-500" />
+          </div>
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-bold">Interactive Simulations</h1>
+          </div>
+        </div>
+        <p className="text-zinc-400 max-w-3xl">
+          Hands-on exercises using real Nexus data. Build strategic analyses, financial models,
+          and operational plans with guided workflows.
+        </p>
+      </div>
+
+      {/* Stats Bar */}
+      <div className="grid grid-cols-3 gap-4 mb-8">
+        <Card className="border-zinc-800 bg-zinc-900/50">
+          <CardContent className="p-4 flex items-center gap-3">
+            <PlayCircle className="h-5 w-5 text-purple-400" />
+            <div>
+              <p className="text-xl font-bold">{simulations.length}</p>
+              <p className="text-xs text-zinc-400">Simulations</p>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="border-zinc-800 bg-zinc-900/50">
+          <CardContent className="p-4 flex items-center gap-3">
+            <Clock className="h-5 w-5 text-orange-400" />
+            <div>
+              <p className="text-xl font-bold">
+                {simulations.reduce((acc, s) => acc + s.duration, 0) / 60}h
+              </p>
+              <p className="text-xs text-zinc-400">Total Duration</p>
+            </div>
+          </CardContent>
+        </Card>
+        <Card className="border-zinc-800 bg-zinc-900/50">
+          <CardContent className="p-4 flex items-center gap-3">
+            <FileSpreadsheet className="h-5 w-5 text-green-400" />
+            <div>
+              <p className="text-xl font-bold">
+                {[...new Set(simulations.flatMap(s => s.datasets))].length}
+              </p>
+              <p className="text-xs text-zinc-400">Datasets Used</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Simulations Grid */}
+      <div className="grid gap-6 md:grid-cols-2">
+        {simulations.map((sim) => {
+          const Icon = sim.icon;
+          const colors = colorClasses[sim.color];
+
+          return (
+            <Link key={sim.slug} href={`/cases/nexus/simulations/${sim.slug}`}>
+              <Card className={`border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer h-full`}>
+                <CardHeader>
+                  <div className="flex items-start justify-between mb-2">
+                    <div className={`p-2 rounded-lg ${colors.bg}`}>
+                      <Icon className={`h-6 w-6 ${colors.text}`} />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Badge variant="secondary" className={`${colors.bg} ${colors.text} border-0 text-xs`}>
+                        {sim.type}
+                      </Badge>
+                      <Badge
+                        variant="outline"
+                        className={`text-xs capitalize ${
+                          sim.difficulty === "advanced"
+                            ? "border-red-500/50 text-red-400"
+                            : "border-zinc-700"
+                        }`}
+                      >
+                        {sim.difficulty}
+                      </Badge>
+                    </div>
+                  </div>
+                  <CardTitle className="text-xl">{sim.name}</CardTitle>
+                  <CardDescription className="text-zinc-400 mt-1">
+                    {sim.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {sim.skills.map((skill) => (
+                      <Badge key={skill} variant="outline" className="border-zinc-700 text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-zinc-500 flex items-center gap-1">
+                      <Clock className="h-4 w-4" />
+                      {sim.duration} min
+                    </span>
+                    <Button variant="ghost" size="sm" className={`${colors.text} hover:${colors.text}`}>
+                      Start Simulation
+                      <ArrowRight className="h-4 w-4 ml-1" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          );
+        })}
+      </div>
+
+      {/* Info Section */}
+      <Card className="border-zinc-800 bg-zinc-900/30 mt-8">
+        <CardContent className="p-6">
+          <h3 className="text-lg font-semibold mb-3">How Simulations Work</h3>
+          <div className="grid gap-4 md:grid-cols-3 text-sm text-zinc-400">
+            <div>
+              <span className="text-zinc-100 font-medium block mb-1">1. Read the Context</span>
+              Each simulation begins with background information and objectives to guide your analysis.
+            </div>
+            <div>
+              <span className="text-zinc-100 font-medium block mb-1">2. Work with Data</span>
+              Access real Nexus datasets and build your analysis using provided templates and frameworks.
+            </div>
+            <div>
+              <span className="text-zinc-100 font-medium block mb-1">3. Submit & Learn</span>
+              Your work is saved automatically. Review sample solutions after completing each section.
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
