@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "Business Turnaround Case Data",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Anonymized turnaround advisory data for crisis management case studies"
+  },
+  "turnaround_case": {
+    "id": "TA001",
+    "name": "TechServices Corp Turnaround",
+    "type": "internal",
+    "status": "active",
+    "health_score": 2,
+    "start_date": "2026-01-01",
+    "target_end_date": "2026-03-31"
+  },
+  "financial_situation": {
+    "starting_cash": 202812,
+    "current_cash": 171015,
+    "monthly_burn_rate": 330000,
+    "monthly_revenue_current": 272000,
+    "monthly_revenue_target": 365000,
+    "runway_weeks": 2,
+    "payroll_biweekly": 182000,
+    "next_payroll_date": "2026-02-13",
+    "line_of_credit_available": 150000,
+    "line_of_credit_drawn": 0
+  },
+  "revenue_analysis": {
+    "primary_client_revenue": {
+      "current_month": 261000,
+      "prior_month": 480000,
+      "change_percent": -46
+    },
+    "other_revenue": {
+      "current_month": 12000,
+      "prior_month": 166000,
+      "change_percent": -93
+    },
+    "revenue_concentration_risk": "High - 95% from single client relationship"
+  },
+  "root_causes": [
+    "Primary client revenue dropped 46% month-over-month",
+    "Other deposits collapsed 93%",
+    "High fixed payroll burden relative to revenue",
+    "Revenue concentration risk (single client dependency)",
+    "Limited direct client relationships (most through subcontracting)"
+  ],
+  "key_risks": [
+    {
+      "risk": "February payroll funding gap",
+      "severity": "critical",
+      "amount_needed": 160000,
+      "deadline": "2026-02-13"
+    },
+    {
+      "risk": "Primary client contract reduction",
+      "severity": "high",
+      "impact": "Unknown if permanent or timing issue"
+    },
+    {
+      "risk": "Cash runway exhaustion",
+      "severity": "critical",
+      "timeline": "Under 2 weeks without LOC draw"
+    },
+    {
+      "risk": "Employee retention",
+      "severity": "medium",
+      "impact": "Key talent may leave if payroll delayed"
+    }
+  ],
+  "stakeholders": [
+    {
+      "type": "employee",
+      "name": "Staff (45 employees)",
+      "stance": "neutral",
+      "health_score": 3,
+      "key_concerns": ["Job security", "Payroll timing"],
+      "communication_frequency": "weekly"
+    },
+    {
+      "type": "creditor",
+      "name": "Line of Credit Bank",
+      "stance": "supportive",
+      "health_score": 4,
+      "key_concerns": ["Repayment ability", "Covenant compliance"],
+      "communication_frequency": "as_needed"
+    },
+    {
+      "type": "customer",
+      "name": "Primary Client (subcontractor relationship)",
+      "stance": "neutral",
+      "health_score": 3,
+      "key_concerns": ["Service continuity", "Contract terms"],
+      "communication_frequency": "daily"
+    },
+    {
+      "type": "investor",
+      "name": "Ownership Group",
+      "stance": "supportive",
+      "health_score": 4,
+      "key_concerns": ["Business viability", "Return on investment"],
+      "communication_frequency": "weekly"
+    }
+  ],
+  "cash_levers": [
+    {
+      "lever": "Draw Line of Credit",
+      "type": "increase_inflow",
+      "timing": "immediate",
+      "potential_impact": 150000,
+      "status": "identified",
+      "risk": "Creates debt obligation"
+    },
+    {
+      "lever": "Accelerate AR Collection",
+      "type": "increase_inflow",
+      "timing": "short_term",
+      "potential_impact": 45000,
+      "status": "in_progress",
+      "risk": "May strain client relationships"
+    },
+    {
+      "lever": "Reduce Non-Essential Spending",
+      "type": "reduce_outflow",
+      "timing": "immediate",
+      "potential_impact": 25000,
+      "status": "in_progress",
+      "risk": "Limited impact on fundamentals"
+    },
+    {
+      "lever": "Payroll Reduction (Layoffs)",
+      "type": "reduce_outflow",
+      "timing": "short_term",
+      "potential_impact": 60000,
+      "status": "identified",
+      "risk": "Capacity reduction, morale impact"
+    },
+    {
+      "lever": "Direct Client Acquisition",
+      "type": "increase_inflow",
+      "timing": "medium_term",
+      "potential_impact": 100000,
+      "status": "identified",
+      "risk": "Takes time to close deals"
+    }
+  ],
+  "strategic_analysis": {
+    "strengths": [
+      "Public Health & Healthcare expertise (MD on staff, epidemiologists)",
+      "Data & Analytics capabilities (Power BI dashboards, state government experience)",
+      "Cloud & Enterprise Tech (Azure, Oracle, 160+ hospital implementations)",
+      "Government Programs experience ($150M budget, Top Secret clearance)"
+    ],
+    "current_positioning": "Subcontractor providing staffing services through primary client",
+    "recommended_positioning": "Direct consulting firm specializing in public health data infrastructure",
+    "value_proposition": "We built the state's COVID dashboards. Now we help states modernize their public health data infrastructure."
+  },
+  "turnaround_phases": [
+    {
+      "phase": "Stabilization",
+      "duration_weeks": 4,
+      "objectives": ["Secure immediate cash needs", "Communicate with stakeholders", "Stop the bleeding"],
+      "status": "in_progress"
+    },
+    {
+      "phase": "Assessment",
+      "duration_weeks": 2,
+      "objectives": ["Deep-dive root cause analysis", "Market opportunity assessment", "Team capability audit"],
+      "status": "pending"
+    },
+    {
+      "phase": "Restructuring",
+      "duration_weeks": 6,
+      "objectives": ["Right-size operations", "Reposition market offering", "Build direct sales capability"],
+      "status": "pending"
+    },
+    {
+      "phase": "Growth",
+      "duration_weeks": 12,
+      "objectives": ["Execute go-direct strategy", "Diversify revenue", "Rebuild margins"],
+      "status": "pending"
+    }
+  ],
+  "exercises": {
+    "cash_forecasting": "Build a 13-week cash forecast using the data provided. What decisions need to be made by week 2?",
+    "stakeholder_mapping": "Create a stakeholder influence/interest matrix. Who are the key players and how should they be managed?",
+    "turnaround_prioritization": "Of the cash levers identified, which 3 would you prioritize and why? Consider impact, timing, and risk.",
+    "strategic_repositioning": "Draft a 90-day plan to shift from subcontractor to direct consulting firm. What are the key milestones?"
+  }
+}

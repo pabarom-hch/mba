@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "Sales Pipeline & Opportunities",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Anonymized sales opportunity data implementing Miller Heiman methodology"
+  },
+  "opportunities": [
+    {
+      "id": "OPP001",
+      "name": "State Agency - Process Documentation Project",
+      "account": "Alpha State Corporation",
+      "stage": "proposal",
+      "probability": 60,
+      "value": 95000,
+      "expected_close_date": "2025-10-10",
+      "sector": "state_local",
+      "procurement_type": "direct",
+      "days_in_stage": 21,
+      "has_blue_sheet": true,
+      "has_green_sheet": true,
+      "competitor_count": 2
+    },
+    {
+      "id": "OPP002",
+      "name": "Federal Health Agency Support Services",
+      "account": "Federal Health Department",
+      "stage": "proposal",
+      "probability": 40,
+      "value": 3685745,
+      "expected_close_date": "2026-02-15",
+      "sector": "federal",
+      "procurement_type": "rfp",
+      "days_in_stage": 45,
+      "has_blue_sheet": true,
+      "has_green_sheet": false,
+      "competitor_count": 5
+    },
+    {
+      "id": "OPP003",
+      "name": "Medical Support Services",
+      "account": "Regional Medical Center",
+      "stage": "lead",
+      "probability": 20,
+      "value": 0,
+      "expected_close_date": "2026-06-30",
+      "sector": "private",
+      "procurement_type": "rfi",
+      "days_in_stage": 14,
+      "has_blue_sheet": false,
+      "has_green_sheet": false,
+      "competitor_count": 0
+    },
+    {
+      "id": "OPP004",
+      "name": "Managed Security Services - Manufacturing",
+      "account": "Beta Manufacturing Inc",
+      "stage": "negotiation",
+      "probability": 80,
+      "value": 240000,
+      "expected_close_date": "2026-03-01",
+      "sector": "private",
+      "procurement_type": "direct",
+      "days_in_stage": 12,
+      "has_blue_sheet": true,
+      "has_green_sheet": true,
+      "competitor_count": 1
+    },
+    {
+      "id": "OPP005",
+      "name": "Cloud Infrastructure Assessment",
+      "account": "Gamma Tech Corp",
+      "stage": "discovery",
+      "probability": 30,
+      "value": 75000,
+      "expected_close_date": "2026-04-15",
+      "sector": "private",
+      "procurement_type": "direct",
+      "days_in_stage": 7,
+      "has_blue_sheet": false,
+      "has_green_sheet": true,
+      "competitor_count": 3
+    }
+  ],
+  "pipeline_summary": {
+    "total_pipeline_value": 4095745,
+    "weighted_pipeline": 1723298,
+    "avg_deal_size": 819149,
+    "avg_days_to_close": 67,
+    "win_rate_ytd": 0.35,
+    "conversion_rates": {
+      "lead_to_qualification": 0.60,
+      "qualification_to_discovery": 0.70,
+      "discovery_to_proposal": 0.55,
+      "proposal_to_negotiation": 0.40,
+      "negotiation_to_closed_won": 0.75
+    }
+  },
+  "stage_distribution": [
+    { "stage": "lead", "count": 12, "value": 450000 },
+    { "stage": "qualification", "count": 8, "value": 680000 },
+    { "stage": "discovery", "count": 6, "value": 520000 },
+    { "stage": "proposal", "count": 4, "value": 1850000 },
+    { "stage": "negotiation", "count": 2, "value": 595745 }
+  ],
+  "sector_analysis": [
+    { "sector": "federal", "opportunities": 8, "total_value": 8500000, "avg_probability": 35 },
+    { "sector": "state_local", "opportunities": 12, "total_value": 2100000, "avg_probability": 45 },
+    { "sector": "private", "opportunities": 12, "total_value": 1800000, "avg_probability": 55 }
+  ],
+  "exercises": {
+    "pipeline_velocity": "Calculate the expected monthly revenue based on weighted pipeline. What stage needs the most improvement?",
+    "win_rate_analysis": "The proposal-to-negotiation conversion is only 40%. What Miller Heiman tools might address this?",
+    "forecast_accuracy": "Build a 90-day forecast using the opportunity data. What assumptions are you making?"
+  }
+}

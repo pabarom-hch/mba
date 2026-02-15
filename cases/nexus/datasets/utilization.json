@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "Resource Utilization & Capacity",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Anonymized resource utilization data for operations case studies"
+  },
+  "resource_assignments": [
+    {
+      "id": "RA001",
+      "resource_name": "Senior Healthcare Analyst",
+      "role": "Team Lead",
+      "engagement": "COVID Response Support",
+      "client": "Beta Healthcare System",
+      "allocation_percentage": 100,
+      "start_date": "2024-01-01",
+      "end_date": "2026-06-30",
+      "is_billable": true,
+      "bill_rate": 145,
+      "cost_rate": 85
+    },
+    {
+      "id": "RA002",
+      "resource_name": "Data Analyst I",
+      "role": "Informatics Coordinator",
+      "engagement": "COVID Response Support",
+      "client": "Beta Healthcare System",
+      "allocation_percentage": 100,
+      "start_date": "2024-01-01",
+      "end_date": "2026-06-30",
+      "is_billable": true,
+      "bill_rate": 95,
+      "cost_rate": 55
+    },
+    {
+      "id": "RA003",
+      "resource_name": "SOC Analyst II",
+      "role": "Security Operations",
+      "engagement": "Managed Security Services",
+      "client": "Beta Manufacturing Inc",
+      "allocation_percentage": 50,
+      "start_date": "2025-08-01",
+      "end_date": "2026-07-31",
+      "is_billable": true,
+      "bill_rate": 150,
+      "cost_rate": 90
+    },
+    {
+      "id": "RA004",
+      "resource_name": "Cloud Architect",
+      "role": "Technical Lead",
+      "engagement": "Cloud Migration Project",
+      "client": "Delta Tech Startup",
+      "allocation_percentage": 75,
+      "start_date": "2025-09-15",
+      "end_date": "2026-01-31",
+      "is_billable": true,
+      "bill_rate": 175,
+      "cost_rate": 110
+    },
+    {
+      "id": "RA005",
+      "resource_name": "Junior Developer",
+      "role": "Development Support",
+      "engagement": "None",
+      "client": "Bench",
+      "allocation_percentage": 0,
+      "start_date": null,
+      "end_date": null,
+      "is_billable": false,
+      "bill_rate": 0,
+      "cost_rate": 45
+    }
+  ],
+  "utilization_summary": {
+    "period": "2026-01",
+    "total_resources": 45,
+    "billable_resources": 38,
+    "bench_resources": 7,
+    "target_utilization": 75,
+    "actual_utilization": 68,
+    "utilization_gap": -7,
+    "monthly_capacity_hours": 7200,
+    "billable_hours_actual": 4896,
+    "bench_cost_monthly": 31500
+  },
+  "utilization_by_function": [
+    { "function": "Client Billable", "headcount": 32, "utilization": 85, "revenue_contribution": 92 },
+    { "function": "Managed Services", "headcount": 6, "utilization": 75, "revenue_contribution": 6 },
+    { "function": "Back Office", "headcount": 4, "utilization": 0, "revenue_contribution": 0 },
+    { "function": "Management", "headcount": 3, "utilization": 15, "revenue_contribution": 2 }
+  ],
+  "skills_inventory": [
+    { "skill": "Healthcare IT", "available": 8, "demand": 12, "gap": -4 },
+    { "skill": "Cybersecurity", "available": 6, "demand": 8, "gap": -2 },
+    { "skill": "Cloud Architecture", "available": 3, "demand": 5, "gap": -2 },
+    { "skill": "Project Management", "available": 4, "demand": 3, "gap": 1 },
+    { "skill": "Data Analytics", "available": 5, "demand": 4, "gap": 1 }
+  ],
+  "staffing_recommendations": [
+    {
+      "skill": "Healthcare IT",
+      "recommendation": "hire",
+      "quantity": 3,
+      "urgency": "high",
+      "revenue_at_risk": 450000,
+      "rationale": "4 open positions with active opportunities requiring this skill"
+    },
+    {
+      "skill": "Cybersecurity",
+      "recommendation": "hire",
+      "quantity": 2,
+      "urgency": "medium",
+      "revenue_at_risk": 240000,
+      "rationale": "Growing managed services demand exceeds current capacity"
+    },
+    {
+      "skill": "Project Management",
+      "recommendation": "upskill",
+      "quantity": 0,
+      "urgency": "low",
+      "revenue_at_risk": 0,
+      "rationale": "Slight oversupply; cross-train for client-facing roles"
+    }
+  ],
+  "exercises": {
+    "utilization_impact": "If utilization improved from 68% to 75%, what would be the revenue impact? Show your calculation.",
+    "bench_cost_analysis": "Calculate the annual cost of carrying 7 bench resources. At what point is it better to reduce headcount?",
+    "skills_gap_strategy": "Design a 6-month strategy to close the Healthcare IT skills gap. Consider hiring, training, and contractor options."
+  }
+}

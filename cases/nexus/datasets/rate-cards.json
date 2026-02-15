@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "Rate Cards & Pricing",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Anonymized rate card data for services pricing case studies"
+  },
+  "rate_cards": [
+    {
+      "id": "RC001",
+      "role": "Network Operations Center (NOC) Analyst",
+      "level": "junior",
+      "hourly_rate": 120,
+      "daily_rate": 960,
+      "monthly_rate": 19200,
+      "cost_rate": 65,
+      "margin_percent": 45.8,
+      "skills": ["Network Monitoring", "Ticketing Systems", "Basic Troubleshooting", "Documentation"],
+      "target_utilization": 85
+    },
+    {
+      "id": "RC002",
+      "role": "Network Operations Center (NOC) Analyst",
+      "level": "mid",
+      "hourly_rate": 135,
+      "daily_rate": 1080,
+      "monthly_rate": 21600,
+      "cost_rate": 75,
+      "margin_percent": 44.4,
+      "skills": ["Advanced Network Monitoring", "Incident Management", "Escalation Procedures"],
+      "target_utilization": 80
+    },
+    {
+      "id": "RC003",
+      "role": "Security Operations Center (SOC) Analyst",
+      "level": "junior",
+      "hourly_rate": 125,
+      "daily_rate": 1000,
+      "monthly_rate": 20000,
+      "cost_rate": 68,
+      "margin_percent": 45.6,
+      "skills": ["SIEM Monitoring", "Alert Triage", "Incident Response", "Security Tools"],
+      "target_utilization": 85
+    },
+    {
+      "id": "RC004",
+      "role": "Security Operations Center (SOC) Analyst",
+      "level": "senior",
+      "hourly_rate": 150,
+      "daily_rate": 1200,
+      "monthly_rate": 24000,
+      "cost_rate": 90,
+      "margin_percent": 40.0,
+      "skills": ["Advanced Threat Detection", "Threat Hunting", "Forensics", "Team Leadership"],
+      "target_utilization": 75
+    },
+    {
+      "id": "RC005",
+      "role": "Penetration Tester",
+      "level": "mid",
+      "hourly_rate": 145,
+      "daily_rate": 1160,
+      "monthly_rate": 23200,
+      "cost_rate": 85,
+      "margin_percent": 41.4,
+      "skills": ["Penetration Testing", "Exploit Development", "Red Team", "OWASP"],
+      "target_utilization": 70
+    },
+    {
+      "id": "RC006",
+      "role": "Cloud Systems Administrator",
+      "level": "junior",
+      "hourly_rate": 125,
+      "daily_rate": 1000,
+      "monthly_rate": 20000,
+      "cost_rate": 65,
+      "margin_percent": 48.0,
+      "skills": ["Cloud Administration", "User Management", "Monitoring", "Backup"],
+      "target_utilization": 85
+    },
+    {
+      "id": "RC007",
+      "role": "Cloud Architect",
+      "level": "senior",
+      "hourly_rate": 175,
+      "daily_rate": 1400,
+      "monthly_rate": 28000,
+      "cost_rate": 110,
+      "margin_percent": 37.1,
+      "skills": ["Cloud Architecture", "AWS", "Azure", "Solution Design", "Migration"],
+      "target_utilization": 70
+    },
+    {
+      "id": "RC008",
+      "role": "Healthcare Data Analyst",
+      "level": "mid",
+      "hourly_rate": 130,
+      "daily_rate": 1040,
+      "monthly_rate": 20800,
+      "cost_rate": 72,
+      "margin_percent": 44.6,
+      "skills": ["Healthcare Analytics", "Power BI", "SQL", "HIPAA Compliance"],
+      "target_utilization": 80
+    }
+  ],
+  "pricing_tiers": {
+    "standard": {
+      "description": "Standard market rates",
+      "multiplier": 1.0,
+      "typical_clients": "Mid-market, commercial"
+    },
+    "government": {
+      "description": "GSA Schedule compliant rates",
+      "multiplier": 0.92,
+      "typical_clients": "Federal, state, local agencies"
+    },
+    "strategic": {
+      "description": "Discounted for large volume",
+      "multiplier": 0.88,
+      "typical_clients": "Strategic accounts with $500K+ annual spend"
+    },
+    "premium": {
+      "description": "Premium for urgent/specialized needs",
+      "multiplier": 1.25,
+      "typical_clients": "Emergency response, highly specialized skills"
+    }
+  },
+  "margin_analysis": {
+    "avg_margin_by_level": {
+      "junior": 46.5,
+      "mid": 43.5,
+      "senior": 38.5
+    },
+    "margin_range": {
+      "minimum_acceptable": 30,
+      "target": 40,
+      "high_value": 50
+    }
+  },
+  "exercises": {
+    "pricing_optimization": "A client wants a blended rate for a team of 2 junior + 2 mid + 1 senior SOC analysts. Calculate the blended hourly rate and team margin.",
+    "competitive_analysis": "If a competitor offers SOC services at $115/hour for juniors, how should we respond? Consider cost structure and value proposition.",
+    "volume_discount": "A strategic client wants 8,000 hours/year at 15% discount. Calculate the revenue impact and whether this meets margin requirements."
+  }
+}

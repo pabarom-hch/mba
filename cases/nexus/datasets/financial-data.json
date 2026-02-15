@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "Financial Snapshots & Budgets",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Anonymized financial performance data for MBA case study analysis"
+  },
+  "financial_snapshots": [
+    {
+      "id": "FS001",
+      "account": "Alpha Government Agency",
+      "engagement": "Technical Staffing Services",
+      "period": "2025-10",
+      "revenue": 45000.00,
+      "labor_cost": 32000.00,
+      "odc": 3500.00,
+      "total_cost": 35500.00,
+      "gross_profit": 9500.00,
+      "margin_percent": 21.11
+    },
+    {
+      "id": "FS002",
+      "account": "Alpha Government Agency",
+      "engagement": "Technical Staffing Services",
+      "period": "2025-11",
+      "revenue": 48000.00,
+      "labor_cost": 33000.00,
+      "odc": 3200.00,
+      "total_cost": 36200.00,
+      "gross_profit": 11800.00,
+      "margin_percent": 24.58
+    },
+    {
+      "id": "FS003",
+      "account": "Beta Healthcare System",
+      "engagement": "COVID Response Support",
+      "period": "2025-10",
+      "revenue": 125000.00,
+      "labor_cost": 85000.00,
+      "odc": 12000.00,
+      "total_cost": 97000.00,
+      "gross_profit": 28000.00,
+      "margin_percent": 22.40
+    },
+    {
+      "id": "FS004",
+      "account": "Beta Healthcare System",
+      "engagement": "COVID Response Support",
+      "period": "2025-11",
+      "revenue": 118000.00,
+      "labor_cost": 82000.00,
+      "odc": 10500.00,
+      "total_cost": 92500.00,
+      "gross_profit": 25500.00,
+      "margin_percent": 21.61
+    },
+    {
+      "id": "FS005",
+      "account": "Gamma Manufacturing Co",
+      "engagement": "IT Managed Services",
+      "period": "2025-10",
+      "revenue": 15000.00,
+      "labor_cost": 8000.00,
+      "odc": 2000.00,
+      "total_cost": 10000.00,
+      "gross_profit": 5000.00,
+      "margin_percent": 33.33
+    },
+    {
+      "id": "FS006",
+      "account": "Gamma Manufacturing Co",
+      "engagement": "IT Managed Services",
+      "period": "2025-11",
+      "revenue": 15000.00,
+      "labor_cost": 7500.00,
+      "odc": 1800.00,
+      "total_cost": 9300.00,
+      "gross_profit": 5700.00,
+      "margin_percent": 38.00
+    },
+    {
+      "id": "FS007",
+      "account": "Delta Tech Startup",
+      "engagement": "Cloud Migration Project",
+      "period": "2025-10",
+      "revenue": 75000.00,
+      "labor_cost": 52000.00,
+      "odc": 8000.00,
+      "total_cost": 60000.00,
+      "gross_profit": 15000.00,
+      "margin_percent": 20.00
+    },
+    {
+      "id": "FS008",
+      "account": "Epsilon Fire District",
+      "engagement": "Emergency Services Support",
+      "period": "2025-10",
+      "revenue": 8500.00,
+      "labor_cost": 5200.00,
+      "odc": 800.00,
+      "total_cost": 6000.00,
+      "gross_profit": 2500.00,
+      "margin_percent": 29.41
+    }
+  ],
+  "budget_data": {
+    "company_budget_fy2026": {
+      "total_revenue_target": 4200000.00,
+      "labor_budget": 2800000.00,
+      "benefits_budget": 560000.00,
+      "overhead_budget": 420000.00,
+      "target_margin": 10.00
+    },
+    "monthly_targets": [
+      { "month": "2026-01", "revenue": 320000, "actual": 272000, "variance_pct": -15.0 },
+      { "month": "2026-02", "revenue": 340000, "actual": null, "variance_pct": null },
+      { "month": "2026-03", "revenue": 360000, "actual": null, "variance_pct": null }
+    ]
+  },
+  "revenue_by_vertical": [
+    { "vertical": "Government", "revenue_ytd": 1250000, "target": 1800000, "pct_of_total": 58 },
+    { "vertical": "Healthcare", "revenue_ytd": 620000, "target": 900000, "pct_of_total": 29 },
+    { "vertical": "Manufacturing", "revenue_ytd": 180000, "target": 300000, "pct_of_total": 8 },
+    { "vertical": "Technology", "revenue_ytd": 110000, "target": 200000, "pct_of_total": 5 }
+  ],
+  "revenue_by_model": [
+    { "model": "Premium Specialized Staffing", "revenue_ytd": 1450000, "margin_avg": 22.5 },
+    { "model": "Project-Based Tech Services", "revenue_ytd": 480000, "margin_avg": 28.0 },
+    { "model": "Managed Services (MRR)", "revenue_ytd": 180000, "margin_avg": 35.0 },
+    { "model": "Non-Premium General Staffing", "revenue_ytd": 50000, "margin_avg": 15.0 }
+  ],
+  "exercises": {
+    "margin_analysis": "Calculate the blended margin across all engagements. Which engagement type has the highest profitability?",
+    "variance_analysis": "January 2026 showed a -15% variance to target. What factors might explain this? What actions would you recommend?",
+    "portfolio_optimization": "If you could only grow two verticals by 50%, which would you choose and why?"
+  }
+}
