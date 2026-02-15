@@ -1,0 +1,696 @@
+{
+  "metadata": {
+    "source": "Nexus Platform",
+    "dataset": "PE Turnaround & Buy-and-Build Case Data",
+    "anonymized": true,
+    "version": "1.0",
+    "extracted_date": "2026-02-15",
+    "description": "Comprehensive PE transaction data for LBO modeling, M&A roll-up, and ESOP analysis",
+    "connected_case": "case-07-pe-turnaround-buyout.md",
+    "connected_turnaround": "turnaround.json"
+  },
+  "transaction_overview": {
+    "deal_name": "Project Phoenix",
+    "target_company": "TechServices Corp",
+    "pe_sponsor": "Apex Partners Fund III",
+    "deal_type": "Management Buyout with Growth Equity",
+    "strategy": "Buy-and-Build Roll-Up",
+    "industry": "IT Consulting & Technical Staffing",
+    "close_date": "2026-06-01",
+    "target_exit_date": "2030-09-01",
+    "hold_period_years": 4.25
+  },
+  "entry_financials": {
+    "ltm_revenue": 15000000,
+    "ltm_ebitda_reported": 0,
+    "ebitda_adjustments": [
+      {
+        "item": "Owner excess compensation",
+        "amount": 600000,
+        "rationale": "CEO salary above market rate, will be normalized"
+      },
+      {
+        "item": "One-time turnaround costs",
+        "amount": 400000,
+        "rationale": "Crisis consulting, legal fees from Case 03"
+      },
+      {
+        "item": "Non-recurring legal",
+        "amount": 200000,
+        "rationale": "Contract renegotiation with primary client"
+      },
+      {
+        "item": "Below-market rent add-back",
+        "amount": 300000,
+        "rationale": "Related party lease, will normalize at market"
+      }
+    ],
+    "adjusted_ebitda": 1500000,
+    "ebitda_margin_adjusted": 10.0,
+    "revenue_concentration": {
+      "primary_client_pct": 60,
+      "top_5_clients_pct": 85,
+      "government_revenue_pct": 45,
+      "healthcare_revenue_pct": 35,
+      "commercial_revenue_pct": 20
+    },
+    "employee_count": 85,
+    "billable_utilization": 72,
+    "average_bill_rate": 125,
+    "average_cost_rate": 68,
+    "gross_margin": 45.6
+  },
+  "valuation": {
+    "entry_multiple": 5.0,
+    "enterprise_value": 7500000,
+    "equity_value": 7500000,
+    "purchase_price": 7500000,
+    "ceo_buyout_premium": 2500000,
+    "total_consideration": 10000000,
+    "comparable_transactions": [
+      {
+        "company": "TechStaff Solutions",
+        "revenue": 18000000,
+        "ebitda_multiple": 4.8,
+        "year": 2025
+      },
+      {
+        "company": "CloudConsult Group",
+        "revenue": 22000000,
+        "ebitda_multiple": 5.5,
+        "year": 2025
+      },
+      {
+        "company": "GovIT Partners",
+        "revenue": 12000000,
+        "ebitda_multiple": 5.2,
+        "year": 2024
+      }
+    ]
+  },
+  "capital_structure": {
+    "sources": [
+      {
+        "type": "Senior Debt",
+        "amount": 4500000,
+        "multiple_of_ebitda": 3.0,
+        "interest_rate": "SOFR + 450bps",
+        "term_years": 5,
+        "amortization": "5% per year, balloon at maturity",
+        "covenants": {
+          "leverage_ratio_max": 4.0,
+          "interest_coverage_min": 2.0,
+          "fixed_charge_coverage_min": 1.25
+        }
+      },
+      {
+        "type": "Seller Note",
+        "amount": 2000000,
+        "interest_rate": 8.0,
+        "interest_type": "PIK",
+        "term_years": 3,
+        "subordination": "Fully subordinated to senior debt"
+      },
+      {
+        "type": "PE Equity",
+        "amount": 5000000,
+        "preferred_return": 8.0,
+        "participation": "Participating preferred"
+      },
+      {
+        "type": "Management Rollover",
+        "amount": 750000,
+        "participants": ["New CEO", "CFO", "COO"],
+        "rollover_pct_of_proceeds": 15
+      },
+      {
+        "type": "ESOP Initial Contribution",
+        "amount": 250000,
+        "pool_pct": 5.0
+      }
+    ],
+    "uses": [
+      {
+        "type": "Purchase Price",
+        "amount": 7500000
+      },
+      {
+        "type": "CEO Buyout Premium",
+        "amount": 2500000
+      },
+      {
+        "type": "Transaction Costs",
+        "amount": 500000,
+        "breakdown": {
+          "legal": 200000,
+          "accounting_diligence": 150000,
+          "investment_banking": 100000,
+          "other": 50000
+        }
+      },
+      {
+        "type": "Working Capital",
+        "amount": 1000000
+      },
+      {
+        "type": "M&A Reserve",
+        "amount": 1000000
+      }
+    ],
+    "total_sources": 12500000,
+    "total_uses": 12500000
+  },
+  "ceo_buyout_terms": {
+    "seller_name": "Marcus Chen",
+    "ownership_pct": 80,
+    "total_proceeds": 6300000,
+    "components": [
+      {
+        "type": "Cash at Close",
+        "amount": 4000000,
+        "timing": "Day 1"
+      },
+      {
+        "type": "Seller Note Principal",
+        "amount": 2000000,
+        "timing": "Years 1-3"
+      },
+      {
+        "type": "PIK Interest on Seller Note",
+        "amount": 520000,
+        "timing": "Accrued, paid at maturity"
+      },
+      {
+        "type": "Consulting Agreement",
+        "amount": 300000,
+        "timing": "$150K/year for 2 years"
+      }
+    ],
+    "transition_period_months": 24,
+    "non_compete_years": 5,
+    "role_post_close": "Strategic Advisor (part-time)"
+  },
+  "financial_projections": {
+    "years": [
+      {
+        "year": 0,
+        "label": "Entry",
+        "revenue": 15000000,
+        "organic_revenue": 15000000,
+        "acquired_revenue": 0,
+        "ebitda": 1500000,
+        "ebitda_margin": 10.0,
+        "employees": 85,
+        "acquisitions_completed": 0
+      },
+      {
+        "year": 1,
+        "label": "Year 1",
+        "revenue": 18000000,
+        "organic_revenue": 14000000,
+        "acquired_revenue": 4000000,
+        "revenue_growth_pct": 20.0,
+        "ebitda": 2520000,
+        "ebitda_margin": 14.0,
+        "employees": 120,
+        "acquisitions_completed": 1,
+        "key_initiatives": [
+          "Install new CEO",
+          "100-day operational plan",
+          "DataBridge acquisition closed",
+          "VP Sales hired"
+        ]
+      },
+      {
+        "year": 2,
+        "label": "Year 2",
+        "revenue": 32000000,
+        "organic_revenue": 18000000,
+        "acquired_revenue": 14000000,
+        "revenue_growth_pct": 77.8,
+        "ebitda": 4800000,
+        "ebitda_margin": 15.0,
+        "employees": 185,
+        "acquisitions_completed": 2,
+        "key_initiatives": [
+          "CloudPath acquisition",
+          "SecureNet acquisition",
+          "CRM fully implemented",
+          "First direct federal contract won"
+        ]
+      },
+      {
+        "year": 3,
+        "label": "Year 3",
+        "revenue": 45000000,
+        "organic_revenue": 25000000,
+        "acquired_revenue": 20000000,
+        "revenue_growth_pct": 40.6,
+        "ebitda": 7200000,
+        "ebitda_margin": 16.0,
+        "employees": 230,
+        "acquisitions_completed": 1,
+        "key_initiatives": [
+          "GovTech Partners acquisition",
+          "DC office opened",
+          "Managed services recurring to 25% of revenue",
+          "Exit preparation begins"
+        ]
+      },
+      {
+        "year": 4,
+        "label": "Year 4 (Exit)",
+        "revenue": 55000000,
+        "organic_revenue": 30000000,
+        "acquired_revenue": 25000000,
+        "revenue_growth_pct": 22.2,
+        "ebitda": 9350000,
+        "ebitda_margin": 17.0,
+        "employees": 260,
+        "acquisitions_completed": 1,
+        "key_initiatives": [
+          "MidWest IT acquisition",
+          "Full integration complete",
+          "Banker engaged",
+          "Exit process launched"
+        ]
+      }
+    ],
+    "cagr_revenue": 38.4,
+    "cagr_ebitda": 58.0,
+    "total_organic_growth": 15000000,
+    "total_acquired_revenue": 30000000
+  },
+  "ma_targets": [
+    {
+      "id": "ACQ001",
+      "name": "DataBridge Analytics",
+      "close_year": 1,
+      "revenue": 4000000,
+      "ebitda": 400000,
+      "ebitda_margin": 10.0,
+      "purchase_multiple": 4.5,
+      "purchase_price": 1800000,
+      "employees": 28,
+      "geography": "Boston, MA",
+      "capabilities": ["Healthcare analytics", "Power BI", "Data warehousing"],
+      "rationale": "Adds direct healthcare client relationships and analytics depth",
+      "synergies": {
+        "cost_reduction": 150000,
+        "cross_sell_revenue": 300000,
+        "timeline_months": 12
+      },
+      "integration_complexity": "Low",
+      "owner_profile": "Retiring founder, age 62"
+    },
+    {
+      "id": "ACQ002",
+      "name": "CloudPath Consulting",
+      "close_year": 2,
+      "revenue": 6000000,
+      "ebitda": 720000,
+      "ebitda_margin": 12.0,
+      "purchase_multiple": 4.5,
+      "purchase_price": 3240000,
+      "employees": 42,
+      "geography": "Austin, TX",
+      "capabilities": ["AWS", "Azure", "Cloud migration", "DevOps"],
+      "rationale": "Expands cloud capabilities, adds government cloud experience",
+      "synergies": {
+        "cost_reduction": 200000,
+        "cross_sell_revenue": 500000,
+        "timeline_months": 12
+      },
+      "integration_complexity": "Medium",
+      "owner_profile": "Partnership buyout, 3 partners age 50-55"
+    },
+    {
+      "id": "ACQ003",
+      "name": "SecureNet Solutions",
+      "close_year": 2,
+      "revenue": 5000000,
+      "ebitda": 500000,
+      "ebitda_margin": 10.0,
+      "purchase_multiple": 4.4,
+      "purchase_price": 2200000,
+      "employees": 35,
+      "geography": "Atlanta, GA",
+      "capabilities": ["Cybersecurity", "SOC operations", "Compliance", "Pen testing"],
+      "rationale": "High-demand cybersecurity practice, recurring SOC revenue",
+      "synergies": {
+        "cost_reduction": 180000,
+        "cross_sell_revenue": 400000,
+        "timeline_months": 12
+      },
+      "integration_complexity": "Medium",
+      "owner_profile": "Founder seeking liquidity, age 58"
+    },
+    {
+      "id": "ACQ004",
+      "name": "GovTech Partners",
+      "close_year": 3,
+      "revenue": 8000000,
+      "ebitda": 1000000,
+      "ebitda_margin": 12.5,
+      "purchase_multiple": 4.5,
+      "purchase_price": 4500000,
+      "employees": 55,
+      "geography": "Washington, DC",
+      "capabilities": ["Federal contracts", "Clearances", "Program management"],
+      "rationale": "DC presence, federal contract vehicles, cleared workforce",
+      "synergies": {
+        "cost_reduction": 300000,
+        "cross_sell_revenue": 800000,
+        "timeline_months": 18
+      },
+      "integration_complexity": "High",
+      "owner_profile": "PE-backed, secondary sale"
+    },
+    {
+      "id": "ACQ005",
+      "name": "MidWest IT Services",
+      "close_year": 4,
+      "revenue": 7000000,
+      "ebitda": 770000,
+      "ebitda_margin": 11.0,
+      "purchase_multiple": 4.5,
+      "purchase_price": 3465000,
+      "employees": 48,
+      "geography": "Chicago, IL",
+      "capabilities": ["Managed services", "Help desk", "IT outsourcing"],
+      "rationale": "Geographic expansion, 40% recurring MRR revenue",
+      "synergies": {
+        "cost_reduction": 250000,
+        "cross_sell_revenue": 600000,
+        "timeline_months": 12
+      },
+      "integration_complexity": "Low",
+      "owner_profile": "Family business transition, second generation"
+    }
+  ],
+  "ma_summary": {
+    "total_acquisitions": 5,
+    "total_acquired_revenue": 30000000,
+    "total_acquisition_spend": 15205000,
+    "average_multiple_paid": 4.48,
+    "total_synergies_captured": 3780000,
+    "employees_added": 208
+  },
+  "esop_structures": {
+    "selected_structure": "Direct Equity with Phantom Participation",
+    "pool_size_pct": 15.0,
+    "structures_compared": [
+      {
+        "type": "Traditional ESOP",
+        "description": "Tax-advantaged trust holds shares for employees",
+        "setup_cost": 75000,
+        "annual_cost": 25000,
+        "complexity": "High",
+        "tax_advantages": {
+          "company": "Contributions tax-deductible",
+          "employee": "No tax until distribution",
+          "seller": "1042 rollover available (C-Corp)"
+        },
+        "governance": {
+          "voting": "Trustee votes shares",
+          "valuation": "Annual 409A required",
+          "compliance": "ERISA, DOL oversight"
+        },
+        "pe_compatibility": "Low - complexity and governance constraints",
+        "best_for": "Long-term independent companies"
+      },
+      {
+        "type": "Direct Equity Grants",
+        "description": "Options/RSUs granted to individual employees",
+        "setup_cost": 30000,
+        "annual_cost": 12000,
+        "complexity": "Medium",
+        "grant_types": [
+          {
+            "type": "ISOs",
+            "description": "Incentive Stock Options",
+            "tax_treatment": "Capital gains if held 1 year",
+            "annual_limit": 100000
+          },
+          {
+            "type": "NSOs",
+            "description": "Non-Qualified Stock Options",
+            "tax_treatment": "Ordinary income at exercise",
+            "annual_limit": "None"
+          },
+          {
+            "type": "RSUs",
+            "description": "Restricted Stock Units",
+            "tax_treatment": "Ordinary income at vesting",
+            "annual_limit": "None"
+          }
+        ],
+        "pe_compatibility": "High - standard PE model",
+        "best_for": "PE-backed companies planning exit"
+      },
+      {
+        "type": "ESPP",
+        "description": "Employees purchase shares at discount",
+        "setup_cost": 20000,
+        "annual_cost": 15000,
+        "complexity": "Low",
+        "discount_pct": 15,
+        "purchase_limit_annual": 25000,
+        "tax_treatment": "Capital gains if held 2+ years",
+        "pe_compatibility": "Low - requires liquidity for shares",
+        "best_for": "Public companies or regular liquidity events"
+      }
+    ],
+    "selected_plan": {
+      "name": "TechServices Equity Incentive Plan",
+      "total_pool_pct": 15.0,
+      "total_pool_value_at_exit": 12000000,
+      "tiers": [
+        {
+          "tier": 1,
+          "name": "Executive Options",
+          "pool_pct_of_total": 33.3,
+          "equity_pct": 5.0,
+          "grant_type": "NSOs",
+          "vesting": "25% Year 1, monthly over 36 months",
+          "recipients": [
+            {"role": "CEO", "equity_pct": 2.5, "exit_value": 3000000},
+            {"role": "CFO", "equity_pct": 1.5, "exit_value": 1800000},
+            {"role": "COO", "equity_pct": 1.0, "exit_value": 1200000}
+          ]
+        },
+        {
+          "tier": 2,
+          "name": "Key Employee Options",
+          "pool_pct_of_total": 25.0,
+          "equity_pct": 3.75,
+          "grant_type": "ISOs/NSOs",
+          "vesting": "4-year with 1-year cliff",
+          "recipients_count": 31,
+          "average_grant_pct": 0.12,
+          "average_exit_value": 145000
+        },
+        {
+          "tier": 3,
+          "name": "Broad-Based Phantom Equity",
+          "pool_pct_of_total": 33.3,
+          "equity_pct": 5.0,
+          "grant_type": "Phantom Equity (cash-settled)",
+          "vesting": "3-year cliff",
+          "eligibility": "1+ year tenure",
+          "recipients_count": 195,
+          "allocation_method": "Tenure + compensation formula",
+          "average_exit_value": 30770
+        },
+        {
+          "tier": 4,
+          "name": "Reserve Pool",
+          "pool_pct_of_total": 8.4,
+          "equity_pct": 1.25,
+          "purpose": "Future hires, acquisition retention"
+        }
+      ]
+    }
+  },
+  "exit_analysis": {
+    "timing": {
+      "hold_period_months": 51,
+      "hold_period_years": 4.25,
+      "banker_engagement_month": 42,
+      "process_launch_month": 45,
+      "close_month": 51
+    },
+    "financial_metrics_at_exit": {
+      "ltm_revenue": 55000000,
+      "ltm_ebitda": 9350000,
+      "ebitda_margin": 17.0,
+      "revenue_cagr_3yr": 38.0,
+      "client_concentration_top1": 25,
+      "recurring_revenue_pct": 28,
+      "employee_count": 260
+    },
+    "exit_multiple_analysis": {
+      "entry_multiple": 5.0,
+      "comparable_exits": [
+        {"company": "TechCorp Services", "multiple": 7.5, "revenue": 65000000},
+        {"company": "FedIT Solutions", "multiple": 9.0, "revenue": 48000000},
+        {"company": "CloudStaff Inc", "multiple": 8.2, "revenue": 52000000}
+      ],
+      "selected_multiple": 8.5,
+      "multiple_expansion": 3.5,
+      "rationale": [
+        "Scale premium (>$50M revenue)",
+        "Growth premium (38% CAGR)",
+        "Diversification premium (client concentration reduced)",
+        "Recurring revenue premium (28% MRR)"
+      ]
+    },
+    "enterprise_value": 79475000,
+    "scenarios": [
+      {"case": "Low", "multiple": 7.0, "ev": 65450000},
+      {"case": "Base", "multiple": 8.5, "ev": 79475000},
+      {"case": "High", "multiple": 10.0, "ev": 93500000}
+    ]
+  },
+  "exit_waterfall": {
+    "gross_proceeds": 80000000,
+    "deductions": [
+      {"item": "Senior Debt Payoff", "amount": 8500000},
+      {"item": "Seller Note + PIK Interest", "amount": 2520000},
+      {"item": "Transaction Costs", "amount": 2500000}
+    ],
+    "net_proceeds": 66480000,
+    "distributions": [
+      {
+        "recipient": "ESOP/Employee Pool",
+        "ownership_pct": 15.0,
+        "gross_amount": 9972000,
+        "net_of_costs": 9972000
+      },
+      {
+        "recipient": "Management Rollover",
+        "ownership_pct": 7.5,
+        "gross_amount": 4986000,
+        "net_of_costs": 4986000
+      },
+      {
+        "recipient": "PE Equity (Apex Partners)",
+        "ownership_pct": 77.5,
+        "gross_amount": 51522000,
+        "preferred_return": 0,
+        "participation": 51522000,
+        "net_of_costs": 51522000
+      }
+    ]
+  },
+  "returns_analysis": {
+    "pe_returns": {
+      "initial_investment": 5000000,
+      "follow_on_investment": 8000000,
+      "total_invested": 13000000,
+      "total_proceeds": 51522000,
+      "moic": 3.96,
+      "gross_irr": 42.3,
+      "net_irr_estimate": 32.0
+    },
+    "value_creation_attribution": [
+      {"driver": "EBITDA Growth", "pct_of_value": 55},
+      {"driver": "Multiple Expansion", "pct_of_value": 30},
+      {"driver": "Debt Paydown", "pct_of_value": 10},
+      {"driver": "Leverage Effect", "pct_of_value": 5}
+    ],
+    "management_returns": {
+      "rollover_investment": 750000,
+      "exit_proceeds": 4986000,
+      "moic": 6.65,
+      "plus_equity_grants": 6000000
+    },
+    "employee_outcomes": [
+      {"tier": "CEO", "count": 1, "total_payout": 3000000, "average": 3000000},
+      {"tier": "C-Suite", "count": 3, "total_payout": 2700000, "average": 900000},
+      {"tier": "VP Level", "count": 6, "total_payout": 2520000, "average": 420000},
+      {"tier": "Directors", "count": 15, "total_payout": 2400000, "average": 160000},
+      {"tier": "Senior Staff", "count": 30, "total_payout": 2160000, "average": 72000},
+      {"tier": "All Other", "count": 195, "total_payout": 6000000, "average": 30770}
+    ],
+    "total_employee_payout": 9972000
+  },
+  "debt_schedule": {
+    "senior_debt": {
+      "initial_balance": 4500000,
+      "interest_rate": 9.5,
+      "annual_amortization_pct": 5,
+      "schedule": [
+        {"year": 1, "opening": 4500000, "principal": 225000, "interest": 427500, "closing": 4275000},
+        {"year": 2, "opening": 4275000, "principal": 225000, "interest": 406125, "closing": 4050000},
+        {"year": 3, "opening": 4050000, "principal": 225000, "interest": 384750, "closing": 3825000},
+        {"year": 4, "opening": 3825000, "principal": 3825000, "interest": 363375, "closing": 0}
+      ]
+    },
+    "seller_note": {
+      "initial_balance": 2000000,
+      "interest_rate": 8.0,
+      "pik_interest": true,
+      "schedule": [
+        {"year": 1, "opening": 2000000, "pik_interest": 160000, "closing": 2160000},
+        {"year": 2, "opening": 2160000, "pik_interest": 172800, "closing": 2332800},
+        {"year": 3, "opening": 2332800, "pik_interest": 186624, "closing": 2519424}
+      ]
+    }
+  },
+  "exercises": {
+    "lbo_modeling": {
+      "title": "Build the LBO Model",
+      "description": "Using the data provided, construct a complete LBO model including sources/uses, debt schedules, projections, and returns analysis.",
+      "deliverables": [
+        "Sources and Uses table",
+        "5-year P&L projection",
+        "Debt amortization schedule",
+        "Exit waterfall",
+        "IRR and MOIC calculations"
+      ],
+      "estimated_time_minutes": 60
+    },
+    "ma_evaluation": {
+      "title": "Evaluate Acquisition Targets",
+      "description": "Rank the 5 acquisition targets by attractiveness. Consider strategic fit, price, integration risk, and synergy potential.",
+      "questions": [
+        "Which acquisition would you prioritize first and why?",
+        "What's the risk of paying 4.5x for tuck-ins when platform trades at 5.0x?",
+        "How would you structure earnouts to reduce acquisition risk?"
+      ],
+      "estimated_time_minutes": 30
+    },
+    "esop_design": {
+      "title": "Design the Employee Equity Plan",
+      "description": "Create an equity allocation plan that balances retention, fairness, and PE returns.",
+      "questions": [
+        "How do you decide allocation between CEO (2.5%) and average employee (~0.03%)?",
+        "Should acquired company employees get equity? How much?",
+        "What vesting terms best balance retention with flexibility?"
+      ],
+      "estimated_time_minutes": 30
+    },
+    "exit_strategy": {
+      "title": "Plan the Exit Process",
+      "description": "Develop an exit strategy including timing, buyer targeting, and value maximization.",
+      "questions": [
+        "What signals indicate readiness to exit?",
+        "Who are the likely buyers? Strategic vs. PE?",
+        "How do you maximize multiple expansion?"
+      ],
+      "estimated_time_minutes": 30
+    },
+    "sensitivity_analysis": {
+      "title": "Stress Test the Model",
+      "description": "Run sensitivity analysis on key assumptions.",
+      "scenarios": [
+        {"variable": "Exit Multiple", "range": [6.0, 7.0, 8.5, 10.0]},
+        {"variable": "Organic Growth Rate", "range": [0, 10, 20, 30]},
+        {"variable": "Margin at Exit", "range": [12, 15, 17, 20]},
+        {"variable": "Acquisition Multiples", "range": [3.5, 4.5, 5.5, 6.5]}
+      ],
+      "estimated_time_minutes": 30
+    }
+  }
+}
