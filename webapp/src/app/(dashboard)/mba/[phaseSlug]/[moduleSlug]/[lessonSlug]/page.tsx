@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { LessonViewer } from "@/components/lesson/LessonViewer";
+import { SimpleLessonViewer } from "@/components/lesson/SimpleLessonViewer";
 
 async function getLessonData(phaseNumber: number, moduleSlug: string, lessonSlug: string, userId: string) {
   const supabase = await createClient();
@@ -129,7 +129,7 @@ export default async function LessonPage({
   }
 
   return (
-    <LessonViewer
+    <SimpleLessonViewer
       lesson={data.lesson}
       phase={data.phase}
       module={data.module}

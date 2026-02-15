@@ -2,41 +2,59 @@ import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SimpleLessonViewer } from "@/components/lesson/SimpleLessonViewer";
 
-async function getCaseStudyData(slug: string, userId: string) {
+async function getLessonData(phaseNumber: number, moduleSlug: string, lessonSlug: string, userId: string) {
   const supabase = await createClient();
 
-  // Get the case study lesson by slug
+  // Get PE curriculum
+  const { data: curriculum } = await supabase
+    .from("curricula")
+    .select("id")
+    .eq("slug", "pe-buy-build")
+    .single();
+
+  if (!curriculum) return null;
+
+  // Get the phase
+  const { data: phase } = await supabase
+    .from("phases")
+    .select("id, name, number")
+    .eq("curriculum_id", curriculum.id)
+    .eq("number", phaseNumber)
+    .single();
+
+  if (!phase) return null;
+
+  // Get the module
+  const { data: module } = await supabase
+    .from("modules")
+    .select("id, name, slug")
+    .eq("phase_id", phase.id)
+    .eq("slug", moduleSlug)
+    .single();
+
+  if (!module) return null;
+
+  // Get the lesson
   const { data: lesson } = await supabase
     .from("lessons")
-    .select(`
-      *,
-      module:modules(
-        id,
-        name,
-        slug,
-        phase:phases(
-          id,
-          name,
-          number
-        )
-      )
-    `)
-    .eq("slug", slug)
+    .select("*")
+    .eq("module_id", module.id)
+    .eq("slug", lessonSlug)
     .single();
 
   if (!lesson) return null;
 
-  // Get all Nexus case studies for navigation
-  const { data: allCaseStudies } = await supabase
+  // Get all lessons in this module for navigation
+  const { data: allLessons } = await supabase
     .from("lessons")
     .select("id, title, slug, number")
-    .like("slug", "nexus-case-%")
-    .order("title");
+    .eq("module_id", module.id)
+    .order("number");
 
-  // Find prev/next case studies
-  const currentIndex = allCaseStudies?.findIndex(l => l.id === lesson.id) ?? -1;
-  const prevLesson = currentIndex > 0 ? allCaseStudies![currentIndex - 1] : null;
-  const nextLesson = currentIndex < (allCaseStudies?.length || 0) - 1 ? allCaseStudies![currentIndex + 1] : null;
+  // Find prev/next lessons
+  const currentIndex = allLessons?.findIndex(l => l.id === lesson.id) ?? -1;
+  const prevLesson = currentIndex > 0 ? allLessons![currentIndex - 1] : null;
+  const nextLesson = currentIndex < (allLessons?.length || 0) - 1 ? allLessons![currentIndex + 1] : null;
 
   // Get user's progress
   const { data: progress } = await supabase
@@ -74,47 +92,41 @@ async function getCaseStudyData(slug: string, userId: string) {
     exerciseData[er.table_index] = er.responses as Record<string, string>;
   });
 
-  // Get related datasets for this case study
-  const { data: datasets } = await supabase
-    .from("case_study_datasets")
-    .select("id, dataset_name, display_name, description")
-    .eq("source_type", "nexus")
-    .eq("is_active", true);
-
   return {
     lesson,
-    phase: lesson.module?.phase || { id: "", name: "Cases", number: 0 },
-    module: lesson.module || { id: "", name: "Nexus", slug: "nexus" },
+    phase,
+    module,
     prevLesson,
     nextLesson,
     progress,
     notes: notes || [],
     highlights: highlights || [],
     exerciseData,
-    datasets: datasets || [],
-    basePath: "/cases/nexus",
+    basePath: `/pe/${phaseNumber}/${moduleSlug}`,
   };
 }
 
-export default async function CaseStudyPage({
+export default async function PELessonPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ phaseNumber: string; moduleSlug: string; lessonSlug: string }>;
 }) {
-  const { slug } = await params;
+  const { phaseNumber: phaseSlug, moduleSlug, lessonSlug } = await params;
+  const phaseNumber = parseInt(phaseSlug);
+
+  if (isNaN(phaseNumber)) {
+    notFound();
+  }
 
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
   if (!user) return null;
 
-  const data = await getCaseStudyData(slug, user.id);
+  const data = await getLessonData(phaseNumber, moduleSlug, lessonSlug, user.id);
   if (!data) {
     notFound();
   }
-
-  // Create a clean title without the "Nexus Case: " prefix
-  const displayTitle = data.lesson.title.replace("Nexus Case: ", "");
 
   return (
     <SimpleLessonViewer
@@ -130,9 +142,9 @@ export default async function CaseStudyPage({
       basePath={data.basePath}
       breadcrumbs={[
         { label: "Dashboard", href: "/" },
-        { label: "Cases", href: "/cases" },
-        { label: "Nexus", href: "/cases/nexus" },
-        { label: displayTitle, href: "#" },
+        { label: "PE Buy & Build", href: "/pe" },
+        { label: `Phase ${data.phase.number}`, href: `/pe` },
+        { label: data.module.name, href: `/pe/${phaseSlug}/${moduleSlug}` },
       ]}
     />
   );

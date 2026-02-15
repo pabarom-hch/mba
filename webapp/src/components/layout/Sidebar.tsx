@@ -13,6 +13,7 @@ import {
   Home,
   Flame,
   Briefcase,
+  Building2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -38,6 +39,11 @@ const navigation = [
     name: "Case Studies",
     href: "/cases",
     icon: Briefcase,
+  },
+  {
+    name: "PE Buy & Build",
+    href: "/pe",
+    icon: Building2,
   },
 ];
 

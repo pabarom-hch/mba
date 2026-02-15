@@ -15,6 +15,7 @@ import {
   Menu,
   X,
   Briefcase,
+  Building2,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,7 @@ const navigation = [
   { name: "MBA Curriculum", href: "/mba", icon: GraduationCap },
   { name: "Mentor Curriculum", href: "/mentor", icon: Users },
   { name: "Case Studies", href: "/cases", icon: Briefcase },
+  { name: "PE Buy & Build", href: "/pe", icon: Building2 },
   { name: "Morning Ritual", href: "/rituals/morning", icon: Sun },
   { name: "Evening Reflection", href: "/rituals/evening", icon: Moon },
   { name: "Reading List", href: "/books", icon: BookOpen },

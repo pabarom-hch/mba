@@ -69,6 +69,45 @@ const simulations = [
     color: "emerald",
     datasets: ["pe-turnaround"],
   },
+  {
+    slug: "pe-due-diligence",
+    name: "Due Diligence Deep Dive",
+    type: "Private Equity",
+    description:
+      "Conduct comprehensive buy-side due diligence including Quality of Earnings analysis, management assessment, and risk identification.",
+    duration: 75,
+    difficulty: "advanced",
+    skills: ["QofE Analysis", "Risk Assessment", "Management Evaluation"],
+    icon: FileSpreadsheet,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
+  {
+    slug: "pe-hundred-day-plan",
+    name: "100-Day Plan Builder",
+    type: "Private Equity",
+    description:
+      "Design a comprehensive 100-day value creation plan for a newly acquired platform company with operational improvement initiatives.",
+    duration: 60,
+    difficulty: "intermediate",
+    skills: ["Operational Planning", "KPI Design", "Change Management"],
+    icon: Target,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
+  {
+    slug: "pe-exit-preparation",
+    name: "Exit Preparation Workshop",
+    type: "Private Equity",
+    description:
+      "Prepare a portfolio company for exit including sell-side materials, management presentations, and value creation bridge.",
+    duration: 60,
+    difficulty: "advanced",
+    skills: ["Exit Planning", "Presentation Skills", "Value Documentation"],
+    icon: DollarSign,
+    color: "emerald",
+    datasets: ["pe-turnaround"],
+  },
 ];
 
 const colorClasses: Record<string, { bg: string; text: string; border: string }> = {
