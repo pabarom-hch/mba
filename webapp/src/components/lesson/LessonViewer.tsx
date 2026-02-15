@@ -109,46 +109,46 @@ export function LessonViewer({
   const furtherReadingArray = lesson.further_reading as { title: string; author?: string; url?: string }[] | null;
 
   return (
-    <div className="flex h-full min-h-0">
+    <div className="flex h-full min-h-0 min-w-0 w-full">
       {/* Main Content */}
-      <div className="flex-1 flex flex-col min-h-0">
+      <div className="flex-1 flex flex-col min-h-0 min-w-0 w-full">
         {/* Header */}
-        <div className="border-b border-zinc-800 bg-zinc-950 px-6 py-4">
+        <div className="border-b border-zinc-800 bg-zinc-950 px-4 sm:px-6 py-4 w-full">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm text-zinc-400 mb-3 flex-wrap">
             {breadcrumbs.map((crumb, idx) => (
               <span key={idx} className="flex items-center gap-2">
-                {idx > 0 && <ChevronRight className="h-4 w-4" />}
-                <Link href={crumb.href} className="hover:text-zinc-100">
+                {idx > 0 && <ChevronRight className="h-4 w-4 shrink-0" />}
+                <Link href={crumb.href} className="hover:text-zinc-100 truncate">
                   {crumb.label}
                 </Link>
               </span>
             ))}
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4 shrink-0" />
             <span className="text-zinc-100 truncate">{lesson.title}</span>
           </div>
 
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Badge variant="outline" className="border-zinc-700 capitalize">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <Badge variant="outline" className="border-zinc-700 capitalize shrink-0">
                   {lesson.type}
                 </Badge>
                 {lesson.difficulty && (
-                  <Badge variant="outline" className="border-zinc-700 capitalize">
+                  <Badge variant="outline" className="border-zinc-700 capitalize shrink-0">
                     {lesson.difficulty}
                   </Badge>
                 )}
                 {lesson.duration_minutes && (
-                  <span className="text-sm text-zinc-400 flex items-center gap-1">
+                  <span className="text-sm text-zinc-400 flex items-center gap-1 shrink-0">
                     <Clock className="h-4 w-4" />
                     {lesson.duration_minutes} min
                   </span>
                 )}
               </div>
-              <h1 className="text-2xl font-bold">{lesson.title}</h1>
+              <h1 className="text-xl sm:text-2xl font-bold break-words">{lesson.title}</h1>
               {lesson.summary && (
-                <p className="text-zinc-400 mt-2 max-w-2xl">{lesson.summary}</p>
+                <p className="text-zinc-400 mt-2 max-w-2xl break-words">{lesson.summary}</p>
               )}
             </div>
 
@@ -156,7 +156,7 @@ export function LessonViewer({
               onClick={handleMarkComplete}
               disabled={isPending}
               variant={isComplete ? "default" : "outline"}
-              className={isComplete ? "bg-green-600 hover:bg-green-700" : ""}
+              className={`shrink-0 w-full sm:w-auto ${isComplete ? "bg-green-600 hover:bg-green-700" : ""}`}
             >
               {isPending ? (
                 <Loader2 className="h-4 w-4 animate-spin mr-2" />
@@ -169,9 +169,9 @@ export function LessonViewer({
         </div>
 
         {/* Content Area */}
-        <ScrollArea className="flex-1">
-          <div className="p-6 lg:p-8">
-            <div className="flex gap-8">
+        <ScrollArea className="flex-1 min-w-0">
+          <div className="p-4 sm:p-6 lg:p-8 w-full">
+            <div className="flex gap-8 w-full">
               {/* Main Content Column */}
               <div className="flex-1 max-w-4xl min-w-0 w-full">
                 {/* Audio Player */}
@@ -214,16 +214,18 @@ export function LessonViewer({
                 )}
 
                 {/* Main Content - with Interactive Tables */}
-                <HighlightableContent lessonId={lesson.id} highlights={highlights}>
-                  <ExerciseContent
-                    content={lesson.content || ""}
-                    lessonId={lesson.id}
-                    exerciseData={exerciseData}
-                    basePath={basePath}
-                  />
-                </HighlightableContent>
-
-                <Separator className="my-8 bg-zinc-800" />
+                <Card className="border-zinc-800 bg-zinc-900/50 mb-6 overflow-hidden">
+                  <CardContent className="p-4 sm:p-6">
+                    <HighlightableContent lessonId={lesson.id} highlights={highlights}>
+                      <ExerciseContent
+                        content={lesson.content || ""}
+                        lessonId={lesson.id}
+                        exerciseData={exerciseData}
+                        basePath={basePath}
+                      />
+                    </HighlightableContent>
+                  </CardContent>
+                </Card>
 
             {/* Key Concepts */}
             {keyConceptsArray && keyConceptsArray.length > 0 && (

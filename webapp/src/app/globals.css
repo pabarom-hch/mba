@@ -119,6 +119,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
   body {
     @apply bg-background text-foreground;
@@ -127,7 +128,7 @@
   }
 }
 
-/* Ensure text wraps properly on mobile */
+/* Ensure text wraps properly */
 .prose,
 .prose-invert,
 article,
@@ -144,7 +145,7 @@ strong {
   word-break: break-word;
 }
 
-/* Allow horizontal scrolling on mobile */
+/* Mobile-specific text overflow handling */
 @media (max-width: 768px) {
   .highlightable-content,
   article,

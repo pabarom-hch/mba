@@ -137,8 +137,116 @@ function extractTablesFromMarkdown(markdown: string): {
   return { segments };
 }
 
-export function ExerciseContent({ content, lessonId, exerciseData, basePath }: ExerciseContentProps) {
+// Split markdown into sections by h2 headings for mobile card layout
+function splitIntoSections(markdown: string): { intro: string; sections: { heading: string; content: string }[] } {
+  const h2Regex = /^## (.+)$/gm;
+  const sections: { heading: string; content: string }[] = [];
+  const matches: { heading: string; index: number }[] = [];
+
+  let match;
+  while ((match = h2Regex.exec(markdown)) !== null) {
+    matches.push({ heading: match[1], index: match.index });
+  }
+
+  if (matches.length === 0) {
+    return { intro: markdown, sections: [] };
+  }
+
+  // Content before first h2 is the intro
+  const intro = markdown.slice(0, matches[0].index).trim();
+
+  // Extract each section
+  for (let i = 0; i < matches.length; i++) {
+    const start = matches[i].index;
+    const end = i < matches.length - 1 ? matches[i + 1].index : markdown.length;
+    const sectionContent = markdown.slice(start, end).trim();
+
+    sections.push({
+      heading: matches[i].heading,
+      content: sectionContent,
+    });
+  }
+
+  return { intro, sections };
+}
+
+// Renders a section of markdown content (handles tables separately)
+function MarkdownSection({
+  content,
+  lessonId,
+  exerciseData,
+  basePath,
+  markdownComponents,
+}: {
+  content: string;
+  lessonId: string;
+  exerciseData: Record<number, Record<string, string>>;
+  basePath?: string;
+  markdownComponents: Record<string, React.ComponentType<{ children?: React.ReactNode; className?: string; href?: string }>>;
+}) {
   const { segments } = useMemo(() => extractTablesFromMarkdown(content), [content]);
+
+  return (
+    <>
+      {segments.map((segment, idx) => {
+        if (segment.type === "text") {
+          return (
+            <ReactMarkdown
+              key={idx}
+              remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeHighlight]}
+              components={markdownComponents}
+            >
+              {segment.content}
+            </ReactMarkdown>
+          );
+        }
+
+        const parsed = parseMarkdownTable(segment.content);
+
+        if (!parsed) {
+          return (
+            <ReactMarkdown
+              key={idx}
+              remarkPlugins={[remarkGfm]}
+              components={markdownComponents}
+            >
+              {segment.content}
+            </ReactMarkdown>
+          );
+        }
+
+        const hasEditableCells = parsed.rows.some(row => row.isEditable.some(e => e));
+
+        if (hasEditableCells) {
+          return (
+            <InteractiveTable
+              key={idx}
+              lessonId={lessonId}
+              tableIndex={segment.tableIndex!}
+              headers={parsed.headers}
+              rows={parsed.rows}
+              initialData={exerciseData[segment.tableIndex!] || {}}
+            />
+          );
+        }
+
+        return (
+          <ReactMarkdown
+            key={idx}
+            remarkPlugins={[remarkGfm]}
+            components={markdownComponents}
+          >
+            {segment.content}
+          </ReactMarkdown>
+        );
+      })}
+    </>
+  );
+}
+
+export function ExerciseContent({ content, lessonId, exerciseData, basePath }: ExerciseContentProps) {
+  const { intro, sections } = useMemo(() => splitIntoSections(content), [content]);
 
   const markdownComponents = {
     h1: ({ children }: { children?: React.ReactNode }) => (
@@ -231,59 +339,30 @@ export function ExerciseContent({ content, lessonId, exerciseData, basePath }: E
 
   return (
     <article className="prose prose-invert prose-zinc max-w-none">
-      {segments.map((segment, idx) => {
-        if (segment.type === "text") {
-          return (
-            <ReactMarkdown
-              key={idx}
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeHighlight]}
-              components={markdownComponents}
-            >
-              {segment.content}
-            </ReactMarkdown>
-          );
-        }
+      {/* Intro content (before first h2) - no card */}
+      {intro && (
+        <MarkdownSection
+          content={intro}
+          lessonId={lessonId}
+          exerciseData={exerciseData}
+          basePath={basePath}
+          markdownComponents={markdownComponents}
+        />
+      )}
 
-        const parsed = parseMarkdownTable(segment.content);
-
-        if (!parsed) {
-          return (
-            <ReactMarkdown
-              key={idx}
-              remarkPlugins={[remarkGfm]}
-              components={markdownComponents}
-            >
-              {segment.content}
-            </ReactMarkdown>
-          );
-        }
-
-        const hasEditableCells = parsed.rows.some(row => row.isEditable.some(e => e));
-
-        if (hasEditableCells) {
-          return (
-            <InteractiveTable
-              key={idx}
-              lessonId={lessonId}
-              tableIndex={segment.tableIndex!}
-              headers={parsed.headers}
-              rows={parsed.rows}
-              initialData={exerciseData[segment.tableIndex!] || {}}
-            />
-          );
-        }
-
-        return (
-          <ReactMarkdown
-            key={idx}
-            remarkPlugins={[remarkGfm]}
-            components={markdownComponents}
-          >
-            {segment.content}
-          </ReactMarkdown>
-        );
-      })}
+      {/* Sections with visual separators */}
+      {sections.map((section, idx) => (
+        <div key={idx}>
+          {idx > 0 && <hr className="border-zinc-800 my-6" />}
+          <MarkdownSection
+            content={section.content}
+            lessonId={lessonId}
+            exerciseData={exerciseData}
+            basePath={basePath}
+            markdownComponents={markdownComponents}
+          />
+        </div>
+      ))}
     </article>
   );
 }

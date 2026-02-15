@@ -38,20 +38,20 @@ export default async function DashboardLayout({
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col overflow-hidden">
+      <div className="flex flex-1 flex-col overflow-hidden min-w-0">
         {/* Header with Mobile Nav */}
         <div className="flex items-center border-b border-zinc-800 bg-zinc-950">
           <div className="flex items-center gap-2 px-4 lg:hidden">
             <MobileNav />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <Header user={user} />
           </div>
         </div>
 
         {/* Page Content */}
-        <main className="flex-1 flex flex-col min-h-0 overflow-hidden">
-          <div className="flex-1 min-h-0 overflow-y-auto overflow-x-auto">
+        <main className="flex-1 flex flex-col min-h-0 overflow-hidden min-w-0">
+          <div className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden min-w-0">
             {children}
           </div>
         </main>
