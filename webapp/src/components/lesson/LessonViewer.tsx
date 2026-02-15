@@ -170,10 +170,10 @@ export function LessonViewer({
 
         {/* Content Area */}
         <ScrollArea className="flex-1">
-          <div className="p-6 lg:p-8">
+          <div className="p-6 lg:p-8 overflow-hidden">
             <div className="flex gap-8">
               {/* Main Content Column */}
-              <div className="flex-1 max-w-4xl min-w-0">
+              <div className="flex-1 max-w-4xl min-w-0 w-full overflow-hidden">
                 {/* Audio Player */}
                 {lesson.audio_url && (
                   <div className="mb-6">
