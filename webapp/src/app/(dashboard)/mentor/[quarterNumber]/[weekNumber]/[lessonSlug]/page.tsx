@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { LessonViewer } from "@/components/lesson/LessonViewer";
+import { SimpleLessonViewer } from "@/components/lesson/SimpleLessonViewer";
 
 async function getLessonData(quarterNumber: number, weekNumber: number, lessonSlug: string, userId: string) {
   const supabase = await createClient();
@@ -135,7 +135,7 @@ export default async function MentorLessonPage({
   }
 
   return (
-    <LessonViewer
+    <SimpleLessonViewer
       lesson={data.lesson}
       week={data.week}
       prevLesson={data.prevLesson}
