@@ -8,6 +8,7 @@ import {
   Flame,
   CheckCircle2,
   Clock,
+  Building2,
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -106,6 +107,7 @@ export default async function DashboardPage() {
 
   const mbaProgress = progressData.find(p => p.curriculum_slug === "mba");
   const mentorProgress = progressData.find(p => p.curriculum_slug === "mentor");
+  const peProgress = progressData.find(p => p.curriculum_slug === "pe-buy-build");
 
   return (
     <div className="p-6 lg:p-8 space-y-8">
@@ -138,7 +140,7 @@ export default async function DashboardPage() {
             </div>
             <div>
               <p className="text-2xl font-bold">
-                {(mbaProgress?.lessons_completed || 0) + (mentorProgress?.lessons_completed || 0)}
+                {(mbaProgress?.lessons_completed || 0) + (mentorProgress?.lessons_completed || 0) + (peProgress?.lessons_completed || 0)}
               </p>
               <p className="text-sm text-zinc-400">Lessons Completed</p>
             </div>
@@ -242,6 +244,38 @@ export default async function DashboardPage() {
               </span>
               <Button asChild variant="ghost" size="sm" className="text-cyan-400 hover:text-cyan-300">
                 <Link href="/mentor">
+                  Continue
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* PE Buy & Build Curriculum Card */}
+        <Card className="border-zinc-800 bg-zinc-900/50">
+          <CardHeader className="flex flex-row items-center gap-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-500/10">
+              <Building2 className="h-6 w-6 text-amber-500" />
+            </div>
+            <div className="flex-1">
+              <CardTitle>PE Buy &amp; Build</CardTitle>
+              <CardDescription className="text-zinc-400">
+                {peProgress?.lessons_completed || 0} of {peProgress?.total_lessons || 0} lessons completed
+              </CardDescription>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <Progress
+              value={peProgress?.completion_percentage || 0}
+              className="h-2 bg-zinc-800"
+            />
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-zinc-400">
+                {Math.round(peProgress?.completion_percentage || 0)}% complete
+              </span>
+              <Button asChild variant="ghost" size="sm" className="text-amber-400 hover:text-amber-300">
+                <Link href="/pe">
                   Continue
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
