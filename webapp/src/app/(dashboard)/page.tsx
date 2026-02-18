@@ -175,7 +175,7 @@ export default async function DashboardPage() {
           </CardHeader>
           <CardContent>
             <Button asChild className="bg-orange-500 hover:bg-orange-600">
-              <Link href={`/mentor/lesson/${todayLesson.slug}`}>
+              <Link href="/mentor/today">
                 Start Today&apos;s Lesson
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
