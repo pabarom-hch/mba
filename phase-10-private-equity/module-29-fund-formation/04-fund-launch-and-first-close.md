@@ -422,6 +422,275 @@ LP Example — Summit FoF ($35M commitment):
 
 ---
 
+## Worked Example: SAF Partners Fund I — First Close & HCH Acquisition
+
+> This extended case study follows SAF Partners through first close and their acquisition of HCH Enterprises. For full fund details, see [SAF Fund Profile](saf-fund-profile.md).
+
+### SAF First Close Summary
+
+**First Close Date:** July 15, 2026
+**Target Fund Size:** $75M
+**First Close Amount:** $35M (47% of target)
+
+| LP | Type | Commitment | % of Fund | Notes |
+|----|------|-----------|-----------|-------|
+| Emerging Manager Capital | EM FoF | $15M | 20.0% | Anchor; 25bps fee discount |
+| Meridian Partners | FoF | $5M | 6.7% | Standard terms |
+| Clearwater Capital | FoF | $3M | 4.0% | Standard terms |
+| Chen Family Office | Family Office | $4M | 5.3% | Co-invest rights requested |
+| Williams Trust | Family Office | $3M | 4.0% | Standard terms |
+| Rodriguez Family | Family Office | $2M | 2.7% | Partner's family |
+| Park Investments | Family Office | $1.5M | 2.0% | Partner's family |
+| GP Commitment | GP | $1.5M | 2.0% | First tranche of 2.5% |
+| **First Close Total** | | **$35M** | **46.7%** | |
+
+### HCH Acquisition Capital Call
+
+**Deal:** HCH Enterprises acquisition (Platform #1)
+**Signing:** July 20, 2026
+**Closing Target:** December 15, 2026
+
+```
+SAF PARTNERS FUND I — CAPITAL CALL #1
+December 1, 2026
+
+PURPOSE:
+  HCH Enterprises acquisition:    $5,500,000
+  Q4 2026 Management Fee:          $350,000
+  Organizational expenses:         $150,000
+  ────────────────────────────────────────
+  TOTAL CALL:                    $6,000,000
+
+CALL CALCULATION BY LP:
+
+LP Name                 Commitment   %      Call Amount
+──────────────────────────────────────────────────────
+Emerging Manager Cap.    $15.0M    42.9%   $2,571,429
+Meridian Partners         $5.0M    14.3%     $857,143
+Clearwater Capital        $3.0M     8.6%     $514,286
+Chen Family Office        $4.0M    11.4%     $685,714
+Williams Trust            $3.0M     8.6%     $514,286
+Rodriguez Family          $2.0M     5.7%     $342,857
+Park Investments          $1.5M     4.3%     $257,143
+GP Commitment             $1.5M     4.3%     $257,143
+──────────────────────────────────────────────────────
+TOTAL                    $35.0M   100.0%  $6,000,000
+
+WIRE INSTRUCTIONS:
+  Bank: Silicon Valley Bank
+  Account: SAF Partners Fund I Capital Account
+  ABA: 121-140-399
+  Account #: 3301-XXXXXX
+  Reference: [LP Name] Capital Call #1
+
+DUE DATE: December 10, 2026 (10 business days)
+```
+
+### HCH Acquisition Structure
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           HCH ENTERPRISES ACQUISITION STRUCTURE               │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  SOURCES                         USES                         │
+│  ────────────────────────        ────────────────────────    │
+│  SAF Fund I Equity:  $5.50M      Purchase Price:    $4.72M   │
+│  Assumed Debt:       $1.16M      Working Capital:   $0.78M   │
+│                                  Transaction Costs: $0.60M   │
+│                                  Escrow:            $0.56M   │
+│  ────────────────────────        ────────────────────────    │
+│  TOTAL:              $6.66M      TOTAL:            $6.66M   │
+│                                                               │
+│  VALUATION:                                                  │
+│  Enterprise Value:     $4.72M (0.75x LTM Revenue)           │
+│  Less: Debt Assumed:   $1.16M                                │
+│  Equity Value:         $3.56M                                │
+│  Plus: Transaction Costs + WC + Escrow: $1.94M              │
+│  Total Equity Check:   $5.50M                                │
+│                                                               │
+│  POST-CLOSE OWNERSHIP:                                       │
+│  SAF Partners Fund I:   85%                                  │
+│  Management Rollover:   10%                                  │
+│  Option Pool:           5%                                   │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### SAF Post-Close Operations Setup
+
+**Day 1 Checklist (Completed):**
+
+| Category | Item | Status | Provider |
+|----------|------|--------|----------|
+| **Banking** | Operating account | ✓ | Silicon Valley Bank |
+| | Capital call account | ✓ | Silicon Valley Bank |
+| | Distribution account | ✓ | Silicon Valley Bank |
+| **Administration** | Fund admin onboarded | ✓ | Citco |
+| | NAV tracking setup | ✓ | Citco |
+| | Capital account system | ✓ | Citco |
+| **Compliance** | Compliance manual adopted | ✓ | ACA Compliance |
+| | Code of ethics signed | ✓ | All team members |
+| | Form D filed | ✓ | July 30, 2026 |
+| | Blue sky filings | ✓ | 8 states |
+| **Reporting** | Investor portal live | ✓ | Juniper Square |
+| | First LP letter drafted | ✓ | In review |
+| **Insurance** | D&O policy bound | ✓ | Marsh |
+| | E&O policy bound | ✓ | Marsh |
+
+### Second Close & Equalization
+
+**Second Close Date:** September 15, 2026
+**Additional Capital:** $25M
+**Running Total:** $60M (80% of target)
+
+```
+EQUALIZATION CALCULATION — SECOND CLOSE LPs
+
+Period: July 15 - September 15, 2026 (62 days)
+Capital Called During Period: $6.0M (from first-close LPs)
+Called %: 17.1% of first-close commitments
+
+Second-Close LP Example — Apex Ventures ($8M commitment)
+
+  1. Capital Call Catch-Up:
+     $8M × 17.1% = $1,371,429
+
+  2. Management Fee Catch-Up:
+     $8M × 2.0% × (62/365) = $27,178
+
+  3. Equalization Interest (Prime + 2% = 7.5%):
+     ($1,371,429 + $27,178) × 7.5% × (62/365) = $17,819
+
+  TOTAL EQUALIZATION PAYMENT: $1,416,426
+
+  Equalization interest distributed to first-close LPs
+  pro-rata based on their commitments.
+```
+
+---
+
+## Templates & Checklists
+
+### Template: Capital Call Notice
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              CAPITAL CALL NOTICE TEMPLATE                     │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  [FUND NAME]                                                  │
+│  Capital Call Notice #[___]                                   │
+│  Date: _______________                                        │
+│                                                               │
+│  Dear Limited Partner,                                        │
+│                                                               │
+│  Pursuant to Section [___] of the Limited Partnership        │
+│  Agreement, the General Partner hereby calls capital as      │
+│  follows:                                                     │
+│                                                               │
+│  PURPOSE OF CALL:                                             │
+│  □ Investment: __________________ $[_________]               │
+│  □ Management Fee (Q___ 20__)     $[_________]               │
+│  □ Fund Expenses                  $[_________]               │
+│  □ Organizational Expenses        $[_________]               │
+│  ────────────────────────────────────────────                │
+│  TOTAL CALL:                      $[_________]               │
+│                                                               │
+│  YOUR CAPITAL CALL:                                           │
+│  Commitment:                      $[_________]               │
+│  Ownership %:                     [____]%                    │
+│  Your Pro-Rata Share:             $[_________]               │
+│                                                               │
+│  CAPITAL ACCOUNT STATUS:                                      │
+│  Prior Contributions:             $[_________]               │
+│  This Call:                       $[_________]               │
+│  Total Contributions:             $[_________]               │
+│  Remaining Unfunded:              $[_________]               │
+│                                                               │
+│  WIRE INSTRUCTIONS:                                           │
+│  Bank: _______________________                               │
+│  ABA: ________________________                               │
+│  Account: ____________________                               │
+│  Reference: __________________                               │
+│                                                               │
+│  DUE DATE: _______________ ([__] business days)              │
+│                                                               │
+│  Please contact [IR Contact] with any questions.             │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Checklist: Fund Launch Operational Readiness
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           FUND LAUNCH OPERATIONAL READINESS                   │
+│           Target First Close Date: _______________            │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  60 DAYS BEFORE CLOSE                            COMPLETE?   │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Fund administrator selected and engaged                   │
+│  □ Bank accounts opened (operating, capital, distribution)   │
+│  □ Auditor engaged                                           │
+│  □ Insurance quotes obtained                                 │
+│  □ Technology platform selected (CRM, portal)                │
+│                                                               │
+│  30 DAYS BEFORE CLOSE                                         │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Compliance manual drafted                                 │
+│  □ Code of ethics finalized                                  │
+│  □ Form ADV prepared (if applicable)                         │
+│  □ LP onboarding process documented                          │
+│  □ Capital call procedures documented                        │
+│  □ Insurance policies bound                                  │
+│                                                               │
+│  CLOSE DATE                                                   │
+│  ──────────────────────────────────────────────────────────  │
+│  □ All subscription documents executed                       │
+│  □ KYC/AML completed for all LPs                            │
+│  □ Compliance manual adopted                                 │
+│  □ Code of ethics signed by all employees                    │
+│  □ Fund administrator notified of close                      │
+│                                                               │
+│  WITHIN 15 DAYS OF CLOSE                                      │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Form D filed with SEC                                     │
+│  □ Blue sky filings in all LP states                         │
+│  □ Welcome letters sent to LPs                               │
+│  □ Portal credentials distributed                            │
+│  □ First LP communication scheduled                          │
+│                                                               │
+│  WITHIN 30 DAYS OF CLOSE                                      │
+│  ──────────────────────────────────────────────────────────  │
+│  □ First capital call issued (if investing)                  │
+│  □ Investor portal fully populated                           │
+│  □ Quarterly reporting calendar established                  │
+│  □ LPAC meeting scheduled                                    │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Nexus Simulation Connection
+
+### Try the Fund Launch & First Portfolio Simulation
+
+Apply the concepts from this lesson in an interactive exercise:
+
+**[Fund Launch & First Portfolio Simulation](../../../cases/nexus/simulations/pe-fund-launch.md)**
+
+In this 90-minute simulation, you will:
+1. Execute first close documentation and procedures
+2. Calculate and issue capital calls for your first investment
+3. Model equalization for second-close LPs
+4. Set up day-one operational infrastructure
+5. Acquire HCH Enterprises as your platform investment
+
+---
+
 ## PE Application
 
 ### How Established Firms Manage Closings

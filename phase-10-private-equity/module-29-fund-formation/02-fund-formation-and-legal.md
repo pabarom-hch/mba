@@ -250,6 +250,194 @@ The PPM is the fund's offering document — the primary disclosure document prov
 └───────────────────────────────────────────────────────┘
 ```
 
+#### Investment Adviser vs. RIA vs. ERA: Complete Decision Framework
+
+Understanding the differences between these registration categories is critical for compliance:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│        IA vs. RIA vs. ERA: REGISTRATION DECISION TREE        │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│                    START HERE                                 │
+│                        │                                      │
+│                        ▼                                      │
+│          ┌─────────────────────────────┐                     │
+│          │ Do you provide investment   │                     │
+│          │ advice for compensation?    │                     │
+│          └─────────────┬───────────────┘                     │
+│                        │                                      │
+│              YES ──────┴────── NO → Not an IA                │
+│                        │                                      │
+│                        ▼                                      │
+│          ┌─────────────────────────────┐                     │
+│          │ Total PE fund AUM ≥ $150M?  │                     │
+│          └─────────────┬───────────────┘                     │
+│                        │                                      │
+│              YES ──────┼────── NO                            │
+│                │       │       │                              │
+│                ▼       │       ▼                              │
+│    ┌──────────────┐    │    ┌──────────────┐                 │
+│    │  REGISTERED  │    │    │    EXEMPT    │                 │
+│    │   ADVISER    │    │    │   REPORTING  │                 │
+│    │    (RIA)     │    │    │   ADVISER    │                 │
+│    │              │    │    │    (ERA)     │                 │
+│    │ Full SEC     │    │    │              │                 │
+│    │ registration │    │    │ File Form ADV│                 │
+│    │ Form ADV     │    │    │ (abbreviated)│                 │
+│    │ Parts 1 & 2  │    │    │ Part 1A only │                 │
+│    │ Form PF      │    │    │ No brochure  │                 │
+│    └──────────────┘    │    └──────────────┘                 │
+│                        │                                      │
+│                        │ ALTERNATIVE: VC Adviser             │
+│                        │ Exemption if ONLY advising          │
+│                        │ venture capital funds               │
+│                        │                                      │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  COMPARISON: RIA vs. ERA REQUIREMENTS                         │
+│  ┌────────────────────────────────────────────────────┐      │
+│  │ REQUIREMENT         RIA              ERA           │      │
+│  │ ─────────────────────────────────────────────────  │      │
+│  │ Form ADV Part 1A    Required         Required      │      │
+│  │ Form ADV Part 2     Required         NOT required  │      │
+│  │ Form PF             Required         NOT required  │      │
+│  │ Annual update       Required         Required      │      │
+│  │ SEC examination     Subject to       Subject to    │      │
+│  │ Compliance program  Full program     Basic program │      │
+│  │ CCO requirement     Required         Recommended   │      │
+│  │ Custody rule        Full compliance  Lighter       │      │
+│  │ Books/records       Full retention   Full retention│      │
+│  │ Annual fee          ~$225            ~$225         │      │
+│  └────────────────────────────────────────────────────┘      │
+│                                                               │
+│  KEY INSIGHT: Most emerging PE managers start as ERAs        │
+│  and transition to RIA status when crossing $150M AUM        │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**State Registration Considerations:**
+
+| AUM Level | Federal vs. State | Notes |
+|-----------|------------------|-------|
+| < $25M | State registration only | Register in state of principal office |
+| $25M - $100M | State registration | May register with SEC if 15+ states |
+| $100M - $150M (PE) | State or SEC choice | PE adviser exemption available federally |
+| ≥ $150M (PE) | SEC registration required | No longer exempt |
+
+#### Beyond Regulation D: Alternative Offering Exemptions
+
+Most PE funds rely on Regulation D exemptions (Rule 506(b) or 506(c)), but emerging managers should understand alternative paths for raising capital, particularly from non-accredited investors:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│     SECURITIES OFFERING EXEMPTIONS COMPARISON                 │
+│     (Reg D, Reg A/A+, Reg CF)                                │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│                    REG D (506b)   REG D (506c)   REG A+      │
+│  ─────────────────────────────────────────────────────────   │
+│  Max Raise            Unlimited    Unlimited     $75M/year   │
+│  Investor Type        Accredited   Accredited    Anyone      │
+│                       + 35 sophis  ONLY          (limits)    │
+│  General Solicitation NO           YES           YES         │
+│  SEC Filing           Form D       Form D        Full review │
+│  Ongoing Reporting    None         None          Semi-annual │
+│  State Preemption     Yes (506)    Yes (506)     Yes (Tier 2)│
+│  Typical Use          PE funds     Large raises  Growth cos  │
+│                                                               │
+│                    REG CF            RULE 504                 │
+│  ─────────────────────────────────────────────────────────   │
+│  Max Raise            $5M/year      $10M/year                │
+│  Investor Type        Anyone        Varies by state          │
+│  General Solicitation YES           Depends                  │
+│  SEC Filing           Form C        Form D                   │
+│  Ongoing Reporting    Annual        None                     │
+│  State Preemption     No            No                       │
+│  Typical Use          Startups      Small raises             │
+│                                                               │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  NON-ACCREDITED INVESTOR OPTIONS:                             │
+│                                                               │
+│  ┌─────────────────────────────────────────────────────┐     │
+│  │ REGULATION A+ (TIER 2)                               │     │
+│  ├─────────────────────────────────────────────────────┤     │
+│  │ • Raise up to $75M per year                         │     │
+│  │ • Can include non-accredited investors              │     │
+│  │   (10% of income/net worth limit per investor)      │     │
+│  │ • Requires SEC qualification (mini-IPO process)     │     │
+│  │ • Semi-annual reporting required                    │     │
+│  │ • Securities can be freely traded                   │     │
+│  │ • Cost: $50K-$150K+ for qualification              │     │
+│  │ • Timeline: 3-6 months for SEC review               │     │
+│  │                                                      │     │
+│  │ BEST FOR: Companies seeking broader investor base   │     │
+│  │ while maintaining private status                    │     │
+│  └─────────────────────────────────────────────────────┘     │
+│                                                               │
+│  ┌─────────────────────────────────────────────────────┐     │
+│  │ REGULATION CROWDFUNDING (REG CF)                    │     │
+│  ├─────────────────────────────────────────────────────┤     │
+│  │ • Raise up to $5M per year                          │     │
+│  │ • Anyone can invest (with limits based on income)   │     │
+│  │ • Must use SEC-registered intermediary (portal)     │     │
+│  │ • Investor limits:                                  │     │
+│  │   - <$124K income: Greater of $2,500 or 5% of       │     │
+│  │     lesser of income/net worth                      │     │
+│  │   - >$124K income: 10% of lesser of income/net worth│     │
+│  │ • Annual reporting required                         │     │
+│  │ • Cost: $15K-$50K+ (portal fees + legal)           │     │
+│  │                                                      │     │
+│  │ BEST FOR: Small raises, community investment models │     │
+│  │ NOT TYPICAL FOR: PE funds (scale too small)         │     │
+│  └─────────────────────────────────────────────────────┘     │
+│                                                               │
+│  ┌─────────────────────────────────────────────────────┐     │
+│  │ REG D 506(b) WITH SOPHISTICATED INVESTORS           │     │
+│  ├─────────────────────────────────────────────────────┤     │
+│  │ • Unlimited raise amount                            │     │
+│  │ • Up to 35 non-accredited "sophisticated" investors │     │
+│  │   plus unlimited accredited investors               │     │
+│  │ • "Sophisticated" = knowledge/experience in finance │     │
+│  │ • NO general solicitation allowed                   │     │
+│  │ • Pre-existing relationship required                │     │
+│  │ • Must provide same disclosure as Reg A            │     │
+│  │ • Higher liability risk with non-accredited         │     │
+│  │                                                      │     │
+│  │ BEST FOR: PE funds wanting a few non-accredited LPs │     │
+│  │ (family members, close associates)                  │     │
+│  └─────────────────────────────────────────────────────┘     │
+│                                                               │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  RECOMMENDATION FOR PE FUND FORMATION:                        │
+│                                                               │
+│  Fund Size         Recommended Exemption                      │
+│  ─────────────────────────────────────────────────────────   │
+│  <$10M             Reg D 506(b) or syndication                │
+│  $10M-$100M        Reg D 506(b) or 506(c)                    │
+│  $100M+            Reg D 506(b) with 3(c)(7)                 │
+│                                                               │
+│  Want non-accredited? Consider:                               │
+│  • Reg D 506(b) with up to 35 sophisticated investors        │
+│  • Reg A+ for broader access (but higher compliance cost)    │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Accreditation Thresholds (Current SEC Standards):**
+
+| Category | Threshold |
+|----------|-----------|
+| **Individual - Income** | $200K individual / $300K joint for past 2 years |
+| **Individual - Net Worth** | $1M+ excluding primary residence |
+| **Knowledgeable Employee** | Directors, officers of fund/GP |
+| **Licensed Professional** | Series 7, 65, 82 holders |
+| **Entity** | $5M+ assets (not formed to invest) |
+| **Qualified Purchaser** | $5M+ in investments (for 3(c)(7) funds) |
+
 #### Key Regulatory Requirements
 
 | Requirement | Applicability | Details |
@@ -395,6 +583,313 @@ TOTALS:
   Net to GP (carry only): $107M
   GP total (carry + fees): $107M + ~$42M fees = $149M
 ```
+
+---
+
+## Worked Example: SAF Partners Fund I — Legal Structure & Formation
+
+> This extended case study follows SAF Partners through the legal formation process. For full fund details, see [SAF Fund Profile](saf-fund-profile.md).
+
+### SAF Fund Structure Selection
+
+**Decision Process:**
+
+| Question | SAF Decision | Rationale |
+|----------|-------------|-----------|
+| **Blind pool or syndication?** | Blind pool | Institutional LP base; GP discretion needed |
+| **Closed-end or open-end?** | Closed-end (10 years) | Standard for buyout strategy |
+| **Delaware LP or LLC?** | Delaware LP | Industry standard; clear GP/LP roles |
+| **3(c)(1) or 3(c)(7)?** | 3(c)(7) | Want 25+ LPs; all qualified purchasers |
+| **SEC registration?** | Exempt Reporting Adviser | <$150M AUM; file abbreviated Form ADV |
+| **Offshore parallel?** | No | No foreign LPs in Fund I; consider for Fund II |
+
+### SAF LPA Term Sheet
+
+| Term | SAF Fund I | Notes |
+|------|-----------|-------|
+| **Fund Name** | SAF Partners Fund I, LP | |
+| **GP Entity** | SAF Partners Management, LLC | Delaware LLC |
+| **Target Size** | $75M | Hard cap $90M |
+| **Minimum LP Commitment** | $1M | $500K for employees of portfolio companies |
+| **Investment Period** | 4 years from final close | |
+| **Fund Term** | 10 years + 2× one-year extensions | LPAC approval for extensions |
+| **Management Fee** | 2.0% on committed (Years 1-4); 1.5% on invested cost (Years 5-10) | |
+| **Organizational Expenses** | Capped at $500K | GP pays excess |
+| **Carried Interest** | 20% | |
+| **Preferred Return** | 8% compounded annually | |
+| **Waterfall** | European (whole-fund) | ILPA-preferred |
+| **Catch-Up** | 100% to GP | |
+| **GP Commitment** | 2.5% minimum ($1.875M) | |
+| **Clawback** | Full clawback secured by escrow (30% of carry) | |
+| **Key Persons** | Marcus Chen, Sarah Rodriguez | Trigger: either departs without replacement within 90 days |
+| **LPAC** | 5 members (top LPs by commitment) | Semi-annual meetings |
+| **No-Fault Termination** | 75% LP vote | |
+| **For-Cause Termination** | Simple majority for fraud, felony, gross negligence | |
+| **Investment Limits** | Max 20% per deal; min 8 investments | |
+| **Co-Investment** | Pro-rata rights for LPs >$5M commitment | |
+| **Fee Offset** | 100% of transaction and monitoring fees | |
+
+### SAF Service Provider Selection
+
+| Provider | Selected Firm | Annual Cost | Selection Rationale |
+|----------|--------------|-------------|-------------------|
+| **Fund Counsel** | Ropes & Gray | $175K (formation) + $50K/yr | PE fund specialist; ILPA expertise |
+| **Fund Administrator** | Citco Fund Services | $75K/yr | Mid-market focus; good technology |
+| **Auditor** | RSM US | $60K/yr | Emerging manager experience |
+| **Tax Advisor** | Andersen Tax | $45K/yr | K-1 expertise |
+| **Compliance (Outsourced CCO)** | ACA Compliance | $40K/yr | SEC exam experience |
+| **D&O/E&O Insurance** | Marsh | $35K/yr | Standard emerging manager coverage |
+| **Technology (CRM/Portal)** | Juniper Square | $25K/yr | LP portal + reporting |
+
+**Total Formation Cost:** ~$280K (legal + setup)
+**Total Annual Operating Cost:** ~$330K (service providers only)
+
+### SAF Waterfall Example
+
+**Scenario:** Fund performs at target (2.5x gross MOIC over 5 years)
+
+```
+SAF PARTNERS FUND I — DISTRIBUTION WATERFALL
+$75M Fund, European Waterfall, 8% Preferred, 100% Catch-Up, 20% Carry
+
+Assumptions:
+  Capital called: $72M (96% of commitments)
+  Total realizations: $180M (2.5x gross)
+  Fund life: 5.5 years average
+
+STEP 1: RETURN OF CAPITAL
+  LP capital returned: $72M
+  Remaining: $180M - $72M = $108M
+
+STEP 2: PREFERRED RETURN (8% compounded)
+  LP preferred on $72M over 5.5 years:
+  $72M × (1.08^5.5 - 1) = $72M × 0.519 = $37.4M
+  LPs receive: $37.4M
+  Remaining: $108M - $37.4M = $70.6M
+
+STEP 3: GP CATCH-UP (100% to GP)
+  Total profits: $108M
+  GP target: 20% × $108M = $21.6M
+  GP receives: $21.6M (100% until caught up)
+  Remaining: $70.6M - $21.6M = $49.0M
+
+STEP 4: 80/20 SPLIT
+  LPs receive: $49.0M × 80% = $39.2M
+  GP receives: $49.0M × 20% = $9.8M
+
+TOTALS:
+┌─────────────────────────────────────────┐
+│           LP          GP (Carry)        │
+│  Step 1:   $72.0M     $0               │
+│  Step 2:   $37.4M     $0               │
+│  Step 3:    $0        $21.6M           │
+│  Step 4:   $39.2M     $9.8M            │
+│  ────────────────────────────           │
+│  Total:   $148.6M     $31.4M           │
+│                                         │
+│  LP Net MOIC: $148.6M / $72M = 2.06x   │
+│  LP Net IRR: ~16% (estimated)          │
+│  GP Carry Total: $31.4M                │
+│  GP Carry %: 31.4/108 = 29% of profits │
+│                                         │
+│  GP Total Economics:                    │
+│    Carry:         $31.4M               │
+│    Mgmt Fees:     ~$8.5M (over 10 yr)  │
+│    Total GP:      ~$40M                │
+└─────────────────────────────────────────┘
+```
+
+### SAF Formation Timeline
+
+```
+SAF PARTNERS FUND I — FORMATION TIMELINE
+
+APRIL 2026
+├─ Week 1-2: Engage fund counsel (Ropes & Gray)
+│   • Initial call to discuss structure
+│   • Engagement letter signed
+│   • Conflict check completed
+│
+├─ Week 3-4: Structure decisions
+│   • Delaware LP vs. alternatives
+│   • 3(c)(1) vs. 3(c)(7) decision
+│   • Fee structure finalized
+
+MAY 2026
+├─ Week 1-2: Draft LPA
+│   • First draft from counsel
+│   • SAF team review
+│   • Comments compiled
+│
+├─ Week 3-4: Draft PPM
+│   • Risk factors drafted
+│   • Strategy section refined
+│   • Team bios finalized
+
+JUNE 2026
+├─ Week 1-2: Documents finalized
+│   • LPA final form
+│   • PPM final form
+│   • Subscription agreement template
+│
+├─ Week 3-4: Service provider setup
+│   • Fund admin onboarded
+│   • Bank accounts opened
+│   • Insurance bound
+
+JULY 2026
+├─ First Close: July 15
+│   • $35M committed (7 LPs)
+│   • Form D filed (July 30)
+│   • Blue sky filings completed
+│
+└─ HCH Acquisition Signed: July 20
+    • LOI executed
+    • Diligence begins
+```
+
+---
+
+## Templates & Checklists
+
+### Template: LPA Term Sheet Comparison
+
+Use this template to compare your proposed terms against market standards:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           LPA TERM SHEET COMPARISON                           │
+│           Fund Name: _______________________                  │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  TERM              YOUR FUND    MARKET STD    LP-FRIENDLY?   │
+│  ──────────────────────────────────────────────────────────  │
+│  Management Fee                                               │
+│    Investment Period  [____]%    2.0%          □ Y  □ N      │
+│    Post-Investment    [____]%    1.5%          □ Y  □ N      │
+│    Basis              [______]   Committed→    □ Y  □ N      │
+│                                  Invested                     │
+│                                                               │
+│  Carried Interest     [____]%    20%           □ Y  □ N      │
+│  Preferred Return     [____]%    8%            □ Y  □ N      │
+│  Waterfall            [______]   European      □ Y  □ N      │
+│  Catch-Up             [____]%    80-100%       □ Y  □ N      │
+│                                                               │
+│  GP Commitment        [____]%    2%+           □ Y  □ N      │
+│  Clawback             [______]   Full + escrow □ Y  □ N      │
+│  Org Expense Cap      $[____]K   $500K-1M      □ Y  □ N      │
+│  Fee Offset           [____]%    100%          □ Y  □ N      │
+│                                                               │
+│  Key Persons          [#____]    2-3           □ Y  □ N      │
+│  LPAC Size            [#____]    3-7           □ Y  □ N      │
+│  No-Fault Term.       [____]%    75-80%        □ Y  □ N      │
+│  Investment Limits    [____]%    10-20%        □ Y  □ N      │
+│                                                               │
+│  OVERALL ASSESSMENT:                                          │
+│  □ LP-friendly terms — strong positioning                    │
+│  □ Market-standard — acceptable                              │
+│  □ GP-favorable — may face LP pushback                       │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Checklist: Fund Formation Documentation
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           FUND FORMATION DOCUMENTATION CHECKLIST              │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  GOVERNING DOCUMENTS                            COMPLETE?     │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Limited Partnership Agreement (LPA)                       │
+│  □ Private Placement Memorandum (PPM)                        │
+│  □ Subscription Agreement template                           │
+│  □ Side Letter template                                      │
+│  □ GP LLC Operating Agreement                                │
+│  □ Investment Management Agreement                           │
+│                                                               │
+│  REGULATORY FILINGS                                           │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Form D (within 15 days of first sale)                     │
+│  □ Form ADV (if registering or filing as ERA)                │
+│  □ Blue sky filings (each state with LPs)                    │
+│  □ IARD registration                                         │
+│                                                               │
+│  COMPLIANCE DOCUMENTS                                         │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Compliance Manual                                         │
+│  □ Code of Ethics                                            │
+│  □ Personal Trading Policy                                   │
+│  □ Insider Trading Policy                                    │
+│  □ Privacy Policy                                            │
+│  □ Business Continuity Plan                                  │
+│  □ Cybersecurity Policy                                      │
+│  □ Advertising Policy                                        │
+│                                                               │
+│  SERVICE PROVIDER AGREEMENTS                                  │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Fund Administrator agreement                              │
+│  □ Auditor engagement letter                                 │
+│  □ Tax advisor engagement letter                             │
+│  □ CCO services agreement (if outsourced)                    │
+│  □ Bank account documentation                                │
+│  □ Insurance policies (D&O, E&O, cyber)                      │
+│                                                               │
+│  LP ONBOARDING                                                │
+│  ──────────────────────────────────────────────────────────  │
+│  □ KYC/AML procedures documented                             │
+│  □ Investor questionnaire template                           │
+│  □ W-9/W-8BEN collection process                             │
+│  □ OFAC screening process                                    │
+│  □ Accredited investor/QP verification                       │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Template: Service Provider Evaluation Matrix
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           SERVICE PROVIDER EVALUATION MATRIX                  │
+│           Provider Type: _______________________              │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  CRITERION         WT    FIRM A   FIRM B   FIRM C           │
+│  ──────────────────────────────────────────────────────────  │
+│  PE Specialization  25%  [1-5]    [1-5]    [1-5]            │
+│  Technology/Platform 20%  [1-5]    [1-5]    [1-5]            │
+│  LP Reputation      20%  [1-5]    [1-5]    [1-5]            │
+│  Cost               15%  [1-5]    [1-5]    [1-5]            │
+│  References         10%  [1-5]    [1-5]    [1-5]            │
+│  Team Continuity    10%  [1-5]    [1-5]    [1-5]            │
+│  ──────────────────────────────────────────────────────────  │
+│  WEIGHTED TOTAL    100%  [___]    [___]    [___]            │
+│                                                               │
+│  ANNUAL COST            $[___]K  $[___]K  $[___]K           │
+│  SETUP COST             $[___]K  $[___]K  $[___]K           │
+│                                                               │
+│  SELECTION: _____________ RATIONALE: ___________________     │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Nexus Simulation Connection
+
+### Try the Fund Structuring Workshop Simulation
+
+Apply the concepts from this lesson in an interactive exercise:
+
+**[Fund Structuring Workshop Simulation](../../../cases/nexus/simulations/pe-fund-structuring.md)**
+
+In this 75-minute simulation, you will:
+1. Select the optimal fund structure for SAF Partners
+2. Draft key LPA terms and compare against ILPA standards
+3. Calculate waterfall distributions under multiple scenarios
+4. Select and evaluate service providers within a budget
+5. Build a compliance checklist for fund launch
 
 ---
 

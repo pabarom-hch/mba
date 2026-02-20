@@ -357,6 +357,287 @@ For each potential investment, evaluate:
 
 ---
 
+## Worked Example: SAF Partners Fund I — LPAC & HCH Governance
+
+> This extended case study follows SAF Partners' governance structures and HCH portfolio monitoring. For full fund details, see [SAF Fund Profile](saf-fund-profile.md).
+
+### SAF LPAC Formation
+
+**LPAC Composition (5 members):**
+
+| Member | LP | Commitment | Selection Rationale |
+|--------|-----|-----------|-------------------|
+| **Chair** | Emerging Manager Capital | $15M | Anchor LP; FoF governance expertise |
+| Member | Meridian Partners | $5M | Institutional FoF perspective |
+| Member | Chen Family Office | $4M | Operator background; deal experience |
+| Member | Williams Trust | $3M | Legal/compliance expertise |
+| Member | Clearwater Capital | $3M | PE fund operations experience |
+
+**LPAC Charter Highlights:**
+
+| Provision | SAF Fund I Terms |
+|-----------|-----------------|
+| **Meeting Frequency** | Semi-annually (minimum); quarterly during Year 1 |
+| **Quorum** | 3 of 5 members |
+| **Voting** | Majority (3 votes) for most matters |
+| **Compensation** | None; reasonable expenses reimbursed |
+| **Conflicts** | Members with conflicts recuse from related votes |
+| **Information Access** | Quarterly portfolio updates; full DDQ access |
+
+### First LPAC Meeting Agenda (Q4 2026)
+
+```
+SAF PARTNERS FUND I — LPAC MEETING
+Date: November 15, 2026
+Location: Virtual
+
+AGENDA:
+
+1. FUND STATUS UPDATE (15 min)
+   • First close: $35M (July 15)
+   • Second close: $25M (September 15)
+   • Current AUM: $60M (80% of target)
+   • Final close target: Q4 2026
+
+2. HCH ACQUISITION REVIEW (30 min)
+   • Deal overview: $4.72M EV; turnaround thesis
+   • Value creation plan: operational improvements
+   • 100-day plan progress
+   • Board composition and governance
+
+3. CONFLICT DISCLOSURE (15 min)
+   • Sarah Rodriguez — prior consulting relationship with HCH
+   • Resolution: Full disclosure; no fee offset required
+   • LPAC Vote Required: Approve conflict waiver
+
+4. VALUATION METHODOLOGY (15 min)
+   • HCH entry valuation: $4.72M (0.75x revenue)
+   • Q4 mark: Expected to hold at cost (< 90 days)
+   • Comparable company methodology for future marks
+
+5. PIPELINE UPDATE (15 min)
+   • 3 additional targets under review
+   • Expected deployment pace: 2 platforms in 2027
+
+6. OPEN DISCUSSION (15 min)
+   • LP questions
+   • Market outlook
+```
+
+### HCH Portfolio Monitoring Framework
+
+**Board Composition:**
+
+| Seat | Representative | Role |
+|------|---------------|------|
+| Chair | Marcus Chen (SAF) | Lead GP representative |
+| Director | Sarah Rodriguez (SAF) | Operations oversight |
+| Director | David Park (SAF) | Financial oversight |
+| Director | [HCH CEO] | Management |
+| Observer | Chen Family Office | LP co-investor (per side letter) |
+
+**Monthly Reporting Package (HCH):**
+
+| Report | Contents | Due Date |
+|--------|----------|----------|
+| **Flash Report** | Revenue, bookings, cash, key metrics | 5th business day |
+| **Financial Package** | P&L, balance sheet, cash flow | 15th business day |
+| **Pipeline Report** | Sales pipeline, proposals, win/loss | 15th business day |
+| **KPI Dashboard** | Utilization, bill rates, employee count | 15th business day |
+
+**HCH KPI Dashboard (Sample):**
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           HCH ENTERPRISES — KPI DASHBOARD                     │
+│           Period: December 2026 (Month 1 Post-Close)          │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  FINANCIAL                    ACTUAL   BUDGET   VARIANCE     │
+│  ──────────────────────────────────────────────────────────  │
+│  Revenue (Monthly)            $524K    $525K    (0.2%)       │
+│  Gross Margin                 36.8%    36.4%    +0.4%        │
+│  EBITDA                      ($31K)   ($35K)    +$4K         │
+│  Cash Balance                 $412K    $400K    +$12K        │
+│                                                               │
+│  OPERATIONAL                  ACTUAL   TARGET   STATUS       │
+│  ──────────────────────────────────────────────────────────  │
+│  Billable Utilization         74%      75%      ⚠ YELLOW    │
+│  Average Bill Rate            $127     $125     ✓ GREEN      │
+│  Employee Count               44       45       ✓ GREEN      │
+│  Voluntary Turnover (Ann.)    8%       <15%     ✓ GREEN      │
+│                                                               │
+│  SALES PIPELINE               ACTUAL   TARGET   STATUS       │
+│  ──────────────────────────────────────────────────────────  │
+│  Active Proposals             $1.8M    $2.0M    ⚠ YELLOW    │
+│  Win Rate (Trailing 90d)      18%      20%      ⚠ YELLOW    │
+│  New Contracts Signed         $0       $50K     ✗ RED        │
+│                                                               │
+│  100-DAY PLAN PROGRESS                                       │
+│  ──────────────────────────────────────────────────────────  │
+│  Day 30 Milestones:           4/5 complete (80%)             │
+│  Blockers:                    Benefits renegotiation delayed │
+│  Key Wins:                    CFO candidate identified       │
+│                                                               │
+│  EARLY WARNING INDICATORS                                    │
+│  ──────────────────────────────────────────────────────────  │
+│  □ No customer churn signals                                 │
+│  □ All key employees retained                                │
+│  ⚠ Sales pipeline below target — remediation plan needed    │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Conflict Management: HCH Add-On Acquisition
+
+**Scenario:** SAF identifies GovTech Solutions as a potential add-on for HCH. GovTech's CEO is a former colleague of Sarah Rodriguez.
+
+**Conflict Analysis:**
+
+| Factor | Assessment |
+|--------|-----------|
+| Nature of conflict | Personal relationship (prior colleague) |
+| Materiality | Low — professional relationship, no financial interest |
+| LPA provision | Requires LPAC notification for related-party transactions |
+| Information barrier | Not required — different companies |
+| Recommended action | Disclose to LPAC; no vote required |
+
+**Resolution:**
+1. Sarah discloses relationship in deal memo
+2. LPAC notified at next meeting (information item)
+3. Marcus leads negotiation to ensure arm's-length terms
+4. Third-party valuation obtained to support price
+5. Documentation maintained in compliance files
+
+---
+
+## Templates & Checklists
+
+### Template: LPAC Meeting Agenda
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              LPAC MEETING AGENDA TEMPLATE                     │
+│              Fund: _______________  Date: _______________    │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  ATTENDEES:                                                   │
+│  □ [Member 1 — Chair]                                        │
+│  □ [Member 2]                                                │
+│  □ [Member 3]                                                │
+│  □ [Member 4]                                                │
+│  □ [Member 5]                                                │
+│  □ GP Representatives: _______________________               │
+│                                                               │
+│  AGENDA:                                        TIME          │
+│  ──────────────────────────────────────────────────────────  │
+│  1. Fund Performance Review                     [__] min     │
+│     • AUM, deployment, and capital status                    │
+│     • IRR/MOIC (gross and net)                               │
+│     • Comparison to plan                                     │
+│                                                               │
+│  2. Portfolio Update                            [__] min     │
+│     • Company-by-company summary                             │
+│     • Key developments and milestones                        │
+│     • Risk factors and early warnings                        │
+│                                                               │
+│  3. Valuation Discussion                        [__] min     │
+│     • Methodology review                                     │
+│     • Material changes from prior quarter                    │
+│     • Third-party validation (if applicable)                 │
+│                                                               │
+│  4. Conflict Approvals                          [__] min     │
+│     ACTION ITEMS REQUIRING VOTE:                             │
+│     □ [Conflict 1]: _______________________                  │
+│     □ [Conflict 2]: _______________________                  │
+│                                                               │
+│  5. GP Updates                                  [__] min     │
+│     • Team changes                                           │
+│     • Compliance matters                                     │
+│     • Fundraising status (if applicable)                     │
+│                                                               │
+│  6. Open Discussion                             [__] min     │
+│     • LP questions                                           │
+│     • Market outlook                                         │
+│                                                               │
+│  MATERIALS DISTRIBUTED:                                       │
+│  □ Quarterly report                                          │
+│  □ Portfolio summary                                         │
+│  □ Valuation memo                                            │
+│  □ Conflict disclosure memo                                  │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Checklist: Portfolio Company Monitoring
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           PORTFOLIO COMPANY MONITORING CHECKLIST              │
+│           Company: _______________  Period: _______________  │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  MONTHLY REQUIREMENTS                            COMPLETE?   │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Flash report received (by 5th business day)              │
+│  □ Full financial package received (by 15th)                │
+│  □ KPI dashboard updated                                     │
+│  □ Variance analysis reviewed                                │
+│  □ Deal team check-in call completed                        │
+│  □ Early warning indicators assessed                        │
+│                                                               │
+│  QUARTERLY REQUIREMENTS                                       │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Board meeting held                                        │
+│  □ Board package distributed 5 days in advance              │
+│  □ Management presentation received                          │
+│  □ Budget vs. actual review completed                        │
+│  □ Strategic initiatives progress reviewed                   │
+│  □ Capital needs assessment                                  │
+│  □ Valuation updated                                         │
+│                                                               │
+│  ANNUAL REQUIREMENTS                                          │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Annual budget approved by board                          │
+│  □ Strategic plan reviewed                                   │
+│  □ Management team assessment                                │
+│  □ Compensation review completed                             │
+│  □ Third-party valuation (if required)                      │
+│  □ Exit readiness assessment                                 │
+│                                                               │
+│  EARLY WARNING CHECKLIST                                      │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Revenue within 10% of plan?                              │
+│  □ EBITDA margin within 200bps of target?                   │
+│  □ Key customer retention stable?                            │
+│  □ No unplanned C-suite departures?                         │
+│  □ Covenant compliance maintained?                           │
+│  □ Cash runway > 6 months?                                   │
+│                                                               │
+│  If ANY early warning triggered → Escalate to IC            │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Nexus Simulation Connection
+
+### Try the Fund Governance & Conflict Management Simulation
+
+Apply the concepts from this lesson in an interactive exercise:
+
+**[Fund Governance Simulation](../../../cases/nexus/simulations/pe-fund-governance.md)**
+
+In this 75-minute simulation, you will:
+1. Structure an LPAC and conduct your first meeting
+2. Design a portfolio monitoring framework for HCH
+3. Navigate conflict of interest scenarios
+4. Perform quarterly valuations using ASC 820 methodology
+5. Respond to an early warning situation
+
+---
+
 ## PE Application
 
 ### Governance at Scale — Multi-Fund Platforms

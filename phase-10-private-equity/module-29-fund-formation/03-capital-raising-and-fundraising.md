@@ -314,6 +314,251 @@ Many institutional LPs have dedicated emerging manager programs:
 └─────────────────────────────────────────┘
 ```
 
+### Capital Raising Matrix
+
+The Capital Raising Matrix shows the progression of LP sources as fund size grows. Each fund size level has a natural LP base:
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│                    CAPITAL RAISING MATRIX                         │
+│           (Fund Size × LP Type Progression)                       │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│   FUND SIZE                                                       │
+│      │                                                            │
+│   $1B│                              ┌──────────────────────────┐ │
+│      │                              │ SOVEREIGN WEALTH         │ │
+│      │                              │ MEGA PENSIONS            │ │
+│      │                              │ LARGE INSURANCE          │ │
+│      │                        ┌─────┴──────────────────────────┘ │
+│ $500M│                        │ PUBLIC PENSIONS                  │ │
+│      │                        │ LARGE ENDOWMENTS                 │ │
+│      │                  ┌─────┴─────────────────────────────────┐│
+│      │                  │ CORPORATE PENSIONS                    ││
+│ $250M│                  │ INSURANCE COMPANIES                   ││
+│      │            ┌─────┴─────────────────────────────────────┐ ││
+│      │            │ FUND OF FUNDS                             │ ││
+│      │            │ ENDOWMENTS / FOUNDATIONS                  │ ││
+│ $100M│      ┌─────┴─────────────────────────────────────────┐ │ ││
+│      │      │ EMERGING MANAGER FoFs                         │ │ ││
+│      │      │ LARGE FAMILY OFFICES                          │ │ ││
+│  $50M│┌─────┴─────────────────────────────────────────────┐ │ │ ││
+│      ││ FAMILY OFFICES                                    │ │ │ ││
+│      ││ HNW INDIVIDUALS                                   │ │ │ ││
+│  $25M││ FRIENDS & FAMILY                                  │ │ │ ││
+│      │└───────────────────────────────────────────────────┘ │ │ ││
+│   $0 │                                                       │ │ ││
+│      └───────────────────────────────────────────────────────┴─┴─┘│
+│         SYNDICATION / ──── FUND I ──── FUND II ──── FUND III+    │
+│         DEAL-BY-DEAL                                              │
+│                                                                   │
+├───────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│   LP PROGRESSION BY FUND VINTAGE:                                 │
+│                                                                   │
+│   DEAL-BY-DEAL / SYNDICATION ($1M-$25M per deal)                 │
+│   └─ Friends & Family, HNW from personal network                 │
+│   └─ No institutional allocation process                          │
+│   └─ Relationship-driven decisions                                │
+│                                                                   │
+│   FUND I ($25M-$100M)                                             │
+│   └─ HNW individuals, Family Offices                              │
+│   └─ Emerging Manager FoFs (dedicated programs)                   │
+│   └─ Need: attributable track record, differentiated thesis       │
+│                                                                   │
+│   FUND II ($75M-$250M)                                            │
+│   └─ Traditional FoFs, Small Endowments/Foundations               │
+│   └─ First institutional LPs beyond EM specialists                │
+│   └─ Need: Fund I realized returns, LP re-ups                     │
+│                                                                   │
+│   FUND III+ ($200M-$1B+)                                          │
+│   └─ Public Pensions, Insurance Companies                         │
+│   └─ Sovereign Wealth enters at $500M+                            │
+│   └─ Need: consistent track record, scale, team depth             │
+│                                                                   │
+└───────────────────────────────────────────────────────────────────┘
+```
+
+**Key Insight:** You cannot skip levels. A Fund I GP targeting public pensions will waste time — those LPs have minimum fund size requirements ($300M+) and track record expectations (2+ prior funds) that Fund I GPs cannot meet.
+
+### Room, Connect, Close: The Capital Raising Funnel
+
+Beyond the 4 Ps framework for LP evaluation, successful fundraisers master the interpersonal dynamics of capital raising. The **Room, Connect, Close** framework structures the relationship-building process:
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│            ROOM, CONNECT, CLOSE FRAMEWORK                         │
+│              (The Capital Raising Relationship Funnel)            │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │                        1. ROOM                             │   │
+│  │                   "Get in the Room"                        │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │ GOAL: Secure the meeting / Get on the radar                │   │
+│  │                                                            │   │
+│  │ Tactics:                                                   │   │
+│  │ • Warm introductions (3x more effective than cold)        │   │
+│  │ • Conference networking (ILPA, SuperReturn, PEI)          │   │
+│  │ • Placement agent relationships                           │   │
+│  │ • LinkedIn/email outreach with clear value proposition    │   │
+│  │ • Thought leadership (articles, podcasts, speaking)       │   │
+│  │                                                            │   │
+│  │ Success Metric: Meetings scheduled / Outreach attempts    │   │
+│  │ Target: 20-30% response rate (warm), 5-10% (cold)         │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                            │                                      │
+│                            ▼                                      │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │                      2. CONNECT                            │   │
+│  │                  "Build the Relationship"                  │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │ GOAL: Establish trust, demonstrate competence              │   │
+│  │                                                            │   │
+│  │ Tactics:                                                   │   │
+│  │ • Listen more than you talk (understand LP needs first)   │   │
+│  │ • Share insights without being salesy                     │   │
+│  │ • Be responsive and reliable on follow-ups                │   │
+│  │ • Provide value beyond the pitch (intro, research)        │   │
+│  │ • Demonstrate authenticity — LPs invest in people         │   │
+│  │                                                            │   │
+│  │ Success Metric: Second meetings / First meetings          │   │
+│  │ Target: 40-60% advancement to next stage                  │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                            │                                      │
+│                            ▼                                      │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │                       3. CLOSE                             │   │
+│  │                   "Secure the Capital"                     │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │ GOAL: Move from interest to commitment                     │   │
+│  │                                                            │   │
+│  │ Tactics:                                                   │   │
+│  │ • Create urgency (closing deadlines, capacity limits)     │   │
+│  │ • Address remaining objections directly                   │   │
+│  │ • Provide social proof (other LP commitments)             │   │
+│  │ • Simplify the path to "yes" (clear next steps)           │   │
+│  │ • Ask for the commitment explicitly                       │   │
+│  │                                                            │   │
+│  │ Success Metric: Commitments / LPs in diligence            │   │
+│  │ Target: 50-70% close rate from DD stage                   │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                                                                   │
+└───────────────────────────────────────────────────────────────────┘
+```
+
+### The 7 Principles of Persuasion for Capital Raising
+
+Apply Cialdini's principles of influence specifically to LP fundraising:
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│         7 PRINCIPLES OF PERSUASION FOR CAPITAL RAISING            │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  1. RECIPROCITY                                                   │
+│  ─────────────────────────────────────────────────────────────   │
+│  "Give value first to receive value back"                        │
+│                                                                   │
+│  Application:                                                     │
+│  • Share proprietary market research before asking for meeting   │
+│  • Make introductions to portfolio companies or other GPs        │
+│  • Provide insights on their existing portfolio                  │
+│  • Be generous with your time and expertise                      │
+│                                                                   │
+│  2. COMMITMENT & CONSISTENCY                                      │
+│  ─────────────────────────────────────────────────────────────   │
+│  "Small yeses lead to big yeses"                                 │
+│                                                                   │
+│  Application:                                                     │
+│  • Start with small asks (coffee, intro call, feedback)          │
+│  • Get verbal commitments documented ("soft circle")             │
+│  • Reference LP's stated investment criteria in your pitch       │
+│  • Remind them of prior positive statements about your thesis    │
+│                                                                   │
+│  3. SOCIAL PROOF                                                  │
+│  ─────────────────────────────────────────────────────────────   │
+│  "Others like you have invested"                                 │
+│                                                                   │
+│  Application:                                                     │
+│  • Name anchor LP early in process (with permission)             │
+│  • Share that "similar endowments" are evaluating                │
+│  • Reference LP referenceable relationships                      │
+│  • Announce closes promptly to create momentum                   │
+│                                                                   │
+│  4. AUTHORITY                                                     │
+│  ─────────────────────────────────────────────────────────────   │
+│  "We are experts in this domain"                                 │
+│                                                                   │
+│  Application:                                                     │
+│  • Demonstrate deep sector expertise (not just deal experience)  │
+│  • Publish research, speak at conferences, advise                │
+│  • Reference credentials (degrees, certifications, awards)       │
+│  • Show advisory board with recognized industry experts          │
+│                                                                   │
+│  5. LIKING                                                        │
+│  ─────────────────────────────────────────────────────────────   │
+│  "People invest in people they like"                             │
+│                                                                   │
+│  Application:                                                     │
+│  • Find genuine common ground (school, geography, interests)     │
+│  • Be authentic — LPs can spot inauthenticity immediately        │
+│  • Show personality while remaining professional                 │
+│  • Remember personal details and follow up on them               │
+│                                                                   │
+│  6. SCARCITY                                                      │
+│  ─────────────────────────────────────────────────────────────   │
+│  "Capacity is limited"                                           │
+│                                                                   │
+│  Application:                                                     │
+│  • Hard cap creates genuine scarcity                             │
+│  • First close deadlines create decision urgency                 │
+│  • Anchor LP "reserved" capacity signals limited availability    │
+│  • Emerging manager + specialized niche = scarce opportunity     │
+│                                                                   │
+│  ⚠️ IMPORTANT: Artificial scarcity backfires. Only use genuine   │
+│     constraints; LPs share information and will catch tactics.   │
+│                                                                   │
+│  7. UNITY                                                         │
+│  ─────────────────────────────────────────────────────────────   │
+│  "We are part of the same tribe"                                 │
+│                                                                   │
+│  Application:                                                     │
+│  • Emphasize shared alumni networks (school, firm)               │
+│  • Reference common values (impact, diversity, innovation)       │
+│  • Position LP as partner in building something together         │
+│  • Create exclusivity through LP Advisory Committee              │
+│                                                                   │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  WARNING: These principles are for ETHICAL persuasion only.      │
+│  LPs are sophisticated; manipulative tactics destroy reputation. │
+│  The principles work because they align incentives — if your     │
+│  fund doesn't genuinely deliver value, no principle will help.   │
+│                                                                   │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+### Capital Raising Effectiveness Scorecard
+
+Rate your fundraising capabilities across the Room/Connect/Close dimensions:
+
+| Dimension | Self-Assessment (1-5) | Evidence | Improvement Action |
+|-----------|----------------------|----------|-------------------|
+| **ROOM - Network Breadth** | [ ] | How many LPs can you reach? | Build referral sources |
+| **ROOM - Brand Awareness** | [ ] | Are you known in your market? | Thought leadership |
+| **CONNECT - Trust Building** | [ ] | Do LPs want to work with you? | Authenticity, follow-through |
+| **CONNECT - Communication** | [ ] | Can you explain your thesis clearly? | Practice, simplify |
+| **CLOSE - Urgency Creation** | [ ] | Do LPs feel motivated to decide? | Deadlines, scarcity |
+| **CLOSE - Objection Handling** | [ ] | Can you overcome resistance? | Prepare for common objections |
+| **Overall Score** | [ /30] | | |
+
+**Interpretation:**
+- 25-30: Strong fundraising capability — focus on execution
+- 18-24: Solid foundation — targeted improvements needed
+- 12-17: Significant gaps — consider placement agent or intensive preparation
+- <12: Major preparation required before launching
+
 ### Fundraising Pipeline Dashboard
 
 | Stage | LP Name | Type | Size Estimate | Status | Next Step | Timeline |
@@ -355,6 +600,254 @@ Many institutional LPs have dedicated emerging manager programs:
 2. Re-engage 8 LPs who said "keep us posted" after first meeting
 3. Push hardest on 4 LPs in DD to convert before first close
 4. Consider anchor LP fee discount to accelerate commitment
+
+---
+
+## Worked Example: SAF Partners Fund I — Capital Raising Campaign
+
+> This extended case study follows SAF Partners through their complete fundraising process. For full fund details, see [SAF Fund Profile](saf-fund-profile.md).
+
+### SAF LP Targeting Strategy
+
+**Target Fund Size:** $75M
+**Target LP Count:** 18-25 LPs
+**Timeline:** 9 months from kickoff to final close
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           SAF PARTNERS LP TARGETING FUNNEL                    │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  UNIVERSE: 180 LPs identified                                │
+│    • 12 Emerging Manager FoFs                                │
+│    • 25 Traditional FoFs                                      │
+│    • 45 Family Offices (D.C./Mid-Atlantic focus)             │
+│    • 60 HNW from personal networks                           │
+│    • 38 Other (endowments, foundations, advisors)            │
+│                 │                                             │
+│                 ▼ Screen for fit (50% pass)                  │
+│  QUALIFIED: 90 LPs targeted                                  │
+│                 │                                             │
+│                 ▼ Outreach (30% response rate)               │
+│  MEETINGS: 27 first meetings                                 │
+│                 │                                             │
+│                 ▼ Advance (50% to second meeting)            │
+│  DILIGENCE: 14 LPs in active DD                             │
+│                 │                                             │
+│                 ▼ Convert (65% close rate)                   │
+│  COMMITTED: 9 initial LPs ($35M first close)                │
+│                 │                                             │
+│                 ▼ Subsequent closes                          │
+│  FINAL: 22 LPs ($75M total)                                  │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### SAF Pitch Deck Structure
+
+| Slide | Content | Key Message |
+|-------|---------|-------------|
+| **1. Cover** | SAF Partners Fund I, $75M Target | Professional, focused |
+| **2. Executive Summary** | Government IT roll-up; HCH platform deal | Clear strategy |
+| **3. The Opportunity** | $150B federal IT spend; 10,000+ targets | Large, fragmented market |
+| **4. Investment Thesis** | What/Why/How/Who/Returns | Differentiated approach |
+| **5. The Team** | Marcus, Sarah, David + Advisory Board | Relevant, complementary |
+| **6. Track Record** | Marcus's 8 deals, 2.4x MOIC; Sarah's 3 acquisitions | Attributable performance |
+| **7. HCH Platform Deal** | $6.3M revenue, turnaround opportunity | Proof of deal flow |
+| **8. Value Creation** | Operational playbook: margins, managed services, M&A | How returns are made |
+| **9. Fund Terms** | 2/20, 8% preferred, European waterfall | LP-friendly |
+| **10. Pipeline** | 5 additional targets; $400M+ total opportunity | Deployment visibility |
+
+### SAF Fundraising Timeline
+
+```
+SAF PARTNERS FUND I — FUNDRAISING TIMELINE
+
+APRIL 2026: Pre-Marketing
+├─ Week 1-2: Materials finalized
+│   • Pitch deck v1.0
+│   • Teaser document
+│   • DDQ (80% complete)
+├─ Week 3-4: Outreach begins
+│   • Personal network introductions
+│   • 15 initial LP conversations
+
+MAY 2026: Market Sounding
+├─ 25 LP conversations total
+├─ Thesis validation
+├─ Feedback: "Show us a deal"
+└─ Begin HCH preliminary diligence
+
+JUNE 2026: Active Fundraising Begins
+├─ Week 1-2: Anchor LP focus
+│   • 4 meetings with EM FoFs
+│   • Emerging Manager Capital interested
+├─ Week 3-4: Broaden outreach
+│   • Family office campaign (D.C. area)
+│   • Former colleague network
+
+JULY 2026: First Close
+├─ July 15: First Close — $35M (7 LPs)
+│   • Emerging Manager Capital: $15M (anchor)
+│   • 2 FoFs: $8M combined
+│   • 4 Family Offices: $12M combined
+├─ HCH acquisition LOI signed
+└─ Momentum builds
+
+AUGUST-SEPTEMBER 2026: Second Close
+├─ September 1: Second Close — $25M (9 additional LPs)
+│   • 3 FoFs: $12M
+│   • 5 Family Offices: $10M
+│   • 1 HNW: $3M
+└─ Running total: $60M
+
+OCTOBER-NOVEMBER 2026: Final Close
+├─ November 15: Final Close — $15M (6 additional LPs)
+│   • HNW network: $8M
+│   • Family Offices: $7M
+└─ Total: $75M (22 LPs)
+```
+
+### SAF Anchor LP Negotiation
+
+**Anchor LP: Emerging Manager Capital**
+- $500M AUM dedicated to emerging managers
+- Typical commitment: $15-25M (25-35% of target fund)
+
+**Negotiation Summary:**
+
+| Term | Standard | EMC Ask | SAF Counter | Final |
+|------|---------|---------|-------------|-------|
+| **Commitment** | — | $15M | Accept | $15M (20%) |
+| **Fee Discount** | 0 bps | 50 bps | 25 bps | 25 bps |
+| **LPAC Seat** | — | Required | Accept | Yes |
+| **Co-Invest Rights** | Pro-rata | Priority | Pro-rata | Pro-rata |
+| **Board Observer** | No | Yes | No | No |
+| **MFN** | — | Required | Accept | Yes |
+| **Reference Calls** | — | 5 references | Accept | Completed |
+
+**Key Insight:** SAF accepted 25bps fee discount (~$37.5K/year) in exchange for securing anchor commitment that unlocked subsequent closes. The anchor's reputation gave other LPs confidence to commit.
+
+### SAF DDQ Highlights
+
+**Track Record Presentation (DDQ Section):**
+
+```
+MARCUS CHEN — ATTRIBUTABLE TRACK RECORD (VISTA EQUITY)
+
+Deal        Entry    Exit     Invested  Realized  Gross    Gross
+            Year     Year     Capital   Capital   MOIC     IRR
+──────────────────────────────────────────────────────────────
+GovTech Inc   2015    2019    $45M      $135M     3.0x     32%
+SecureIT      2016    2020    $38M      $95M      2.5x     25%
+DataServ      2017    2021    $52M      $130M     2.5x     24%
+CloudGov      2018    2022    $41M      $90M      2.2x     18%
+FedSoft*      2019    2023    $55M      $110M     2.0x     15%
+InfoSec       2020    2024    $48M      $120M     2.5x     21%
+CyberDef      2021    Present $62M      $93M†     1.5x†    —
+TechGov       2022    Present $44M      $57M†     1.3x†    —
+──────────────────────────────────────────────────────────────
+TOTAL ATTRIBUTABLE              $385M    $830M    2.4x avg  23% avg
+(6 realized deals)                       (realized only)
+
+* Lead but shared decision-making
+† Unrealized, marked at current valuation
+```
+
+---
+
+## Templates & Checklists
+
+### Template: LP Pipeline Tracker
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              LP PIPELINE TRACKER — SUMMARY VIEW               │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  STAGE         COUNT    $M POTENTIAL    AVG. SIZE            │
+│  ──────────────────────────────────────────────────────────  │
+│  Universe      [___]    $[_____]M       $[___]M              │
+│  Qualified     [___]    $[_____]M       $[___]M              │
+│  Contacted     [___]    $[_____]M       $[___]M              │
+│  Meeting       [___]    $[_____]M       $[___]M              │
+│  In DD         [___]    $[_____]M       $[___]M              │
+│  Verbal        [___]    $[_____]M       $[___]M              │
+│  Committed     [___]    $[_____]M       $[___]M              │
+│                                                               │
+│  TARGET: $[___]M    SOFT-CIRCLED: $[___]M                   │
+│  FIRST CLOSE TARGET: $[___]M BY: _______________            │
+│                                                               │
+│  CONVERSION RATES (trailing 30 days):                        │
+│  Contact→Meeting: [___]%    Meeting→DD: [___]%              │
+│  DD→Verbal: [___]%          Verbal→Commit: [___]%           │
+│  End-to-End: [___]%                                          │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Checklist: Pitch Meeting Preparation
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              LP MEETING PREPARATION CHECKLIST                 │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  LP: _______________________  DATE: _______________          │
+│  TYPE: □ FoF □ Family Office □ Endowment □ Pension □ HNW    │
+│                                                               │
+│  PRE-MEETING RESEARCH                            COMPLETE?   │
+│  ──────────────────────────────────────────────────────────  │
+│  □ LP investment criteria reviewed                           │
+│  □ Current PE allocation / portfolio known                   │
+│  □ Recent investments in similar strategies identified       │
+│  □ Key decision-maker identified                             │
+│  □ Mutual connections identified                             │
+│  □ LP's typical commitment size known                        │
+│                                                               │
+│  MATERIALS PREPARED                                           │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Pitch deck (LP-appropriate version)                       │
+│  □ Teaser / executive summary                                │
+│  □ Track record summary                                      │
+│  □ DDQ (if requested in advance)                             │
+│  □ Pipeline overview                                         │
+│                                                               │
+│  ANTICIPATED QUESTIONS                                        │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Track record attribution prepared                         │
+│  □ Key person / team stability answer                        │
+│  □ Fund size rationale                                       │
+│  □ Competitive positioning                                   │
+│  □ Fee structure justification                               │
+│  □ First deal / pipeline discussion                          │
+│                                                               │
+│  POST-MEETING                                                 │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Thank you email sent (within 24 hours)                    │
+│  □ Follow-up materials sent (as promised)                    │
+│  □ CRM updated with meeting notes                            │
+│  □ Next step scheduled                                       │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Nexus Simulation Connection
+
+### Try the Capital Raising Roadshow Simulation
+
+Apply the concepts from this lesson in an interactive exercise:
+
+**[Capital Raising Roadshow Simulation](../../../cases/nexus/simulations/pe-capital-raising.md)**
+
+In this 90-minute simulation, you will:
+1. Segment the LP universe and build a targeting strategy
+2. Prepare pitch materials and practice objection handling
+3. Negotiate terms with different LP archetypes
+4. Manage a fundraising pipeline and track conversions
+5. Execute first close strategy and post-close communication
 
 ---
 

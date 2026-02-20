@@ -491,6 +491,316 @@ Terms Evolution:
 
 ---
 
+## Worked Example: SAF Partners Fund I — Year 2 Performance & Fund II Planning
+
+> This extended case study follows SAF Partners through Year 2 performance reporting and Fund II planning. For full fund details, see [SAF Fund Profile](saf-fund-profile.md).
+
+### SAF Fund I Performance Summary (End of Year 2)
+
+**Fund Status: December 2028**
+
+| Metric | Value | vs. Plan |
+|--------|-------|----------|
+| **Capital Committed** | $75M | 100% |
+| **Capital Called** | $52M | 69% |
+| **Capital Deployed (Investments)** | $45M | 60% |
+| **Remaining Commitment** | $23M | 31% |
+| **Realized Distributions** | $8M | Early exit |
+| **Unrealized NAV** | $62M | Mark-to-market |
+| **Total Value** | $70M | |
+
+**Performance Metrics:**
+
+```
+SAF PARTNERS FUND I — PERFORMANCE DASHBOARD
+As of December 31, 2028 (Year 2)
+
+RETURNS:
+┌────────────────────────────────────────────────┐
+│  Metric          Fund I    Benchmark   Quartile│
+│  ────────────────────────────────────────────  │
+│  Gross IRR       28.5%     15.2%       Q1      │
+│  Net IRR         22.3%     11.8%       Q1      │
+│  Gross MOIC      1.56x     1.25x       Q1      │
+│  Net MOIC        1.35x     1.15x       Q1      │
+│  DPI             0.15x     0.08x       Q1      │
+│  RVPI            1.19x     1.07x       Q1      │
+│  TVPI            1.35x     1.15x       Q1      │
+└────────────────────────────────────────────────┘
+
+Note: Benchmark is Cambridge Associates Lower Mid-Market
+Buyout Index, 2026 Vintage (median)
+
+J-CURVE STATUS:
+  Year 1: -0.12x (fees and expenses; HCH at cost)
+  Year 2: +0.35x (HCH marked up; add-on realized)
+  → Positive J-curve inflection achieved
+```
+
+### Portfolio Overview (Year 2)
+
+| Company | Investment | Invested | Current Value | MOIC | Status |
+|---------|-----------|----------|--------------|------|--------|
+| **HCH Enterprises** | Platform #1 | $5.5M | $11.0M | 2.0x | Value creation |
+| **GovTech Solutions** | HCH Add-on #1 | $2.2M | $3.3M | 1.5x | Integrated |
+| **DataServe Federal** | HCH Add-on #2 | $1.8M | — | Realized | Sold to strategic |
+| **SecureCloud Gov** | Platform #2 | $12.0M | $15.6M | 1.3x | Growth phase |
+| **CyberDefense Inc** | Platform #3 | $18.0M | $23.4M | 1.3x | 100-day plan |
+| **Pipeline** | Platform #4 | $5.5M | $5.5M | 1.0x | Under LOI |
+| **Reserves** | | $7.0M | | | Unfunded |
+| **Total** | | **$52.0M** | **$58.8M** | **1.56x** | |
+
+### HCH Turnaround Progress
+
+**HCH Value Creation Bridge:**
+
+```
+HCH ENTERPRISES — VALUE CREATION ANALYSIS
+Entry: December 2026  |  Current: December 2028
+
+ENTRY VALUATION:
+  Revenue:           $6.29M
+  EBITDA:           ($415K) ← Operating loss
+  EV/Revenue:        0.75x
+  Enterprise Value:  $4.72M
+
+CURRENT VALUATION (Year 2):
+  Revenue:           $9.8M     (+56%)
+  EBITDA:            $1.47M    (15% margin)
+  EV/EBITDA:         8.0x
+  Enterprise Value:  $11.76M
+
+VALUE CREATION ATTRIBUTION:
+
+  ┌────────────────────────────────────────────────────┐
+  │  Component              Value Add    % of Total    │
+  │  ────────────────────────────────────────────────  │
+  │  Revenue Growth         $2.5M         36%          │
+  │  (organic: $1.8M; add-on: $1.5M; synergies: -$0.8M)│
+  │                                                    │
+  │  Margin Expansion       $1.9M         27%          │
+  │  (from -6.6% to +15.0%)                           │
+  │                                                    │
+  │  Multiple Expansion     $2.6M         37%          │
+  │  (from 0.75x rev to 8.0x EBITDA)                  │
+  │  ────────────────────────────────────────────────  │
+  │  Total Value Created    $7.0M        100%          │
+  │  Entry EV:              $4.7M                      │
+  │  Current EV:           $11.7M                      │
+  │  MOIC:                  2.5x (on HCH standalone)   │
+  └────────────────────────────────────────────────────┘
+```
+
+### Quarterly LP Letter (Sample)
+
+```
+SAF PARTNERS FUND I
+Quarterly Update — Q4 2028
+
+Dear Limited Partners,
+
+We are pleased to report another strong quarter for SAF Partners
+Fund I, with net TVPI increasing to 1.35x and the portfolio
+continuing to exceed our value creation targets.
+
+KEY HIGHLIGHTS:
+• HCH Enterprises achieved 15% EBITDA margin — turnaround complete
+• DataServe Federal add-on realized at 2.1x MOIC (18-month hold)
+• CyberDefense Inc closed December 1; 100-day plan underway
+• Platform #4 (IT consulting, $18M revenue) under LOI
+
+PERFORMANCE:
+Our 22.3% net IRR ranks in the top quartile of 2026 vintage funds,
+driven by the successful HCH turnaround and disciplined execution
+of our government IT services thesis.
+
+DEPLOYMENT:
+We have deployed 60% of committed capital across 3 platforms and
+2 add-ons, with a fourth platform expected to close in Q1 2029.
+This pace positions us for Fund II discussions beginning mid-2029.
+
+LOOKING AHEAD:
+HCH is now generating strong cash flow and is positioned for a
+potential exit in 2030-2031. We are building the pipeline for
+continued add-on acquisitions across all platforms.
+
+We remain grateful for your partnership and confidence in SAF.
+
+Sincerely,
+Marcus Chen, Sarah Rodriguez, David Park
+SAF Partners
+```
+
+### Fund II Planning
+
+**Timing Assessment (Year 2):**
+
+| Factor | Status | Fund II Signal |
+|--------|--------|----------------|
+| Deployment | 60% committed; 4 platforms | ✓ In target window |
+| Realized returns | 1 exit at 2.1x MOIC | ✓ Early proof point |
+| DPI | 0.15x | ⚠ Below 0.20x ideal |
+| Net IRR | 22.3% (Q1) | ✓ Strong performance |
+| Team stability | All 3 partners retained; 2 VPs added | ✓ Team growth |
+| LP feedback | 90%+ satisfied per survey | ✓ Strong relationships |
+
+**Decision: Begin Fund II preparation in H1 2029; launch raise H2 2029**
+
+**Fund II Sizing Analysis:**
+
+```
+FUND II SIZE CALCULATION
+
+LP Re-Up Analysis:
+  Fund I LPs (ex-GP):              $73.1M committed
+  Expected re-up rate:             85%
+  Average re-up increase:          30%
+  Re-up capital:                   $73.1M × 85% × 1.3 = $80.8M
+
+New LP Acquisition:
+  Target new LPs:                  8-12
+  Average new commitment:          $6M
+  New LP capital:                  $60M
+
+GP Commitment:
+  Target:                          3% (increased from 2.5%)
+  GP capital:                      $4.5M
+
+TOTAL FUND II TARGET:              $145M (hard cap $175M)
+STEP-UP RATIO:                     1.9x (within 1.5-2.5x range)
+
+Capacity Validation:
+  Target deal size increase:       $5-15M → $8-20M (supported)
+  Team growth:                     3 → 5 professionals (hire 2)
+  Deployment pace:                 $145M / 4 years = $36M/year
+  Historical pace:                 $52M / 2 years = $26M/year ← achievable
+```
+
+---
+
+## Templates & Checklists
+
+### Template: Quarterly LP Report Structure
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           QUARTERLY LP REPORT TEMPLATE                        │
+│           Fund: _______________  Period: Q__ 20__            │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  SECTION 1: GP LETTER (2-3 pages)                            │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Market overview and outlook                               │
+│  □ Key fund highlights (3-5 bullets)                         │
+│  □ Portfolio activity summary                                │
+│  □ Deployment status and pipeline                            │
+│  □ Looking ahead / upcoming milestones                       │
+│                                                               │
+│  SECTION 2: FUND SUMMARY (1 page)                            │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Capital status (committed, called, distributed, NAV)      │
+│  □ Performance metrics (IRR, MOIC, DPI, RVPI, TVPI)         │
+│  □ Comparison to prior quarter                               │
+│  □ Benchmark comparison (Cambridge, Preqin)                  │
+│                                                               │
+│  SECTION 3: PORTFOLIO REVIEW (1-2 pages per company)         │
+│  ──────────────────────────────────────────────────────────  │
+│  For each portfolio company:                                 │
+│  □ Company overview and investment thesis                    │
+│  □ Financial performance vs. plan                            │
+│  □ Key developments and milestones                           │
+│  □ Valuation and MOIC                                        │
+│  □ Outlook and next steps                                    │
+│                                                               │
+│  SECTION 4: CASH FLOW SUMMARY (1 page)                       │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Capital calls (by purpose)                                │
+│  □ Distributions (by company)                                │
+│  □ Management fees                                           │
+│  □ Fund expenses                                             │
+│                                                               │
+│  SECTION 5: CAPITAL ACCOUNT (per LP)                         │
+│  ──────────────────────────────────────────────────────────  │
+│  □ Beginning balance                                         │
+│  □ Contributions this period                                 │
+│  □ Distributions this period                                 │
+│  □ Allocation of income/loss                                 │
+│  □ Ending balance                                            │
+│  □ Unfunded commitment                                       │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Checklist: Fund II Readiness Assessment
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           FUND II READINESS ASSESSMENT                        │
+│           Fund I Status: _______________                      │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  TRACK RECORD                    SCORE (1-5)    WEIGHT       │
+│  ──────────────────────────────────────────────────────────  │
+│  DPI (cash returned)             [___]          10%          │
+│  Net IRR vs. benchmark           [___]          15%          │
+│  Net MOIC vs. benchmark          [___]          15%          │
+│  Realized exit quality           [___]          10%          │
+│                                                               │
+│  TEAM                                                         │
+│  ──────────────────────────────────────────────────────────  │
+│  Key person retention            [___]          15%          │
+│  Team growth / succession        [___]          5%           │
+│  LP relationships                [___]          10%          │
+│                                                               │
+│  OPERATIONS                                                   │
+│  ──────────────────────────────────────────────────────────  │
+│  Reporting quality / timeliness  [___]          5%           │
+│  Compliance record               [___]          5%           │
+│  LP satisfaction (survey)        [___]          5%           │
+│                                                               │
+│  MARKET POSITION                                              │
+│  ──────────────────────────────────────────────────────────  │
+│  Pipeline strength               [___]          5%           │
+│  Competitive differentiation     [___]          5%           │
+│                                                               │
+│  WEIGHTED TOTAL:                 [___]/5.0                   │
+│                                                               │
+│  INTERPRETATION:                                              │
+│  4.5+: Exceptional — strong Fund II positioning              │
+│  4.0-4.4: Ready — proceed with Fund II raise                 │
+│  3.5-3.9: Proceed with caution — address gaps first          │
+│  <3.5: Not ready — continue building Fund I track record     │
+│                                                               │
+│  KEY GAPS TO ADDRESS:                                         │
+│  1. ________________________________________________         │
+│  2. ________________________________________________         │
+│  3. ________________________________________________         │
+│                                                               │
+│  RECOMMENDED FUND II TIMING: _______________                 │
+│  RECOMMENDED FUND II SIZE: $_______________M                 │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Nexus Simulation Connection
+
+### Try the Fund Performance & LP Relations Simulation
+
+Apply the concepts from this lesson in an interactive exercise:
+
+**[Fund Performance & LP Relations Simulation](../../../cases/nexus/simulations/pe-fund-performance.md)**
+
+In this 75-minute simulation, you will:
+1. Calculate and present SAF Fund I performance metrics
+2. Write a quarterly LP letter addressing underperformance
+3. Model the distribution waterfall for a partial exit
+4. Assess Fund II readiness and develop a sizing strategy
+5. Handle difficult LP conversations about fund extension
+
+---
+
 ## PE Application
 
 ### How Multi-Billion Dollar Platforms Manage LP Relations

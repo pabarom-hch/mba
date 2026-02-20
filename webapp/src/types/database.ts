@@ -504,3 +504,186 @@ export type UserProfile = Tables<"user_profiles">
 export type UserLessonProgress = Tables<"user_lesson_progress">
 export type UserNote = Tables<"user_notes">
 export type UserEnrollment = Tables<"user_curriculum_enrollments">
+
+// Fund Operating System types (added for PE Fund Builder & LP Pipeline)
+// Note: These reference tables that may not be in the local type definitions yet
+// Run `npx supabase gen types typescript` to regenerate full types
+
+export interface Fund {
+  id: string
+  user_id: string | null
+  name: string
+  description: string | null
+  target_size: number
+  hard_cap: number | null
+  minimum_commitment: number | null
+  status: 'building' | 'raising' | 'first_close' | 'final_close' | 'investing' | 'harvesting' | null
+  management_fee_rate: number | null
+  management_fee_basis: string | null
+  carried_interest_rate: number | null
+  preferred_return: number | null
+  gp_commitment_percent: number | null
+  waterfall_type: string | null
+  catch_up_rate: number | null
+  vintage_year: number | null
+  first_close_date: string | null
+  final_close_date: string | null
+  investment_period_years: number | null
+  fund_term_years: number | null
+  is_sample_data: boolean | null
+  created_at: string | null
+  updated_at: string | null
+}
+
+export interface FundBuilderPhase {
+  id: string
+  phase_number: number
+  name: string
+  description: string | null
+  lesson_slug: string | null
+  sort_order: number
+}
+
+export interface FundBuilderSection {
+  id: string
+  phase_id: string | null
+  name: string
+  description: string | null
+  sort_order: number
+}
+
+export interface FundBuilderQuestion {
+  id: string
+  section_id: string | null
+  question_text: string
+  question_type: 'text' | 'textarea' | 'select' | 'multiselect' | 'number' | 'date' | null
+  options: string[] | null
+  placeholder: string | null
+  help_text: string | null
+  is_required: boolean | null
+  sort_order: number
+}
+
+export interface LpOrganization {
+  id: string
+  user_id: string | null
+  fund_id: string | null
+  name: string
+  type: 'pension_public' | 'pension_corporate' | 'endowment' | 'foundation' | 'fund_of_funds' | 'fund_of_funds_em' | 'family_office' | 'hnw_individual' | 'insurance' | 'sovereign_wealth' | 'ria_wealth_mgmt' | 'other'
+  website: string | null
+  aum: number | null
+  typical_commitment_min: number | null
+  typical_commitment_max: number | null
+  emerging_manager_appetite: 'high' | 'moderate' | 'low' | 'none' | null
+  city: string | null
+  state: string | null
+  country: string | null
+  notes: string | null
+  is_sample_data: boolean | null
+  created_at: string | null
+  updated_at: string | null
+}
+
+export interface LpContact {
+  id: string
+  user_id: string | null
+  fund_id: string | null
+  organization_id: string | null
+  first_name: string
+  last_name: string
+  email: string | null
+  phone: string | null
+  linkedin_url: string | null
+  title: string | null
+  is_decision_maker: boolean | null
+  relationship_strength: 'cold' | 'warm' | 'hot' | 'existing' | null
+  referral_source: string | null
+  notes: string | null
+  is_sample_data: boolean | null
+  created_at: string | null
+  updated_at: string | null
+}
+
+export interface LpPipelineStage {
+  id: string
+  fund_id: string | null
+  name: string
+  description: string | null
+  sort_order: number
+  color: string | null
+  is_won_stage: boolean | null
+  is_lost_stage: boolean | null
+  created_at: string | null
+}
+
+export interface LpStageChecklistTemplate {
+  id: string
+  stage_id: string | null
+  item_text: string
+  sort_order: number
+  is_required: boolean | null
+}
+
+export interface LpOpportunity {
+  id: string
+  user_id: string | null
+  fund_id: string | null
+  contact_id: string | null
+  organization_id: string | null
+  stage_id: string | null
+  name: string
+  potential_commitment: number | null
+  probability: number | null
+  expected_close_date: string | null
+  status: 'active' | 'won' | 'lost' | 'on_hold' | null
+  lost_reason: string | null
+  won_date: string | null
+  actual_commitment: number | null
+  last_activity_date: string | null
+  next_follow_up_date: string | null
+  notes: string | null
+  is_sample_data: boolean | null
+  created_at: string | null
+  updated_at: string | null
+}
+
+export interface LpOpportunityChecklistItem {
+  id: string
+  opportunity_id: string | null
+  template_id: string | null
+  stage_id: string | null
+  item_text: string
+  is_completed: boolean | null
+  completed_at: string | null
+  sort_order: number
+}
+
+export interface LpActivity {
+  id: string
+  user_id: string | null
+  opportunity_id: string | null
+  contact_id: string | null
+  type: 'call' | 'email' | 'meeting' | 'presentation' | 'dd_request' | 'docs_sent' | 'docs_received' | 'site_visit' | 'note' | 'other'
+  subject: string | null
+  description: string | null
+  activity_date: string | null
+  outcome: string | null
+  next_steps: string | null
+  created_at: string | null
+}
+
+// LP Type display names
+export const LP_TYPE_LABELS: Record<LpOrganization['type'], string> = {
+  pension_public: 'Public Pension',
+  pension_corporate: 'Corporate Pension',
+  endowment: 'Endowment',
+  foundation: 'Foundation',
+  fund_of_funds: 'Fund of Funds',
+  fund_of_funds_em: 'Fund of Funds (EM)',
+  family_office: 'Family Office',
+  hnw_individual: 'HNW Individual',
+  insurance: 'Insurance',
+  sovereign_wealth: 'Sovereign Wealth',
+  ria_wealth_mgmt: 'RIA/Wealth Mgmt',
+  other: 'Other',
+}
