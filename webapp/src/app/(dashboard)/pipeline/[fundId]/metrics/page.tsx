@@ -234,11 +234,11 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
               <BarChart3 className="h-6 w-6 text-orange-500" />
               Pipeline Metrics
             </h1>
-            <p className="text-zinc-400 text-sm">{fund.name}</p>
+            <p className="text-muted-foreground text-sm">{fund.name}</p>
           </div>
         </div>
         <Link href={`/pipeline/${fundId}`}>
-          <Button variant="outline" className="border-zinc-700">
+          <Button variant="outline" className="border-border">
             Back to Pipeline
           </Button>
         </Link>
@@ -246,7 +246,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
 
       {/* Key Metrics */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
@@ -256,13 +256,13 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                 <p className="text-2xl font-bold text-green-400">
                   {formatCurrency(totalPipelineValue)}
                 </p>
-                <p className="text-sm text-zinc-500">Total Pipeline</p>
+                <p className="text-sm text-muted-foreground">Total Pipeline</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
@@ -272,13 +272,13 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                 <p className="text-2xl font-bold text-blue-400">
                   {formatCurrency(weightedPipelineValue)}
                 </p>
-                <p className="text-sm text-zinc-500">Weighted Pipeline</p>
+                <p className="text-sm text-muted-foreground">Weighted Pipeline</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/10">
@@ -286,13 +286,13 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
               </div>
               <div>
                 <p className="text-2xl font-bold text-purple-400">{coverageRatio.toFixed(1)}x</p>
-                <p className="text-sm text-zinc-500">Coverage Ratio</p>
+                <p className="text-sm text-muted-foreground">Coverage Ratio</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10">
@@ -300,7 +300,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
               </div>
               <div>
                 <p className="text-2xl font-bold">{totalOpportunities}</p>
-                <p className="text-sm text-zinc-500">Total Opportunities</p>
+                <p className="text-sm text-muted-foreground">Total Opportunities</p>
               </div>
             </div>
           </CardContent>
@@ -308,24 +308,24 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
       </div>
 
       {/* Progress to Target */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5 text-orange-500" />
             Progress to Target
           </CardTitle>
-          <CardDescription className="text-zinc-400">
+          <CardDescription className="text-muted-foreground">
             {formatCurrency(committedCapital)} committed of {formatCurrency(targetSize)} target
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-2">
             <div className="flex justify-between text-sm">
-              <span className="text-zinc-400">Committed Capital</span>
+              <span className="text-muted-foreground">Committed Capital</span>
               <span className="font-medium">{progressToTarget.toFixed(1)}%</span>
             </div>
-            <Progress value={Math.min(progressToTarget, 100)} className="h-3 bg-zinc-800" />
-            <div className="flex justify-between text-xs text-zinc-500 mt-2">
+            <Progress value={Math.min(progressToTarget, 100)} className="h-3 bg-muted" />
+            <div className="flex justify-between text-xs text-muted-foreground mt-2">
               <span>$0</span>
               <span>{formatCurrency(targetSize / 2)}</span>
               <span>{formatCurrency(targetSize)}</span>
@@ -336,30 +336,30 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
 
       {/* Fund Strategy (from Fund Builder) */}
       {fundBuilderInsights.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Lightbulb className="h-5 w-5 text-yellow-500" />
               Fund Strategy
             </CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Key insights from your Fund Builder responses
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {fundBuilderInsights.slice(0, 6).map((insight, idx) => (
-                <div key={idx} className="p-4 rounded-lg bg-zinc-800/50 border border-zinc-700/50">
+                <div key={idx} className="p-4 rounded-lg bg-muted/50 border border-border/50">
                   <div className="flex items-center gap-2 mb-2">
-                    <FileText className="h-4 w-4 text-zinc-500" />
-                    <span className="text-xs text-zinc-500 uppercase tracking-wide">
+                    <FileText className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-xs text-muted-foreground uppercase tracking-wide">
                       {insight.sectionName}
                     </span>
                   </div>
-                  <p className="text-sm font-medium text-zinc-300 mb-1">
+                  <p className="text-sm font-medium text-foreground mb-1">
                     {insight.questionText}
                   </p>
-                  <p className="text-sm text-zinc-400 line-clamp-3">
+                  <p className="text-sm text-muted-foreground line-clamp-3">
                     {insight.responseValue}
                   </p>
                 </div>
@@ -368,7 +368,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
             {fundBuilderInsights.length > 6 && (
               <div className="mt-4 text-center">
                 <Link href={`/fund-builder/${fundId}`}>
-                  <Button variant="outline" size="sm" className="border-zinc-700">
+                  <Button variant="outline" size="sm" className="border-border">
                     View All {fundBuilderInsights.length} Responses
                   </Button>
                 </Link>
@@ -380,10 +380,10 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Stage Breakdown */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Pipeline by Stage</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Opportunity count and value per stage
             </CardDescription>
           </CardHeader>
@@ -401,7 +401,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                         style={{ backgroundColor: sm.stage.color || "#71717a" }}
                       />
                       <span className="text-sm font-medium">{sm.stage.name}</span>
-                      <Badge variant="outline" className="text-xs border-zinc-700">
+                      <Badge variant="outline" className="text-xs border-border">
                         {sm.count}
                       </Badge>
                     </div>
@@ -409,7 +409,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                       {formatCurrency(sm.totalValue)}
                     </span>
                   </div>
-                  <Progress value={valuePercent} className="h-2 bg-zinc-800" />
+                  <Progress value={valuePercent} className="h-2 bg-muted" />
                 </div>
               );
             })}
@@ -417,10 +417,10 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
         </Card>
 
         {/* LP Type Breakdown */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Pipeline by LP Type</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Distribution across investor categories
             </CardDescription>
           </CardHeader>
@@ -434,7 +434,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                     <span className="text-sm">
                       {LP_TYPE_LABELS[type as keyof typeof LP_TYPE_LABELS] || type}
                     </span>
-                    <Badge variant="outline" className="text-xs border-zinc-700">
+                    <Badge variant="outline" className="text-xs border-border">
                       {data.count}
                     </Badge>
                   </div>
@@ -444,7 +444,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                 </div>
               ))}
             {Object.keys(lpTypeBreakdown).length === 0 && (
-              <p className="text-sm text-zinc-500">No LP type data available</p>
+              <p className="text-sm text-muted-foreground">No LP type data available</p>
             )}
           </CardContent>
         </Card>
@@ -452,10 +452,10 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Stage Funnel */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Pipeline Funnel</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Opportunity flow through stages
             </CardDescription>
           </CardHeader>
@@ -469,8 +469,8 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
 
                 return (
                   <div key={sm.stage.id} className="flex items-center gap-3">
-                    <div className="w-24 text-xs text-zinc-400 truncate">{sm.stage.name}</div>
-                    <div className="flex-1 h-8 bg-zinc-800 rounded overflow-hidden relative">
+                    <div className="w-24 text-xs text-muted-foreground truncate">{sm.stage.name}</div>
+                    <div className="flex-1 h-8 bg-muted rounded overflow-hidden relative">
                       <div
                         className="h-full transition-all flex items-center justify-end pr-2"
                         style={{
@@ -483,7 +483,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
                     </div>
                     {idx > 0 && (
                       <div className="w-16 text-xs text-right">
-                        <span className={conversionRate >= 50 ? "text-green-400" : "text-zinc-500"}>
+                        <span className={conversionRate >= 50 ? "text-green-400" : "text-muted-foreground"}>
                           {conversionRate.toFixed(0)}%
                         </span>
                       </div>
@@ -496,30 +496,30 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
         </Card>
 
         {/* Recent Activity */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Activity className="h-5 w-5 text-blue-400" />
               Recent Activity
             </CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Last 10 logged activities
             </CardDescription>
           </CardHeader>
           <CardContent>
             {activities.length === 0 ? (
-              <p className="text-sm text-zinc-500">No activities logged yet</p>
+              <p className="text-sm text-muted-foreground">No activities logged yet</p>
             ) : (
               <div className="space-y-3">
                 {activities.slice(0, 5).map((activity) => (
                   <div key={activity.id} className="flex items-start gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800 shrink-0">
-                      <Activity className="h-4 w-4 text-zinc-400" />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-muted shrink-0">
+                      <Activity className="h-4 w-4 text-muted-foreground" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate">{activity.subject}</p>
-                      <div className="flex items-center gap-2 text-xs text-zinc-500">
-                        <Badge variant="outline" className="text-xs border-zinc-700">
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <Badge variant="outline" className="text-xs border-border">
                           {activity.type}
                         </Badge>
                         {activity.activity_date && (
@@ -536,28 +536,28 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
       </div>
 
       {/* Summary Stats */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardHeader>
           <CardTitle>Summary Statistics</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div>
-              <p className="text-sm text-zinc-500">Active Opportunities</p>
+              <p className="text-sm text-muted-foreground">Active Opportunities</p>
               <p className="text-2xl font-bold">{activeOpportunities}</p>
             </div>
             <div>
-              <p className="text-sm text-zinc-500">Won Opportunities</p>
+              <p className="text-sm text-muted-foreground">Won Opportunities</p>
               <p className="text-2xl font-bold text-green-400">{wonOpportunities.length}</p>
             </div>
             <div>
-              <p className="text-sm text-zinc-500">Avg. Opportunity Size</p>
+              <p className="text-sm text-muted-foreground">Avg. Opportunity Size</p>
               <p className="text-2xl font-bold">
                 {formatCurrency(totalOpportunities > 0 ? totalPipelineValue / totalOpportunities : 0)}
               </p>
             </div>
             <div>
-              <p className="text-sm text-zinc-500">Activities (30 days)</p>
+              <p className="text-sm text-muted-foreground">Activities (30 days)</p>
               <p className="text-2xl font-bold">{recentActivities.length}</p>
             </div>
           </div>

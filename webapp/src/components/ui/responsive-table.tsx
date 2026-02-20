@@ -69,7 +69,7 @@ export function ResponsiveTable({ children }: ResponsiveTableProps) {
     <>
       {/* Desktop: standard table */}
       <div className="hidden md:block overflow-x-auto my-4">
-        <table className="min-w-full border border-zinc-800">{children}</table>
+        <table className="min-w-full border border-border">{children}</table>
       </div>
 
       {/* Mobile: stacked cards */}
@@ -78,16 +78,16 @@ export function ResponsiveTable({ children }: ResponsiveTableProps) {
           {data.rows.map((row, rowIdx) => (
             <div
               key={rowIdx}
-              className="rounded-lg border border-zinc-800 bg-zinc-900/50 p-4 space-y-2"
+              className="rounded-lg border border-border bg-card/50 p-4 space-y-2"
             >
               {row.map((cell, colIdx) => (
                 <div key={colIdx}>
                   {data.headers[colIdx] && (
-                    <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                       {data.headers[colIdx]}
                     </span>
                   )}
-                  <p className="text-sm text-zinc-300 mt-0.5">{cell}</p>
+                  <p className="text-sm text-foreground mt-0.5">{cell}</p>
                 </div>
               ))}
             </div>

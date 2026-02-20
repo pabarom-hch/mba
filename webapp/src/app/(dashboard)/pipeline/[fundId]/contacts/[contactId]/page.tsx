@@ -181,7 +181,7 @@ export default function ContactDetailPage() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
+        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
       </div>
     );
   }
@@ -189,7 +189,7 @@ export default function ContactDetailPage() {
   if (!contact) {
     return (
       <div className="p-6 lg:p-8">
-        <p className="text-zinc-400">Contact not found</p>
+        <p className="text-muted-foreground">Contact not found</p>
       </div>
     );
   }
@@ -211,7 +211,7 @@ export default function ContactDetailPage() {
               <User className="h-6 w-6 text-orange-500" />
               {contact.first_name} {contact.last_name}
             </h1>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-muted-foreground text-sm">
               {contact.title}
               {selectedOrg && ` at ${selectedOrg.name}`}
             </p>
@@ -225,16 +225,16 @@ export default function ContactDetailPage() {
                 Delete
               </Button>
             </AlertDialogTrigger>
-            <AlertDialogContent className="bg-zinc-900 border-zinc-800">
+            <AlertDialogContent className="bg-card border-border">
               <AlertDialogHeader>
                 <AlertDialogTitle>Delete Contact</AlertDialogTitle>
-                <AlertDialogDescription className="text-zinc-400">
+                <AlertDialogDescription className="text-muted-foreground">
                   Are you sure you want to delete {contact.first_name} {contact.last_name}?
                   This action cannot be undone.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
-                <AlertDialogCancel className="border-zinc-700">Cancel</AlertDialogCancel>
+                <AlertDialogCancel className="border-border">Cancel</AlertDialogCancel>
                 <AlertDialogAction
                   onClick={handleDelete}
                   className="bg-red-500 hover:bg-red-600"
@@ -268,7 +268,7 @@ export default function ContactDetailPage() {
       <div className="grid gap-6 lg:grid-cols-3">
         {/* Main Form */}
         <div className="lg:col-span-2 space-y-6">
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
             </CardHeader>
@@ -280,7 +280,7 @@ export default function ContactDetailPage() {
                   <Input
                     value={formData.first_name}
                     onChange={(e) => setFormData({ ...formData, first_name: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -288,7 +288,7 @@ export default function ContactDetailPage() {
                   <Input
                     value={formData.last_name}
                     onChange={(e) => setFormData({ ...formData, last_name: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function ContactDetailPage() {
                   <Input
                     value={formData.title}
                     onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -309,10 +309,10 @@ export default function ContactDetailPage() {
                     value={formData.organization_id}
                     onValueChange={(value) => setFormData({ ...formData, organization_id: value })}
                   >
-                    <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                    <SelectTrigger className="bg-background border-border">
                       <SelectValue placeholder="Select organization" />
                     </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-zinc-800">
+                    <SelectContent className="bg-card border-border">
                       {organizations.map((org) => (
                         <SelectItem key={org.id} value={org.id}>
                           {org.name}
@@ -331,7 +331,7 @@ export default function ContactDetailPage() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     type="email"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -339,7 +339,7 @@ export default function ContactDetailPage() {
                   <Input
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -351,7 +351,7 @@ export default function ContactDetailPage() {
                   value={formData.linkedin_url}
                   onChange={(e) => setFormData({ ...formData, linkedin_url: e.target.value })}
                   type="url"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
 
@@ -363,10 +363,10 @@ export default function ContactDetailPage() {
                     value={formData.relationship_strength}
                     onValueChange={(value) => setFormData({ ...formData, relationship_strength: value })}
                   >
-                    <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                    <SelectTrigger className="bg-background border-border">
                       <SelectValue placeholder="Select strength" />
                     </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-zinc-800">
+                    <SelectContent className="bg-card border-border">
                       <SelectItem value="existing">Existing</SelectItem>
                       <SelectItem value="hot">Hot</SelectItem>
                       <SelectItem value="warm">Warm</SelectItem>
@@ -379,7 +379,7 @@ export default function ContactDetailPage() {
                   <Input
                     value={formData.referral_source}
                     onChange={(e) => setFormData({ ...formData, referral_source: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function ContactDetailPage() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   rows={4}
-                  className="bg-zinc-950 border-zinc-800 resize-none"
+                  className="bg-background border-border resize-none"
                 />
               </div>
 
@@ -420,14 +420,14 @@ export default function ContactDetailPage() {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Quick Actions */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Quick Actions</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
               {formData.email && (
                 <a href={`mailto:${formData.email}`} className="block">
-                  <Button variant="outline" size="sm" className="w-full justify-start border-zinc-700">
+                  <Button variant="outline" size="sm" className="w-full justify-start border-border">
                     <Mail className="h-4 w-4 mr-2" />
                     Send Email
                   </Button>
@@ -435,7 +435,7 @@ export default function ContactDetailPage() {
               )}
               {formData.phone && (
                 <a href={`tel:${formData.phone}`} className="block">
-                  <Button variant="outline" size="sm" className="w-full justify-start border-zinc-700">
+                  <Button variant="outline" size="sm" className="w-full justify-start border-border">
                     <Phone className="h-4 w-4 mr-2" />
                     Call
                   </Button>
@@ -443,7 +443,7 @@ export default function ContactDetailPage() {
               )}
               {formData.linkedin_url && (
                 <a href={formData.linkedin_url} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="outline" size="sm" className="w-full justify-start border-zinc-700">
+                  <Button variant="outline" size="sm" className="w-full justify-start border-border">
                     <Linkedin className="h-4 w-4 mr-2" />
                     View LinkedIn
                     <ExternalLink className="h-3 w-3 ml-auto" />
@@ -454,11 +454,11 @@ export default function ContactDetailPage() {
           </Card>
 
           {/* Related Opportunities */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader className="flex flex-row items-center justify-between">
               <CardTitle className="text-base">Related Opportunities</CardTitle>
               {opportunities.length > 0 && (
-                <Badge variant="secondary" className="bg-zinc-800">
+                <Badge variant="secondary" className="bg-muted">
                   {opportunities.length}
                 </Badge>
               )}
@@ -466,9 +466,9 @@ export default function ContactDetailPage() {
             <CardContent>
               {opportunities.length === 0 ? (
                 <div className="text-center py-4">
-                  <p className="text-sm text-zinc-500">No opportunities linked to this contact</p>
+                  <p className="text-sm text-muted-foreground">No opportunities linked to this contact</p>
                   <Link href={`/pipeline/${fundId}/opportunities/new`}>
-                    <Button variant="outline" size="sm" className="mt-2 border-zinc-700">
+                    <Button variant="outline" size="sm" className="mt-2 border-border">
                       Create Opportunity
                     </Button>
                   </Link>
@@ -477,7 +477,7 @@ export default function ContactDetailPage() {
                 <div className="space-y-2">
                   {opportunities.map((opp) => (
                     <Link key={opp.id} href={`/pipeline/${fundId}/opportunities/${opp.id}`}>
-                      <div className="p-3 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                      <div className="p-3 rounded-lg border border-border hover:border-border hover:bg-accent/50 transition-all">
                         <div className="flex items-start justify-between gap-2">
                           <p className="text-sm font-medium">{opp.name}</p>
                           {opp.stage && (
@@ -502,7 +502,7 @@ export default function ContactDetailPage() {
                             </span>
                           )}
                           {opp.probability != null && (
-                            <span className="text-xs text-zinc-500">
+                            <span className="text-xs text-muted-foreground">
                               {Math.round(opp.probability * 100)}% prob
                             </span>
                           )}

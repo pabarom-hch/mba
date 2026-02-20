@@ -45,7 +45,7 @@ export default async function CasesHubPage() {
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl font-bold mb-2">Case Studies</h1>
-        <p className="text-zinc-400 max-w-2xl">
+        <p className="text-muted-foreground max-w-2xl">
           Real business scenarios for applied learning. Work through complex challenges
           using actual data from professional services firms.
         </p>
@@ -55,7 +55,7 @@ export default async function CasesHubPage() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
         {/* Nexus Collection */}
         <Link href="/cases/nexus">
-          <Card className="border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer h-full">
+          <Card className="border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer h-full">
             <CardHeader>
               <div className="flex items-center justify-between mb-2">
                 <div className="p-2 rounded-lg bg-orange-500/10">
@@ -66,13 +66,13 @@ export default async function CasesHubPage() {
                 </Badge>
               </div>
               <CardTitle className="text-xl">Nexus Case Studies</CardTitle>
-              <CardDescription className="text-zinc-400">
+              <CardDescription className="text-muted-foreground">
                 Real data from a professional services firm implementing Miller Heiman,
                 turnaround advisory, and PE transactions.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex items-center gap-4 text-sm text-zinc-400">
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <Briefcase className="h-4 w-4" />
                   {caseCount} cases
@@ -95,47 +95,47 @@ export default async function CasesHubPage() {
         </Link>
 
         {/* Future Collections - Placeholder */}
-        <Card className="border-zinc-800 bg-zinc-900/30 opacity-60 h-full">
+        <Card className="border-border bg-card/30 opacity-60 h-full">
           <CardHeader>
             <div className="flex items-center justify-between mb-2">
-              <div className="p-2 rounded-lg bg-zinc-800">
-                <TrendingUp className="h-6 w-6 text-zinc-500" />
+              <div className="p-2 rounded-lg bg-muted">
+                <TrendingUp className="h-6 w-6 text-muted-foreground" />
               </div>
-              <Badge variant="secondary" className="bg-zinc-800 text-zinc-500 border-0">
+              <Badge variant="secondary" className="bg-muted text-muted-foreground border-0">
                 Coming Soon
               </Badge>
             </div>
-            <CardTitle className="text-xl text-zinc-500">Classic MBA Cases</CardTitle>
-            <CardDescription className="text-zinc-500">
+            <CardTitle className="text-xl text-muted-foreground">Classic MBA Cases</CardTitle>
+            <CardDescription className="text-muted-foreground">
               Timeless business cases from Harvard, Stanford, and Wharton covering
               strategy, marketing, and operations.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center gap-4 text-sm text-zinc-500">
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>Coming in Q3 2026</span>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/30 opacity-60 h-full">
+        <Card className="border-border bg-card/30 opacity-60 h-full">
           <CardHeader>
             <div className="flex items-center justify-between mb-2">
-              <div className="p-2 rounded-lg bg-zinc-800">
-                <BookOpen className="h-6 w-6 text-zinc-500" />
+              <div className="p-2 rounded-lg bg-muted">
+                <BookOpen className="h-6 w-6 text-muted-foreground" />
               </div>
-              <Badge variant="secondary" className="bg-zinc-800 text-zinc-500 border-0">
+              <Badge variant="secondary" className="bg-muted text-muted-foreground border-0">
                 Coming Soon
               </Badge>
             </div>
-            <CardTitle className="text-xl text-zinc-500">Industry Deep Dives</CardTitle>
-            <CardDescription className="text-zinc-500">
+            <CardTitle className="text-xl text-muted-foreground">Industry Deep Dives</CardTitle>
+            <CardDescription className="text-muted-foreground">
               Comprehensive analyses of specific industries including healthcare,
               technology, and financial services.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center gap-4 text-sm text-zinc-500">
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>Coming in Q4 2026</span>
             </div>
           </CardContent>
@@ -148,27 +148,27 @@ export default async function CasesHubPage() {
         <div className="grid gap-4">
           {caseStudies?.slice(0, 4).map((caseStudy) => (
             <Link key={caseStudy.id} href={`/cases/nexus/${caseStudy.slug}`}>
-              <Card className="border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer">
+              <Card className="border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer">
                 <CardContent className="p-4 flex items-center justify-between">
                   <div className="flex-1 min-w-0">
                     <h3 className="font-medium truncate">{caseStudy.title}</h3>
-                    <p className="text-sm text-zinc-400 truncate mt-1">
+                    <p className="text-sm text-muted-foreground truncate mt-1">
                       {caseStudy.summary}
                     </p>
                   </div>
                   <div className="flex items-center gap-3 ml-4 shrink-0">
                     {caseStudy.duration_minutes && (
-                      <span className="text-sm text-zinc-400 flex items-center gap-1">
+                      <span className="text-sm text-muted-foreground flex items-center gap-1">
                         <Clock className="h-4 w-4" />
                         {caseStudy.duration_minutes} min
                       </span>
                     )}
                     {caseStudy.difficulty && (
-                      <Badge variant="outline" className="border-zinc-700 capitalize">
+                      <Badge variant="outline" className="border-border capitalize">
                         {caseStudy.difficulty}
                       </Badge>
                     )}
-                    <ChevronRight className="h-5 w-5 text-zinc-400" />
+                    <ChevronRight className="h-5 w-5 text-muted-foreground" />
                   </div>
                 </CardContent>
               </Card>
@@ -179,36 +179,36 @@ export default async function CasesHubPage() {
 
       {/* Quick Stats */}
       <div className="grid gap-4 sm:grid-cols-3">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-4">
             <div className="p-3 rounded-lg bg-blue-500/10">
               <Briefcase className="h-5 w-5 text-blue-400" />
             </div>
             <div>
               <p className="text-2xl font-bold">{caseCount}</p>
-              <p className="text-sm text-zinc-400">Case Studies</p>
+              <p className="text-sm text-muted-foreground">Case Studies</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-4">
             <div className="p-3 rounded-lg bg-green-500/10">
               <Database className="h-5 w-5 text-green-400" />
             </div>
             <div>
               <p className="text-2xl font-bold">{datasetCount}</p>
-              <p className="text-sm text-zinc-400">Datasets</p>
+              <p className="text-sm text-muted-foreground">Datasets</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-4">
             <div className="p-3 rounded-lg bg-purple-500/10">
               <PlayCircle className="h-5 w-5 text-purple-400" />
             </div>
             <div>
               <p className="text-2xl font-bold">{simulations.length}</p>
-              <p className="text-sm text-zinc-400">Simulations</p>
+              <p className="text-sm text-muted-foreground">Simulations</p>
             </div>
           </CardContent>
         </Card>

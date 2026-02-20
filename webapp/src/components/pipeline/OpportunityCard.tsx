@@ -53,8 +53,8 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
       ref={setNodeRef}
       style={style}
       className={cn(
-        "group bg-zinc-900 border border-zinc-800 rounded-lg p-3 transition-all",
-        "hover:border-zinc-700 hover:bg-zinc-800/50",
+        "group bg-card border border-border rounded-lg p-3 transition-all",
+        "hover:border-border hover:bg-accent/50",
         isDragging && "opacity-50 border-orange-500 shadow-lg shadow-orange-500/10"
       )}
     >
@@ -63,7 +63,7 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
         <button
           {...attributes}
           {...listeners}
-          className="mt-0.5 p-0.5 rounded text-zinc-600 hover:text-zinc-400 hover:bg-zinc-800 cursor-grab active:cursor-grabbing"
+          className="mt-0.5 p-0.5 rounded text-muted-foreground hover:text-foreground hover:bg-accent cursor-grab active:cursor-grabbing"
         >
           <GripVertical className="h-4 w-4" />
         </button>
@@ -76,7 +76,7 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
           </Link>
 
           {/* Organization / Contact */}
-          <div className="flex items-center gap-3 mt-1 text-xs text-zinc-500">
+          <div className="flex items-center gap-3 mt-1 text-xs text-muted-foreground">
             {opportunity.organization && (
               <span className="flex items-center gap-1 truncate">
                 <Building2 className="h-3 w-3" />
@@ -99,7 +99,7 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
           {formatCurrency(opportunity.potential_commitment)}
         </span>
         {opportunity.probability !== null && opportunity.probability !== undefined && (
-          <span className="text-xs text-zinc-500">
+          <span className="text-xs text-muted-foreground">
             {Math.round(opportunity.probability * 100)}% prob
           </span>
         )}
@@ -109,12 +109,12 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
       {checklistProgress && checklistProgress.total > 0 && (
         <div className="mt-2 space-y-1">
           <div className="flex items-center justify-between text-xs">
-            <span className="text-zinc-500">Checklist</span>
-            <span className="text-zinc-400">
+            <span className="text-muted-foreground">Checklist</span>
+            <span className="text-muted-foreground">
               {checklistProgress.completed}/{checklistProgress.total}
             </span>
           </div>
-          <Progress value={progressPercent} className="h-1 bg-zinc-800" />
+          <Progress value={progressPercent} className="h-1 bg-muted" />
         </div>
       )}
     </div>

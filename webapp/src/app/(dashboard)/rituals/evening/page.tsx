@@ -77,17 +77,17 @@ export default function EveningReflectionPage() {
   if (isComplete) {
     return (
       <div className="p-6 lg:p-8 max-w-3xl mx-auto">
-        <div className="flex items-center gap-2 text-sm text-zinc-400 mb-8">
-          <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-foreground">Dashboard</Link>
           <ChevronRight className="h-4 w-4" />
-          <span className="text-zinc-100">Evening Reflection</span>
+          <span className="text-foreground">Evening Reflection</span>
         </div>
 
         <Card className="border-green-500/30 bg-green-500/5">
           <CardContent className="p-8 text-center">
             <CheckCircle2 className="h-16 w-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-green-400">Reflection Complete!</h2>
-            <p className="text-zinc-400 mt-2 mb-6">
+            <p className="text-muted-foreground mt-2 mb-6">
               Great job reflecting on your day. Rest well and recharge for tomorrow.
             </p>
             <Link href="/">
@@ -104,10 +104,10 @@ export default function EveningReflectionPage() {
   return (
     <div className="p-6 lg:p-8 space-y-8 max-w-3xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Evening Reflection</span>
+        <span className="text-foreground">Evening Reflection</span>
       </div>
 
       {/* Header */}
@@ -119,22 +119,22 @@ export default function EveningReflectionPage() {
         </div>
         <div>
           <h1 className="text-3xl font-bold">Evening Reflection</h1>
-          <p className="text-zinc-400 mt-2">End your day with clarity and intention</p>
+          <p className="text-muted-foreground mt-2">End your day with clarity and intention</p>
         </div>
       </div>
 
       {/* Progress */}
       <div className="text-center">
-        <p className="text-sm text-zinc-400">
+        <p className="text-sm text-muted-foreground">
           {filledCount} of {reflectionPrompts.length} prompts completed
-          {!canSubmit && <span className="text-zinc-500"> (minimum 3 required)</span>}
+          {!canSubmit && <span className="text-muted-foreground"> (minimum 3 required)</span>}
         </p>
       </div>
 
       {/* Prompts */}
       <div className="space-y-6">
         {reflectionPrompts.map((prompt) => (
-          <Card key={prompt.id} className="border-zinc-800 bg-zinc-900/50">
+          <Card key={prompt.id} className="border-border bg-card/50">
             <CardHeader className="pb-2">
               <CardTitle className="text-lg">{prompt.title}</CardTitle>
               <CardDescription>{prompt.prompt}</CardDescription>
@@ -144,7 +144,7 @@ export default function EveningReflectionPage() {
                 value={responses[prompt.id] || ""}
                 onChange={(e) => handleChange(prompt.id, e.target.value)}
                 placeholder="Write your thoughts..."
-                className="min-h-[100px] bg-zinc-900 border-zinc-700 focus:border-indigo-500 resize-none"
+                className="min-h-[100px] bg-card border-border focus:border-indigo-500 resize-none"
               />
             </CardContent>
           </Card>

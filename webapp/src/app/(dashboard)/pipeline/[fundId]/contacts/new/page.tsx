@@ -106,16 +106,16 @@ export default function NewContactPage() {
             <UserPlus className="h-6 w-6 text-orange-500" />
             Add Contact
           </h1>
-          <p className="text-zinc-400 text-sm">Add a new LP contact to your pipeline</p>
+          <p className="text-muted-foreground text-sm">Add a new LP contact to your pipeline</p>
         </div>
       </div>
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Contact Information</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Enter the contact&apos;s details
             </CardDescription>
           </CardHeader>
@@ -129,7 +129,7 @@ export default function NewContactPage() {
                   name="first_name"
                   placeholder="John"
                   required
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -139,7 +139,7 @@ export default function NewContactPage() {
                   name="last_name"
                   placeholder="Smith"
                   required
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function NewContactPage() {
                   id="title"
                   name="title"
                   placeholder="Managing Director"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -161,10 +161,10 @@ export default function NewContactPage() {
                   Organization
                 </Label>
                 <Select name="organization_id">
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select organization" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {organizations.map((org) => (
                       <SelectItem key={org.id} value={org.id}>
                         {org.name}
@@ -184,7 +184,7 @@ export default function NewContactPage() {
                   name="email"
                   type="email"
                   placeholder="john@example.com"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -194,7 +194,7 @@ export default function NewContactPage() {
                   name="phone"
                   type="tel"
                   placeholder="+1 (555) 123-4567"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function NewContactPage() {
                 name="linkedin_url"
                 type="url"
                 placeholder="https://linkedin.com/in/johnsmith"
-                className="bg-zinc-950 border-zinc-800"
+                className="bg-background border-border"
               />
             </div>
 
@@ -216,10 +216,10 @@ export default function NewContactPage() {
               <div className="space-y-2">
                 <Label htmlFor="relationship_strength">Relationship Strength</Label>
                 <Select name="relationship_strength">
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select strength" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     <SelectItem value="existing">Existing (Strong relationship)</SelectItem>
                     <SelectItem value="hot">Hot (Active dialogue)</SelectItem>
                     <SelectItem value="warm">Warm (Previous contact)</SelectItem>
@@ -233,7 +233,7 @@ export default function NewContactPage() {
                   id="referral_source"
                   name="referral_source"
                   placeholder="e.g., Conference, Mutual connection"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function NewContactPage() {
                 name="notes"
                 placeholder="Additional notes about this contact..."
                 rows={3}
-                className="bg-zinc-950 border-zinc-800 resize-none"
+                className="bg-background border-border resize-none"
               />
             </div>
 
@@ -272,7 +272,7 @@ export default function NewContactPage() {
             {/* Actions */}
             <div className="flex gap-4 pt-4">
               <Link href={`/pipeline/${fundId}/contacts`} className="flex-1">
-                <Button variant="outline" className="w-full border-zinc-700">
+                <Button variant="outline" className="w-full border-border">
                   Cancel
                 </Button>
               </Link>

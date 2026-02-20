@@ -220,7 +220,7 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
     return (
       <Link href={getSortUrl(column)} className="flex items-center gap-1 hover:text-white">
         {children}
-        <ArrowUpDown className={`h-3 w-3 ${isActive ? "text-orange-400" : "text-zinc-600"}`} />
+        <ArrowUpDown className={`h-3 w-3 ${isActive ? "text-orange-400" : "text-muted-foreground"}`} />
       </Link>
     );
   }
@@ -228,7 +228,7 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
   return (
     <div className="flex flex-col h-[calc(100vh-4rem)]">
       {/* Header */}
-      <div className="flex-shrink-0 border-b border-zinc-800 bg-zinc-950 px-6 py-4">
+      <div className="flex-shrink-0 border-b border-border bg-background px-6 py-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
@@ -239,7 +239,7 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
               </Link>
               <div>
                 <h1 className="text-xl font-bold">{fund.name}</h1>
-                <div className="flex items-center gap-4 text-sm text-zinc-400">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <span>{totalOpportunities} opportunities</span>
                   <span>-</span>
                   <span>{formatCurrency(totalPipelineValue)} pipeline</span>
@@ -250,13 +250,13 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
             </div>
             <div className="flex items-center gap-2">
               <Link href={`/pipeline/${fundId}/contacts`}>
-                <Button variant="outline" size="sm" className="border-zinc-700">
+                <Button variant="outline" size="sm" className="border-border">
                   <Users className="h-4 w-4 mr-2" />
                   Contacts
                 </Button>
               </Link>
               <Link href={`/pipeline/${fundId}/organizations`}>
-                <Button variant="outline" size="sm" className="border-zinc-700">
+                <Button variant="outline" size="sm" className="border-border">
                   <Building className="h-4 w-4 mr-2" />
                   Organizations
                 </Button>
@@ -274,20 +274,20 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               {/* View Toggle */}
-              <div className="flex items-center border border-zinc-800 rounded-lg overflow-hidden">
+              <div className="flex items-center border border-border rounded-lg overflow-hidden">
                 <Link href={`/pipeline/${fundId}`}>
                   <Button variant="ghost" size="sm" className="h-8 px-3 rounded-none">
                     <LayoutGrid className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Button variant="ghost" size="sm" className="h-8 px-3 rounded-none bg-zinc-800">
+                <Button variant="ghost" size="sm" className="h-8 px-3 rounded-none bg-muted">
                   <List className="h-4 w-4" />
                 </Button>
               </div>
 
               {/* Filter Status */}
               {(search || lpType) && (
-                <span className="text-sm text-zinc-500 ml-2">
+                <span className="text-sm text-muted-foreground ml-2">
                   Showing {filteredOpportunities.length} of {totalOpportunities}
                 </span>
               )}
@@ -295,7 +295,7 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
 
             {/* Metrics Link */}
             <Link href={`/pipeline/${fundId}/metrics`}>
-              <Button variant="outline" size="sm" className="border-zinc-700 h-9">
+              <Button variant="outline" size="sm" className="border-border h-9">
                 <BarChart3 className="h-4 w-4 mr-2" />
                 Metrics
               </Button>
@@ -307,35 +307,35 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
       {/* Table */}
       <div className="flex-1 overflow-auto">
         <Table>
-          <TableHeader className="sticky top-0 bg-zinc-950 z-10">
-            <TableRow className="border-zinc-800 hover:bg-transparent">
-              <TableHead className="text-zinc-400">
+          <TableHeader className="sticky top-0 bg-background z-10">
+            <TableRow className="border-border hover:bg-transparent">
+              <TableHead className="text-muted-foreground">
                 <SortableHeader column="name">Opportunity</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400">
+              <TableHead className="text-muted-foreground">
                 <SortableHeader column="organization">Organization</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400">LP Type</TableHead>
-              <TableHead className="text-zinc-400">
+              <TableHead className="text-muted-foreground">LP Type</TableHead>
+              <TableHead className="text-muted-foreground">
                 <SortableHeader column="stage">Stage</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400 text-right">
+              <TableHead className="text-muted-foreground text-right">
                 <SortableHeader column="potential_commitment">Commitment</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400 text-right">
+              <TableHead className="text-muted-foreground text-right">
                 <SortableHeader column="probability">Prob.</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400">Contact</TableHead>
-              <TableHead className="text-zinc-400">
+              <TableHead className="text-muted-foreground">Contact</TableHead>
+              <TableHead className="text-muted-foreground">
                 <SortableHeader column="updated_at">Updated</SortableHeader>
               </TableHead>
-              <TableHead className="text-zinc-400 w-10"></TableHead>
+              <TableHead className="text-muted-foreground w-10"></TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {filteredOpportunities.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={9} className="text-center py-12 text-zinc-500">
+                <TableCell colSpan={9} className="text-center py-12 text-muted-foreground">
                   {search || lpType
                     ? "No opportunities match your filters"
                     : "No opportunities yet"}
@@ -343,7 +343,7 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
               </TableRow>
             ) : (
               filteredOpportunities.map((opp) => (
-                <TableRow key={opp.id} className="border-zinc-800 hover:bg-zinc-900/50">
+                <TableRow key={opp.id} className="border-border hover:bg-card/50">
                   <TableCell className="font-medium">
                     <Link
                       href={`/pipeline/${fundId}/opportunities/${opp.id}`}
@@ -361,16 +361,16 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
                         {opp.organization.name}
                       </Link>
                     ) : (
-                      <span className="text-zinc-500">-</span>
+                      <span className="text-muted-foreground">-</span>
                     )}
                   </TableCell>
                   <TableCell>
                     {opp.organization?.type ? (
-                      <Badge variant="outline" className="border-zinc-700 text-xs">
+                      <Badge variant="outline" className="border-border text-xs">
                         {LP_TYPE_LABELS[opp.organization.type as keyof typeof LP_TYPE_LABELS] || opp.organization.type}
                       </Badge>
                     ) : (
-                      <span className="text-zinc-500">-</span>
+                      <span className="text-muted-foreground">-</span>
                     )}
                   </TableCell>
                   <TableCell>
@@ -386,19 +386,19 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
                         {opp.stage.name}
                       </Badge>
                     ) : (
-                      <span className="text-zinc-500">-</span>
+                      <span className="text-muted-foreground">-</span>
                     )}
                   </TableCell>
                   <TableCell className="text-right font-medium">
                     {opp.potential_commitment
                       ? formatCurrency(opp.potential_commitment)
-                      : <span className="text-zinc-500">-</span>
+                      : <span className="text-muted-foreground">-</span>
                     }
                   </TableCell>
                   <TableCell className="text-right">
                     {opp.probability != null
                       ? `${Math.round(opp.probability * 100)}%`
-                      : <span className="text-zinc-500">-</span>
+                      : <span className="text-muted-foreground">-</span>
                     }
                   </TableCell>
                   <TableCell>
@@ -410,10 +410,10 @@ export default async function PipelineListPage({ params, searchParams }: Pipelin
                         {opp.contact.first_name} {opp.contact.last_name}
                       </Link>
                     ) : (
-                      <span className="text-zinc-500">-</span>
+                      <span className="text-muted-foreground">-</span>
                     )}
                   </TableCell>
-                  <TableCell className="text-zinc-400 text-sm">
+                  <TableCell className="text-muted-foreground text-sm">
                     {formatDate(opp.updated_at)}
                   </TableCell>
                   <TableCell>

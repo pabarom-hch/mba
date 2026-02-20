@@ -58,10 +58,10 @@ export function HighlightsSidebar({ highlights: initialHighlights }: HighlightsS
   }
 
   return (
-    <Card className="border-zinc-800 bg-zinc-900/50">
+    <Card className="border-border bg-card/50">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <CollapsibleTrigger asChild>
-          <CardHeader className="cursor-pointer hover:bg-zinc-800/50 transition-colors py-3">
+          <CardHeader className="cursor-pointer hover:bg-accent/50 transition-colors py-3">
             <CardTitle className="text-sm flex items-center justify-between">
               <span className="flex items-center gap-2">
                 <span
@@ -73,9 +73,9 @@ export function HighlightsSidebar({ highlights: initialHighlights }: HighlightsS
                 Highlights ({highlights.length})
               </span>
               {isOpen ? (
-                <ChevronDown className="h-4 w-4 text-zinc-500" />
+                <ChevronDown className="h-4 w-4 text-muted-foreground" />
               ) : (
-                <ChevronRight className="h-4 w-4 text-zinc-500" />
+                <ChevronRight className="h-4 w-4 text-muted-foreground" />
               )}
             </CardTitle>
           </CardHeader>
@@ -89,14 +89,14 @@ export function HighlightsSidebar({ highlights: initialHighlights }: HighlightsS
                   colorStyles[highlight.color] || colorStyles.yellow
                 }`}
               >
-                <p className="text-sm text-zinc-300 italic line-clamp-3">
+                <p className="text-sm text-foreground italic line-clamp-3">
                   &quot;{highlight.text}&quot;
                 </p>
 
                 {highlight.note && (
                   <div className="mt-2 flex items-start gap-2">
-                    <MessageSquare className="h-3 w-3 text-zinc-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-zinc-400">{highlight.note}</p>
+                    <MessageSquare className="h-3 w-3 text-muted-foreground mt-0.5 shrink-0" />
+                    <p className="text-xs text-muted-foreground">{highlight.note}</p>
                   </div>
                 )}
 
@@ -106,7 +106,7 @@ export function HighlightsSidebar({ highlights: initialHighlights }: HighlightsS
                     size="sm"
                     onClick={() => handleDelete(highlight.id)}
                     disabled={deletingId === highlight.id}
-                    className="h-6 px-2 text-zinc-500 hover:text-red-400"
+                    className="h-6 px-2 text-muted-foreground hover:text-red-400"
                   >
                     <Trash2 className="h-3 w-3" />
                   </Button>

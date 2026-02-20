@@ -93,10 +93,10 @@ export default async function PEPage() {
     <div className="p-6 lg:p-8 space-y-8">
       {/* Header */}
       <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-2 text-sm text-zinc-400">
-          <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground">Dashboard</Link>
           <ChevronRight className="h-4 w-4" />
-          <span className="text-zinc-100">PE Buy & Build</span>
+          <span className="text-foreground">PE Buy & Build</span>
         </div>
         <div className="flex items-start gap-4">
           <div className="p-3 rounded-lg bg-emerald-500/10">
@@ -104,54 +104,54 @@ export default async function PEPage() {
           </div>
           <div>
             <h1 className="text-3xl font-bold">{curriculum.name}</h1>
-            <p className="text-zinc-400 mt-2 max-w-3xl">{curriculum.description}</p>
+            <p className="text-muted-foreground mt-2 max-w-3xl">{curriculum.description}</p>
           </div>
         </div>
       </div>
 
       {/* Overall Progress */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <p className="text-sm text-zinc-400">Overall Progress</p>
+              <p className="text-sm text-muted-foreground">Overall Progress</p>
               <p className="text-2xl font-bold">{Math.round(overallProgress)}%</p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-zinc-400">Lessons Completed</p>
+              <p className="text-sm text-muted-foreground">Lessons Completed</p>
               <p className="text-lg font-semibold">{totalCompleted} / {totalLessons}</p>
             </div>
           </div>
-          <Progress value={overallProgress} className="h-2 bg-zinc-800" />
+          <Progress value={overallProgress} className="h-2 bg-muted" />
         </CardContent>
       </Card>
 
       {/* Quick Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <p className="text-2xl font-bold text-emerald-400">{phases?.length || 0}</p>
-            <p className="text-sm text-zinc-400">Phases</p>
+            <p className="text-sm text-muted-foreground">Phases</p>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <p className="text-2xl font-bold text-emerald-400">
               {phases?.reduce((acc, p) => acc + (p.modules?.length || 0), 0) || 0}
             </p>
-            <p className="text-sm text-zinc-400">Modules</p>
+            <p className="text-sm text-muted-foreground">Modules</p>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <p className="text-2xl font-bold text-emerald-400">{totalLessons}</p>
-            <p className="text-sm text-zinc-400">Lessons</p>
+            <p className="text-sm text-muted-foreground">Lessons</p>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <p className="text-2xl font-bold text-emerald-400">{curriculum.total_weeks}</p>
-            <p className="text-sm text-zinc-400">Weeks</p>
+            <p className="text-sm text-muted-foreground">Weeks</p>
           </CardContent>
         </Card>
       </div>
@@ -177,17 +177,17 @@ export default async function PEPage() {
                     <span className="text-emerald-500">Phase {phase.number}:</span>
                     {phase.name}
                   </h2>
-                  <p className="text-sm text-zinc-400 mt-1">{phase.description}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{phase.description}</p>
                 </div>
-                <Badge variant="outline" className="border-zinc-700">
+                <Badge variant="outline" className="border-border">
                   {phase.duration_weeks} weeks
                 </Badge>
               </div>
 
               {/* Progress bar for phase */}
               <div className="flex items-center gap-4">
-                <Progress value={phaseProgress} className="h-1.5 bg-zinc-800 flex-1" />
-                <span className="text-sm text-zinc-400 min-w-[60px]">
+                <Progress value={phaseProgress} className="h-1.5 bg-muted flex-1" />
+                <span className="text-sm text-muted-foreground min-w-[60px]">
                   {Math.round(phaseProgress)}%
                 </span>
               </div>
@@ -211,7 +211,7 @@ export default async function PEPage() {
                       key={module.id}
                       href={`/pe/${phase.number}/${module.slug}`}
                     >
-                      <Card className="border-zinc-800 bg-zinc-900/50 transition-all hover:border-emerald-500/30 hover:bg-zinc-800/50 h-full">
+                      <Card className="border-border bg-card/50 transition-all hover:border-emerald-500/30 hover:bg-muted/50 h-full">
                         <CardHeader className="pb-2">
                           <div className="flex items-start justify-between">
                             <Badge
@@ -221,7 +221,7 @@ export default async function PEPage() {
                                   ? "border-green-500/30 text-green-400"
                                   : hasStarted
                                   ? "border-emerald-500/30 text-emerald-400"
-                                  : "border-zinc-700 text-zinc-400"
+                                  : "border-border text-muted-foreground"
                               }
                             >
                               {isComplete ? (
@@ -235,18 +235,18 @@ export default async function PEPage() {
                           <CardTitle className="text-base mt-2">
                             {module.number}. {module.name}
                           </CardTitle>
-                          <CardDescription className="text-zinc-400 text-sm line-clamp-2">
+                          <CardDescription className="text-muted-foreground text-sm line-clamp-2">
                             {module.description}
                           </CardDescription>
                         </CardHeader>
                         <CardContent>
                           <div className="flex items-center justify-between text-sm">
-                            <div className="flex items-center gap-1 text-zinc-400">
+                            <div className="flex items-center gap-1 text-muted-foreground">
                               <BookOpen className="h-4 w-4" />
                               {progress.total} lessons
                             </div>
                             {module.estimated_hours && (
-                              <span className="text-zinc-500">
+                              <span className="text-muted-foreground">
                                 ~{module.estimated_hours}h
                               </span>
                             )}
@@ -254,7 +254,7 @@ export default async function PEPage() {
                           {progress.total > 0 && (
                             <Progress
                               value={(progress.completed / progress.total) * 100}
-                              className="h-1 bg-zinc-800 mt-3"
+                              className="h-1 bg-muted mt-3"
                             />
                           )}
                         </CardContent>

@@ -41,12 +41,12 @@ export function PipelineColumn({ stage, opportunities, fundId }: PipelineColumnP
     <div
       ref={setNodeRef}
       className={cn(
-        "flex flex-col w-72 min-w-[288px] bg-zinc-900/30 rounded-lg border border-zinc-800",
+        "flex flex-col w-72 min-w-[288px] bg-card/30 rounded-lg border border-border",
         isOver && "border-orange-500/50 bg-orange-500/5"
       )}
     >
       {/* Column Header */}
-      <div className="flex-shrink-0 p-3 border-b border-zinc-800">
+      <div className="flex-shrink-0 p-3 border-b border-border">
         <div className="flex items-center justify-between mb-1">
           <div className="flex items-center gap-2">
             <div
@@ -55,17 +55,17 @@ export function PipelineColumn({ stage, opportunities, fundId }: PipelineColumnP
             />
             <h3 className="font-medium text-sm">{stage.name}</h3>
           </div>
-          <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">
+          <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
             {opportunities.length}
           </span>
         </div>
-        <p className="text-xs text-zinc-500">{formatCurrency(totalValue)}</p>
+        <p className="text-xs text-muted-foreground">{formatCurrency(totalValue)}</p>
       </div>
 
       {/* Opportunities List */}
       <div className="flex-1 overflow-y-auto p-2 space-y-2">
         {opportunities.length === 0 ? (
-          <div className="flex items-center justify-center h-20 text-xs text-zinc-600 border border-dashed border-zinc-800 rounded-lg">
+          <div className="flex items-center justify-center h-20 text-xs text-muted-foreground border border-dashed border-border rounded-lg">
             Drop opportunities here
           </div>
         ) : (

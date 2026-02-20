@@ -134,17 +134,17 @@ export function DatasetViewer({ dataset }: DatasetViewerProps) {
   };
 
   return (
-    <Card className="border-zinc-800 bg-zinc-900/50">
+    <Card className="border-border bg-card/50">
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <div>
             <CardTitle className="text-xl">{dataset.display_name}</CardTitle>
-            <p className="text-sm text-zinc-400 mt-1">{dataset.description}</p>
+            <p className="text-sm text-muted-foreground mt-1">{dataset.description}</p>
             <div className="flex items-center gap-3 mt-2">
-              <Badge variant="outline" className="border-zinc-700 text-xs">
+              <Badge variant="outline" className="border-border text-xs">
                 {dataArray.length} records
               </Badge>
-              <Badge variant="outline" className="border-zinc-700 text-xs">
+              <Badge variant="outline" className="border-border text-xs">
                 {columns.length} columns
               </Badge>
             </div>
@@ -153,7 +153,7 @@ export function DatasetViewer({ dataset }: DatasetViewerProps) {
             variant="outline"
             size="sm"
             onClick={downloadCSV}
-            className="border-zinc-700 hover:border-zinc-600"
+            className="border-border hover:border-border"
           >
             <Download className="h-4 w-4 mr-2" />
             CSV
@@ -162,26 +162,26 @@ export function DatasetViewer({ dataset }: DatasetViewerProps) {
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="table" className="w-full">
-          <TabsList className="bg-zinc-800">
-            <TabsTrigger value="table" className="data-[state=active]:bg-zinc-700">
+          <TabsList className="bg-muted">
+            <TabsTrigger value="table" className="data-[state=active]:bg-accent">
               <Table2 className="h-4 w-4 mr-2" />
               Table
             </TabsTrigger>
-            <TabsTrigger value="json" className="data-[state=active]:bg-zinc-700">
+            <TabsTrigger value="json" className="data-[state=active]:bg-accent">
               <Code2 className="h-4 w-4 mr-2" />
               JSON
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="table" className="mt-4">
-            <div className="overflow-x-auto border border-zinc-800 rounded-lg">
+            <div className="overflow-x-auto border border-border rounded-lg">
               <table className="w-full text-sm">
-                <thead className="bg-zinc-800/50">
+                <thead className="bg-muted/50">
                   <tr>
                     {columns.map((col) => (
                       <th
                         key={col}
-                        className="px-4 py-3 text-left font-medium text-zinc-300 cursor-pointer hover:bg-zinc-800 transition-colors whitespace-nowrap"
+                        className="px-4 py-3 text-left font-medium text-foreground cursor-pointer hover:bg-muted transition-colors whitespace-nowrap"
                         onClick={() => handleSort(col)}
                       >
                         <div className="flex items-center gap-2">
@@ -193,18 +193,18 @@ export function DatasetViewer({ dataset }: DatasetViewerProps) {
                               <ChevronDown className="h-4 w-4 text-green-400" />
                             )
                           ) : (
-                            <ArrowUpDown className="h-3 w-3 text-zinc-500" />
+                            <ArrowUpDown className="h-3 w-3 text-muted-foreground" />
                           )}
                         </div>
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-zinc-800">
+                <tbody className="divide-y divide-border">
                   {sortedData.map((row, rowIdx) => (
-                    <tr key={rowIdx} className="hover:bg-zinc-800/30 transition-colors">
+                    <tr key={rowIdx} className="hover:bg-muted/30 transition-colors">
                       {columns.map((col) => (
-                        <td key={col} className="px-4 py-3 text-zinc-300 whitespace-nowrap">
+                        <td key={col} className="px-4 py-3 text-foreground whitespace-nowrap">
                           {formatValue((row as Record<string, unknown>)[col])}
                         </td>
                       ))}
@@ -214,15 +214,15 @@ export function DatasetViewer({ dataset }: DatasetViewerProps) {
               </table>
             </div>
             {sortedData.length > 20 && (
-              <p className="text-xs text-zinc-500 mt-2 text-center">
+              <p className="text-xs text-muted-foreground mt-2 text-center">
                 Showing all {sortedData.length} records. Scroll horizontally to see all columns.
               </p>
             )}
           </TabsContent>
 
           <TabsContent value="json" className="mt-4">
-            <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 overflow-x-auto">
-              <pre className="text-sm text-zinc-300 font-mono">
+            <div className="bg-card border border-border rounded-lg p-4 overflow-x-auto">
+              <pre className="text-sm text-foreground font-mono">
                 {JSON.stringify(dataset.data, null, 2)}
               </pre>
             </div>

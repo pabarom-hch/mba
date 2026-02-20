@@ -106,33 +106,33 @@ export function SimpleLessonViewer({
   return (
     <div className="p-4 sm:p-6 lg:p-8 space-y-6">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 flex-wrap">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
         {breadcrumbs.map((crumb, idx) => (
           <span key={idx} className="flex items-center gap-2">
             {idx > 0 && <ChevronRight className="h-4 w-4 shrink-0" />}
-            <Link href={crumb.href} className="hover:text-zinc-100">
+            <Link href={crumb.href} className="hover:text-foreground">
               {crumb.label}
             </Link>
           </span>
         ))}
         <ChevronRight className="h-4 w-4 shrink-0" />
-        <span className="text-zinc-100">{lesson.title}</span>
+        <span className="text-foreground">{lesson.title}</span>
       </div>
 
       {/* Header */}
       <div className="space-y-4">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2 flex-wrap">
-            <Badge variant="outline" className="border-zinc-700 capitalize">
+            <Badge variant="outline" className="border-border capitalize">
               {lesson.type}
             </Badge>
             {lesson.difficulty && (
-              <Badge variant="outline" className="border-zinc-700 capitalize">
+              <Badge variant="outline" className="border-border capitalize">
                 {lesson.difficulty}
               </Badge>
             )}
             {lesson.duration_minutes && (
-              <span className="text-sm text-zinc-400 flex items-center gap-1">
+              <span className="text-sm text-muted-foreground flex items-center gap-1">
                 <Clock className="h-4 w-4" />
                 {lesson.duration_minutes} min
               </span>
@@ -140,7 +140,7 @@ export function SimpleLessonViewer({
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold">{lesson.title}</h1>
           {lesson.summary && (
-            <p className="text-zinc-400">{lesson.summary}</p>
+            <p className="text-muted-foreground">{lesson.summary}</p>
           )}
           <Button
             onClick={handleMarkComplete}
@@ -168,9 +168,9 @@ export function SimpleLessonViewer({
       )}
 
       {/* Highlighting Tip */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-4">
-          <div className="flex items-center gap-2 text-sm text-zinc-500">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Highlighter className="h-4 w-4 text-orange-500" />
             <span>Select any text to highlight it or add a note</span>
           </div>
@@ -179,7 +179,7 @@ export function SimpleLessonViewer({
 
       {/* Learning Objectives */}
       {learningObjectivesArray && learningObjectivesArray.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex items-center gap-2">
               <Target className="h-5 w-5 text-blue-500" />
@@ -189,7 +189,7 @@ export function SimpleLessonViewer({
           <CardContent>
             <ul className="space-y-2">
               {learningObjectivesArray.map((obj, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
+                <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
                   <span className="text-blue-500 mt-1">•</span>
                   {obj}
                 </li>
@@ -200,7 +200,7 @@ export function SimpleLessonViewer({
       )}
 
       {/* Main Content */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-4 sm:p-6">
           <HighlightableContent lessonId={lesson.id} highlights={highlights}>
             <ExerciseContent
@@ -215,7 +215,7 @@ export function SimpleLessonViewer({
 
       {/* Key Concepts */}
       {keyConceptsArray && keyConceptsArray.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex items-center gap-2">
               <Lightbulb className="h-5 w-5 text-yellow-500" />
@@ -225,7 +225,7 @@ export function SimpleLessonViewer({
           <CardContent>
             <div className="flex flex-wrap gap-2">
               {keyConceptsArray.map((concept, idx) => (
-                <Badge key={idx} variant="secondary" className="bg-zinc-800 text-zinc-300">
+                <Badge key={idx} variant="secondary" className="bg-muted text-foreground">
                   {concept}
                 </Badge>
               ))}
@@ -236,7 +236,7 @@ export function SimpleLessonViewer({
 
       {/* Reflection Questions */}
       {reflectionQuestionsArray && reflectionQuestionsArray.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex items-center gap-2">
               <HelpCircle className="h-5 w-5 text-purple-500" />
@@ -246,7 +246,7 @@ export function SimpleLessonViewer({
           <CardContent>
             <ul className="space-y-3">
               {reflectionQuestionsArray.map((question, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
+                <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
                   <span className="text-purple-500 font-semibold">{idx + 1}.</span>
                   {question}
                 </li>
@@ -258,7 +258,7 @@ export function SimpleLessonViewer({
 
       {/* Further Reading */}
       {furtherReadingArray && furtherReadingArray.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="pb-2">
             <CardTitle className="text-base flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-green-500" />
@@ -279,10 +279,10 @@ export function SimpleLessonViewer({
                       {item.title}
                     </a>
                   ) : (
-                    <span className="text-zinc-300">{item.title}</span>
+                    <span className="text-foreground">{item.title}</span>
                   )}
                   {item.author && (
-                    <span className="text-zinc-500"> by {item.author}</span>
+                    <span className="text-muted-foreground"> by {item.author}</span>
                   )}
                 </li>
               ))}

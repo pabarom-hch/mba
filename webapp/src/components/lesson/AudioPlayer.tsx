@@ -193,7 +193,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
+    <div className="bg-card border border-border rounded-lg p-4">
       <audio
         ref={audioRef}
         src={src}
@@ -207,7 +207,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
 
       {/* Title */}
       {title && (
-        <p className="text-sm text-zinc-400 mb-3 truncate">
+        <p className="text-sm text-muted-foreground mb-3 truncate">
           {title}
         </p>
       )}
@@ -222,7 +222,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
           disabled={isLoading}
           className="cursor-pointer"
         />
-        <div className="flex justify-between text-xs text-zinc-500 mt-1">
+        <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>{formatTime(currentTime)}</span>
           <span>{formatTime(duration)}</span>
         </div>
@@ -236,7 +236,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
             variant="ghost"
             size="icon"
             onClick={restart}
-            className="h-8 w-8 text-zinc-400 hover:text-zinc-100"
+            className="h-8 w-8 text-muted-foreground hover:text-foreground"
             title="Restart"
           >
             <RotateCcw className="h-4 w-4" />
@@ -246,7 +246,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
             variant="ghost"
             size="icon"
             onClick={() => skip(-10)}
-            className="h-8 w-8 text-zinc-400 hover:text-zinc-100"
+            className="h-8 w-8 text-muted-foreground hover:text-foreground"
             title="Back 10s"
           >
             <Rewind className="h-4 w-4" />
@@ -270,7 +270,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
             variant="ghost"
             size="icon"
             onClick={() => skip(10)}
-            className="h-8 w-8 text-zinc-400 hover:text-zinc-100"
+            className="h-8 w-8 text-muted-foreground hover:text-foreground"
             title="Forward 10s"
           >
             <FastForward className="h-4 w-4" />
@@ -285,12 +285,12 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="h-8 px-2 text-xs text-zinc-400 hover:text-zinc-100"
+                className="h-8 px-2 text-xs text-muted-foreground hover:text-foreground"
               >
                 {playbackSpeed}x
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="bg-zinc-900 border-zinc-800">
+            <DropdownMenuContent align="end" className="bg-card border-border">
               {PLAYBACK_SPEEDS.map((speed) => (
                 <DropdownMenuItem
                   key={speed}
@@ -298,7 +298,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
                   className={`text-sm ${
                     playbackSpeed === speed
                       ? "text-orange-400"
-                      : "text-zinc-300"
+                      : "text-foreground"
                   }`}
                 >
                   {speed}x
@@ -313,7 +313,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
               variant="ghost"
               size="icon"
               onClick={toggleMute}
-              className="h-8 w-8 text-zinc-400 hover:text-zinc-100"
+              className="h-8 w-8 text-muted-foreground hover:text-foreground"
             >
               {isMuted || volume === 0 ? (
                 <VolumeX className="h-4 w-4" />
@@ -333,7 +333,7 @@ export function AudioPlayer({ src, title, lessonId }: AudioPlayerProps) {
       </div>
 
       {/* Keyboard shortcuts hint */}
-      <p className="text-xs text-zinc-600 mt-3 text-center">
+      <p className="text-xs text-muted-foreground mt-3 text-center">
         Space: play/pause • ←→: skip 10s • M: mute
       </p>
     </div>

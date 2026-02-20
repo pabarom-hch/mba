@@ -205,7 +205,7 @@ export default async function FundPipelinePage({ params, searchParams }: Pipelin
   return (
     <div className="flex flex-col h-[calc(100vh-4rem)]">
       {/* Header */}
-      <div className="flex-shrink-0 border-b border-zinc-800 bg-zinc-950 px-6 py-4">
+      <div className="flex-shrink-0 border-b border-border bg-background px-6 py-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
@@ -216,7 +216,7 @@ export default async function FundPipelinePage({ params, searchParams }: Pipelin
               </Link>
               <div>
                 <h1 className="text-xl font-bold">{fund.name}</h1>
-                <div className="flex items-center gap-4 text-sm text-zinc-400">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <span>{totalOpportunities} opportunities</span>
                   <span>•</span>
                   <span>{formatCurrency(totalPipelineValue)} pipeline</span>
@@ -227,13 +227,13 @@ export default async function FundPipelinePage({ params, searchParams }: Pipelin
             </div>
             <div className="flex items-center gap-2">
               <Link href={`/pipeline/${fundId}/contacts`}>
-                <Button variant="outline" size="sm" className="border-zinc-700">
+                <Button variant="outline" size="sm" className="border-border">
                   <Users className="h-4 w-4 mr-2" />
                   Contacts
                 </Button>
               </Link>
               <Link href={`/pipeline/${fundId}/organizations`}>
-                <Button variant="outline" size="sm" className="border-zinc-700">
+                <Button variant="outline" size="sm" className="border-border">
                   <Building className="h-4 w-4 mr-2" />
                   Organizations
                 </Button>

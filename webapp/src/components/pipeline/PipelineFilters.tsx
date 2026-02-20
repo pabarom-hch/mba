@@ -83,12 +83,12 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
       <div className="flex items-center gap-2 flex-1">
         {/* Search */}
         <div className="relative flex-1 max-w-sm">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-500" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             placeholder="Search opportunities..."
             value={searchValue}
             onChange={(e) => handleSearch(e.target.value)}
-            className="pl-9 bg-zinc-900 border-zinc-800 h-9"
+            className="pl-9 bg-card border-border h-9"
           />
           {searchValue && (
             <button
@@ -96,7 +96,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
                 setSearchValue("");
                 updateParams("search", "");
               }}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
               <X className="h-4 w-4" />
             </button>
@@ -109,7 +109,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
             <Button
               variant="outline"
               size="sm"
-              className={`border-zinc-700 h-9 ${currentLpType ? "bg-orange-500/10 border-orange-500/30" : ""}`}
+              className={`border-border h-9 ${currentLpType ? "bg-orange-500/10 border-orange-500/30" : ""}`}
             >
               <Filter className="h-4 w-4 mr-2" />
               LP Type
@@ -120,12 +120,12 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
               )}
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-56 p-2 bg-zinc-900 border-zinc-800" align="start">
+          <PopoverContent className="w-56 p-2 bg-card border-border" align="start">
             <div className="space-y-1">
               <button
                 onClick={() => updateParams("lpType", "")}
                 className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
-                  !currentLpType ? "bg-zinc-800 text-white" : "text-zinc-400 hover:bg-zinc-800/50"
+                  !currentLpType ? "bg-muted text-white" : "text-muted-foreground hover:bg-muted/50"
                 }`}
               >
                 All Types
@@ -136,8 +136,8 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
                   onClick={() => updateParams("lpType", value)}
                   className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
                     currentLpType === value
-                      ? "bg-zinc-800 text-white"
-                      : "text-zinc-400 hover:bg-zinc-800/50"
+                      ? "bg-muted text-white"
+                      : "text-muted-foreground hover:bg-muted/50"
                   }`}
                 >
                   {label}
@@ -153,7 +153,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
             <Button
               variant="outline"
               size="sm"
-              className={`border-zinc-700 h-9 ${currentDateRange ? "bg-orange-500/10 border-orange-500/30" : ""}`}
+              className={`border-border h-9 ${currentDateRange ? "bg-orange-500/10 border-orange-500/30" : ""}`}
             >
               <Calendar className="h-4 w-4 mr-2" />
               Date
@@ -164,12 +164,12 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
               )}
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-48 p-2 bg-zinc-900 border-zinc-800" align="start">
+          <PopoverContent className="w-48 p-2 bg-card border-border" align="start">
             <div className="space-y-1">
               <button
                 onClick={() => updateParams("dateRange", "")}
                 className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
-                  !currentDateRange ? "bg-zinc-800 text-white" : "text-zinc-400 hover:bg-zinc-800/50"
+                  !currentDateRange ? "bg-muted text-white" : "text-muted-foreground hover:bg-muted/50"
                 }`}
               >
                 All Time
@@ -180,8 +180,8 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
                   onClick={() => updateParams("dateRange", option.value)}
                   className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
                     currentDateRange === option.value
-                      ? "bg-zinc-800 text-white"
-                      : "text-zinc-400 hover:bg-zinc-800/50"
+                      ? "bg-muted text-white"
+                      : "text-muted-foreground hover:bg-muted/50"
                   }`}
                 >
                   {option.label}
@@ -197,7 +197,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
             variant="ghost"
             size="sm"
             onClick={clearFilters}
-            className="h-9 text-zinc-400 hover:text-white"
+            className="h-9 text-muted-foreground hover:text-white"
           >
             <X className="h-4 w-4 mr-1" />
             Clear
@@ -208,19 +208,19 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
       <div className="flex items-center gap-2">
         {/* Filter Status */}
         {hasFilters && (
-          <span className="text-sm text-zinc-500">
+          <span className="text-sm text-muted-foreground">
             Showing {filteredCount} of {totalCount}
           </span>
         )}
 
         {/* View Toggle */}
-        <div className="flex items-center border border-zinc-800 rounded-lg overflow-hidden">
+        <div className="flex items-center border border-border rounded-lg overflow-hidden">
           <Link href={`/pipeline/${fundId}?view=kanban`}>
             <Button
               variant="ghost"
               size="sm"
               className={`h-8 px-3 rounded-none ${
-                currentView === "kanban" ? "bg-zinc-800" : ""
+                currentView === "kanban" ? "bg-muted" : ""
               }`}
             >
               <LayoutGrid className="h-4 w-4" />
@@ -231,7 +231,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
               variant="ghost"
               size="sm"
               className={`h-8 px-3 rounded-none ${
-                currentView === "list" ? "bg-zinc-800" : ""
+                currentView === "list" ? "bg-muted" : ""
               }`}
             >
               <List className="h-4 w-4" />
@@ -241,7 +241,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
 
         {/* Metrics Link */}
         <Link href={`/pipeline/${fundId}/metrics`}>
-          <Button variant="outline" size="sm" className="border-zinc-700 h-9">
+          <Button variant="outline" size="sm" className="border-border h-9">
             <BarChart3 className="h-4 w-4 mr-2" />
             Metrics
           </Button>

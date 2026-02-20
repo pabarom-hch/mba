@@ -16,7 +16,7 @@ import { Progress } from "@/components/ui/progress";
 import type { Fund } from "@/types/database";
 
 const STATUS_COLORS: Record<string, string> = {
-  building: "bg-zinc-500/10 text-zinc-400 border-zinc-500/30",
+  building: "bg-zinc-500/10 text-muted-foreground border-zinc-500/30",
   raising: "bg-orange-500/10 text-orange-400 border-orange-500/30",
   first_close: "bg-blue-500/10 text-blue-400 border-blue-500/30",
   final_close: "bg-green-500/10 text-green-400 border-green-500/30",
@@ -80,7 +80,7 @@ export default async function FundBuilderPage() {
             <Rocket className="h-8 w-8 text-orange-500" />
             Fund Builder
           </h1>
-          <p className="text-zinc-400 mt-1">
+          <p className="text-muted-foreground mt-1">
             Build and manage your PE funds with guided workflows
           </p>
         </div>
@@ -94,13 +94,13 @@ export default async function FundBuilderPage() {
 
       {/* Fund Cards */}
       {funds.length === 0 ? (
-        <Card className="border-zinc-800 bg-zinc-900/50 border-dashed">
+        <Card className="border-border bg-card/50 border-dashed">
           <CardContent className="flex flex-col items-center justify-center py-16">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-500/10 mb-4">
               <Building2 className="h-8 w-8 text-orange-500" />
             </div>
             <h3 className="text-xl font-semibold mb-2">No funds yet</h3>
-            <p className="text-zinc-400 text-center max-w-md mb-6">
+            <p className="text-muted-foreground text-center max-w-md mb-6">
               Start building your first fund. The Fund Builder will guide you through
               strategy development, legal formation, and capital raising.
             </p>
@@ -116,19 +116,19 @@ export default async function FundBuilderPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {funds.map((fund) => (
             <Link key={fund.id} href={`/fund-builder/${fund.id}`}>
-              <Card className="border-zinc-800 bg-zinc-900/50 transition-all hover:border-zinc-700 hover:bg-zinc-800/50 h-full">
+              <Card className="border-border bg-card/50 transition-all hover:border-border hover:bg-accent/50 h-full">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <CardTitle className="text-lg flex items-center gap-2">
                         {fund.name}
                         {fund.is_sample_data && (
-                          <Badge variant="outline" className="text-xs border-zinc-700 text-zinc-500">
+                          <Badge variant="outline" className="text-xs border-border text-muted-foreground">
                             Sample
                           </Badge>
                         )}
                       </CardTitle>
-                      <CardDescription className="text-zinc-400 mt-1 line-clamp-2">
+                      <CardDescription className="text-muted-foreground mt-1 line-clamp-2">
                         {fund.description || "No description"}
                       </CardDescription>
                     </div>
@@ -144,33 +144,33 @@ export default async function FundBuilderPage() {
                   {/* Fund Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center gap-2">
-                      <DollarSign className="h-4 w-4 text-zinc-500" />
+                      <DollarSign className="h-4 w-4 text-muted-foreground" />
                       <div>
                         <p className="text-sm font-medium">{formatCurrency(fund.target_size)}</p>
-                        <p className="text-xs text-zinc-500">Target</p>
+                        <p className="text-xs text-muted-foreground">Target</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <TrendingUp className="h-4 w-4 text-zinc-500" />
+                      <TrendingUp className="h-4 w-4 text-muted-foreground" />
                       <div>
                         <p className="text-sm font-medium">
                           {fund.carried_interest_rate ? `${(fund.carried_interest_rate * 100).toFixed(0)}%` : "20%"}
                         </p>
-                        <p className="text-xs text-zinc-500">Carry</p>
+                        <p className="text-xs text-muted-foreground">Carry</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Fund Terms */}
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="text-xs border-zinc-700 text-zinc-400">
+                    <Badge variant="outline" className="text-xs border-border text-muted-foreground">
                       {fund.management_fee_rate ? `${(fund.management_fee_rate * 100).toFixed(1)}%` : "2%"} Mgmt
                     </Badge>
-                    <Badge variant="outline" className="text-xs border-zinc-700 text-zinc-400">
+                    <Badge variant="outline" className="text-xs border-border text-muted-foreground">
                       {fund.preferred_return ? `${(fund.preferred_return * 100).toFixed(0)}%` : "8%"} Pref
                     </Badge>
                     {fund.vintage_year && (
-                      <Badge variant="outline" className="text-xs border-zinc-700 text-zinc-400">
+                      <Badge variant="outline" className="text-xs border-border text-muted-foreground">
                         <Calendar className="h-3 w-3 mr-1" />
                         {fund.vintage_year}
                       </Badge>
@@ -180,10 +180,10 @@ export default async function FundBuilderPage() {
                   {/* Progress placeholder */}
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-zinc-400">Builder Progress</span>
-                      <span className="text-zinc-400">0%</span>
+                      <span className="text-muted-foreground">Builder Progress</span>
+                      <span className="text-muted-foreground">0%</span>
                     </div>
-                    <Progress value={0} className="h-1.5 bg-zinc-800" />
+                    <Progress value={0} className="h-1.5 bg-muted" />
                   </div>
                 </CardContent>
               </Card>
@@ -193,42 +193,42 @@ export default async function FundBuilderPage() {
       )}
 
       {/* Quick Links */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardHeader>
           <CardTitle className="text-lg">Learn More</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Link href="/pe/10/module-29-fund-formation/01-fund-strategy-and-validation">
-              <div className="flex items-center gap-3 rounded-lg border border-zinc-800 p-4 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+              <div className="flex items-center gap-3 rounded-lg border border-border p-4 transition-colors hover:border-border hover:bg-accent/50">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/10">
                   <Rocket className="h-5 w-5 text-purple-500" />
                 </div>
                 <div>
                   <p className="font-medium">Fund Strategy</p>
-                  <p className="text-sm text-zinc-400">Module 29, Lesson 1</p>
+                  <p className="text-sm text-muted-foreground">Module 29, Lesson 1</p>
                 </div>
               </div>
             </Link>
             <Link href="/pe/10/module-29-fund-formation/02-fund-formation-and-legal">
-              <div className="flex items-center gap-3 rounded-lg border border-zinc-800 p-4 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+              <div className="flex items-center gap-3 rounded-lg border border-border p-4 transition-colors hover:border-border hover:bg-accent/50">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
                   <Building2 className="h-5 w-5 text-blue-500" />
                 </div>
                 <div>
                   <p className="font-medium">Legal Formation</p>
-                  <p className="text-sm text-zinc-400">Module 29, Lesson 2</p>
+                  <p className="text-sm text-muted-foreground">Module 29, Lesson 2</p>
                 </div>
               </div>
             </Link>
             <Link href="/pe/10/module-29-fund-formation/03-capital-raising-and-fundraising">
-              <div className="flex items-center gap-3 rounded-lg border border-zinc-800 p-4 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+              <div className="flex items-center gap-3 rounded-lg border border-border p-4 transition-colors hover:border-border hover:bg-accent/50">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
                   <TrendingUp className="h-5 w-5 text-green-500" />
                 </div>
                 <div>
                   <p className="font-medium">Capital Raising</p>
-                  <p className="text-sm text-zinc-400">Module 29, Lesson 3</p>
+                  <p className="text-sm text-muted-foreground">Module 29, Lesson 3</p>
                 </div>
               </div>
             </Link>

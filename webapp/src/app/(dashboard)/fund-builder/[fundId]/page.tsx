@@ -280,7 +280,7 @@ export default function FundBuilderWorkflowPage() {
     const value = response?.response_value || "";
     const isSaving = savingQuestions.has(question.id);
 
-    const baseInputClass = "bg-zinc-950 border-zinc-800";
+    const baseInputClass = "bg-background border-border";
 
     switch (question.question_type) {
       case "textarea":
@@ -301,7 +301,7 @@ export default function FundBuilderWorkflowPage() {
             <SelectTrigger className={baseInputClass}>
               <SelectValue placeholder={question.placeholder || "Select an option"} />
             </SelectTrigger>
-            <SelectContent className="bg-zinc-900 border-zinc-800">
+            <SelectContent className="bg-card border-border">
               {options.map((opt) => (
                 <SelectItem key={String(opt)} value={String(opt)}>
                   {String(opt)}
@@ -348,7 +348,7 @@ export default function FundBuilderWorkflowPage() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
+        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
       </div>
     );
   }
@@ -356,7 +356,7 @@ export default function FundBuilderWorkflowPage() {
   if (!fund) {
     return (
       <div className="p-6 lg:p-8">
-        <p className="text-zinc-400">Fund not found</p>
+        <p className="text-muted-foreground">Fund not found</p>
       </div>
     );
   }
@@ -388,16 +388,16 @@ export default function FundBuilderWorkflowPage() {
               <Rocket className="h-6 w-6 text-orange-500" />
               {fund.name}
             </h1>
-            <p className="text-zinc-400 text-sm">Fund Builder Workflow</p>
+            <p className="text-muted-foreground text-sm">Fund Builder Workflow</p>
           </div>
         </div>
         <div className="flex items-center gap-4">
           <div className="text-right">
-            <p className="text-sm text-zinc-500">Overall Progress</p>
+            <p className="text-sm text-muted-foreground">Overall Progress</p>
             <p className="text-lg font-semibold">{overallProgress}%</p>
           </div>
           <Link href={`/pipeline/${fundId}`}>
-            <Button variant="outline" className="border-zinc-700">
+            <Button variant="outline" className="border-border">
               <Kanban className="h-4 w-4 mr-2" />
               LP Pipeline
             </Button>
@@ -425,7 +425,7 @@ export default function FundBuilderWorkflowPage() {
               className={`flex-shrink-0 px-4 py-3 rounded-lg border transition-all ${
                 isActive
                   ? "border-orange-500 bg-orange-500/10"
-                  : "border-zinc-800 bg-zinc-900/50 hover:border-zinc-700"
+                  : "border-border bg-card/50 hover:border-border"
               }`}
             >
               <div className="flex items-center gap-2">
@@ -442,12 +442,12 @@ export default function FundBuilderWorkflowPage() {
                     phase.phase_number
                   )}
                 </div>
-                <span className={`text-sm font-medium ${isActive ? "text-white" : "text-zinc-400"}`}>
+                <span className={`text-sm font-medium ${isActive ? "text-white" : "text-muted-foreground"}`}>
                   {phase.name}
                 </span>
               </div>
               {!isComplete && progress > 0 && (
-                <div className="mt-2 w-full h-1 bg-zinc-800 rounded-full overflow-hidden">
+                <div className="mt-2 w-full h-1 bg-muted rounded-full overflow-hidden">
                   <div
                     className="h-full bg-orange-500 transition-all"
                     style={{ width: `${progress}%` }}
@@ -465,7 +465,7 @@ export default function FundBuilderWorkflowPage() {
           {/* Main Content */}
           <div className="lg:col-span-3 space-y-4">
             {/* Phase Header Card */}
-            <Card className="border-zinc-800 bg-zinc-900/50">
+            <Card className="border-border bg-card/50">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -481,25 +481,25 @@ export default function FundBuilderWorkflowPage() {
                     </Badge>
                     <CardTitle className="mt-2">{currentPhase.name}</CardTitle>
                     {currentPhase.description && (
-                      <CardDescription className="text-zinc-400 mt-1">
+                      <CardDescription className="text-muted-foreground mt-1">
                         {currentPhase.description}
                       </CardDescription>
                     )}
                   </div>
                   <div className="text-right">
                     <p className="text-2xl font-bold">{currentProgress}%</p>
-                    <p className="text-sm text-zinc-500">Complete</p>
+                    <p className="text-sm text-muted-foreground">Complete</p>
                   </div>
                 </div>
-                <Progress value={currentProgress} className="h-2 bg-zinc-800 mt-4" />
+                <Progress value={currentProgress} className="h-2 bg-muted mt-4" />
               </CardHeader>
             </Card>
 
             {/* Sections */}
             {currentPhase.sections.length === 0 ? (
-              <Card className="border-zinc-800 bg-zinc-900/50">
+              <Card className="border-border bg-card/50">
                 <CardContent className="py-12 text-center">
-                  <p className="text-zinc-500">No questions defined for this phase yet.</p>
+                  <p className="text-muted-foreground">No questions defined for this phase yet.</p>
                   {currentPhase.phase_number === 5 && (
                     <Link href={`/pipeline/${fundId}`}>
                       <Button className="mt-4 bg-orange-500 hover:bg-orange-600">
@@ -522,18 +522,18 @@ export default function FundBuilderWorkflowPage() {
 
                 return (
                   <Collapsible key={section.id} open={isExpanded}>
-                    <Card className="border-zinc-800 bg-zinc-900/50">
+                    <Card className="border-border bg-card/50">
                       <CollapsibleTrigger asChild>
                         <CardHeader
-                          className="cursor-pointer hover:bg-zinc-800/30 transition-colors"
+                          className="cursor-pointer hover:bg-muted/30 transition-colors"
                           onClick={() => toggleSection(section.id)}
                         >
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
                               {isExpanded ? (
-                                <ChevronDown className="h-5 w-5 text-zinc-500" />
+                                <ChevronDown className="h-5 w-5 text-muted-foreground" />
                               ) : (
-                                <ChevronRight className="h-5 w-5 text-zinc-500" />
+                                <ChevronRight className="h-5 w-5 text-muted-foreground" />
                               )}
                               <div>
                                 <CardTitle className="text-base flex items-center gap-2">
@@ -543,13 +543,13 @@ export default function FundBuilderWorkflowPage() {
                                   )}
                                 </CardTitle>
                                 {section.description && (
-                                  <CardDescription className="text-zinc-500 text-sm">
+                                  <CardDescription className="text-muted-foreground text-sm">
                                     {section.description}
                                   </CardDescription>
                                 )}
                               </div>
                             </div>
-                            <Badge variant="outline" className="border-zinc-700">
+                            <Badge variant="outline" className="border-border">
                               {sectionAnswered}/{sectionTotal}
                             </Badge>
                           </div>
@@ -570,7 +570,7 @@ export default function FundBuilderWorkflowPage() {
                                   {hasValue ? (
                                     <CheckCircle2 className="h-4 w-4 text-green-500 mt-1 shrink-0" />
                                   ) : (
-                                    <Circle className="h-4 w-4 text-zinc-600 mt-1 shrink-0" />
+                                    <Circle className="h-4 w-4 text-muted-foreground mt-1 shrink-0" />
                                   )}
                                   <div className="flex-1 space-y-2">
                                     <Label className="flex items-center gap-2">
@@ -579,14 +579,14 @@ export default function FundBuilderWorkflowPage() {
                                         <span className="text-red-400">*</span>
                                       )}
                                       {isSaving && (
-                                        <span className="flex items-center gap-1 text-xs text-zinc-500">
+                                        <span className="flex items-center gap-1 text-xs text-muted-foreground">
                                           <Save className="h-3 w-3 animate-pulse" />
                                           Saving...
                                         </span>
                                       )}
                                     </Label>
                                     {question.help_text && (
-                                      <p className="text-xs text-zinc-500">
+                                      <p className="text-xs text-muted-foreground">
                                         {question.help_text}
                                       </p>
                                     )}
@@ -609,7 +609,7 @@ export default function FundBuilderWorkflowPage() {
           <div className="space-y-6">
             {/* Lesson Link */}
             {currentPhase.lesson_slug && (
-              <Card className="border-zinc-800 bg-zinc-900/50">
+              <Card className="border-border bg-card/50">
                 <CardHeader>
                   <CardTitle className="text-base flex items-center gap-2">
                     <BookOpen className="h-4 w-4 text-purple-400" />
@@ -618,7 +618,7 @@ export default function FundBuilderWorkflowPage() {
                 </CardHeader>
                 <CardContent>
                   <Link href={`/pe/10/module-29-fund-formation/${currentPhase.lesson_slug}`}>
-                    <Button variant="outline" className="w-full border-zinc-700 justify-between">
+                    <Button variant="outline" className="w-full border-border justify-between">
                       <span>Module 29 - Lesson {currentPhase.phase_number}</span>
                       <ExternalLink className="h-4 w-4" />
                     </Button>
@@ -637,7 +637,7 @@ export default function FundBuilderWorkflowPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-zinc-400 mb-4">
+                  <p className="text-sm text-muted-foreground mb-4">
                     Phase 5 is all about execution. Use the LP Pipeline to manage your capital
                     raising process.
                   </p>
@@ -652,7 +652,7 @@ export default function FundBuilderWorkflowPage() {
             )}
 
             {/* Phase Progress Overview */}
-            <Card className="border-zinc-800 bg-zinc-900/50">
+            <Card className="border-border bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base">All Phases</CardTitle>
               </CardHeader>
@@ -666,14 +666,14 @@ export default function FundBuilderWorkflowPage() {
                       key={phase.id}
                       onClick={() => setActivePhase(idx)}
                       className={`w-full text-left p-2 rounded-lg transition-colors ${
-                        isActive ? "bg-zinc-800" : "hover:bg-zinc-800/50"
+                        isActive ? "bg-muted" : "hover:bg-muted/50"
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-sm font-medium">
                           {phase.phase_number}. {phase.name}
                         </span>
-                        <span className="text-xs text-zinc-500">{progress}%</span>
+                        <span className="text-xs text-muted-foreground">{progress}%</span>
                       </div>
                       <Progress value={progress} className="h-1 bg-zinc-700" />
                     </button>
@@ -683,14 +683,14 @@ export default function FundBuilderWorkflowPage() {
             </Card>
 
             {/* Quick Stats */}
-            <Card className="border-zinc-800 bg-zinc-900/50">
+            <Card className="border-border bg-card/50">
               <CardHeader>
                 <CardTitle className="text-base">Fund Stats</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 {fund.target_size && (
                   <div>
-                    <p className="text-xs text-zinc-500">Target Size</p>
+                    <p className="text-xs text-muted-foreground">Target Size</p>
                     <p className="font-medium">
                       ${(fund.target_size / 1_000_000).toFixed(0)}M
                     </p>
@@ -698,7 +698,7 @@ export default function FundBuilderWorkflowPage() {
                 )}
                 {fund.management_fee_rate && (
                   <div>
-                    <p className="text-xs text-zinc-500">Management Fee</p>
+                    <p className="text-xs text-muted-foreground">Management Fee</p>
                     <p className="font-medium">
                       {(fund.management_fee_rate * 100).toFixed(1)}%
                     </p>
@@ -706,7 +706,7 @@ export default function FundBuilderWorkflowPage() {
                 )}
                 {fund.carried_interest_rate && (
                   <div>
-                    <p className="text-xs text-zinc-500">Carried Interest</p>
+                    <p className="text-xs text-muted-foreground">Carried Interest</p>
                     <p className="font-medium">
                       {(fund.carried_interest_rate * 100).toFixed(0)}%
                     </p>
@@ -714,7 +714,7 @@ export default function FundBuilderWorkflowPage() {
                 )}
                 {fund.preferred_return && (
                   <div>
-                    <p className="text-xs text-zinc-500">Preferred Return</p>
+                    <p className="text-xs text-muted-foreground">Preferred Return</p>
                     <p className="font-medium">
                       {(fund.preferred_return * 100).toFixed(0)}%
                     </p>

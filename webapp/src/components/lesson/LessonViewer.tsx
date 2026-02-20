@@ -113,34 +113,34 @@ export function LessonViewer({
       {/* Main Content */}
       <div className="flex-1 flex flex-col min-h-0 min-w-0 w-full">
         {/* Header */}
-        <div className="border-b border-zinc-800 bg-zinc-950 px-4 sm:px-6 py-4 w-full">
+        <div className="border-b border-border bg-background px-4 sm:px-6 py-4 w-full">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-sm text-zinc-400 mb-3 flex-wrap">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3 flex-wrap">
             {breadcrumbs.map((crumb, idx) => (
               <span key={idx} className="flex items-center gap-2">
                 {idx > 0 && <ChevronRight className="h-4 w-4 shrink-0" />}
-                <Link href={crumb.href} className="hover:text-zinc-100 truncate">
+                <Link href={crumb.href} className="hover:text-foreground truncate">
                   {crumb.label}
                 </Link>
               </span>
             ))}
             <ChevronRight className="h-4 w-4 shrink-0" />
-            <span className="text-zinc-100 truncate">{lesson.title}</span>
+            <span className="text-foreground truncate">{lesson.title}</span>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2 mb-2 flex-wrap">
-                <Badge variant="outline" className="border-zinc-700 capitalize shrink-0">
+                <Badge variant="outline" className="border-border capitalize shrink-0">
                   {lesson.type}
                 </Badge>
                 {lesson.difficulty && (
-                  <Badge variant="outline" className="border-zinc-700 capitalize shrink-0">
+                  <Badge variant="outline" className="border-border capitalize shrink-0">
                     {lesson.difficulty}
                   </Badge>
                 )}
                 {lesson.duration_minutes && (
-                  <span className="text-sm text-zinc-400 flex items-center gap-1 shrink-0">
+                  <span className="text-sm text-muted-foreground flex items-center gap-1 shrink-0">
                     <Clock className="h-4 w-4" />
                     {lesson.duration_minutes} min
                   </span>
@@ -148,7 +148,7 @@ export function LessonViewer({
               </div>
               <h1 className="text-xl sm:text-2xl font-bold break-words">{lesson.title}</h1>
               {lesson.summary && (
-                <p className="text-zinc-400 mt-2 max-w-2xl break-words">{lesson.summary}</p>
+                <p className="text-muted-foreground mt-2 max-w-2xl break-words">{lesson.summary}</p>
               )}
             </div>
 
@@ -186,14 +186,14 @@ export function LessonViewer({
                 )}
 
                 {/* Highlighting Tip */}
-                <div className="flex items-center gap-2 text-sm text-zinc-500 mb-6 p-3 rounded-lg bg-zinc-900/50 border border-zinc-800">
+                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6 p-3 rounded-lg bg-card/50 border border-border">
                   <Highlighter className="h-4 w-4 text-orange-500" />
                   <span>Select any text to highlight it or add a note</span>
                 </div>
 
                 {/* Learning Objectives */}
                 {learningObjectivesArray && learningObjectivesArray.length > 0 && (
-                  <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+                  <Card className="border-border bg-card/50 mb-6">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-base flex items-center gap-2">
                         <Target className="h-5 w-5 text-blue-500" />
@@ -203,7 +203,7 @@ export function LessonViewer({
                     <CardContent>
                       <ul className="space-y-2">
                         {learningObjectivesArray.map((obj, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
+                          <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
                             <span className="text-blue-500 mt-1">•</span>
                             {obj}
                           </li>
@@ -214,7 +214,7 @@ export function LessonViewer({
                 )}
 
                 {/* Main Content - with Interactive Tables */}
-                <Card className="border-zinc-800 bg-zinc-900/50 mb-6 overflow-x-hidden">
+                <Card className="border-border bg-card/50 mb-6 overflow-x-hidden">
                   <CardContent className="p-4 sm:p-6">
                     <HighlightableContent lessonId={lesson.id} highlights={highlights}>
                       <ExerciseContent
@@ -229,7 +229,7 @@ export function LessonViewer({
 
             {/* Key Concepts */}
             {keyConceptsArray && keyConceptsArray.length > 0 && (
-              <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+              <Card className="border-border bg-card/50 mb-6">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-base flex items-center gap-2">
                     <Lightbulb className="h-5 w-5 text-yellow-500" />
@@ -239,7 +239,7 @@ export function LessonViewer({
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {keyConceptsArray.map((concept, idx) => (
-                      <Badge key={idx} variant="secondary" className="bg-zinc-800 text-zinc-300">
+                      <Badge key={idx} variant="secondary" className="bg-muted text-foreground">
                         {concept}
                       </Badge>
                     ))}
@@ -250,7 +250,7 @@ export function LessonViewer({
 
             {/* Reflection Questions */}
             {reflectionQuestionsArray && reflectionQuestionsArray.length > 0 && (
-              <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+              <Card className="border-border bg-card/50 mb-6">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-base flex items-center gap-2">
                     <HelpCircle className="h-5 w-5 text-purple-500" />
@@ -260,7 +260,7 @@ export function LessonViewer({
                 <CardContent>
                   <ul className="space-y-3">
                     {reflectionQuestionsArray.map((question, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-zinc-300">
+                      <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
                         <span className="text-purple-500 font-semibold">{idx + 1}.</span>
                         {question}
                       </li>
@@ -272,7 +272,7 @@ export function LessonViewer({
 
             {/* Further Reading */}
             {furtherReadingArray && furtherReadingArray.length > 0 && (
-              <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+              <Card className="border-border bg-card/50 mb-6">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-base flex items-center gap-2">
                     <BookOpen className="h-5 w-5 text-green-500" />
@@ -293,10 +293,10 @@ export function LessonViewer({
                             {item.title}
                           </a>
                         ) : (
-                          <span className="text-zinc-300">{item.title}</span>
+                          <span className="text-foreground">{item.title}</span>
                         )}
                         {item.author && (
-                          <span className="text-zinc-500"> by {item.author}</span>
+                          <span className="text-muted-foreground"> by {item.author}</span>
                         )}
                       </li>
                     ))}

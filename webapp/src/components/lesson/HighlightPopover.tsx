@@ -64,7 +64,7 @@ export function HighlightPopover({
         transform: "translateX(-50%)",
       }}
     >
-      <div className="bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl p-2">
+      <div className="bg-card border border-border rounded-lg shadow-xl p-2">
         {!showNoteInput ? (
           <div className="flex items-center gap-1">
             {/* Color options */}
@@ -86,7 +86,7 @@ export function HighlightPopover({
               size="sm"
               onClick={() => setShowNoteInput(true)}
               disabled={isSubmitting}
-              className="h-7 px-2 text-zinc-400 hover:text-zinc-100"
+              className="h-7 px-2 text-muted-foreground hover:text-foreground"
             >
               <MessageSquare className="h-4 w-4" />
             </Button>
@@ -97,7 +97,7 @@ export function HighlightPopover({
               size="sm"
               onClick={onClose}
               disabled={isSubmitting}
-              className="h-7 px-2 text-zinc-400 hover:text-zinc-100"
+              className="h-7 px-2 text-muted-foreground hover:text-foreground"
             >
               <X className="h-4 w-4" />
             </Button>
@@ -105,13 +105,13 @@ export function HighlightPopover({
         ) : (
           <div className="w-64 space-y-3">
             {/* Selected text preview */}
-            <div className="text-xs text-zinc-400 line-clamp-2 italic">
+            <div className="text-xs text-muted-foreground line-clamp-2 italic">
               &quot;{selectedText}&quot;
             </div>
 
             {/* Color selection */}
             <div className="flex items-center gap-1">
-              <span className="text-xs text-zinc-500 mr-2">Color:</span>
+              <span className="text-xs text-muted-foreground mr-2">Color:</span>
               {colorOptions.map(({ color, bg }) => (
                 <button
                   key={color}
@@ -130,7 +130,7 @@ export function HighlightPopover({
               value={note}
               onChange={(e) => setNote(e.target.value)}
               placeholder="Add a note (optional)..."
-              className="min-h-[80px] bg-zinc-800 border-zinc-700 text-sm resize-none"
+              className="min-h-[80px] bg-muted border-border text-sm resize-none"
               autoFocus
             />
 

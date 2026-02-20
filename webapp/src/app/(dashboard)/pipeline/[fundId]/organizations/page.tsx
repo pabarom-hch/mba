@@ -111,7 +111,7 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
               <Building2 className="h-6 w-6 text-orange-500" />
               Organizations
             </h1>
-            <p className="text-zinc-400 text-sm">{fund.name} • {organizations.length} organizations</p>
+            <p className="text-muted-foreground text-sm">{fund.name} • {organizations.length} organizations</p>
           </div>
         </div>
         <Link href={`/pipeline/${fundId}/organizations/new`}>
@@ -130,13 +130,13 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
           { label: "High EM Appetite", value: highAppetiteCount.toString(), icon: TrendingUp, color: "text-blue-400" },
           { label: "LP Types", value: Object.keys(orgsByType).length.toString(), icon: Users, color: "text-purple-400" },
         ].map((stat) => (
-          <Card key={stat.label} className="border-zinc-800 bg-zinc-900/50">
+          <Card key={stat.label} className="border-border bg-card/50">
             <CardContent className="p-4">
               <div className="flex items-center gap-2 mb-1">
                 <stat.icon className={`h-4 w-4 ${stat.color}`} />
                 <p className={`text-2xl font-bold ${stat.color}`}>{stat.value}</p>
               </div>
-              <p className="text-sm text-zinc-500">{stat.label}</p>
+              <p className="text-sm text-muted-foreground">{stat.label}</p>
             </CardContent>
           </Card>
         ))}
@@ -144,13 +144,13 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
 
       {/* Organization List */}
       {organizations.length === 0 ? (
-        <Card className="border-zinc-800 bg-zinc-900/50 border-dashed">
+        <Card className="border-border bg-card/50 border-dashed">
           <CardContent className="flex flex-col items-center justify-center py-16">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-500/10 mb-4">
               <Building2 className="h-8 w-8 text-orange-500" />
             </div>
             <h3 className="text-xl font-semibold mb-2">No organizations yet</h3>
-            <p className="text-zinc-400 text-center max-w-md mb-6">
+            <p className="text-muted-foreground text-center max-w-md mb-6">
               Add LP organizations to track institutional investors and their investment preferences.
             </p>
             <Link href={`/pipeline/${fundId}/organizations/new`}>
@@ -165,12 +165,12 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
         <div className="space-y-2">
           {organizations.map((org) => (
             <Link key={org.id} href={`/pipeline/${fundId}/organizations/${org.id}`}>
-              <Card className="border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+              <Card className="border-border bg-card/50 hover:border-border hover:bg-accent/50 transition-all">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       {/* Icon */}
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-zinc-400">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground">
                         <Building2 className="h-5 w-5" />
                       </div>
 
@@ -178,7 +178,7 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="font-medium">{org.name}</span>
-                          <Badge variant="outline" className="bg-zinc-800/50 text-zinc-400 border-zinc-700">
+                          <Badge variant="outline" className="bg-muted/50 text-muted-foreground border-border">
                             {LP_TYPE_LABELS[org.type]}
                           </Badge>
                           {org.emerging_manager_appetite && (
@@ -187,7 +187,7 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
                             </Badge>
                           )}
                         </div>
-                        <div className="flex items-center gap-4 text-sm text-zinc-500">
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
                           {org.city && org.state && (
                             <span>{org.city}, {org.state}</span>
                           )}
@@ -205,20 +205,20 @@ export default async function OrganizationsPage({ params }: OrganizationsPagePro
                     <div className="hidden sm:flex items-center gap-6 text-sm">
                       {org.aum && (
                         <div className="text-right">
-                          <p className="text-zinc-500">AUM</p>
+                          <p className="text-muted-foreground">AUM</p>
                           <p className="font-medium text-green-400">{formatCurrency(org.aum)}</p>
                         </div>
                       )}
                       {(org.typical_commitment_min || org.typical_commitment_max) && (
                         <div className="text-right">
-                          <p className="text-zinc-500">Typical Commitment</p>
+                          <p className="text-muted-foreground">Typical Commitment</p>
                           <p className="font-medium">
                             {formatCurrency(org.typical_commitment_min)} - {formatCurrency(org.typical_commitment_max)}
                           </p>
                         </div>
                       )}
                       {org.website && (
-                        <Globe className="h-4 w-4 text-zinc-500" />
+                        <Globe className="h-4 w-4 text-muted-foreground" />
                       )}
                     </div>
                   </div>

@@ -93,32 +93,32 @@ export default async function MentorPage() {
     <div className="p-6 lg:p-8 space-y-8">
       {/* Header */}
       <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-2 text-sm text-zinc-400">
-          <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/" className="hover:text-foreground">Dashboard</Link>
           <ChevronRight className="h-4 w-4" />
-          <span className="text-zinc-100">CEO Mentor Curriculum</span>
+          <span className="text-foreground">CEO Mentor Curriculum</span>
         </div>
         <div>
           <h1 className="text-3xl font-bold">{curriculum.name}</h1>
-          <p className="text-zinc-400 mt-2">{curriculum.description}</p>
+          <p className="text-muted-foreground mt-2">{curriculum.description}</p>
         </div>
       </div>
 
       {/* Overall Progress */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <p className="text-sm text-zinc-400">Your Progress</p>
+              <p className="text-sm text-muted-foreground">Your Progress</p>
               <p className="text-2xl font-bold">Week {currentWeek} of 52</p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-zinc-400">Lessons Completed</p>
+              <p className="text-sm text-muted-foreground">Lessons Completed</p>
               <p className="text-lg font-semibold">{totalCompleted} / {totalLessons}</p>
             </div>
           </div>
-          <Progress value={overallProgress} className="h-2 bg-zinc-800" />
-          <p className="text-sm text-zinc-400 mt-2">{Math.round(overallProgress)}% complete</p>
+          <Progress value={overallProgress} className="h-2 bg-muted" />
+          <p className="text-sm text-muted-foreground mt-2">{Math.round(overallProgress)}% complete</p>
         </CardContent>
       </Card>
 
@@ -144,17 +144,17 @@ export default async function MentorPage() {
                     <span className="text-cyan-500">Q{quarter.number}:</span>
                     {quarter.name}
                   </h2>
-                  <p className="text-sm text-zinc-400 mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     {quarter.theme} • Weeks {quarter.weeks_start}-{quarter.weeks_end}
                   </p>
                 </div>
-                <Badge variant="outline" className="border-zinc-700">
+                <Badge variant="outline" className="border-border">
                   {Math.round(quarterProgress)}% complete
                 </Badge>
               </div>
 
               {/* Progress bar for quarter */}
-              <Progress value={quarterProgress} className="h-1.5 bg-zinc-800" />
+              <Progress value={quarterProgress} className="h-1.5 bg-muted" />
 
               {/* Weeks Grid */}
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -171,12 +171,12 @@ export default async function MentorPage() {
                       href={isLocked ? "#" : `/mentor/${quarter.number}/${week.number}`}
                       className={isLocked ? "cursor-not-allowed" : ""}
                     >
-                      <Card className={`border-zinc-800 bg-zinc-900/50 transition-all h-full ${
+                      <Card className={`border-border bg-card/50 transition-all h-full ${
                         isLocked
                           ? "opacity-50"
                           : isCurrent
                           ? "border-cyan-500/50 ring-1 ring-cyan-500/20"
-                          : "hover:border-zinc-700 hover:bg-zinc-800/50"
+                          : "hover:border-border hover:bg-muted/50"
                       }`}>
                         <CardHeader className="pb-2">
                           <div className="flex items-center justify-between">
@@ -189,7 +189,7 @@ export default async function MentorPage() {
                                   ? "border-cyan-500/30 text-cyan-400"
                                   : hasStarted
                                   ? "border-orange-500/30 text-orange-400"
-                                  : "border-zinc-700 text-zinc-400"
+                                  : "border-border text-muted-foreground"
                               }
                             >
                               {isComplete ? (
@@ -210,11 +210,11 @@ export default async function MentorPage() {
                                 "Not Started"
                               )}
                             </Badge>
-                            <span className="text-sm text-zinc-500">Week {week.number}</span>
+                            <span className="text-sm text-muted-foreground">Week {week.number}</span>
                           </div>
                           <CardTitle className="text-base mt-2">{week.title}</CardTitle>
                           {week.theme && (
-                            <CardDescription className="text-zinc-400 text-sm">
+                            <CardDescription className="text-muted-foreground text-sm">
                               {week.theme}
                             </CardDescription>
                           )}
@@ -229,19 +229,19 @@ export default async function MentorPage() {
                                   {week.mentor.name.split(" ").map((n: string) => n[0]).join("")}
                                 </AvatarFallback>
                               </Avatar>
-                              <span className="text-sm text-zinc-400">{week.mentor.name}</span>
+                              <span className="text-sm text-muted-foreground">{week.mentor.name}</span>
                             </div>
                           )}
 
                           <div className="flex items-center justify-between text-sm">
-                            <span className="text-zinc-400">
+                            <span className="text-muted-foreground">
                               {progress.completed} / {progress.total} lessons
                             </span>
                           </div>
                           {progress.total > 0 && (
                             <Progress
                               value={(progress.completed / progress.total) * 100}
-                              className="h-1 bg-zinc-800 mt-2"
+                              className="h-1 bg-muted mt-2"
                             />
                           )}
                         </CardContent>

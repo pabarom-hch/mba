@@ -93,7 +93,7 @@ export default function NewFundPage() {
             <Rocket className="h-6 w-6 text-orange-500" />
             Create New Fund
           </h1>
-          <p className="text-zinc-400 text-sm">
+          <p className="text-muted-foreground text-sm">
             Set up your fund basics, then use the Fund Builder to refine
           </p>
         </div>
@@ -101,10 +101,10 @@ export default function NewFundPage() {
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Fund Details</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Enter the basic information for your fund. You can adjust these later.
             </CardDescription>
           </CardHeader>
@@ -117,7 +117,7 @@ export default function NewFundPage() {
                 name="name"
                 placeholder="e.g., Acme Partners Fund I"
                 required
-                className="bg-zinc-950 border-zinc-800"
+                className="bg-background border-border"
               />
             </div>
 
@@ -129,7 +129,7 @@ export default function NewFundPage() {
                 name="description"
                 placeholder="Brief description of fund strategy and focus..."
                 rows={3}
-                className="bg-zinc-950 border-zinc-800 resize-none"
+                className="bg-background border-border resize-none"
               />
             </div>
 
@@ -145,7 +145,7 @@ export default function NewFundPage() {
                   min="1"
                   placeholder="75"
                   required
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -157,7 +157,7 @@ export default function NewFundPage() {
                   step="0.1"
                   min="1"
                   placeholder="90"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function NewFundPage() {
                 min="25"
                 placeholder="250"
                 defaultValue="250"
-                className="bg-zinc-950 border-zinc-800"
+                className="bg-background border-border"
               />
             </div>
 
@@ -190,7 +190,7 @@ export default function NewFundPage() {
                   max="5"
                   placeholder="2.0"
                   defaultValue="2.0"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -204,7 +204,7 @@ export default function NewFundPage() {
                   max="30"
                   placeholder="20"
                   defaultValue="20"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -218,7 +218,7 @@ export default function NewFundPage() {
                   max="15"
                   placeholder="8"
                   defaultValue="8"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -227,10 +227,10 @@ export default function NewFundPage() {
             <div className="space-y-2">
               <Label htmlFor="waterfall_type">Waterfall Type</Label>
               <Select name="waterfall_type" defaultValue="european">
-                <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                <SelectTrigger className="bg-background border-border">
                   <SelectValue placeholder="Select waterfall type" />
                 </SelectTrigger>
-                <SelectContent className="bg-zinc-900 border-zinc-800">
+                <SelectContent className="bg-card border-border">
                   <SelectItem value="european">European (Fund-level)</SelectItem>
                   <SelectItem value="american">American (Deal-by-deal)</SelectItem>
                 </SelectContent>
@@ -250,7 +250,7 @@ export default function NewFundPage() {
             {/* Actions */}
             <div className="flex gap-4 pt-4">
               <Link href="/fund-builder" className="flex-1">
-                <Button variant="outline" className="w-full border-zinc-700">
+                <Button variant="outline" className="w-full border-border">
                   Cancel
                 </Button>
               </Link>

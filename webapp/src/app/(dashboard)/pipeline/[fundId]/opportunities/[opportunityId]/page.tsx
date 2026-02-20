@@ -399,7 +399,7 @@ export default function OpportunityDetailPage() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
+        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
       </div>
     );
   }
@@ -407,7 +407,7 @@ export default function OpportunityDetailPage() {
   if (!opportunity) {
     return (
       <div className="p-6 lg:p-8">
-        <p className="text-zinc-400">Opportunity not found</p>
+        <p className="text-muted-foreground">Opportunity not found</p>
       </div>
     );
   }
@@ -469,15 +469,15 @@ export default function OpportunityDetailPage() {
                 Delete
               </Button>
             </AlertDialogTrigger>
-            <AlertDialogContent className="bg-zinc-900 border-zinc-800">
+            <AlertDialogContent className="bg-card border-border">
               <AlertDialogHeader>
                 <AlertDialogTitle>Delete Opportunity</AlertDialogTitle>
-                <AlertDialogDescription className="text-zinc-400">
+                <AlertDialogDescription className="text-muted-foreground">
                   Are you sure you want to delete {opportunity.name}? This action cannot be undone.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
-                <AlertDialogCancel className="border-zinc-700">Cancel</AlertDialogCancel>
+                <AlertDialogCancel className="border-border">Cancel</AlertDialogCancel>
                 <AlertDialogAction
                   onClick={handleDelete}
                   className="bg-red-500 hover:bg-red-600"
@@ -512,7 +512,7 @@ export default function OpportunityDetailPage() {
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-6">
           {/* Opportunity Details */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle>Opportunity Details</CardTitle>
             </CardHeader>
@@ -523,7 +523,7 @@ export default function OpportunityDetailPage() {
                 <Input
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
 
@@ -531,10 +531,10 @@ export default function OpportunityDetailPage() {
               <div className="space-y-2">
                 <Label>Pipeline Stage</Label>
                 <Select value={formData.stage_id} onValueChange={handleStageChange}>
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select stage" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {stages.map((stage) => (
                       <SelectItem key={stage.id} value={stage.id}>
                         <div className="flex items-center gap-2">
@@ -560,10 +560,10 @@ export default function OpportunityDetailPage() {
                       setFormData({ ...formData, organization_id: value, contact_id: "" })
                     }
                   >
-                    <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                    <SelectTrigger className="bg-background border-border">
                       <SelectValue placeholder="Select organization" />
                     </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-zinc-800">
+                    <SelectContent className="bg-card border-border">
                       {organizations.map((org) => (
                         <SelectItem key={org.id} value={org.id}>
                           {org.name}
@@ -578,10 +578,10 @@ export default function OpportunityDetailPage() {
                     value={formData.contact_id}
                     onValueChange={(value) => setFormData({ ...formData, contact_id: value })}
                   >
-                    <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                    <SelectTrigger className="bg-background border-border">
                       <SelectValue placeholder="Select contact" />
                     </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-zinc-800">
+                    <SelectContent className="bg-card border-border">
                       {filteredContacts.map((c) => (
                         <SelectItem key={c.id} value={c.id}>
                           {c.first_name} {c.last_name}
@@ -603,7 +603,7 @@ export default function OpportunityDetailPage() {
                     }
                     type="number"
                     step="0.1"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -614,7 +614,7 @@ export default function OpportunityDetailPage() {
                     type="number"
                     min="0"
                     max="100"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -625,7 +625,7 @@ export default function OpportunityDetailPage() {
                       setFormData({ ...formData, expected_close_date: e.target.value })
                     }
                     type="date"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -639,10 +639,10 @@ export default function OpportunityDetailPage() {
                     setFormData({ ...formData, status: value as LpOpportunity["status"] })
                   }
                 >
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     <SelectItem value="active">Active</SelectItem>
                     <SelectItem value="won">Won</SelectItem>
                     <SelectItem value="lost">Lost</SelectItem>
@@ -658,7 +658,7 @@ export default function OpportunityDetailPage() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   rows={4}
-                  className="bg-zinc-950 border-zinc-800 resize-none"
+                  className="bg-background border-border resize-none"
                 />
               </div>
 
@@ -672,13 +672,13 @@ export default function OpportunityDetailPage() {
           </Card>
 
           {/* Activities */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader className="flex flex-row items-center justify-between">
               <CardTitle>Activities</CardTitle>
               <Button
                 size="sm"
                 variant="outline"
-                className="border-zinc-700"
+                className="border-border"
                 onClick={() => setShowActivityForm(!showActivityForm)}
               >
                 <Plus className="h-4 w-4 mr-2" />
@@ -687,7 +687,7 @@ export default function OpportunityDetailPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               {showActivityForm && (
-                <div className="p-4 border border-zinc-800 rounded-lg space-y-4 bg-zinc-950">
+                <div className="p-4 border border-border rounded-lg space-y-4 bg-background">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label>Type</Label>
@@ -697,10 +697,10 @@ export default function OpportunityDetailPage() {
                           setNewActivity({ ...newActivity, type: value as LpActivity["type"] })
                         }
                       >
-                        <SelectTrigger className="bg-zinc-900 border-zinc-800">
+                        <SelectTrigger className="bg-card border-border">
                           <SelectValue />
                         </SelectTrigger>
-                        <SelectContent className="bg-zinc-900 border-zinc-800">
+                        <SelectContent className="bg-card border-border">
                           {ACTIVITY_TYPES.map((t) => (
                             <SelectItem key={t.value} value={t.value}>
                               {t.label}
@@ -717,7 +717,7 @@ export default function OpportunityDetailPage() {
                           setNewActivity({ ...newActivity, subject: e.target.value })
                         }
                         placeholder="Brief summary"
-                        className="bg-zinc-900 border-zinc-800"
+                        className="bg-card border-border"
                       />
                     </div>
                   </div>
@@ -730,7 +730,7 @@ export default function OpportunityDetailPage() {
                       }
                       placeholder="Details..."
                       rows={2}
-                      className="bg-zinc-900 border-zinc-800 resize-none"
+                      className="bg-card border-border resize-none"
                     />
                   </div>
                   <div className="flex gap-2">
@@ -753,7 +753,7 @@ export default function OpportunityDetailPage() {
               )}
 
               {activities.length === 0 ? (
-                <p className="text-sm text-zinc-500">No activities logged yet</p>
+                <p className="text-sm text-muted-foreground">No activities logged yet</p>
               ) : (
                 <div className="space-y-3">
                   {activities.map((activity) => {
@@ -761,22 +761,22 @@ export default function OpportunityDetailPage() {
                     return (
                       <div
                         key={activity.id}
-                        className="flex gap-3 p-3 border border-zinc-800 rounded-lg"
+                        className="flex gap-3 p-3 border border-border rounded-lg"
                       >
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800 shrink-0">
-                          <Icon className="h-4 w-4 text-zinc-400" />
+                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-muted shrink-0">
+                          <Icon className="h-4 w-4 text-muted-foreground" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2">
                             <span className="font-medium text-sm">{activity.subject}</span>
-                            <Badge variant="outline" className="text-xs bg-zinc-800/50">
+                            <Badge variant="outline" className="text-xs bg-muted/50">
                               {activity.type}
                             </Badge>
                           </div>
                           {activity.description && (
-                            <p className="text-sm text-zinc-400 mt-1">{activity.description}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{activity.description}</p>
                           )}
-                          <p className="text-xs text-zinc-500 mt-1">
+                          <p className="text-xs text-muted-foreground mt-1">
                             {activity.activity_date &&
                               new Date(activity.activity_date).toLocaleDateString()}
                           </p>
@@ -793,16 +793,16 @@ export default function OpportunityDetailPage() {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Stage Checklist */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base flex items-center justify-between">
                 <span>Stage Checklist</span>
-                <span className="text-sm text-zinc-500">
+                <span className="text-sm text-muted-foreground">
                   {completedItems}/{totalItems}
                 </span>
               </CardTitle>
               {totalItems > 0 && (
-                <div className="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+                <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
                   <div
                     className="h-full bg-orange-500 transition-all"
                     style={{ width: `${checklistProgress}%` }}
@@ -812,13 +812,13 @@ export default function OpportunityDetailPage() {
             </CardHeader>
             <CardContent>
               {checklistItems.length === 0 ? (
-                <p className="text-sm text-zinc-500">No checklist items for this stage</p>
+                <p className="text-sm text-muted-foreground">No checklist items for this stage</p>
               ) : (
                 <div className="space-y-2">
                   {checklistItems.map((item) => (
                     <div
                       key={item.id}
-                      className="flex items-start gap-3 p-2 rounded-lg hover:bg-zinc-800/50 cursor-pointer"
+                      className="flex items-start gap-3 p-2 rounded-lg hover:bg-muted/50 cursor-pointer"
                       onClick={() => handleChecklistToggle(item)}
                     >
                       <Checkbox
@@ -828,7 +828,7 @@ export default function OpportunityDetailPage() {
                       />
                       <span
                         className={`text-sm ${
-                          item.is_completed ? "text-zinc-500 line-through" : ""
+                          item.is_completed ? "text-muted-foreground line-through" : ""
                         }`}
                       >
                         {item.item_text}
@@ -841,7 +841,7 @@ export default function OpportunityDetailPage() {
           </Card>
 
           {/* Quick Info */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Quick Info</CardTitle>
             </CardHeader>
@@ -850,7 +850,7 @@ export default function OpportunityDetailPage() {
                 <div className="flex items-center gap-3">
                   <DollarSign className="h-4 w-4 text-green-400" />
                   <div>
-                    <p className="text-sm text-zinc-500">Potential</p>
+                    <p className="text-sm text-muted-foreground">Potential</p>
                     <p className="font-medium text-green-400">
                       ${(opportunity.potential_commitment / 1_000_000).toFixed(1)}M
                     </p>
@@ -861,7 +861,7 @@ export default function OpportunityDetailPage() {
                 <div className="flex items-center gap-3">
                   <TrendingUp className="h-4 w-4 text-blue-400" />
                   <div>
-                    <p className="text-sm text-zinc-500">Probability</p>
+                    <p className="text-sm text-muted-foreground">Probability</p>
                     <p className="font-medium">{Math.round(opportunity.probability * 100)}%</p>
                   </div>
                 </div>
@@ -870,7 +870,7 @@ export default function OpportunityDetailPage() {
                 <div className="flex items-center gap-3">
                   <Calendar className="h-4 w-4 text-purple-400" />
                   <div>
-                    <p className="text-sm text-zinc-500">Expected Close</p>
+                    <p className="text-sm text-muted-foreground">Expected Close</p>
                     <p className="font-medium">
                       {new Date(opportunity.expected_close_date).toLocaleDateString()}
                     </p>
@@ -881,7 +881,7 @@ export default function OpportunityDetailPage() {
                 <div className="flex items-center gap-3">
                   <Clock className="h-4 w-4 text-yellow-400" />
                   <div>
-                    <p className="text-sm text-zinc-500">Last Activity</p>
+                    <p className="text-sm text-muted-foreground">Last Activity</p>
                     <p className="font-medium">
                       {new Date(opportunity.last_activity_date).toLocaleDateString()}
                     </p>
@@ -892,19 +892,19 @@ export default function OpportunityDetailPage() {
           </Card>
 
           {/* Related Links */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Related</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
               {organization && (
                 <Link href={`/pipeline/${fundId}/organizations/${organization.id}`}>
-                  <div className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                  <div className="p-2 rounded-lg border border-border hover:border-border hover:bg-muted/50 transition-all">
                     <div className="flex items-center gap-2">
-                      <Building2 className="h-4 w-4 text-zinc-500" />
+                      <Building2 className="h-4 w-4 text-muted-foreground" />
                       <span className="text-sm font-medium">{organization.name}</span>
                     </div>
-                    <p className="text-xs text-zinc-500 ml-6">
+                    <p className="text-xs text-muted-foreground ml-6">
                       {LP_TYPE_LABELS[organization.type]}
                     </p>
                   </div>
@@ -912,15 +912,15 @@ export default function OpportunityDetailPage() {
               )}
               {contact && (
                 <Link href={`/pipeline/${fundId}/contacts/${contact.id}`}>
-                  <div className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                  <div className="p-2 rounded-lg border border-border hover:border-border hover:bg-muted/50 transition-all">
                     <div className="flex items-center gap-2">
-                      <User className="h-4 w-4 text-zinc-500" />
+                      <User className="h-4 w-4 text-muted-foreground" />
                       <span className="text-sm font-medium">
                         {contact.first_name} {contact.last_name}
                       </span>
                     </div>
                     {contact.title && (
-                      <p className="text-xs text-zinc-500 ml-6">{contact.title}</p>
+                      <p className="text-xs text-muted-foreground ml-6">{contact.title}</p>
                     )}
                   </div>
                 </Link>

@@ -193,7 +193,7 @@ export default function OrganizationDetailPage() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
+        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
       </div>
     );
   }
@@ -201,7 +201,7 @@ export default function OrganizationDetailPage() {
   if (!organization) {
     return (
       <div className="p-6 lg:p-8">
-        <p className="text-zinc-400">Organization not found</p>
+        <p className="text-muted-foreground">Organization not found</p>
       </div>
     );
   }
@@ -221,7 +221,7 @@ export default function OrganizationDetailPage() {
               <Building2 className="h-6 w-6 text-orange-500" />
               {organization.name}
             </h1>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-muted-foreground text-sm">
               {LP_TYPE_LABELS[organization.type]}
               {organization.city && organization.state && ` • ${organization.city}, ${organization.state}`}
             </p>
@@ -235,16 +235,16 @@ export default function OrganizationDetailPage() {
                 Delete
               </Button>
             </AlertDialogTrigger>
-            <AlertDialogContent className="bg-zinc-900 border-zinc-800">
+            <AlertDialogContent className="bg-card border-border">
               <AlertDialogHeader>
                 <AlertDialogTitle>Delete Organization</AlertDialogTitle>
-                <AlertDialogDescription className="text-zinc-400">
+                <AlertDialogDescription className="text-muted-foreground">
                   Are you sure you want to delete {organization.name}?
                   This action cannot be undone.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
-                <AlertDialogCancel className="border-zinc-700">Cancel</AlertDialogCancel>
+                <AlertDialogCancel className="border-border">Cancel</AlertDialogCancel>
                 <AlertDialogAction
                   onClick={handleDelete}
                   className="bg-red-500 hover:bg-red-600"
@@ -278,7 +278,7 @@ export default function OrganizationDetailPage() {
       <div className="grid gap-6 lg:grid-cols-3">
         {/* Main Form */}
         <div className="lg:col-span-2 space-y-6">
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle>Organization Information</CardTitle>
             </CardHeader>
@@ -290,7 +290,7 @@ export default function OrganizationDetailPage() {
                   <Input
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -299,10 +299,10 @@ export default function OrganizationDetailPage() {
                     value={formData.type}
                     onValueChange={(value) => setFormData({ ...formData, type: value as LpOrganization["type"] })}
                   >
-                    <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                    <SelectTrigger className="bg-background border-border">
                       <SelectValue placeholder="Select type" />
                     </SelectTrigger>
-                    <SelectContent className="bg-zinc-900 border-zinc-800">
+                    <SelectContent className="bg-card border-border">
                       {Object.entries(LP_TYPE_LABELS).map(([value, label]) => (
                         <SelectItem key={value} value={value}>
                           {label}
@@ -320,7 +320,7 @@ export default function OrganizationDetailPage() {
                   value={formData.website}
                   onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                   type="url"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
 
@@ -331,7 +331,7 @@ export default function OrganizationDetailPage() {
                   <Input
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -339,7 +339,7 @@ export default function OrganizationDetailPage() {
                   <Input
                     value={formData.state}
                     onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -347,7 +347,7 @@ export default function OrganizationDetailPage() {
                   <Input
                     value={formData.country}
                     onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -361,7 +361,7 @@ export default function OrganizationDetailPage() {
                     <Input
                       value={formData.aum}
                       onChange={(e) => setFormData({ ...formData, aum: e.target.value })}
-                      className="bg-zinc-950 border-zinc-800"
+                      className="bg-background border-border"
                     />
                   </div>
                   <div className="space-y-2">
@@ -369,7 +369,7 @@ export default function OrganizationDetailPage() {
                     <Input
                       value={formData.typical_commitment_min}
                       onChange={(e) => setFormData({ ...formData, typical_commitment_min: e.target.value })}
-                      className="bg-zinc-950 border-zinc-800"
+                      className="bg-background border-border"
                     />
                   </div>
                   <div className="space-y-2">
@@ -377,7 +377,7 @@ export default function OrganizationDetailPage() {
                     <Input
                       value={formData.typical_commitment_max}
                       onChange={(e) => setFormData({ ...formData, typical_commitment_max: e.target.value })}
-                      className="bg-zinc-950 border-zinc-800"
+                      className="bg-background border-border"
                     />
                   </div>
                 </div>
@@ -390,10 +390,10 @@ export default function OrganizationDetailPage() {
                   value={formData.emerging_manager_appetite}
                   onValueChange={(value) => setFormData({ ...formData, emerging_manager_appetite: value })}
                 >
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select appetite level" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {APPETITE_OPTIONS.map((opt) => (
                       <SelectItem key={opt.value} value={opt.value}>
                         {opt.label}
@@ -410,7 +410,7 @@ export default function OrganizationDetailPage() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   rows={4}
-                  className="bg-zinc-950 border-zinc-800 resize-none"
+                  className="bg-background border-border resize-none"
                 />
               </div>
 
@@ -427,14 +427,14 @@ export default function OrganizationDetailPage() {
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Quick Actions */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Quick Actions</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
               {formData.website && (
                 <a href={formData.website} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="outline" size="sm" className="w-full justify-start border-zinc-700">
+                  <Button variant="outline" size="sm" className="w-full justify-start border-border">
                     <Globe className="h-4 w-4 mr-2" />
                     Visit Website
                     <ExternalLink className="h-3 w-3 ml-auto" />
@@ -442,7 +442,7 @@ export default function OrganizationDetailPage() {
                 </a>
               )}
               <Link href={`/pipeline/${fundId}/contacts/new`}>
-                <Button variant="outline" size="sm" className="w-full justify-start border-zinc-700">
+                <Button variant="outline" size="sm" className="w-full justify-start border-border">
                   <Users className="h-4 w-4 mr-2" />
                   Add Contact
                 </Button>
@@ -451,20 +451,20 @@ export default function OrganizationDetailPage() {
           </Card>
 
           {/* Investment Summary */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Investment Summary</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {organization.aum && (
                 <div>
-                  <p className="text-sm text-zinc-500">AUM</p>
+                  <p className="text-sm text-muted-foreground">AUM</p>
                   <p className="text-lg font-semibold text-green-400">{formatCurrency(organization.aum)}</p>
                 </div>
               )}
               {(organization.typical_commitment_min || organization.typical_commitment_max) && (
                 <div>
-                  <p className="text-sm text-zinc-500">Typical Commitment</p>
+                  <p className="text-sm text-muted-foreground">Typical Commitment</p>
                   <p className="font-medium">
                     {formatCurrency(organization.typical_commitment_min)} - {formatCurrency(organization.typical_commitment_max)}
                   </p>
@@ -472,7 +472,7 @@ export default function OrganizationDetailPage() {
               )}
               {organization.emerging_manager_appetite && (
                 <div>
-                  <p className="text-sm text-zinc-500">EM Appetite</p>
+                  <p className="text-sm text-muted-foreground">EM Appetite</p>
                   <Badge variant="outline" className="mt-1">
                     {organization.emerging_manager_appetite}
                   </Badge>
@@ -482,21 +482,21 @@ export default function OrganizationDetailPage() {
           </Card>
 
           {/* Contacts */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Contacts ({contacts.length})</CardTitle>
             </CardHeader>
             <CardContent>
               {contacts.length === 0 ? (
-                <p className="text-sm text-zinc-500">No contacts at this organization</p>
+                <p className="text-sm text-muted-foreground">No contacts at this organization</p>
               ) : (
                 <div className="space-y-2">
                   {contacts.map((contact) => (
                     <Link key={contact.id} href={`/pipeline/${fundId}/contacts/${contact.id}`}>
-                      <div className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                      <div className="p-2 rounded-lg border border-border hover:border-border hover:bg-accent/50 transition-all">
                         <p className="text-sm font-medium">{contact.first_name} {contact.last_name}</p>
                         {contact.title && (
-                          <p className="text-xs text-zinc-500">{contact.title}</p>
+                          <p className="text-xs text-muted-foreground">{contact.title}</p>
                         )}
                       </div>
                     </Link>
@@ -507,18 +507,18 @@ export default function OrganizationDetailPage() {
           </Card>
 
           {/* Related Opportunities */}
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader>
               <CardTitle className="text-base">Related Opportunities</CardTitle>
             </CardHeader>
             <CardContent>
               {opportunities.length === 0 ? (
-                <p className="text-sm text-zinc-500">No opportunities from this organization</p>
+                <p className="text-sm text-muted-foreground">No opportunities from this organization</p>
               ) : (
                 <div className="space-y-2">
                   {opportunities.map((opp) => (
                     <Link key={opp.id} href={`/pipeline/${fundId}/opportunities/${opp.id}`}>
-                      <div className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                      <div className="p-2 rounded-lg border border-border hover:border-border hover:bg-accent/50 transition-all">
                         <p className="text-sm font-medium">{opp.name}</p>
                         {opp.potential_commitment && (
                           <p className="text-xs text-green-400">

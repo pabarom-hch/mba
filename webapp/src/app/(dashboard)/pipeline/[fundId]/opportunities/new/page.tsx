@@ -158,7 +158,7 @@ export default function NewOpportunityPage() {
             <Plus className="h-6 w-6 text-orange-500" />
             Add Opportunity
           </h1>
-          <p className="text-zinc-400 text-sm">
+          <p className="text-muted-foreground text-sm">
             Add a new LP opportunity to your pipeline
           </p>
         </div>
@@ -166,10 +166,10 @@ export default function NewOpportunityPage() {
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Opportunity Details</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Enter the LP opportunity information
             </CardDescription>
           </CardHeader>
@@ -182,7 +182,7 @@ export default function NewOpportunityPage() {
                 name="name"
                 placeholder="e.g., Smith Family Office - Fund I"
                 required
-                className="bg-zinc-950 border-zinc-800"
+                className="bg-background border-border"
               />
             </div>
 
@@ -197,10 +197,10 @@ export default function NewOpportunityPage() {
                   name="organization_id"
                   onValueChange={(value) => setSelectedOrgId(value)}
                 >
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select organization" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {organizations.map((org) => (
                       <SelectItem key={org.id} value={org.id}>
                         {org.name}
@@ -215,10 +215,10 @@ export default function NewOpportunityPage() {
                   Contact
                 </Label>
                 <Select name="contact_id">
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select contact" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {filteredContacts.map((contact) => (
                       <SelectItem key={contact.id} value={contact.id}>
                         {contact.first_name} {contact.last_name}
@@ -234,10 +234,10 @@ export default function NewOpportunityPage() {
             <div className="space-y-2">
               <Label htmlFor="stage_id">Pipeline Stage *</Label>
               <Select name="stage_id" required defaultValue={stages[0]?.id}>
-                <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                <SelectTrigger className="bg-background border-border">
                   <SelectValue placeholder="Select stage" />
                 </SelectTrigger>
-                <SelectContent className="bg-zinc-900 border-zinc-800">
+                <SelectContent className="bg-card border-border">
                   {stages.map((stage) => (
                     <SelectItem key={stage.id} value={stage.id}>
                       <div className="flex items-center gap-2">
@@ -264,7 +264,7 @@ export default function NewOpportunityPage() {
                   step="0.1"
                   min="0"
                   placeholder="5.0"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -278,7 +278,7 @@ export default function NewOpportunityPage() {
                   max="100"
                   placeholder="50"
                   defaultValue="50"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -287,7 +287,7 @@ export default function NewOpportunityPage() {
                   id="expected_close_date"
                   name="expected_close_date"
                   type="date"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function NewOpportunityPage() {
                 name="notes"
                 placeholder="Additional notes about this opportunity..."
                 rows={3}
-                className="bg-zinc-950 border-zinc-800 resize-none"
+                className="bg-background border-border resize-none"
               />
             </div>
 
@@ -314,7 +314,7 @@ export default function NewOpportunityPage() {
             {/* Actions */}
             <div className="flex gap-4 pt-4">
               <Link href={`/pipeline/${fundId}`} className="flex-1">
-                <Button variant="outline" className="w-full border-zinc-700">
+                <Button variant="outline" className="w-full border-border">
                   Cancel
                 </Button>
               </Link>

@@ -94,7 +94,7 @@ export default function SignupPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4 py-8">
-      <Card className="w-full max-w-md border-zinc-800 bg-zinc-950">
+      <Card className="w-full max-w-md border-border bg-card">
         <CardHeader className="space-y-4 text-center">
           <div className="flex justify-center">
             <div className="flex items-center gap-2">
@@ -104,7 +104,7 @@ export default function SignupPage() {
           </div>
           <div>
             <CardTitle className="text-2xl">Create an account</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Start your journey to becoming a better leader
             </CardDescription>
           </div>
@@ -112,7 +112,7 @@ export default function SignupPage() {
         <CardContent>
           <form onSubmit={handleSignup} className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-1">
                 Email
               </label>
               <Input
@@ -122,12 +122,12 @@ export default function SignupPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="border-zinc-700 bg-zinc-900 focus:border-orange-500 focus:ring-orange-500"
+                className="border-border bg-secondary focus:border-orange-500 focus:ring-orange-500"
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-zinc-400 mb-1">
+              <label htmlFor="password" className="block text-sm font-medium text-muted-foreground mb-1">
                 Password
               </label>
               <div className="relative">
@@ -138,12 +138,12 @@ export default function SignupPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="border-zinc-700 bg-zinc-900 focus:border-orange-500 focus:ring-orange-500 pr-10"
+                  className="border-border bg-secondary focus:border-orange-500 focus:ring-orange-500 pr-10"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-300"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
@@ -161,7 +161,7 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-zinc-400 mb-1">
+              <label htmlFor="confirmPassword" className="block text-sm font-medium text-muted-foreground mb-1">
                 Confirm Password
               </label>
               <Input
@@ -171,7 +171,7 @@ export default function SignupPage() {
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
-                className="border-zinc-700 bg-zinc-900 focus:border-orange-500 focus:ring-orange-500"
+                className="border-border bg-secondary focus:border-orange-500 focus:ring-orange-500"
               />
               {confirmPassword.length > 0 && !passwordsMatch && (
                 <p className="text-xs text-red-400 mt-1">Passwords do not match</p>
@@ -206,7 +206,7 @@ export default function SignupPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-zinc-400">
+          <div className="mt-6 text-center text-sm text-muted-foreground">
             Already have an account?{" "}
             <Link href="/login" className="text-orange-500 hover:text-orange-400">
               Sign in
@@ -220,7 +220,7 @@ export default function SignupPage() {
 
 function PasswordRequirement({ met, text }: { met: boolean; text: string }) {
   return (
-    <div className={`flex items-center gap-2 text-xs ${met ? "text-green-400" : "text-zinc-500"}`}>
+    <div className={`flex items-center gap-2 text-xs ${met ? "text-green-400" : "text-muted-foreground"}`}>
       <Check className={`h-3 w-3 ${met ? "opacity-100" : "opacity-30"}`} />
       {text}
     </div>

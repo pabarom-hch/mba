@@ -105,16 +105,16 @@ export default function NewOrganizationPage() {
             <Building2 className="h-6 w-6 text-orange-500" />
             Add Organization
           </h1>
-          <p className="text-zinc-400 text-sm">Add a new LP organization to your pipeline</p>
+          <p className="text-muted-foreground text-sm">Add a new LP organization to your pipeline</p>
         </div>
       </div>
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Organization Information</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Enter the organization&apos;s details and investment preferences
             </CardDescription>
           </CardHeader>
@@ -128,16 +128,16 @@ export default function NewOrganizationPage() {
                   name="name"
                   placeholder="CalPERS"
                   required
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="type">LP Type *</Label>
                 <Select name="type" required>
-                  <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                  <SelectTrigger className="bg-background border-border">
                     <SelectValue placeholder="Select type" />
                   </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
+                  <SelectContent className="bg-card border-border">
                     {Object.entries(LP_TYPE_LABELS).map(([value, label]) => (
                       <SelectItem key={value} value={value}>
                         {label}
@@ -156,7 +156,7 @@ export default function NewOrganizationPage() {
                 name="website"
                 type="url"
                 placeholder="https://www.calpers.ca.gov"
-                className="bg-zinc-950 border-zinc-800"
+                className="bg-background border-border"
               />
             </div>
 
@@ -168,7 +168,7 @@ export default function NewOrganizationPage() {
                   id="city"
                   name="city"
                   placeholder="Sacramento"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -177,7 +177,7 @@ export default function NewOrganizationPage() {
                   id="state"
                   name="state"
                   placeholder="CA"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
               <div className="space-y-2">
@@ -187,14 +187,14 @@ export default function NewOrganizationPage() {
                   name="country"
                   placeholder="USA"
                   defaultValue="USA"
-                  className="bg-zinc-950 border-zinc-800"
+                  className="bg-background border-border"
                 />
               </div>
             </div>
 
             {/* Financial */}
             <div className="space-y-4">
-              <h3 className="text-sm font-medium text-zinc-300">Investment Profile</h3>
+              <h3 className="text-sm font-medium text-foreground">Investment Profile</h3>
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="space-y-2">
                   <Label htmlFor="aum">AUM ($)</Label>
@@ -203,7 +203,7 @@ export default function NewOrganizationPage() {
                     name="aum"
                     type="text"
                     placeholder="500,000,000"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -213,7 +213,7 @@ export default function NewOrganizationPage() {
                     name="typical_commitment_min"
                     type="text"
                     placeholder="5,000,000"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -223,7 +223,7 @@ export default function NewOrganizationPage() {
                     name="typical_commitment_max"
                     type="text"
                     placeholder="25,000,000"
-                    className="bg-zinc-950 border-zinc-800"
+                    className="bg-background border-border"
                   />
                 </div>
               </div>
@@ -233,10 +233,10 @@ export default function NewOrganizationPage() {
             <div className="space-y-2">
               <Label htmlFor="emerging_manager_appetite">Emerging Manager Appetite</Label>
               <Select name="emerging_manager_appetite">
-                <SelectTrigger className="bg-zinc-950 border-zinc-800">
+                <SelectTrigger className="bg-background border-border">
                   <SelectValue placeholder="Select appetite level" />
                 </SelectTrigger>
-                <SelectContent className="bg-zinc-900 border-zinc-800">
+                <SelectContent className="bg-card border-border">
                   {APPETITE_OPTIONS.map((opt) => (
                     <SelectItem key={opt.value} value={opt.value}>
                       {opt.label}
@@ -254,7 +254,7 @@ export default function NewOrganizationPage() {
                 name="notes"
                 placeholder="Additional notes about this organization..."
                 rows={3}
-                className="bg-zinc-950 border-zinc-800 resize-none"
+                className="bg-background border-border resize-none"
               />
             </div>
 
@@ -268,7 +268,7 @@ export default function NewOrganizationPage() {
             {/* Actions */}
             <div className="flex gap-4 pt-4">
               <Link href={`/pipeline/${fundId}/organizations`} className="flex-1">
-                <Button variant="outline" className="w-full border-zinc-700">
+                <Button variant="outline" className="w-full border-border">
                   Cancel
                 </Button>
               </Link>

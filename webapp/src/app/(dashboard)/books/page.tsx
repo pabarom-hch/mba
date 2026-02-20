@@ -50,17 +50,17 @@ export default async function BooksPage() {
   return (
     <div className="p-6 lg:p-8 space-y-8">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Reading List</span>
+        <span className="text-foreground">Reading List</span>
       </div>
 
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold">Reading List</h1>
-          <p className="text-zinc-400 mt-2">
+          <p className="text-muted-foreground mt-2">
             {books.length} books • {completedBooks.length} completed
           </p>
         </div>
@@ -68,50 +68,50 @@ export default async function BooksPage() {
 
       {/* Stats */}
       <div className="grid gap-4 md:grid-cols-4">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
               <BookOpen className="h-5 w-5 text-blue-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{readingBooks.length}</p>
-              <p className="text-sm text-zinc-400">Reading</p>
+              <p className="text-sm text-muted-foreground">Reading</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
               <CheckCircle2 className="h-5 w-5 text-green-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{completedBooks.length}</p>
-              <p className="text-sm text-zinc-400">Completed</p>
+              <p className="text-sm text-muted-foreground">Completed</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10">
               <BookMarked className="h-5 w-5 text-orange-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{wantToReadBooks.length}</p>
-              <p className="text-sm text-zinc-400">Want to Read</p>
+              <p className="text-sm text-muted-foreground">Want to Read</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-700">
-              <Clock className="h-5 w-5 text-zinc-400" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
+              <Clock className="h-5 w-5 text-muted-foreground" />
             </div>
             <div>
               <p className="text-2xl font-bold">{notStartedBooks.length}</p>
-              <p className="text-sm text-zinc-400">Not Started</p>
+              <p className="text-sm text-muted-foreground">Not Started</p>
             </div>
           </CardContent>
         </Card>
@@ -119,7 +119,7 @@ export default async function BooksPage() {
 
       {/* Tabs */}
       <Tabs defaultValue="all" className="space-y-6">
-        <TabsList className="bg-zinc-900 border border-zinc-800">
+        <TabsList className="bg-card border border-border">
           <TabsTrigger value="all">All Books ({books.length})</TabsTrigger>
           <TabsTrigger value="reading">Reading ({readingBooks.length})</TabsTrigger>
           <TabsTrigger value="completed">Completed ({completedBooks.length})</TabsTrigger>
@@ -132,7 +132,7 @@ export default async function BooksPage() {
 
             return (
               <div key={category} className="space-y-4">
-                <h2 className="text-lg font-semibold text-zinc-300">{category}</h2>
+                <h2 className="text-lg font-semibold text-foreground">{category}</h2>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {categoryBooks.map(book => (
                     <BookCard key={book.id} book={book} status={bookStatusMap[book.id]} />
@@ -145,7 +145,7 @@ export default async function BooksPage() {
           {/* Uncategorized */}
           {books.filter(b => !b.category).length > 0 && (
             <div className="space-y-4">
-              <h2 className="text-lg font-semibold text-zinc-300">Other</h2>
+              <h2 className="text-lg font-semibold text-foreground">Other</h2>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {books.filter(b => !b.category).map(book => (
                   <BookCard key={book.id} book={book} status={bookStatusMap[book.id]} />
@@ -157,10 +157,10 @@ export default async function BooksPage() {
 
         <TabsContent value="reading" className="space-y-4">
           {readingBooks.length === 0 ? (
-            <Card className="border-zinc-800 bg-zinc-900/50">
+            <Card className="border-border bg-card/50">
               <CardContent className="p-8 text-center">
-                <BookOpen className="h-12 w-12 text-zinc-600 mx-auto mb-4" />
-                <p className="text-zinc-400">No books currently being read</p>
+                <BookOpen className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">No books currently being read</p>
               </CardContent>
             </Card>
           ) : (
@@ -174,10 +174,10 @@ export default async function BooksPage() {
 
         <TabsContent value="completed" className="space-y-4">
           {completedBooks.length === 0 ? (
-            <Card className="border-zinc-800 bg-zinc-900/50">
+            <Card className="border-border bg-card/50">
               <CardContent className="p-8 text-center">
-                <CheckCircle2 className="h-12 w-12 text-zinc-600 mx-auto mb-4" />
-                <p className="text-zinc-400">No completed books yet</p>
+                <CheckCircle2 className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">No completed books yet</p>
               </CardContent>
             </Card>
           ) : (
@@ -201,12 +201,12 @@ function BookCard({
   status?: { status: string; rating: number | null };
 }) {
   return (
-    <Card className="border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 transition-all h-full">
+    <Card className="border-border bg-card/50 hover:border-border transition-all h-full">
       <CardHeader className="pb-2">
         <div className="flex items-start justify-between gap-2">
           <div>
             <CardTitle className="text-base leading-tight">{book.title}</CardTitle>
-            <CardDescription className="text-zinc-400 text-sm mt-1">
+            <CardDescription className="text-muted-foreground text-sm mt-1">
               by {book.author}
             </CardDescription>
           </div>
@@ -232,7 +232,7 @@ function BookCard({
       </CardHeader>
       <CardContent>
         {book.description && (
-          <p className="text-sm text-zinc-400 line-clamp-2 mb-3">{book.description}</p>
+          <p className="text-sm text-muted-foreground line-clamp-2 mb-3">{book.description}</p>
         )}
         {book.amazon_url && (
           <a

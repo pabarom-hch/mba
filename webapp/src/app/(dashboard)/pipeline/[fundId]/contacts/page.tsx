@@ -102,7 +102,7 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
               <Users className="h-6 w-6 text-orange-500" />
               Contacts
             </h1>
-            <p className="text-zinc-400 text-sm">{fund.name} • {contacts.length} contacts</p>
+            <p className="text-muted-foreground text-sm">{fund.name} • {contacts.length} contacts</p>
           </div>
         </div>
         <Link href={`/pipeline/${fundId}/contacts/new`}>
@@ -121,10 +121,10 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
           { label: "Warm", count: contactsByRelationship.warm.length, color: "text-yellow-400" },
           { label: "Cold", count: contactsByRelationship.cold.length, color: "text-blue-400" },
         ].map((stat) => (
-          <Card key={stat.label} className="border-zinc-800 bg-zinc-900/50">
+          <Card key={stat.label} className="border-border bg-card/50">
             <CardContent className="p-4">
               <p className={`text-2xl font-bold ${stat.color}`}>{stat.count}</p>
-              <p className="text-sm text-zinc-500">{stat.label}</p>
+              <p className="text-sm text-muted-foreground">{stat.label}</p>
             </CardContent>
           </Card>
         ))}
@@ -132,13 +132,13 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
 
       {/* Contact List */}
       {contacts.length === 0 ? (
-        <Card className="border-zinc-800 bg-zinc-900/50 border-dashed">
+        <Card className="border-border bg-card/50 border-dashed">
           <CardContent className="flex flex-col items-center justify-center py-16">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-500/10 mb-4">
               <Users className="h-8 w-8 text-orange-500" />
             </div>
             <h3 className="text-xl font-semibold mb-2">No contacts yet</h3>
-            <p className="text-zinc-400 text-center max-w-md mb-6">
+            <p className="text-muted-foreground text-center max-w-md mb-6">
               Add LP contacts to track your relationships and manage your fundraising outreach.
             </p>
             <Link href={`/pipeline/${fundId}/contacts/new`}>
@@ -153,12 +153,12 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
         <div className="space-y-2">
           {contacts.map((contact) => (
             <Link key={contact.id} href={`/pipeline/${fundId}/contacts/${contact.id}`}>
-              <Card className="border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+              <Card className="border-border bg-card/50 hover:border-border hover:bg-accent/50 transition-all">
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       {/* Avatar */}
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 font-medium">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground font-medium">
                         {contact.first_name[0]}{contact.last_name[0]}
                       </div>
 
@@ -177,7 +177,7 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
                             </Badge>
                           )}
                         </div>
-                        <div className="flex items-center gap-4 text-sm text-zinc-500">
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
                           {contact.title && <span>{contact.title}</span>}
                           {contact.organization && (
                             <span className="flex items-center gap-1">
@@ -190,7 +190,7 @@ export default async function ContactsPage({ params }: ContactsPageProps) {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="hidden sm:flex items-center gap-4 text-sm text-zinc-500">
+                    <div className="hidden sm:flex items-center gap-4 text-sm text-muted-foreground">
                       {contact.email && (
                         <span className="flex items-center gap-1">
                           <Mail className="h-4 w-4" />

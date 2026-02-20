@@ -69,14 +69,14 @@ export function InteractiveTable({
   return (
     <div className="my-6 space-y-2">
       {/* Desktop: traditional table */}
-      <div className="hidden md:block overflow-x-auto rounded-lg border border-zinc-700">
+      <div className="hidden md:block overflow-x-auto rounded-lg border border-border">
         <table className="min-w-full">
           <thead>
             <tr>
               {headers.map((header, idx) => (
                 <th
                   key={idx}
-                  className="bg-zinc-800 px-4 py-3 text-left text-sm font-semibold text-zinc-100 border-b border-zinc-700"
+                  className="bg-muted px-4 py-3 text-left text-sm font-semibold text-foreground border-b border-border"
                 >
                   {header}
                 </th>
@@ -85,7 +85,7 @@ export function InteractiveTable({
           </thead>
           <tbody>
             {rows.map((row, rowIdx) => (
-              <tr key={rowIdx} className="border-b border-zinc-800 last:border-b-0">
+              <tr key={rowIdx} className="border-b border-border last:border-b-0">
                 {row.cells.map((cell, colIdx) => (
                   <td key={colIdx} className="px-1 py-1">
                     {row.isEditable[colIdx] ? (
@@ -94,10 +94,10 @@ export function InteractiveTable({
                         value={getValue(rowIdx, colIdx)}
                         onChange={(e) => handleChange(rowIdx, colIdx, e.target.value)}
                         placeholder="Enter your response..."
-                        className="w-full bg-zinc-900 border border-zinc-700 rounded px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none transition-colors"
+                        className="w-full bg-card border border-border rounded px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none transition-colors"
                       />
                     ) : (
-                      <span className="px-3 py-2 text-sm text-zinc-300 block">
+                      <span className="px-3 py-2 text-sm text-foreground block">
                         {cell}
                       </span>
                     )}
@@ -114,11 +114,11 @@ export function InteractiveTable({
         {rows.map((row, rowIdx) => (
           <div
             key={rowIdx}
-            className="rounded-lg border border-zinc-700 bg-zinc-900/50 p-4 space-y-3"
+            className="rounded-lg border border-border bg-card/50 p-4 space-y-3"
           >
             {row.cells.map((cell, colIdx) => (
               <div key={colIdx}>
-                <label className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">
+                <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                   {headers[colIdx]}
                 </label>
                 {row.isEditable[colIdx] ? (
@@ -127,10 +127,10 @@ export function InteractiveTable({
                     value={getValue(rowIdx, colIdx)}
                     onChange={(e) => handleChange(rowIdx, colIdx, e.target.value)}
                     placeholder="Enter your response..."
-                    className="mt-1 w-full bg-zinc-900 border border-zinc-700 rounded px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none transition-colors"
+                    className="mt-1 w-full bg-card border border-border rounded px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none transition-colors"
                   />
                 ) : (
-                  <p className="mt-1 text-sm text-zinc-300">{cell}</p>
+                  <p className="mt-1 text-sm text-foreground">{cell}</p>
                 )}
               </div>
             ))}
@@ -139,7 +139,7 @@ export function InteractiveTable({
       </div>
 
       {/* Save indicator */}
-      <div className="flex items-center justify-end gap-2 text-xs text-zinc-500">
+      <div className="flex items-center justify-end gap-2 text-xs text-muted-foreground">
         {isSaving ? (
           <>
             <Loader2 className="h-3 w-3 animate-spin" />

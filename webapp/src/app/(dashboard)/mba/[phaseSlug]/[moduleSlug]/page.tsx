@@ -103,14 +103,14 @@ export default async function ModulePage({
   return (
     <div className="p-6 lg:p-8 space-y-8">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 flex-wrap">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/mba" className="hover:text-zinc-100">MBA Curriculum</Link>
+        <Link href="/mba" className="hover:text-foreground">MBA Curriculum</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-500">Phase {phase.number}</span>
+        <span className="text-muted-foreground">Phase {phase.number}</span>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">{module.name}</span>
+        <span className="text-foreground">{module.name}</span>
       </div>
 
       {/* Header */}
@@ -121,38 +121,38 @@ export default async function ModulePage({
               Phase {phase.number}: {phase.name}
             </Badge>
             <h1 className="text-3xl font-bold">{module.name}</h1>
-            <p className="text-zinc-400 mt-2 max-w-2xl">{module.description}</p>
+            <p className="text-muted-foreground mt-2 max-w-2xl">{module.description}</p>
           </div>
           {module.estimated_hours && (
             <div className="text-right">
-              <p className="text-sm text-zinc-400">Estimated Time</p>
+              <p className="text-sm text-muted-foreground">Estimated Time</p>
               <p className="text-lg font-semibold">{module.estimated_hours} hours</p>
             </div>
           )}
         </div>
 
         {/* Progress Bar */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-zinc-400">Module Progress</span>
+              <span className="text-sm text-muted-foreground">Module Progress</span>
               <span className="text-sm font-medium">{completedCount} / {lessons.length} lessons</span>
             </div>
-            <Progress value={progressPercent} className="h-2 bg-zinc-800" />
+            <Progress value={progressPercent} className="h-2 bg-muted" />
           </CardContent>
         </Card>
       </div>
 
       {/* Learning Objectives */}
       {module.learning_objectives && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle className="text-lg">Learning Objectives</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2">
               {(module.learning_objectives as string[]).map((objective, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-zinc-300">
+                <li key={idx} className="flex items-start gap-2 text-foreground">
                   <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
                   {objective}
                 </li>
@@ -186,7 +186,7 @@ export default async function ModulePage({
                 key={lesson.id}
                 href={`/mba/${phaseSlug}/${moduleSlug}/${lesson.slug}`}
               >
-                <Card className="border-zinc-800 bg-zinc-900/50 transition-all hover:border-zinc-700 hover:bg-zinc-800/50">
+                <Card className="border-border bg-card/50 transition-all hover:border-border hover:bg-muted/50">
                   <CardContent className="p-4">
                     <div className="flex items-center gap-4">
                       {/* Status Icon */}
@@ -195,46 +195,46 @@ export default async function ModulePage({
                           ? "bg-green-500/10"
                           : isInProgress
                           ? "bg-orange-500/10"
-                          : "bg-zinc-800"
+                          : "bg-muted"
                       }`}>
                         {isComplete ? (
                           <CheckCircle2 className="h-5 w-5 text-green-500" />
                         ) : isInProgress ? (
                           <Clock className="h-5 w-5 text-orange-500" />
                         ) : (
-                          <Icon className="h-5 w-5 text-zinc-400" />
+                          <Icon className="h-5 w-5 text-muted-foreground" />
                         )}
                       </div>
 
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-sm text-zinc-500">{lesson.number}.</span>
+                          <span className="text-sm text-muted-foreground">{lesson.number}.</span>
                           <h3 className="font-medium truncate">{lesson.title}</h3>
-                          <Badge variant="outline" className="border-zinc-700 text-zinc-400 text-xs capitalize">
+                          <Badge variant="outline" className="border-border text-muted-foreground text-xs capitalize">
                             {lesson.type}
                           </Badge>
                         </div>
                         {lesson.summary && (
-                          <p className="text-sm text-zinc-400 mt-1 line-clamp-1">
+                          <p className="text-sm text-muted-foreground mt-1 line-clamp-1">
                             {lesson.summary}
                           </p>
                         )}
                       </div>
 
                       {/* Meta */}
-                      <div className="hidden sm:flex items-center gap-4 text-sm text-zinc-500">
+                      <div className="hidden sm:flex items-center gap-4 text-sm text-muted-foreground">
                         {lesson.duration_minutes && (
                           <span>{lesson.duration_minutes} min</span>
                         )}
                         {lesson.difficulty && (
-                          <Badge variant="outline" className="border-zinc-700 capitalize">
+                          <Badge variant="outline" className="border-border capitalize">
                             {lesson.difficulty}
                           </Badge>
                         )}
                       </div>
 
-                      <ChevronRight className="h-5 w-5 text-zinc-600" />
+                      <ChevronRight className="h-5 w-5 text-muted-foreground" />
                     </div>
                   </CardContent>
                 </Card>

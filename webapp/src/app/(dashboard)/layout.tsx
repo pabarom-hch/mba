@@ -40,7 +40,7 @@ export default async function DashboardLayout({
       {/* Main Content */}
       <div className="flex flex-1 flex-col overflow-hidden min-w-0">
         {/* Header with Mobile Nav */}
-        <div className="flex items-center border-b border-zinc-800 bg-zinc-950">
+        <div className="flex items-center border-b border-border bg-background">
           <div className="flex items-center gap-2 px-4 lg:hidden">
             <MobileNav />
           </div>

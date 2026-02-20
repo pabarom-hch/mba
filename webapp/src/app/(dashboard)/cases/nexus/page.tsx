@@ -93,13 +93,13 @@ export default async function NexusCollectionPage() {
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 mb-6">
-        <Link href="/cases" className="hover:text-zinc-100 flex items-center gap-1">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+        <Link href="/cases" className="hover:text-foreground flex items-center gap-1">
           <ChevronLeft className="h-4 w-4" />
           Cases
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Nexus</span>
+        <span className="text-foreground">Nexus</span>
       </div>
 
       {/* Header */}
@@ -112,7 +112,7 @@ export default async function NexusCollectionPage() {
             <h1 className="text-2xl sm:text-3xl font-bold">Nexus Case Studies</h1>
           </div>
         </div>
-        <p className="text-zinc-400 max-w-3xl">
+        <p className="text-muted-foreground max-w-3xl">
           Real business data from a professional services firm. Unlike traditional case studies,
           Nexus cases use internal operational data, allowing deep dives into actual business
           challenges with full data access.
@@ -121,30 +121,30 @@ export default async function NexusCollectionPage() {
 
       {/* Stats Bar */}
       <div className="grid grid-cols-3 gap-4 mb-8">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <Briefcase className="h-5 w-5 text-orange-400" />
             <div>
               <p className="text-xl font-bold">{caseStudies?.length || 0}</p>
-              <p className="text-xs text-zinc-400">Case Studies</p>
+              <p className="text-xs text-muted-foreground">Case Studies</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <Database className="h-5 w-5 text-green-400" />
             <div>
               <p className="text-xl font-bold">{datasets?.length || 0}</p>
-              <p className="text-xs text-zinc-400">Datasets</p>
+              <p className="text-xs text-muted-foreground">Datasets</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <PlayCircle className="h-5 w-5 text-purple-400" />
             <div>
               <p className="text-xl font-bold">{simulations.length}</p>
-              <p className="text-xs text-zinc-400">Simulations</p>
+              <p className="text-xs text-muted-foreground">Simulations</p>
             </div>
           </CardContent>
         </Card>
@@ -161,23 +161,23 @@ export default async function NexusCollectionPage() {
             <div className="grid gap-4">
               {caseStudies?.map((caseStudy) => (
                 <Link key={caseStudy.id} href={`/cases/nexus/${caseStudy.slug}`}>
-                  <Card className="border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer">
+                  <Card className="border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer">
                     <CardContent className="p-4">
                       <div className="flex items-start gap-4">
-                        <div className="p-2 rounded-lg bg-zinc-800 shrink-0">
-                          {caseIcons[caseStudy.slug] || <Briefcase className="h-5 w-5 text-zinc-400" />}
+                        <div className="p-2 rounded-lg bg-muted shrink-0">
+                          {caseIcons[caseStudy.slug] || <Briefcase className="h-5 w-5 text-muted-foreground" />}
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center justify-between gap-2">
                             <h3 className="font-medium">{caseStudy.title.replace("Nexus Case: ", "")}</h3>
-                            <ChevronRight className="h-5 w-5 text-zinc-400 shrink-0" />
+                            <ChevronRight className="h-5 w-5 text-muted-foreground shrink-0" />
                           </div>
-                          <p className="text-sm text-zinc-400 mt-1 line-clamp-2">
+                          <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
                             {caseStudy.summary}
                           </p>
                           <div className="flex items-center gap-3 mt-3">
                             {caseStudy.duration_minutes && (
-                              <span className="text-xs text-zinc-500 flex items-center gap-1">
+                              <span className="text-xs text-muted-foreground flex items-center gap-1">
                                 <Clock className="h-3 w-3" />
                                 {caseStudy.duration_minutes} min
                               </span>
@@ -188,7 +188,7 @@ export default async function NexusCollectionPage() {
                                 className={`text-xs capitalize ${
                                   caseStudy.difficulty === "advanced"
                                     ? "border-red-500/50 text-red-400"
-                                    : "border-zinc-700"
+                                    : "border-border"
                                 }`}
                               >
                                 {caseStudy.difficulty}
@@ -204,7 +204,7 @@ export default async function NexusCollectionPage() {
             </div>
           </div>
 
-          <Separator className="bg-zinc-800" />
+          <Separator className="bg-muted" />
 
           {/* Simulations */}
           <div>
@@ -215,19 +215,19 @@ export default async function NexusCollectionPage() {
             <div className="grid gap-4 sm:grid-cols-2">
               {simulations.map((sim) => (
                 <Link key={sim.slug} href={`/cases/nexus/simulations/${sim.slug}`}>
-                  <Card className="border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer h-full">
+                  <Card className="border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer h-full">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
                         <Badge variant="secondary" className="bg-purple-500/10 text-purple-400 border-0 text-xs">
                           {sim.type}
                         </Badge>
-                        <span className="text-xs text-zinc-500 flex items-center gap-1">
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
                           <Clock className="h-3 w-3" />
                           {sim.duration} min
                         </span>
                       </div>
                       <h3 className="font-medium mb-1">{sim.name}</h3>
-                      <p className="text-sm text-zinc-400">{sim.description}</p>
+                      <p className="text-sm text-muted-foreground">{sim.description}</p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -254,16 +254,16 @@ export default async function NexusCollectionPage() {
             <div className="space-y-3">
               {datasets?.map((dataset) => (
                 <Link key={dataset.id} href={`/cases/nexus/data?dataset=${dataset.dataset_name}`}>
-                  <Card className="border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer">
+                  <Card className="border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer">
                     <CardContent className="p-3 flex items-center gap-3">
-                      <div className="p-1.5 rounded bg-zinc-800">
-                        {datasetIcons[dataset.dataset_name] || <Database className="h-4 w-4 text-zinc-400" />}
+                      <div className="p-1.5 rounded bg-muted">
+                        {datasetIcons[dataset.dataset_name] || <Database className="h-4 w-4 text-muted-foreground" />}
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm font-medium truncate">{dataset.display_name}</h3>
-                        <p className="text-xs text-zinc-500 truncate">{dataset.description?.slice(0, 50)}...</p>
+                        <p className="text-xs text-muted-foreground truncate">{dataset.description?.slice(0, 50)}...</p>
                       </div>
-                      <ChevronRight className="h-4 w-4 text-zinc-500 shrink-0" />
+                      <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
                     </CardContent>
                   </Card>
                 </Link>
@@ -271,14 +271,14 @@ export default async function NexusCollectionPage() {
             </div>
           </div>
 
-          <Separator className="bg-zinc-800" />
+          <Separator className="bg-muted" />
 
           {/* About Nexus */}
-          <Card className="border-zinc-800 bg-zinc-900/30">
+          <Card className="border-border bg-card/30">
             <CardHeader className="pb-2">
               <CardTitle className="text-base">About Nexus</CardTitle>
             </CardHeader>
-            <CardContent className="text-sm text-zinc-400 space-y-3">
+            <CardContent className="text-sm text-muted-foreground space-y-3">
               <p>
                 Nexus is an enterprise platform for professional services firms implementing
                 Miller Heiman sales methodology, financial management, and resource optimization.
@@ -288,7 +288,7 @@ export default async function NexusCollectionPage() {
                 patterns and challenges from an IT consulting firm.
               </p>
               <div className="pt-2">
-                <Badge variant="outline" className="border-zinc-700 text-xs">
+                <Badge variant="outline" className="border-border text-xs">
                   <Shield className="h-3 w-3 mr-1" />
                   Anonymized Data
                 </Badge>

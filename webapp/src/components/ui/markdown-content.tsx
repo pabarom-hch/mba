@@ -70,47 +70,47 @@ export function MarkdownContent({ content, className = "", basePath }: MarkdownC
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 className="text-2xl font-bold mt-6 mb-4 text-zinc-100">{children}</h1>
+            <h1 className="text-2xl font-bold mt-6 mb-4 text-foreground">{children}</h1>
           ),
           h2: ({ children }) => (
-            <h2 className="text-xl font-semibold mt-5 mb-3 text-zinc-100">{children}</h2>
+            <h2 className="text-xl font-semibold mt-5 mb-3 text-foreground">{children}</h2>
           ),
           h3: ({ children }) => (
-            <h3 className="text-lg font-semibold mt-4 mb-2 text-zinc-200">{children}</h3>
+            <h3 className="text-lg font-semibold mt-4 mb-2 text-foreground">{children}</h3>
           ),
           h4: ({ children }) => (
-            <h4 className="text-base font-semibold mt-3 mb-2 text-zinc-200">{children}</h4>
+            <h4 className="text-base font-semibold mt-3 mb-2 text-foreground">{children}</h4>
           ),
           p: ({ children }) => (
-            <p className="text-zinc-300 leading-relaxed mb-4">{children}</p>
+            <p className="text-foreground leading-relaxed mb-4">{children}</p>
           ),
           ul: ({ children }) => (
-            <ul className="list-disc list-outside ml-4 space-y-2 text-zinc-300 mb-4">{children}</ul>
+            <ul className="list-disc list-outside ml-4 space-y-2 text-foreground mb-4">{children}</ul>
           ),
           ol: ({ children }) => (
-            <ol className="list-decimal list-outside ml-4 space-y-2 text-zinc-300 mb-4">{children}</ol>
+            <ol className="list-decimal list-outside ml-4 space-y-2 text-foreground mb-4">{children}</ol>
           ),
           li: ({ children }) => (
-            <li className="text-zinc-300">{children}</li>
+            <li className="text-foreground">{children}</li>
           ),
           blockquote: ({ children }) => (
-            <blockquote className="border-l-4 border-orange-500 pl-4 italic text-zinc-400 my-4">
+            <blockquote className="border-l-4 border-orange-500 pl-4 italic text-muted-foreground my-4">
               {children}
             </blockquote>
           ),
           strong: ({ children }) => (
-            <strong className="font-semibold text-zinc-100">{children}</strong>
+            <strong className="font-semibold text-foreground">{children}</strong>
           ),
           em: ({ children }) => (
-            <em className="italic text-zinc-300">{children}</em>
+            <em className="italic text-foreground">{children}</em>
           ),
           code: ({ children }) => (
-            <code className="bg-zinc-800 px-1.5 py-0.5 rounded text-orange-400 text-sm">
+            <code className="bg-muted px-1.5 py-0.5 rounded text-orange-400 text-sm">
               {children}
             </code>
           ),
           pre: ({ children }) => (
-            <pre className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 overflow-x-auto my-4">
+            <pre className="bg-card border border-border rounded-lg p-4 overflow-x-auto my-4">
               {children}
             </pre>
           ),
@@ -139,17 +139,17 @@ export function MarkdownContent({ content, className = "", basePath }: MarkdownC
               </a>
             );
           },
-          hr: () => <hr className="border-zinc-700 my-6" />,
+          hr: () => <hr className="border-border my-6" />,
           table: ({ children }) => (
             <ResponsiveTable>{children}</ResponsiveTable>
           ),
           th: ({ children }) => (
-            <th className="bg-zinc-800 px-4 py-2 text-left text-zinc-100 font-semibold border-b border-zinc-700">
+            <th className="bg-muted px-4 py-2 text-left text-foreground font-semibold border-b border-border">
               {children}
             </th>
           ),
           td: ({ children }) => (
-            <td className="px-4 py-2 text-zinc-300 border-b border-zinc-800">{children}</td>
+            <td className="px-4 py-2 text-foreground border-b border-border">{children}</td>
           ),
         }}
       >

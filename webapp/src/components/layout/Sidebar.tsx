@@ -93,9 +93,9 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
   const pathname = usePathname();
 
   return (
-    <div className="flex h-full w-64 flex-col border-r border-zinc-800 bg-zinc-950">
+    <div className="flex h-full w-64 flex-col border-r border-border bg-background">
       {/* Logo */}
-      <div className="flex h-16 items-center gap-2 px-6 border-b border-zinc-800">
+      <div className="flex h-16 items-center gap-2 px-6 border-b border-border">
         <BarChart3 className="h-6 w-6 text-orange-500" />
         <span className="font-semibold text-lg">CEO Platform</span>
       </div>
@@ -114,7 +114,7 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
                   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                   isActive
                     ? "bg-orange-500/10 text-orange-500"
-                    : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100"
+                    : "text-muted-foreground hover:bg-accent hover:text-foreground"
                 )}
               >
                 <item.icon className="h-5 w-5" />
@@ -124,11 +124,11 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
           })}
         </div>
 
-        <Separator className="my-4 bg-zinc-800" />
+        <Separator className="my-4 bg-border" />
 
         {/* Fund Operations */}
         <div className="space-y-1">
-          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Fund Operations
           </p>
           {fundOperations.map((item) => {
@@ -142,7 +142,7 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
                   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                   isActive
                     ? "bg-orange-500/10 text-orange-500"
-                    : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100"
+                    : "text-muted-foreground hover:bg-accent hover:text-foreground"
                 )}
               >
                 <item.icon className="h-5 w-5" />
@@ -152,11 +152,11 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
           })}
         </div>
 
-        <Separator className="my-4 bg-zinc-800" />
+        <Separator className="my-4 bg-border" />
 
         {/* Secondary Navigation */}
         <div className="space-y-1">
-          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Daily Practice
           </p>
           {secondary.map((item) => {
@@ -169,7 +169,7 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
                   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                   isActive
                     ? "bg-orange-500/10 text-orange-500"
-                    : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100"
+                    : "text-muted-foreground hover:bg-accent hover:text-foreground"
                 )}
               >
                 <item.icon className="h-5 w-5" />
@@ -182,14 +182,14 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
 
       {/* Streak Display */}
       {streak > 0 && (
-        <div className="border-t border-zinc-800 px-4 py-4">
+        <div className="border-t border-border px-4 py-4">
           <div className="flex items-center gap-2 rounded-lg bg-orange-500/10 px-3 py-2">
             <Flame className="h-5 w-5 text-orange-500" />
             <div>
               <p className="text-sm font-medium text-orange-500">
                 {streak} Day Streak
               </p>
-              <p className="text-xs text-zinc-500">Keep it going!</p>
+              <p className="text-xs text-muted-foreground">Keep it going!</p>
             </div>
           </div>
         </div>

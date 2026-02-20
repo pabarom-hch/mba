@@ -100,7 +100,7 @@ export default async function PipelinePage() {
             <Kanban className="h-8 w-8 text-orange-500" />
             LP Pipeline
           </h1>
-          <p className="text-zinc-400 mt-1">
+          <p className="text-muted-foreground mt-1">
             Track and manage your LP relationships and commitments
           </p>
         </div>
@@ -108,13 +108,13 @@ export default async function PipelinePage() {
 
       {/* Fund Selection */}
       {funds.length === 0 ? (
-        <Card className="border-zinc-800 bg-zinc-900/50 border-dashed">
+        <Card className="border-border bg-card/50 border-dashed">
           <CardContent className="flex flex-col items-center justify-center py-16">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-500/10 mb-4">
               <Building2 className="h-8 w-8 text-orange-500" />
             </div>
             <h3 className="text-xl font-semibold mb-2">No funds yet</h3>
-            <p className="text-zinc-400 text-center max-w-md mb-6">
+            <p className="text-muted-foreground text-center max-w-md mb-6">
               Create a fund first to start tracking your LP pipeline.
               The Fund Builder will help you set up your fund structure.
             </p>
@@ -128,37 +128,37 @@ export default async function PipelinePage() {
         </Card>
       ) : (
         <div className="space-y-4">
-          <p className="text-zinc-400">Select a fund to view its LP pipeline:</p>
+          <p className="text-muted-foreground">Select a fund to view its LP pipeline:</p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {funds.map((fund) => (
               <Link key={fund.id} href={`/pipeline/${fund.id}`}>
-                <Card className="border-zinc-800 bg-zinc-900/50 transition-all hover:border-orange-500/50 hover:bg-zinc-800/50 h-full group">
+                <Card className="border-border bg-card/50 transition-all hover:border-orange-500/50 hover:bg-accent/50 h-full group">
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
                       <div>
                         <CardTitle className="text-lg group-hover:text-orange-400 transition-colors">
                           {fund.name}
                         </CardTitle>
-                        <CardDescription className="text-zinc-500 text-sm">
+                        <CardDescription className="text-muted-foreground text-sm">
                           {STATUS_LABELS[fund.status || "building"]}
                         </CardDescription>
                       </div>
-                      <ArrowRight className="h-5 w-5 text-zinc-600 group-hover:text-orange-500 transition-colors" />
+                      <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-orange-500 transition-colors" />
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <p className="text-2xl font-bold">{fund.opportunity_count}</p>
-                        <p className="text-xs text-zinc-500">Opportunities</p>
+                        <p className="text-xs text-muted-foreground">Opportunities</p>
                       </div>
                       <div>
                         <p className="text-2xl font-bold">{formatCurrency(fund.total_pipeline)}</p>
-                        <p className="text-xs text-zinc-500">Pipeline Value</p>
+                        <p className="text-xs text-muted-foreground">Pipeline Value</p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-zinc-400">Target:</span>
+                      <span className="text-muted-foreground">Target:</span>
                       <span className="font-medium">{formatCurrency(fund.target_size)}</span>
                     </div>
                   </CardContent>

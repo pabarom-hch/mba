@@ -114,26 +114,26 @@ export default async function DashboardPage() {
       {/* Welcome Header */}
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">Welcome back</h1>
-        <p className="text-zinc-400">Continue your learning journey</p>
+        <p className="text-muted-foreground">Continue your learning journey</p>
       </div>
 
       {/* Stats Row */}
       <div className="grid gap-4 md:grid-cols-3">
         {/* Streak Card */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="flex items-center gap-4 p-6">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500/10">
               <Flame className="h-6 w-6 text-orange-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{streak}</p>
-              <p className="text-sm text-zinc-400">Day Streak</p>
+              <p className="text-sm text-muted-foreground">Day Streak</p>
             </div>
           </CardContent>
         </Card>
 
         {/* Lessons Completed */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="flex items-center gap-4 p-6">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-500/10">
               <CheckCircle2 className="h-6 w-6 text-green-500" />
@@ -142,20 +142,20 @@ export default async function DashboardPage() {
               <p className="text-2xl font-bold">
                 {(mbaProgress?.lessons_completed || 0) + (mentorProgress?.lessons_completed || 0) + (peProgress?.lessons_completed || 0)}
               </p>
-              <p className="text-sm text-zinc-400">Lessons Completed</p>
+              <p className="text-sm text-muted-foreground">Lessons Completed</p>
             </div>
           </CardContent>
         </Card>
 
         {/* Current Week */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="flex items-center gap-4 p-6">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10">
               <Clock className="h-6 w-6 text-blue-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">Week {mentorProgress?.current_week || 1}</p>
-              <p className="text-sm text-zinc-400">Mentor Curriculum</p>
+              <p className="text-sm text-muted-foreground">Mentor Curriculum</p>
             </div>
           </CardContent>
         </Card>
@@ -171,7 +171,7 @@ export default async function DashboardPage() {
               </Badge>
             </div>
             <CardTitle className="text-xl">{todayLesson.title}</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               {todayLesson.summary || "Continue your daily learning with today's mentor lesson"}
             </CardDescription>
           </CardHeader>
@@ -189,14 +189,14 @@ export default async function DashboardPage() {
       {/* Curriculum Progress */}
       <div className="grid gap-6 lg:grid-cols-2">
         {/* MBA Curriculum Card */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="flex flex-row items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/10">
               <GraduationCap className="h-6 w-6 text-purple-500" />
             </div>
             <div className="flex-1">
               <CardTitle>MBA Curriculum</CardTitle>
-              <CardDescription className="text-zinc-400">
+              <CardDescription className="text-muted-foreground">
                 {mbaProgress?.lessons_completed || 0} of {mbaProgress?.total_lessons || 0} lessons completed
               </CardDescription>
             </div>
@@ -204,10 +204,10 @@ export default async function DashboardPage() {
           <CardContent className="space-y-4">
             <Progress
               value={mbaProgress?.completion_percentage || 0}
-              className="h-2 bg-zinc-800"
+              className="h-2 bg-muted"
             />
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-400">
+              <span className="text-sm text-muted-foreground">
                 {Math.round(mbaProgress?.completion_percentage || 0)}% complete
               </span>
               <Button asChild variant="ghost" size="sm" className="text-purple-400 hover:text-purple-300">
@@ -221,14 +221,14 @@ export default async function DashboardPage() {
         </Card>
 
         {/* Mentor Curriculum Card */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="flex flex-row items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-500/10">
               <Users className="h-6 w-6 text-cyan-500" />
             </div>
             <div className="flex-1">
               <CardTitle>CEO Mentor Curriculum</CardTitle>
-              <CardDescription className="text-zinc-400">
+              <CardDescription className="text-muted-foreground">
                 Week {mentorProgress?.current_week || 1} of {mentorProgress?.total_weeks || 52}
               </CardDescription>
             </div>
@@ -236,10 +236,10 @@ export default async function DashboardPage() {
           <CardContent className="space-y-4">
             <Progress
               value={mentorProgress?.completion_percentage || 0}
-              className="h-2 bg-zinc-800"
+              className="h-2 bg-muted"
             />
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-400">
+              <span className="text-sm text-muted-foreground">
                 {Math.round(mentorProgress?.completion_percentage || 0)}% complete
               </span>
               <Button asChild variant="ghost" size="sm" className="text-cyan-400 hover:text-cyan-300">
@@ -253,14 +253,14 @@ export default async function DashboardPage() {
         </Card>
 
         {/* PE Buy & Build Curriculum Card */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader className="flex flex-row items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-500/10">
               <Building2 className="h-6 w-6 text-amber-500" />
             </div>
             <div className="flex-1">
               <CardTitle>PE Buy &amp; Build</CardTitle>
-              <CardDescription className="text-zinc-400">
+              <CardDescription className="text-muted-foreground">
                 {peProgress?.lessons_completed || 0} of {peProgress?.total_lessons || 0} lessons completed
               </CardDescription>
             </div>
@@ -268,10 +268,10 @@ export default async function DashboardPage() {
           <CardContent className="space-y-4">
             <Progress
               value={peProgress?.completion_percentage || 0}
-              className="h-2 bg-zinc-800"
+              className="h-2 bg-muted"
             />
             <div className="flex items-center justify-between">
-              <span className="text-sm text-zinc-400">
+              <span className="text-sm text-muted-foreground">
                 {Math.round(peProgress?.completion_percentage || 0)}% complete
               </span>
               <Button asChild variant="ghost" size="sm" className="text-amber-400 hover:text-amber-300">
@@ -288,42 +288,42 @@ export default async function DashboardPage() {
       {/* Quick Actions */}
       <div className="grid gap-4 md:grid-cols-3">
         <Link href="/rituals/morning">
-          <Card className="border-zinc-800 bg-zinc-900/50 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+          <Card className="border-border bg-card/50 transition-colors hover:border-border hover:bg-muted/50">
             <CardContent className="flex items-center gap-4 p-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500/10">
                 <BookOpen className="h-5 w-5 text-yellow-500" />
               </div>
               <div>
                 <p className="font-medium">Morning Ritual</p>
-                <p className="text-sm text-zinc-400">Start your day right</p>
+                <p className="text-sm text-muted-foreground">Start your day right</p>
               </div>
             </CardContent>
           </Card>
         </Link>
 
         <Link href="/books">
-          <Card className="border-zinc-800 bg-zinc-900/50 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+          <Card className="border-border bg-card/50 transition-colors hover:border-border hover:bg-muted/50">
             <CardContent className="flex items-center gap-4 p-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
                 <BookOpen className="h-5 w-5 text-emerald-500" />
               </div>
               <div>
                 <p className="font-medium">Reading List</p>
-                <p className="text-sm text-zinc-400">Track your books</p>
+                <p className="text-sm text-muted-foreground">Track your books</p>
               </div>
             </CardContent>
           </Card>
         </Link>
 
         <Link href="/notes">
-          <Card className="border-zinc-800 bg-zinc-900/50 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50">
+          <Card className="border-border bg-card/50 transition-colors hover:border-border hover:bg-muted/50">
             <CardContent className="flex items-center gap-4 p-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500/10">
                 <BookOpen className="h-5 w-5 text-pink-500" />
               </div>
               <div>
                 <p className="font-medium">My Notes</p>
-                <p className="text-sm text-zinc-400">Review your insights</p>
+                <p className="text-sm text-muted-foreground">Review your insights</p>
               </div>
             </CardContent>
           </Card>
@@ -332,7 +332,7 @@ export default async function DashboardPage() {
 
       {/* Recent Activity */}
       {recentLessons.length > 0 && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle>Recent Activity</CardTitle>
           </CardHeader>
@@ -341,17 +341,17 @@ export default async function DashboardPage() {
               {recentLessons.map((item) => (
                 <div
                   key={item.id}
-                  className="flex items-center justify-between rounded-lg border border-zinc-800 p-4"
+                  className="flex items-center justify-between rounded-lg border border-border p-4"
                 >
                   <div className="flex items-center gap-3">
                     {item.status === "completed" ? (
                       <CheckCircle2 className="h-5 w-5 text-green-500" />
                     ) : (
-                      <Clock className="h-5 w-5 text-zinc-500" />
+                      <Clock className="h-5 w-5 text-muted-foreground" />
                     )}
                     <div>
                       <p className="font-medium">{item.lesson?.title}</p>
-                      <p className="text-sm text-zinc-400 capitalize">
+                      <p className="text-sm text-muted-foreground capitalize">
                         {item.lesson?.type}
                       </p>
                     </div>
@@ -361,7 +361,7 @@ export default async function DashboardPage() {
                     className={
                       item.status === "completed"
                         ? "border-green-500/30 text-green-400"
-                        : "border-zinc-700 text-zinc-400"
+                        : "border-border text-muted-foreground"
                     }
                   >
                     {item.status}

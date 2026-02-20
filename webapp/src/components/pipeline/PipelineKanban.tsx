@@ -253,16 +253,16 @@ export function PipelineKanban({ fundId, stages: initialStages }: PipelineKanban
 
       {/* Incomplete Checklist Warning Dialog */}
       <AlertDialog open={showIncompleteDialog} onOpenChange={setShowIncompleteDialog}>
-        <AlertDialogContent className="bg-zinc-900 border-zinc-800">
+        <AlertDialogContent className="bg-card border-border">
           <AlertDialogHeader>
             <AlertDialogTitle className="flex items-center gap-2">
               <AlertTriangle className="h-5 w-5 text-yellow-500" />
               Incomplete Checklist
             </AlertDialogTitle>
-            <AlertDialogDescription className="text-zinc-400">
+            <AlertDialogDescription className="text-muted-foreground">
               {pendingMove && (
                 <>
-                  <strong className="text-zinc-300">{pendingMove.opportunity.name}</strong> has an incomplete
+                  <strong className="text-foreground">{pendingMove.opportunity.name}</strong> has an incomplete
                   checklist ({pendingMove.checklistProgress.completed} of {pendingMove.checklistProgress.total} items completed).
                   <br /><br />
                   Moving to the next stage without completing all checklist items may result in missed steps.
@@ -272,7 +272,7 @@ export function PipelineKanban({ fundId, stages: initialStages }: PipelineKanban
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel onClick={handleCancelMove} className="border-zinc-700">
+            <AlertDialogCancel onClick={handleCancelMove} className="border-border">
               Stay & Complete
             </AlertDialogCancel>
             <AlertDialogAction
