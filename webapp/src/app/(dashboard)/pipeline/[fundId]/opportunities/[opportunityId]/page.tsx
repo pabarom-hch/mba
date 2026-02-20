@@ -24,6 +24,7 @@ import {
   Users,
   Send,
   MessageSquare,
+  Compass,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -65,6 +66,17 @@ const STATUS_COLORS: Record<string, string> = {
   won: "bg-green-500/10 text-green-400 border-green-500/30",
   lost: "bg-red-500/10 text-red-400 border-red-500/30",
   on_hold: "bg-yellow-500/10 text-yellow-400 border-yellow-500/30",
+};
+
+const SOURCE_LABELS: Record<string, string> = {
+  linkedin: "LinkedIn",
+  networking_event: "Networking Event",
+  conference: "Conference",
+  referral: "Referral",
+  cold_outreach: "Cold Outreach",
+  existing_relationship: "Existing Relationship",
+  advisor: "Advisor/Placement Agent",
+  other: "Other",
 };
 
 const ACTIVITY_ICONS: Record<string, React.ElementType> = {
@@ -124,6 +136,7 @@ export default function OpportunityDetailPage() {
     organization_id: "",
     contact_id: "",
     stage_id: "",
+    source: "",
     potential_commitment: "",
     probability: "",
     expected_close_date: "",
@@ -151,6 +164,7 @@ export default function OpportunityDetailPage() {
         organization_id: oppData.organization_id || "",
         contact_id: oppData.contact_id || "",
         stage_id: oppData.stage_id || "",
+        source: oppData.source || "",
         potential_commitment: oppData.potential_commitment
           ? (oppData.potential_commitment / 1_000_000).toString()
           : "",
@@ -320,6 +334,7 @@ export default function OpportunityDetailPage() {
         organization_id: formData.organization_id || null,
         contact_id: formData.contact_id || null,
         stage_id: formData.stage_id || null,
+        source: formData.source || null,
         potential_commitment: formData.potential_commitment
           ? parseFloat(formData.potential_commitment) * 1_000_000
           : null,
@@ -527,27 +542,50 @@ export default function OpportunityDetailPage() {
                 />
               </div>
 
-              {/* Stage */}
-              <div className="space-y-2">
-                <Label>Pipeline Stage</Label>
-                <Select value={formData.stage_id} onValueChange={handleStageChange}>
-                  <SelectTrigger className="bg-background border-border">
-                    <SelectValue placeholder="Select stage" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-card border-border">
-                    {stages.map((stage) => (
-                      <SelectItem key={stage.id} value={stage.id}>
-                        <div className="flex items-center gap-2">
-                          <div
-                            className="w-2 h-2 rounded-full"
-                            style={{ backgroundColor: stage.color || "#71717a" }}
-                          />
-                          {stage.name}
-                        </div>
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+              {/* Stage & Source */}
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="space-y-2">
+                  <Label>Pipeline Stage</Label>
+                  <Select value={formData.stage_id} onValueChange={handleStageChange}>
+                    <SelectTrigger className="bg-background border-border">
+                      <SelectValue placeholder="Select stage" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-card border-border">
+                      {stages.map((stage) => (
+                        <SelectItem key={stage.id} value={stage.id}>
+                          <div className="flex items-center gap-2">
+                            <div
+                              className="w-2 h-2 rounded-full"
+                              style={{ backgroundColor: stage.color || "#71717a" }}
+                            />
+                            {stage.name}
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="space-y-2">
+                  <Label>Lead Source</Label>
+                  <Select
+                    value={formData.source}
+                    onValueChange={(value) => setFormData({ ...formData, source: value })}
+                  >
+                    <SelectTrigger className="bg-background border-border">
+                      <SelectValue placeholder="Select source" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-card border-border">
+                      <SelectItem value="linkedin">LinkedIn</SelectItem>
+                      <SelectItem value="networking_event">Networking Event</SelectItem>
+                      <SelectItem value="conference">Conference</SelectItem>
+                      <SelectItem value="referral">Referral</SelectItem>
+                      <SelectItem value="cold_outreach">Cold Outreach</SelectItem>
+                      <SelectItem value="existing_relationship">Existing Relationship</SelectItem>
+                      <SelectItem value="advisor">Advisor/Placement Agent</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
 
               {/* Organization & Contact */}
@@ -884,6 +922,17 @@ export default function OpportunityDetailPage() {
                     <p className="text-sm text-muted-foreground">Last Activity</p>
                     <p className="font-medium">
                       {new Date(opportunity.last_activity_date).toLocaleDateString()}
+                    </p>
+                  </div>
+                </div>
+              )}
+              {opportunity.source && (
+                <div className="flex items-center gap-3">
+                  <Compass className="h-4 w-4 text-cyan-400" />
+                  <div>
+                    <p className="text-sm text-muted-foreground">Lead Source</p>
+                    <p className="font-medium">
+                      {SOURCE_LABELS[opportunity.source] || opportunity.source}
                     </p>
                   </div>
                 </div>

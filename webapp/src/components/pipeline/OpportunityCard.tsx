@@ -3,10 +3,21 @@
 import Link from "next/link";
 import { useDraggable } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
-import { Building2, User, GripVertical } from "lucide-react";
+import { Building2, User, GripVertical, Compass } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Progress } from "@/components/ui/progress";
 import type { LpOpportunity, LpOrganization, LpContact } from "@/types/database";
+
+const SOURCE_LABELS: Record<string, string> = {
+  linkedin: "LinkedIn",
+  networking_event: "Event",
+  conference: "Conference",
+  referral: "Referral",
+  cold_outreach: "Cold",
+  existing_relationship: "Existing",
+  advisor: "Advisor",
+  other: "Other",
+};
 
 interface OpportunityWithRelations extends LpOpportunity {
   organization?: LpOrganization | null;
@@ -90,6 +101,13 @@ export function OpportunityCard({ opportunity, fundId, isDragging }: Opportunity
               </span>
             )}
           </div>
+          {/* Source */}
+          {opportunity.source && (
+            <div className="flex items-center gap-1 mt-1 text-xs text-cyan-400">
+              <Compass className="h-3 w-3" />
+              <span>{SOURCE_LABELS[opportunity.source] || opportunity.source}</span>
+            </div>
+          )}
         </div>
       </div>
 

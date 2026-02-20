@@ -632,6 +632,7 @@ export interface LpOpportunity {
   organization_id: string | null
   stage_id: string | null
   name: string
+  source: string | null
   potential_commitment: number | null
   probability: number | null
   expected_close_date: string | null

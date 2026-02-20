@@ -21,7 +21,7 @@ import type {
 
 interface PipelinePageProps {
   params: Promise<{ fundId: string }>;
-  searchParams: Promise<{ search?: string; lpType?: string; dateRange?: string; view?: string }>;
+  searchParams: Promise<{ search?: string; lpType?: string; source?: string; dateRange?: string; view?: string }>;
 }
 
 export interface PipelineStageWithOpportunities extends LpPipelineStage {
@@ -124,7 +124,7 @@ function getDateThreshold(dateRange: string | undefined): Date | null {
 
 export default async function FundPipelinePage({ params, searchParams }: PipelinePageProps) {
   const { fundId } = await params;
-  const { search, lpType, dateRange } = await searchParams;
+  const { search, lpType, source, dateRange } = await searchParams;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -167,6 +167,13 @@ export default async function FundPipelinePage({ params, searchParams }: Pipelin
       if (lpType) {
         const orgType = opp.organization?.type;
         if (orgType !== lpType) {
+          return false;
+        }
+      }
+
+      // Source filter
+      if (source) {
+        if (opp.source !== source) {
           return false;
         }
       }

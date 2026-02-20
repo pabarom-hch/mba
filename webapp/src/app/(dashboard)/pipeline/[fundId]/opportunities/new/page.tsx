@@ -93,6 +93,7 @@ export default function NewOpportunityPage() {
       organization_id: formData.get("organization_id") || null,
       contact_id: formData.get("contact_id") || null,
       stage_id: stageId,
+      source: formData.get("source") || null,
       potential_commitment: formData.get("potential_commitment")
         ? parseFloat(formData.get("potential_commitment") as string) * 1_000_000
         : null,
@@ -230,27 +231,47 @@ export default function NewOpportunityPage() {
               </div>
             </div>
 
-            {/* Stage */}
-            <div className="space-y-2">
-              <Label htmlFor="stage_id">Pipeline Stage *</Label>
-              <Select name="stage_id" required defaultValue={stages[0]?.id}>
-                <SelectTrigger className="bg-background border-border">
-                  <SelectValue placeholder="Select stage" />
-                </SelectTrigger>
-                <SelectContent className="bg-card border-border">
-                  {stages.map((stage) => (
-                    <SelectItem key={stage.id} value={stage.id}>
-                      <div className="flex items-center gap-2">
-                        <div
-                          className="w-2 h-2 rounded-full"
-                          style={{ backgroundColor: stage.color || "#71717a" }}
-                        />
-                        {stage.name}
-                      </div>
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+            {/* Stage & Source */}
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-2">
+                <Label htmlFor="stage_id">Pipeline Stage *</Label>
+                <Select name="stage_id" required defaultValue={stages[0]?.id}>
+                  <SelectTrigger className="bg-background border-border">
+                    <SelectValue placeholder="Select stage" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-card border-border">
+                    {stages.map((stage) => (
+                      <SelectItem key={stage.id} value={stage.id}>
+                        <div className="flex items-center gap-2">
+                          <div
+                            className="w-2 h-2 rounded-full"
+                            style={{ backgroundColor: stage.color || "#71717a" }}
+                          />
+                          {stage.name}
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="source">Lead Source</Label>
+                <Select name="source">
+                  <SelectTrigger className="bg-background border-border">
+                    <SelectValue placeholder="How did you find this LP?" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-card border-border">
+                    <SelectItem value="linkedin">LinkedIn</SelectItem>
+                    <SelectItem value="networking_event">Networking Event</SelectItem>
+                    <SelectItem value="conference">Conference</SelectItem>
+                    <SelectItem value="referral">Referral</SelectItem>
+                    <SelectItem value="cold_outreach">Cold Outreach</SelectItem>
+                    <SelectItem value="existing_relationship">Existing Relationship</SelectItem>
+                    <SelectItem value="advisor">Advisor/Placement Agent</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
 
             {/* Value & Probability */}
