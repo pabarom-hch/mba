@@ -1,14 +1,15 @@
 # Phase 10: Private Equity
 
-> Mastering private equity from deal sourcing to exit
+> Mastering private equity from fund formation to exit
 
 ---
 
 ## Overview
 
-This phase provides comprehensive training in Private Equity, covering the full investment lifecycle from deal origination through exit. Whether you're pursuing a PE career or leading a PE-backed company, these modules build the knowledge and skills needed to create value in leveraged transactions.
+This phase provides comprehensive training in Private Equity, covering the full lifecycle from fund formation and capital raising through deal execution, value creation, and exit. Whether you're launching your own fund, pursuing a PE career, or leading a PE-backed company, these modules build the knowledge and skills needed to succeed in private equity.
 
-**Duration:** 4-6 weeks (self-paced)
+**Duration:** 5-8 weeks (self-paced)
+**Modules:** 5 (25-29)
 **Prerequisites:** Phase 2-3 (Financial Accounting & Corporate Finance), Phase 5 (Strategic Management)
 **Difficulty:** Advanced
 
@@ -20,6 +21,7 @@ Private Equity represents one of the most demanding and rewarding areas of finan
 
 | Dimension | What You'll Learn |
 |-----------|-------------------|
+| **Fund Formation** | Structure funds, raise capital, navigate regulatory requirements |
 | **Deal Craft** | Structure transactions, negotiate terms, manage risk |
 | **Operational Focus** | Drive value creation beyond financial engineering |
 | **Leadership** | Lead companies through transformation |
@@ -89,28 +91,51 @@ Maximize returns through successful exits:
 
 ---
 
+### Module 29: Fund Formation & Management
+**Lessons:** 6 | **Time:** 5-6 hours
+
+Master the business of running a PE fund:
+- Fund strategy development and validation
+- Fund formation and legal/regulatory requirements
+- Capital raising and LP fundraising
+- Fund launch and first close mechanics
+- Fund governance and portfolio management
+- LP relations and raising successor funds
+
+[Start Module 29 →](module-29-fund-formation/README.md)
+
+---
+
 ## Learning Path
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    PHASE 10: PRIVATE EQUITY                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  Module 25          Module 26         Module 27    Module 28│
-│  PE Fundamentals    Deal Execution    Operations   Exit     │
-│  (8 lessons)        (6 lessons)       (6 lessons)  (4 les.) │
-│       │                  │                │            │    │
-│       ▼                  ▼                ▼            ▼    │
-│  ┌─────────┐        ┌─────────┐      ┌─────────┐  ┌───────┐ │
-│  │Industry │        │Sourcing │      │100 Days │  │Prep   │ │
-│  │Structure│───────▶│   &     │─────▶│   &     │─▶│  &    │ │
-│  │& Basics │        │   DD    │      │Value    │  │Exit   │ │
-│  └─────────┘        └─────────┘      │Creation │  └───────┘ │
-│       │                  │           └─────────┘      │     │
-│       ▼                  ▼                │           ▼     │
-│  Assessment         Assessment       Assessment   Assessment│
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│                      PHASE 10: PRIVATE EQUITY                        │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  THE DEAL LIFECYCLE (Modules 25-28)                                  │
+│                                                                      │
+│  Module 25          Module 26         Module 27         Module 28    │
+│  PE Fundamentals    Deal Execution    Operations        Exit         │
+│  (8 lessons)        (6 lessons)       (6 lessons)       (4 lessons)  │
+│       │                  │                │                 │        │
+│       ▼                  ▼                ▼                 ▼        │
+│  ┌─────────┐        ┌─────────┐      ┌─────────┐      ┌─────────┐  │
+│  │Industry │        │Sourcing │      │100 Days │      │Prep &   │  │
+│  │Structure│───────▶│   &     │─────▶│   &     │─────▶│Exit     │  │
+│  │& Basics │        │   DD    │      │Value    │      │Returns  │  │
+│  └─────────┘        └─────────┘      │Creation │      └─────────┘  │
+│                                      └─────────┘                    │
+│                                                                      │
+│  THE FUND LIFECYCLE (Module 29)                                      │
+│                                                                      │
+│  Module 29: Fund Formation & Management (6 lessons)                  │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐│
+│  │Strategy│→│ Legal  │→│Capital │→│ Launch │→│Govern- │→│LP Rel. ││
+│  │& Valid.│ │Formtn. │ │Raising │ │& Close │ │ance    │ │& Perf  ││
+│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘│
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
                               │
                               ▼
                     ┌─────────────────┐
@@ -132,6 +157,7 @@ This phase integrates directly with Nexus case studies and simulations:
 | PE LBO Model Simulation | Practice after Module 26 |
 | ESOP Structures Comparison | Apply with Module 27 |
 | Exit Preparation Workshop | Practice after Module 28 |
+| Fund Formation Case Study | Apply with Module 29 |
 | PE Turnaround Dataset | Data for all exercises |
 
 ---
@@ -174,6 +200,11 @@ Before starting this phase, ensure you have completed:
 | **Carry** | Carried interest - GP's share of profits (typically 20%) |
 | **Hurdle Rate** | Minimum return LPs receive before GP earns carry |
 | **Add-on** | Acquisition by a portfolio company (vs. platform) |
+| **LPA** | Limited Partnership Agreement - governing fund document |
+| **PPM** | Private Placement Memorandum - fund offering document |
+| **LPAC** | LP Advisory Committee - governance body for conflict review |
+| **DPI** | Distributions to Paid-In - realized return multiple |
+| **TVPI** | Total Value to Paid-In - total return multiple (realized + unrealized) |
 
 ---
 
@@ -184,6 +215,8 @@ Before starting this phase, ensure you have completed:
 - **"The Masters of Private Equity and Venture Capital"** by Robert Finkel
 - **"King of Capital"** by David Carey (Blackstone story)
 - **"Barbarians at the Gate"** by Bryan Burrough (RJR Nabisco)
+- **"Two and Twenty"** by Sachin Khajuria (inside the PE business)
+- **"Raising Capital for Private Equity Funds"** by Marcia Ellis
 
 ### Industry Resources
 - PitchBook PE reports
