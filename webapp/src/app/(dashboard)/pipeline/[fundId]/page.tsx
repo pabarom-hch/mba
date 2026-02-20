@@ -21,7 +21,7 @@ import type {
 
 interface PipelinePageProps {
   params: Promise<{ fundId: string }>;
-  searchParams: Promise<{ search?: string; lpType?: string; view?: string }>;
+  searchParams: Promise<{ search?: string; lpType?: string; dateRange?: string; view?: string }>;
 }
 
 export interface PipelineStageWithOpportunities extends LpPipelineStage {
@@ -103,9 +103,28 @@ async function getFundWithPipeline(fundId: string, userId: string) {
   };
 }
 
+// Helper to get date threshold based on dateRange filter
+function getDateThreshold(dateRange: string | undefined): Date | null {
+  if (!dateRange || dateRange === "all") return null;
+
+  const now = new Date();
+  switch (dateRange) {
+    case "7d":
+      return new Date(now.setDate(now.getDate() - 7));
+    case "30d":
+      return new Date(now.setDate(now.getDate() - 30));
+    case "90d":
+      return new Date(now.setDate(now.getDate() - 90));
+    case "ytd":
+      return new Date(now.getFullYear(), 0, 1); // Jan 1 of current year
+    default:
+      return null;
+  }
+}
+
 export default async function FundPipelinePage({ params, searchParams }: PipelinePageProps) {
   const { fundId } = await params;
-  const { search, lpType } = await searchParams;
+  const { search, lpType, dateRange } = await searchParams;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -148,6 +167,15 @@ export default async function FundPipelinePage({ params, searchParams }: Pipelin
       if (lpType) {
         const orgType = opp.organization?.type;
         if (orgType !== lpType) {
+          return false;
+        }
+      }
+
+      // Date range filter - filters by updated_at or created_at
+      const dateThreshold = getDateThreshold(dateRange);
+      if (dateThreshold) {
+        const oppDate = opp.updated_at ? new Date(opp.updated_at) : opp.created_at ? new Date(opp.created_at) : null;
+        if (!oppDate || oppDate < dateThreshold) {
           return false;
         }
       }

@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useState, useTransition } from "react";
-import { Search, Filter, X, BarChart3, List, LayoutGrid } from "lucide-react";
+import { Search, Filter, X, BarChart3, List, LayoutGrid, Calendar } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -35,9 +35,18 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
 
   const currentSearch = searchParams.get("search") || "";
   const currentLpType = searchParams.get("lpType") || "";
+  const currentDateRange = searchParams.get("dateRange") || "";
   const currentView = searchParams.get("view") || "kanban";
 
   const [searchValue, setSearchValue] = useState(currentSearch);
+
+  const dateRangeOptions = [
+    { value: "7d", label: "Last 7 days" },
+    { value: "30d", label: "Last 30 days" },
+    { value: "90d", label: "Last 90 days" },
+    { value: "ytd", label: "Year to date" },
+    { value: "all", label: "All time" },
+  ];
 
   function updateParams(key: string, value: string) {
     const params = new URLSearchParams(searchParams.toString());
@@ -67,7 +76,7 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
     return () => clearTimeout(timeout);
   }
 
-  const hasFilters = currentSearch || currentLpType;
+  const hasFilters = currentSearch || currentLpType || currentDateRange;
 
   return (
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -132,6 +141,50 @@ export function PipelineFilters({ fundId, totalCount, filteredCount }: PipelineF
                   }`}
                 >
                   {label}
+                </button>
+              ))}
+            </div>
+          </PopoverContent>
+        </Popover>
+
+        {/* Date Range Filter */}
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button
+              variant="outline"
+              size="sm"
+              className={`border-zinc-700 h-9 ${currentDateRange ? "bg-orange-500/10 border-orange-500/30" : ""}`}
+            >
+              <Calendar className="h-4 w-4 mr-2" />
+              Date
+              {currentDateRange && (
+                <Badge variant="secondary" className="ml-2 bg-orange-500/20 text-orange-400">
+                  1
+                </Badge>
+              )}
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent className="w-48 p-2 bg-zinc-900 border-zinc-800" align="start">
+            <div className="space-y-1">
+              <button
+                onClick={() => updateParams("dateRange", "")}
+                className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
+                  !currentDateRange ? "bg-zinc-800 text-white" : "text-zinc-400 hover:bg-zinc-800/50"
+                }`}
+              >
+                All Time
+              </button>
+              {dateRangeOptions.map((option) => (
+                <button
+                  key={option.value}
+                  onClick={() => updateParams("dateRange", option.value)}
+                  className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors ${
+                    currentDateRange === option.value
+                      ? "bg-zinc-800 text-white"
+                      : "text-zinc-400 hover:bg-zinc-800/50"
+                  }`}
+                >
+                  {option.label}
                 </button>
               ))}
             </div>

@@ -19,6 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import type { Fund, LpOpportunity, LpPipelineStage, LpActivity } from "@/types/database";
 import { LP_TYPE_LABELS } from "@/types/database";
+import { Lightbulb, FileText } from "lucide-react";
 
 interface MetricsPageProps {
   params: Promise<{ fundId: string }>;
@@ -36,6 +37,12 @@ interface ConversionMetrics {
   fromStage: string;
   toStage: string;
   rate: number;
+}
+
+interface FundBuilderInsight {
+  questionText: string;
+  responseValue: string;
+  sectionName: string;
 }
 
 function formatCurrency(amount: number | null): string {
@@ -95,6 +102,30 @@ async function getMetricsData(fundId: string, userId: string) {
     .select("*")
     .eq("fund_id", fundId);
 
+  // Get fund builder responses with questions
+  const { data: fundBuilderResponses } = await supabase
+    .from("fund_builder_responses")
+    .select(`
+      response_value,
+      fund_builder_questions!inner (
+        question_text,
+        fund_builder_sections!inner (
+          name
+        )
+      )
+    `)
+    .eq("fund_id", fundId)
+    .not("response_value", "is", null);
+
+  // Transform fund builder data into insights
+  const fundBuilderInsights: FundBuilderInsight[] = (fundBuilderResponses || [])
+    .filter((r) => r.response_value && r.response_value.trim() !== "")
+    .map((r) => ({
+      questionText: (r.fund_builder_questions as unknown as { question_text: string; fund_builder_sections: { name: string } }).question_text,
+      responseValue: r.response_value!,
+      sectionName: (r.fund_builder_questions as unknown as { question_text: string; fund_builder_sections: { name: string } }).fund_builder_sections.name,
+    }));
+
   return {
     fund,
     stages: stages || [],
@@ -102,6 +133,7 @@ async function getMetricsData(fundId: string, userId: string) {
     activities: activities || [],
     stageHistory: stageHistory || [],
     organizations: organizations || [],
+    fundBuilderInsights,
   };
 }
 
@@ -120,7 +152,7 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
     notFound();
   }
 
-  const { fund, stages, opportunities, activities, organizations } = data;
+  const { fund, stages, opportunities, activities, organizations, fundBuilderInsights } = data;
 
   // Calculate stage metrics
   const stageMetrics: StageMetrics[] = stages.map((stage) => {
@@ -301,6 +333,50 @@ export default async function MetricsPage({ params }: MetricsPageProps) {
           </div>
         </CardContent>
       </Card>
+
+      {/* Fund Strategy (from Fund Builder) */}
+      {fundBuilderInsights.length > 0 && (
+        <Card className="border-zinc-800 bg-zinc-900/50">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Lightbulb className="h-5 w-5 text-yellow-500" />
+              Fund Strategy
+            </CardTitle>
+            <CardDescription className="text-zinc-400">
+              Key insights from your Fund Builder responses
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {fundBuilderInsights.slice(0, 6).map((insight, idx) => (
+                <div key={idx} className="p-4 rounded-lg bg-zinc-800/50 border border-zinc-700/50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <FileText className="h-4 w-4 text-zinc-500" />
+                    <span className="text-xs text-zinc-500 uppercase tracking-wide">
+                      {insight.sectionName}
+                    </span>
+                  </div>
+                  <p className="text-sm font-medium text-zinc-300 mb-1">
+                    {insight.questionText}
+                  </p>
+                  <p className="text-sm text-zinc-400 line-clamp-3">
+                    {insight.responseValue}
+                  </p>
+                </div>
+              ))}
+            </div>
+            {fundBuilderInsights.length > 6 && (
+              <div className="mt-4 text-center">
+                <Link href={`/fund-builder/${fundId}`}>
+                  <Button variant="outline" size="sm" className="border-zinc-700">
+                    View All {fundBuilderInsights.length} Responses
+                  </Button>
+                </Link>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Stage Breakdown */}

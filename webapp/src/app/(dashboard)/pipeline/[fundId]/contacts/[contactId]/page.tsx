@@ -42,7 +42,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import type { LpContact, LpOrganization, LpOpportunity } from "@/types/database";
+import type { LpContact, LpOrganization, LpOpportunity, LpPipelineStage } from "@/types/database";
 
 export default function ContactDetailPage() {
   const router = useRouter();
@@ -56,7 +56,7 @@ export default function ContactDetailPage() {
   const [error, setError] = useState<string | null>(null);
   const [contact, setContact] = useState<LpContact | null>(null);
   const [organizations, setOrganizations] = useState<LpOrganization[]>([]);
-  const [opportunities, setOpportunities] = useState<LpOpportunity[]>([]);
+  const [opportunities, setOpportunities] = useState<(LpOpportunity & { stage?: LpPipelineStage | null })[]>([]);
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -110,12 +110,18 @@ export default function ContactDetailPage() {
         .order("name");
       setOrganizations(orgs || []);
 
-      // Load related opportunities
+      // Load related opportunities with stage info
       const { data: opps } = await supabase
         .from("lp_opportunities")
-        .select("*")
+        .select(`
+          *,
+          lp_pipeline_stages (*)
+        `)
         .eq("contact_id", contactId);
-      setOpportunities(opps || []);
+      setOpportunities((opps || []).map(opp => ({
+        ...opp,
+        stage: opp.lp_pipeline_stages
+      })));
 
       setIsLoading(false);
     }
@@ -449,23 +455,58 @@ export default function ContactDetailPage() {
 
           {/* Related Opportunities */}
           <Card className="border-zinc-800 bg-zinc-900/50">
-            <CardHeader>
+            <CardHeader className="flex flex-row items-center justify-between">
               <CardTitle className="text-base">Related Opportunities</CardTitle>
+              {opportunities.length > 0 && (
+                <Badge variant="secondary" className="bg-zinc-800">
+                  {opportunities.length}
+                </Badge>
+              )}
             </CardHeader>
             <CardContent>
               {opportunities.length === 0 ? (
-                <p className="text-sm text-zinc-500">No opportunities linked to this contact</p>
+                <div className="text-center py-4">
+                  <p className="text-sm text-zinc-500">No opportunities linked to this contact</p>
+                  <Link href={`/pipeline/${fundId}/opportunities/new`}>
+                    <Button variant="outline" size="sm" className="mt-2 border-zinc-700">
+                      Create Opportunity
+                    </Button>
+                  </Link>
+                </div>
               ) : (
                 <div className="space-y-2">
                   {opportunities.map((opp) => (
                     <Link key={opp.id} href={`/pipeline/${fundId}/opportunities/${opp.id}`}>
-                      <div className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
-                        <p className="text-sm font-medium">{opp.name}</p>
-                        {opp.potential_commitment && (
-                          <p className="text-xs text-green-400">
-                            ${(opp.potential_commitment / 1_000_000).toFixed(1)}M
-                          </p>
-                        )}
+                      <div className="p-3 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all">
+                        <div className="flex items-start justify-between gap-2">
+                          <p className="text-sm font-medium">{opp.name}</p>
+                          {opp.stage && (
+                            <Badge
+                              variant="outline"
+                              className="text-xs shrink-0"
+                              style={{
+                                borderColor: `${opp.stage.color || '#71717a'}50`,
+                                color: opp.stage.color || '#a1a1aa'
+                              }}
+                            >
+                              {opp.stage.name}
+                            </Badge>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-3 mt-1">
+                          {opp.potential_commitment && (
+                            <span className="text-xs text-green-400 font-medium">
+                              ${opp.potential_commitment >= 1_000_000
+                                ? `${(opp.potential_commitment / 1_000_000).toFixed(1)}M`
+                                : `${(opp.potential_commitment / 1_000).toFixed(0)}K`}
+                            </span>
+                          )}
+                          {opp.probability != null && (
+                            <span className="text-xs text-zinc-500">
+                              {Math.round(opp.probability * 100)}% prob
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </Link>
                   ))}
