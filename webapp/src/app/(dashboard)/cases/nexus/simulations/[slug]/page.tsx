@@ -197,25 +197,25 @@ export default async function SimulationPage({
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 mb-6">
-        <Link href="/cases" className="hover:text-zinc-100 flex items-center gap-1">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+        <Link href="/cases" className="hover:text-foreground flex items-center gap-1">
           <ChevronLeft className="h-4 w-4" />
           Cases
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/cases/nexus" className="hover:text-zinc-100">
+        <Link href="/cases/nexus" className="hover:text-foreground">
           Nexus
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/cases/nexus/simulations" className="hover:text-zinc-100">
+        <Link href="/cases/nexus/simulations" className="hover:text-foreground">
           Simulations
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100 truncate max-w-[200px]">{metadata.name}</span>
+        <span className="text-foreground truncate max-w-[200px]">{metadata.name}</span>
       </div>
 
       {/* Header Card */}
-      <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+      <Card className="border-border bg-card/50 mb-6">
         <CardHeader>
           <div className="flex items-start justify-between">
             <div className="flex items-start gap-4">
@@ -232,39 +232,39 @@ export default async function SimulationPage({
                     className={`text-xs capitalize ${
                       metadata.difficulty === "advanced"
                         ? "border-red-500/50 text-red-400"
-                        : "border-zinc-700"
+                        : "border-border"
                     }`}
                   >
                     {metadata.difficulty}
                   </Badge>
                 </div>
                 <CardTitle className="text-2xl">{metadata.name}</CardTitle>
-                <p className="text-zinc-400 mt-2">{metadata.description}</p>
+                <p className="text-muted-foreground mt-2">{metadata.description}</p>
               </div>
             </div>
           </div>
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-4">
-            <div className="flex items-center gap-2 text-sm text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Clock className="h-4 w-4" />
               {metadata.duration} minutes
             </div>
-            <div className="flex items-center gap-2 text-sm text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Database className="h-4 w-4" />
               {metadata.datasets.length} dataset{metadata.datasets.length > 1 ? "s" : ""}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 mt-4">
             {metadata.skills.map((skill) => (
-              <Badge key={skill} variant="outline" className="border-zinc-700 text-xs">
+              <Badge key={skill} variant="outline" className="border-border text-xs">
                 {skill}
               </Badge>
             ))}
           </div>
           {metadata.datasets.length > 0 && (
-            <div className="mt-4 pt-4 border-t border-zinc-800">
-              <span className="text-sm text-zinc-400">Related datasets: </span>
+            <div className="mt-4 pt-4 border-t border-border">
+              <span className="text-sm text-muted-foreground">Related datasets: </span>
               {metadata.datasets.map((dataset, i) => (
                 <span key={dataset}>
                   <Link
@@ -282,7 +282,7 @@ export default async function SimulationPage({
       </Card>
 
       {/* Content */}
-      <Card className="border-zinc-800 bg-zinc-900/50 mb-6">
+      <Card className="border-border bg-card/50 mb-6">
         <CardContent className="p-6 sm:p-8">
           <MarkdownContent content={content} basePath="/cases/nexus/simulations" />
         </CardContent>
@@ -292,7 +292,7 @@ export default async function SimulationPage({
       <div className="flex items-center justify-between">
         {prevSlug ? (
           <Link href={`/cases/nexus/simulations/${prevSlug}`}>
-            <Button variant="ghost" className="text-zinc-400 hover:text-zinc-100">
+            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               <ArrowLeft className="h-4 w-4 mr-2" />
               {simulationsData[prevSlug].name}
             </Button>
@@ -302,7 +302,7 @@ export default async function SimulationPage({
         )}
         {nextSlug && (
           <Link href={`/cases/nexus/simulations/${nextSlug}`}>
-            <Button variant="ghost" className="text-zinc-400 hover:text-zinc-100">
+            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               {simulationsData[nextSlug].name}
               <ArrowRight className="h-4 w-4 ml-2" />
             </Button>

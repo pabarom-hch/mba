@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
@@ -42,7 +43,7 @@ export function MobileNav() {
         variant="ghost"
         size="icon"
         onClick={() => setIsOpen(true)}
-        className="text-zinc-400"
+        className="text-muted-foreground"
       >
         <Menu className="h-6 w-6" />
       </Button>
@@ -58,23 +59,26 @@ export function MobileNav() {
       {/* Drawer */}
       <div
         className={cn(
-          "fixed inset-y-0 left-0 z-50 w-72 transform bg-zinc-950 border-r border-zinc-800 transition-transform duration-300 ease-in-out",
+          "fixed inset-y-0 left-0 z-50 w-72 transform bg-background border-r border-border transition-transform duration-300 ease-in-out",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
-        <div className="flex h-16 items-center justify-between px-6 border-b border-zinc-800">
+        <div className="flex h-16 items-center justify-between px-6 border-b border-border">
           <div className="flex items-center gap-2">
             <BarChart3 className="h-6 w-6 text-orange-500" />
             <span className="font-semibold text-lg">CEO Platform</span>
           </div>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsOpen(false)}
-            className="text-zinc-400"
-          >
-            <X className="h-5 w-5" />
-          </Button>
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground"
+            >
+              <X className="h-5 w-5" />
+            </Button>
+          </div>
         </div>
 
         <nav className="p-4 space-y-1">
@@ -90,7 +94,7 @@ export function MobileNav() {
                   "flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium transition-colors",
                   isActive
                     ? "bg-orange-500/10 text-orange-500"
-                    : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100"
+                    : "text-muted-foreground hover:bg-accent hover:text-foreground"
                 )}
               >
                 <item.icon className="h-5 w-5" />

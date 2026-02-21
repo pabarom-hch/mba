@@ -32,17 +32,17 @@ export default async function DataExplorerPage({
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 mb-6">
-        <Link href="/cases" className="hover:text-zinc-100 flex items-center gap-1">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+        <Link href="/cases" className="hover:text-foreground flex items-center gap-1">
           <ChevronLeft className="h-4 w-4" />
           Cases
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/cases/nexus" className="hover:text-zinc-100">
+        <Link href="/cases/nexus" className="hover:text-foreground">
           Nexus
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Data Explorer</span>
+        <span className="text-foreground">Data Explorer</span>
       </div>
 
       {/* Header */}
@@ -55,7 +55,7 @@ export default async function DataExplorerPage({
             <h1 className="text-2xl sm:text-3xl font-bold">Data Explorer</h1>
           </div>
         </div>
-        <p className="text-zinc-400 max-w-3xl">
+        <p className="text-muted-foreground max-w-3xl">
           Explore real operational data from Nexus. Use these datasets for analysis exercises,
           financial modeling, and strategic planning.
         </p>
@@ -64,7 +64,7 @@ export default async function DataExplorerPage({
       <div className="grid gap-6 lg:grid-cols-4">
         {/* Dataset Sidebar */}
         <div className="lg:col-span-1">
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardHeader className="pb-3">
               <CardTitle className="text-base">Datasets</CardTitle>
             </CardHeader>
@@ -78,12 +78,12 @@ export default async function DataExplorerPage({
                     className={`p-3 rounded-lg border transition-all cursor-pointer ${
                       currentDataset?.id === dataset.id
                         ? "border-green-500/50 bg-green-500/10"
-                        : "border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50"
+                        : "border-border hover:border-border hover:bg-accent/50"
                     }`}
                   >
                     <div className="flex items-center gap-2">
                       <Database className={`h-4 w-4 ${
-                        currentDataset?.id === dataset.id ? "text-green-400" : "text-zinc-500"
+                        currentDataset?.id === dataset.id ? "text-green-400" : "text-muted-foreground"
                       }`} />
                       <span className={`text-sm font-medium ${
                         currentDataset?.id === dataset.id ? "text-green-400" : ""
@@ -91,7 +91,7 @@ export default async function DataExplorerPage({
                         {dataset.display_name}
                       </span>
                     </div>
-                    <p className="text-xs text-zinc-500 mt-1 line-clamp-2">
+                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
                       {dataset.description?.slice(0, 80)}...
                     </p>
                   </div>
@@ -101,17 +101,17 @@ export default async function DataExplorerPage({
           </Card>
 
           {/* About Card */}
-          <Card className="border-zinc-800 bg-zinc-900/30 mt-4">
+          <Card className="border-border bg-card/30 mt-4">
             <CardContent className="p-4">
               <div className="flex items-center gap-2 mb-2">
                 <Building2 className="h-4 w-4 text-orange-400" />
                 <span className="text-sm font-medium">About This Data</span>
               </div>
-              <p className="text-xs text-zinc-400">
+              <p className="text-xs text-muted-foreground">
                 All data is anonymized but reflects real business patterns from an IT consulting firm.
                 Use for educational purposes only.
               </p>
-              <Badge variant="outline" className="mt-3 text-xs border-zinc-700">
+              <Badge variant="outline" className="mt-3 text-xs border-border">
                 Anonymized
               </Badge>
             </CardContent>
@@ -125,8 +125,8 @@ export default async function DataExplorerPage({
               dataset={currentDataset}
             />
           ) : (
-            <Card className="border-zinc-800 bg-zinc-900/50">
-              <CardContent className="p-8 text-center text-zinc-400">
+            <Card className="border-border bg-card/50">
+              <CardContent className="p-8 text-center text-muted-foreground">
                 No datasets available
               </CardContent>
             </Card>

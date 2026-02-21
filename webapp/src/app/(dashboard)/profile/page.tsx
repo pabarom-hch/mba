@@ -59,14 +59,14 @@ export default async function ProfilePage() {
   return (
     <div className="p-6 lg:p-8 space-y-8 max-w-3xl">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Profile</span>
+        <span className="text-foreground">Profile</span>
       </div>
 
       {/* Profile Header */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-6">
           <div className="flex items-center gap-6">
             <Avatar className="h-20 w-20">
@@ -79,12 +79,12 @@ export default async function ProfilePage() {
               <h1 className="text-2xl font-bold">
                 {profile?.display_name || user.email?.split("@")[0] || "User"}
               </h1>
-              <p className="text-zinc-400 flex items-center gap-2 mt-1">
+              <p className="text-muted-foreground flex items-center gap-2 mt-1">
                 <Mail className="h-4 w-4" />
                 {user.email}
               </p>
               {user.created_at && (
-                <p className="text-sm text-zinc-500 flex items-center gap-2 mt-1">
+                <p className="text-sm text-muted-foreground flex items-center gap-2 mt-1">
                   <Calendar className="h-4 w-4" />
                   Joined {formatDistanceToNow(new Date(user.created_at), { addSuffix: true })}
                 </p>
@@ -96,30 +96,30 @@ export default async function ProfilePage() {
 
       {/* Stats */}
       <div className="grid gap-4 md:grid-cols-3">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 text-center">
             <p className="text-3xl font-bold text-orange-500">{streak}</p>
-            <p className="text-sm text-zinc-400">Day Streak</p>
+            <p className="text-sm text-muted-foreground">Day Streak</p>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 text-center">
             <p className="text-3xl font-bold text-green-500">{completedLessons}</p>
-            <p className="text-sm text-zinc-400">Lessons Completed</p>
+            <p className="text-sm text-muted-foreground">Lessons Completed</p>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 text-center">
             <p className="text-3xl font-bold text-blue-500">{inProgressLessons}</p>
-            <p className="text-sm text-zinc-400">In Progress</p>
+            <p className="text-sm text-muted-foreground">In Progress</p>
           </CardContent>
         </Card>
       </div>
 
       {/* Enrollments */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardHeader>
           <CardTitle className="text-lg">Enrolled Curricula</CardTitle>
         </CardHeader>
@@ -127,11 +127,11 @@ export default async function ProfilePage() {
           {enrollments.map((enrollment) => (
             <div
               key={enrollment.id}
-              className="flex items-center justify-between p-4 rounded-lg border border-zinc-800 bg-zinc-900"
+              className="flex items-center justify-between p-4 rounded-lg border border-border bg-card"
             >
               <div>
                 <h3 className="font-medium">{enrollment.curriculum?.name}</h3>
-                <p className="text-sm text-zinc-400">
+                <p className="text-sm text-muted-foreground">
                   Week {enrollment.current_week || 1}
                 </p>
               </div>
@@ -140,7 +140,7 @@ export default async function ProfilePage() {
                 className={
                   enrollment.status === "active"
                     ? "border-green-500/30 text-green-400"
-                    : "border-zinc-700"
+                    : "border-border"
                 }
               >
                 {enrollment.status}
@@ -151,30 +151,30 @@ export default async function ProfilePage() {
       </Card>
 
       {/* Settings */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardHeader>
           <CardTitle className="text-lg">Preferences</CardTitle>
           <CardDescription>Manage your account settings</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="flex items-center justify-between p-4 rounded-lg border border-zinc-800">
+          <div className="flex items-center justify-between p-4 rounded-lg border border-border">
             <div>
               <p className="font-medium">Timezone</p>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted-foreground">
                 {profile?.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone}
               </p>
             </div>
-            <Clock className="h-5 w-5 text-zinc-500" />
+            <Clock className="h-5 w-5 text-muted-foreground" />
           </div>
 
-          <div className="flex items-center justify-between p-4 rounded-lg border border-zinc-800">
+          <div className="flex items-center justify-between p-4 rounded-lg border border-border">
             <div>
               <p className="font-medium">Daily Reminder</p>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted-foreground">
                 {profile?.daily_reminder_time || "Not set"}
               </p>
             </div>
-            <Badge variant="outline" className="border-zinc-700">
+            <Badge variant="outline" className="border-border">
               Coming Soon
             </Badge>
           </div>

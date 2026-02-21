@@ -139,14 +139,14 @@ export default async function WeekPage({
   return (
     <div className="p-6 lg:p-8 space-y-8">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 flex-wrap">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/mentor" className="hover:text-zinc-100">Mentor Curriculum</Link>
+        <Link href="/mentor" className="hover:text-foreground">Mentor Curriculum</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-500">Q{quarter.number}</span>
+        <span className="text-muted-foreground">Q{quarter.number}</span>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Week {week.number}</span>
+        <span className="text-foreground">Week {week.number}</span>
       </div>
 
       {/* Header */}
@@ -158,14 +158,14 @@ export default async function WeekPage({
             </Badge>
             <h1 className="text-3xl font-bold">Week {week.number}: {week.title}</h1>
             {week.theme && (
-              <p className="text-zinc-400 mt-2">{week.theme}</p>
+              <p className="text-muted-foreground mt-2">{week.theme}</p>
             )}
           </div>
         </div>
 
         {/* Mentor Card */}
         {week.mentor && (
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardContent className="p-6">
               <div className="flex items-center gap-4">
                 <Avatar className="h-16 w-16">
@@ -177,10 +177,10 @@ export default async function WeekPage({
                 <div>
                   <h3 className="text-lg font-semibold">{week.mentor.name}</h3>
                   {week.mentor.title && (
-                    <p className="text-sm text-zinc-400">{week.mentor.title}</p>
+                    <p className="text-sm text-muted-foreground">{week.mentor.title}</p>
                   )}
                   {week.mentor.philosophy && (
-                    <p className="text-sm text-zinc-500 mt-1 line-clamp-2 max-w-xl">
+                    <p className="text-sm text-muted-foreground mt-1 line-clamp-2 max-w-xl">
                       {week.mentor.philosophy}
                     </p>
                   )}
@@ -191,20 +191,20 @@ export default async function WeekPage({
         )}
 
         {/* Progress Bar */}
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-zinc-400">Week Progress</span>
+              <span className="text-sm text-muted-foreground">Week Progress</span>
               <span className="text-sm font-medium">{completedCount} / {lessons.length} lessons</span>
             </div>
-            <Progress value={progressPercent} className="h-2 bg-zinc-800" />
+            <Progress value={progressPercent} className="h-2 bg-muted" />
           </CardContent>
         </Card>
       </div>
 
       {/* Overview */}
       {week.overview && (
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardHeader>
             <CardTitle className="text-lg">Week Overview</CardTitle>
           </CardHeader>
@@ -230,7 +230,7 @@ export default async function WeekPage({
                 key={lesson.id}
                 href={`/mentor/${quarterNumber}/${weekNumber}/${lesson.slug}`}
               >
-                <Card className="border-zinc-800 bg-zinc-900/50 transition-all hover:border-zinc-700 hover:bg-zinc-800/50">
+                <Card className="border-border bg-card/50 transition-all hover:border-border hover:bg-muted/50">
                   <CardContent className="p-4">
                     <div className="flex items-center gap-4">
                       {/* Day Number */}
@@ -239,28 +239,28 @@ export default async function WeekPage({
                           ? "bg-green-500/10"
                           : isInProgress
                           ? "bg-orange-500/10"
-                          : "bg-zinc-800"
+                          : "bg-muted"
                       }`}>
                         {isComplete ? (
                           <CheckCircle2 className="h-6 w-6 text-green-500" />
                         ) : isInProgress ? (
                           <Clock className="h-6 w-6 text-orange-500" />
                         ) : (
-                          <span className="text-lg font-bold text-zinc-400">{lesson.number}</span>
+                          <span className="text-lg font-bold text-muted-foreground">{lesson.number}</span>
                         )}
                       </div>
 
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <Badge variant="outline" className="border-zinc-700 text-zinc-400">
+                          <Badge variant="outline" className="border-border text-muted-foreground">
                             <Calendar className="h-3 w-3 mr-1" />
                             {dayName}
                           </Badge>
                         </div>
                         <h3 className="font-medium mt-1">{lesson.title}</h3>
                         {lesson.summary && (
-                          <p className="text-sm text-zinc-400 mt-1 line-clamp-1">
+                          <p className="text-sm text-muted-foreground mt-1 line-clamp-1">
                             {lesson.summary}
                           </p>
                         )}
@@ -269,7 +269,7 @@ export default async function WeekPage({
                       {/* Meta */}
                       <div className="hidden sm:flex items-center gap-4">
                         {lesson.duration_minutes && (
-                          <span className="text-sm text-zinc-500">{lesson.duration_minutes} min</span>
+                          <span className="text-sm text-muted-foreground">{lesson.duration_minutes} min</span>
                         )}
                         <Badge
                           variant="outline"
@@ -278,14 +278,14 @@ export default async function WeekPage({
                               ? "border-green-500/30 text-green-400"
                               : isInProgress
                               ? "border-orange-500/30 text-orange-400"
-                              : "border-zinc-700 text-zinc-400"
+                              : "border-border text-muted-foreground"
                           }
                         >
                           {isComplete ? "Complete" : isInProgress ? "In Progress" : "Start"}
                         </Badge>
                       </div>
 
-                      <ChevronRight className="h-5 w-5 text-zinc-600" />
+                      <ChevronRight className="h-5 w-5 text-muted-foreground" />
                     </div>
                   </CardContent>
                 </Card>

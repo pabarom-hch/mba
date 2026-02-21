@@ -42,42 +42,42 @@ export default async function NotesPage() {
   return (
     <div className="p-6 lg:p-8 space-y-8">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">My Notes</span>
+        <span className="text-foreground">My Notes</span>
       </div>
 
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold">My Notes</h1>
-        <p className="text-zinc-400 mt-2">
+        <p className="text-muted-foreground mt-2">
           {notes.length} notes • {highlights.length} highlights
         </p>
       </div>
 
       {/* Stats */}
       <div className="grid gap-4 md:grid-cols-2">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500/10">
               <StickyNote className="h-5 w-5 text-pink-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{notes.length}</p>
-              <p className="text-sm text-zinc-400">Notes</p>
+              <p className="text-sm text-muted-foreground">Notes</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500/10">
               <BookOpen className="h-5 w-5 text-yellow-500" />
             </div>
             <div>
               <p className="text-2xl font-bold">{highlights.length}</p>
-              <p className="text-sm text-zinc-400">Highlights</p>
+              <p className="text-sm text-muted-foreground">Highlights</p>
             </div>
           </CardContent>
         </Card>
@@ -88,11 +88,11 @@ export default async function NotesPage() {
         <h2 className="text-xl font-semibold">Recent Notes</h2>
 
         {notes.length === 0 ? (
-          <Card className="border-zinc-800 bg-zinc-900/50">
+          <Card className="border-border bg-card/50">
             <CardContent className="p-8 text-center">
-              <StickyNote className="h-12 w-12 text-zinc-600 mx-auto mb-4" />
-              <p className="text-zinc-400">No notes yet</p>
-              <p className="text-sm text-zinc-500 mt-1">
+              <StickyNote className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+              <p className="text-muted-foreground">No notes yet</p>
+              <p className="text-sm text-muted-foreground mt-1">
                 Start taking notes while reading lessons
               </p>
             </CardContent>
@@ -100,7 +100,7 @@ export default async function NotesPage() {
         ) : (
           <div className="space-y-4">
             {notes.map((note) => (
-              <Card key={note.id} className="border-zinc-800 bg-zinc-900/50">
+              <Card key={note.id} className="border-border bg-card/50">
                 <CardHeader className="pb-2">
                   <div className="flex items-start justify-between">
                     <div>
@@ -110,20 +110,20 @@ export default async function NotesPage() {
                         </p>
                       )}
                       {note.lesson && (
-                        <CardDescription className="text-zinc-400 text-sm flex items-center gap-1">
+                        <CardDescription className="text-muted-foreground text-sm flex items-center gap-1">
                           <BookOpen className="h-3 w-3" />
                           {note.lesson.title}
                         </CardDescription>
                       )}
                     </div>
-                    <div className="flex items-center gap-2 text-xs text-zinc-500">
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
                       <Calendar className="h-3 w-3" />
                       {note.created_at && formatDistanceToNow(new Date(note.created_at), { addSuffix: true })}
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-zinc-300 whitespace-pre-wrap">{note.content}</p>
+                  <p className="text-foreground whitespace-pre-wrap">{note.content}</p>
                 </CardContent>
               </Card>
             ))}
@@ -137,7 +137,7 @@ export default async function NotesPage() {
           <h2 className="text-xl font-semibold">Highlights</h2>
           <div className="space-y-4">
             {highlights.map((highlight) => (
-              <Card key={highlight.id} className="border-zinc-800 bg-zinc-900/50">
+              <Card key={highlight.id} className="border-border bg-card/50">
                 <CardContent className="p-4">
                   <div className="flex items-start gap-4">
                     <div
@@ -154,12 +154,12 @@ export default async function NotesPage() {
                       }}
                     />
                     <div className="flex-1">
-                      <p className="text-zinc-200 italic">&quot;{highlight.text}&quot;</p>
+                      <p className="text-foreground italic">&quot;{highlight.text}&quot;</p>
                       {highlight.note && (
-                        <p className="text-sm text-zinc-400 mt-2">{highlight.note}</p>
+                        <p className="text-sm text-muted-foreground mt-2">{highlight.note}</p>
                       )}
                       {highlight.lesson && (
-                        <p className="text-xs text-zinc-500 mt-2 flex items-center gap-1">
+                        <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
                           <BookOpen className="h-3 w-3" />
                           {highlight.lesson.title}
                         </p>

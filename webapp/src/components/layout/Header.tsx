@@ -14,6 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 interface HeaderProps {
   user: User | null;
@@ -35,17 +36,18 @@ export function Header({ user, title }: HeaderProps) {
     : "U";
 
   return (
-    <header className="flex h-16 items-center justify-between border-b border-zinc-800 bg-zinc-950 px-6">
+    <header className="flex h-16 items-center justify-between border-b border-border bg-background px-6">
       <div>
         {title && (
-          <h1 className="text-lg font-semibold text-zinc-100">{title}</h1>
+          <h1 className="text-lg font-semibold text-foreground">{title}</h1>
         )}
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
+        <ThemeToggle />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <button className="flex items-center gap-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-zinc-950">
+            <button className="flex items-center gap-2 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-background">
               <Avatar className="h-8 w-8">
                 <AvatarImage src={undefined} />
                 <AvatarFallback className="bg-orange-500/20 text-orange-500 text-sm">
@@ -58,7 +60,7 @@ export function Header({ user, title }: HeaderProps) {
             <DropdownMenuLabel>
               <div className="flex flex-col space-y-1">
                 <p className="text-sm font-medium leading-none">My Account</p>
-                <p className="text-xs leading-none text-zinc-400">
+                <p className="text-xs leading-none text-muted-foreground">
                   {user?.email}
                 </p>
               </div>

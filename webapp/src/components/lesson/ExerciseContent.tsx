@@ -250,39 +250,39 @@ export function ExerciseContent({ content, lessonId, exerciseData, basePath }: E
 
   const markdownComponents = {
     h1: ({ children }: { children?: React.ReactNode }) => (
-      <h1 className="text-2xl font-bold mt-8 mb-4 text-zinc-100">{children}</h1>
+      <h1 className="text-2xl font-bold mt-8 mb-4 text-foreground">{children}</h1>
     ),
     h2: ({ children }: { children?: React.ReactNode }) => (
-      <h2 className="text-xl font-semibold mt-6 mb-3 text-zinc-100">{children}</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3 text-foreground">{children}</h2>
     ),
     h3: ({ children }: { children?: React.ReactNode }) => (
-      <h3 className="text-lg font-semibold mt-4 mb-2 text-zinc-200">{children}</h3>
+      <h3 className="text-lg font-semibold mt-4 mb-2 text-foreground">{children}</h3>
     ),
     p: ({ children }: { children?: React.ReactNode }) => (
-      <p className="text-zinc-300 leading-relaxed mb-4">{children}</p>
+      <p className="text-foreground leading-relaxed mb-4">{children}</p>
     ),
     ul: ({ children }: { children?: React.ReactNode }) => (
-      <ul className="list-disc list-inside space-y-2 text-zinc-300 mb-4">{children}</ul>
+      <ul className="list-disc list-inside space-y-2 text-foreground mb-4">{children}</ul>
     ),
     ol: ({ children }: { children?: React.ReactNode }) => (
-      <ol className="list-decimal list-inside space-y-2 text-zinc-300 mb-4">{children}</ol>
+      <ol className="list-decimal list-inside space-y-2 text-foreground mb-4">{children}</ol>
     ),
     li: ({ children }: { children?: React.ReactNode }) => (
-      <li className="text-zinc-300">{children}</li>
+      <li className="text-foreground">{children}</li>
     ),
     blockquote: ({ children }: { children?: React.ReactNode }) => (
-      <blockquote className="border-l-4 border-orange-500 pl-4 italic text-zinc-400 my-4">
+      <blockquote className="border-l-4 border-orange-500 pl-4 italic text-muted-foreground my-4">
         {children}
       </blockquote>
     ),
     strong: ({ children }: { children?: React.ReactNode }) => (
-      <strong className="font-semibold text-zinc-100">{children}</strong>
+      <strong className="font-semibold text-foreground">{children}</strong>
     ),
     code: ({ className, children, ...props }: { className?: string; children?: React.ReactNode }) => {
       const isInline = !className;
       if (isInline) {
         return (
-          <code className="bg-zinc-800 px-1.5 py-0.5 rounded text-orange-400 text-sm" {...props}>
+          <code className="bg-muted px-1.5 py-0.5 rounded text-orange-400 text-sm" {...props}>
             {children}
           </code>
         );
@@ -294,7 +294,7 @@ export function ExerciseContent({ content, lessonId, exerciseData, basePath }: E
       );
     },
     pre: ({ children }: { children?: React.ReactNode }) => (
-      <pre className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 overflow-x-auto my-4">
+      <pre className="bg-card border border-border rounded-lg p-4 overflow-x-auto my-4">
         {children}
       </pre>
     ),
@@ -323,17 +323,17 @@ export function ExerciseContent({ content, lessonId, exerciseData, basePath }: E
         </a>
       );
     },
-    hr: () => <hr className="border-zinc-700 my-6" />,
+    hr: () => <hr className="border-border my-6" />,
     table: ({ children }: { children?: React.ReactNode }) => (
       <ResponsiveTable>{children}</ResponsiveTable>
     ),
     th: ({ children }: { children?: React.ReactNode }) => (
-      <th className="bg-zinc-800 px-4 py-2 text-left text-zinc-100 font-semibold border-b border-zinc-700">
+      <th className="bg-muted px-4 py-2 text-left text-foreground font-semibold border-b border-border">
         {children}
       </th>
     ),
     td: ({ children }: { children?: React.ReactNode }) => (
-      <td className="px-4 py-2 text-zinc-300 border-b border-zinc-800">{children}</td>
+      <td className="px-4 py-2 text-foreground border-b border-border">{children}</td>
     ),
   };
 
@@ -353,7 +353,7 @@ export function ExerciseContent({ content, lessonId, exerciseData, basePath }: E
       {/* Sections with visual separators */}
       {sections.map((section, idx) => (
         <div key={idx}>
-          {idx > 0 && <hr className="border-zinc-800 my-6" />}
+          {idx > 0 && <hr className="border-border my-6" />}
           <MarkdownSection
             content={section.content}
             lessonId={lessonId}

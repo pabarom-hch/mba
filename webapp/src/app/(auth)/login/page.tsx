@@ -41,7 +41,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <Card className="w-full max-w-md border-zinc-800 bg-zinc-950">
+      <Card className="w-full max-w-md border-border bg-card">
         <CardHeader className="space-y-4 text-center">
           <div className="flex justify-center">
             <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ export default function LoginPage() {
           </div>
           <div>
             <CardTitle className="text-2xl">Welcome back</CardTitle>
-            <CardDescription className="text-zinc-400">
+            <CardDescription className="text-muted-foreground">
               Sign in to continue your learning journey
             </CardDescription>
           </div>
@@ -59,7 +59,7 @@ export default function LoginPage() {
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-1">
                 Email
               </label>
               <Input
@@ -69,12 +69,12 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="border-zinc-700 bg-zinc-900 focus:border-orange-500 focus:ring-orange-500"
+                className="border-border bg-secondary focus:border-orange-500 focus:ring-orange-500"
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-zinc-400 mb-1">
+              <label htmlFor="password" className="block text-sm font-medium text-muted-foreground mb-1">
                 Password
               </label>
               <div className="relative">
@@ -85,12 +85,12 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="border-zinc-700 bg-zinc-900 focus:border-orange-500 focus:ring-orange-500 pr-10"
+                  className="border-border bg-secondary focus:border-orange-500 focus:ring-orange-500 pr-10"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-300"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
@@ -125,7 +125,7 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-zinc-400">
+          <div className="mt-6 text-center text-sm text-muted-foreground">
             Don&apos;t have an account?{" "}
             <Link href="/signup" className="text-orange-500 hover:text-orange-400">
               Sign up

@@ -160,17 +160,17 @@ export default function SimulationsPage() {
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400 mb-6">
-        <Link href="/cases" className="hover:text-zinc-100 flex items-center gap-1">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+        <Link href="/cases" className="hover:text-foreground flex items-center gap-1">
           <ChevronLeft className="h-4 w-4" />
           Cases
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href="/cases/nexus" className="hover:text-zinc-100">
+        <Link href="/cases/nexus" className="hover:text-foreground">
           Nexus
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Simulations</span>
+        <span className="text-foreground">Simulations</span>
       </div>
 
       {/* Header */}
@@ -183,7 +183,7 @@ export default function SimulationsPage() {
             <h1 className="text-2xl sm:text-3xl font-bold">Interactive Simulations</h1>
           </div>
         </div>
-        <p className="text-zinc-400 max-w-3xl">
+        <p className="text-muted-foreground max-w-3xl">
           Hands-on exercises using real Nexus data. Build strategic analyses, financial models,
           and operational plans with guided workflows.
         </p>
@@ -191,34 +191,34 @@ export default function SimulationsPage() {
 
       {/* Stats Bar */}
       <div className="grid grid-cols-3 gap-4 mb-8">
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <PlayCircle className="h-5 w-5 text-purple-400" />
             <div>
               <p className="text-xl font-bold">{simulations.length}</p>
-              <p className="text-xs text-zinc-400">Simulations</p>
+              <p className="text-xs text-muted-foreground">Simulations</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <Clock className="h-5 w-5 text-orange-400" />
             <div>
               <p className="text-xl font-bold">
                 {simulations.reduce((acc, s) => acc + s.duration, 0) / 60}h
               </p>
-              <p className="text-xs text-zinc-400">Total Duration</p>
+              <p className="text-xs text-muted-foreground">Total Duration</p>
             </div>
           </CardContent>
         </Card>
-        <Card className="border-zinc-800 bg-zinc-900/50">
+        <Card className="border-border bg-card/50">
           <CardContent className="p-4 flex items-center gap-3">
             <FileSpreadsheet className="h-5 w-5 text-green-400" />
             <div>
               <p className="text-xl font-bold">
                 {[...new Set(simulations.flatMap(s => s.datasets))].length}
               </p>
-              <p className="text-xs text-zinc-400">Datasets Used</p>
+              <p className="text-xs text-muted-foreground">Datasets Used</p>
             </div>
           </CardContent>
         </Card>
@@ -232,7 +232,7 @@ export default function SimulationsPage() {
 
           return (
             <Link key={sim.slug} href={`/cases/nexus/simulations/${sim.slug}`}>
-              <Card className={`border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 hover:border-zinc-700 transition-all cursor-pointer h-full`}>
+              <Card className={`border-border bg-card/50 hover:bg-card hover:border-border transition-all cursor-pointer h-full`}>
                 <CardHeader>
                   <div className="flex items-start justify-between mb-2">
                     <div className={`p-2 rounded-lg ${colors.bg}`}>
@@ -247,7 +247,7 @@ export default function SimulationsPage() {
                         className={`text-xs capitalize ${
                           sim.difficulty === "advanced"
                             ? "border-red-500/50 text-red-400"
-                            : "border-zinc-700"
+                            : "border-border"
                         }`}
                       >
                         {sim.difficulty}
@@ -255,20 +255,20 @@ export default function SimulationsPage() {
                     </div>
                   </div>
                   <CardTitle className="text-xl">{sim.name}</CardTitle>
-                  <CardDescription className="text-zinc-400 mt-1">
+                  <CardDescription className="text-muted-foreground mt-1">
                     {sim.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {sim.skills.map((skill) => (
-                      <Badge key={skill} variant="outline" className="border-zinc-700 text-xs">
+                      <Badge key={skill} variant="outline" className="border-border text-xs">
                         {skill}
                       </Badge>
                     ))}
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-zinc-500 flex items-center gap-1">
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Clock className="h-4 w-4" />
                       {sim.duration} min
                     </span>
@@ -285,20 +285,20 @@ export default function SimulationsPage() {
       </div>
 
       {/* Info Section */}
-      <Card className="border-zinc-800 bg-zinc-900/30 mt-8">
+      <Card className="border-border bg-card/30 mt-8">
         <CardContent className="p-6">
           <h3 className="text-lg font-semibold mb-3">How Simulations Work</h3>
-          <div className="grid gap-4 md:grid-cols-3 text-sm text-zinc-400">
+          <div className="grid gap-4 md:grid-cols-3 text-sm text-muted-foreground">
             <div>
-              <span className="text-zinc-100 font-medium block mb-1">1. Read the Context</span>
+              <span className="text-foreground font-medium block mb-1">1. Read the Context</span>
               Each simulation begins with background information and objectives to guide your analysis.
             </div>
             <div>
-              <span className="text-zinc-100 font-medium block mb-1">2. Work with Data</span>
+              <span className="text-foreground font-medium block mb-1">2. Work with Data</span>
               Access real Nexus datasets and build your analysis using provided templates and frameworks.
             </div>
             <div>
-              <span className="text-zinc-100 font-medium block mb-1">3. Submit & Learn</span>
+              <span className="text-foreground font-medium block mb-1">3. Submit & Learn</span>
               Your work is saved automatically. Review sample solutions after completing each section.
             </div>
           </div>

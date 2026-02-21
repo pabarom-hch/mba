@@ -83,10 +83,10 @@ export default function MorningRitualPage() {
   return (
     <div className="p-6 lg:p-8 space-y-8 max-w-3xl mx-auto">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-zinc-400">
-        <Link href="/" className="hover:text-zinc-100">Dashboard</Link>
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-foreground">Dashboard</Link>
         <ChevronRight className="h-4 w-4" />
-        <span className="text-zinc-100">Morning Ritual</span>
+        <span className="text-foreground">Morning Ritual</span>
       </div>
 
       {/* Header */}
@@ -98,18 +98,18 @@ export default function MorningRitualPage() {
         </div>
         <div>
           <h1 className="text-3xl font-bold">Morning Ritual</h1>
-          <p className="text-zinc-400 mt-2">Start your day with intention and clarity</p>
+          <p className="text-muted-foreground mt-2">Start your day with intention and clarity</p>
         </div>
       </div>
 
       {/* Progress */}
-      <Card className="border-zinc-800 bg-zinc-900/50">
+      <Card className="border-border bg-card/50">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-zinc-400">Today&apos;s Progress</span>
+            <span className="text-sm text-muted-foreground">Today&apos;s Progress</span>
             <span className="text-sm font-medium">{completedSteps.length} / {morningSteps.length}</span>
           </div>
-          <Progress value={progress} className="h-2 bg-zinc-800" />
+          <Progress value={progress} className="h-2 bg-muted" />
         </CardContent>
       </Card>
 
@@ -156,7 +156,7 @@ export default function MorningRitualPage() {
           return (
             <Card
               key={step.id}
-              className={`border-zinc-800 bg-zinc-900/50 transition-all ${
+              className={`border-border bg-card/50 transition-all ${
                 isCurrent ? "border-yellow-500/30 ring-1 ring-yellow-500/20" : ""
               }`}
             >
@@ -169,25 +169,25 @@ export default function MorningRitualPage() {
                     {isCompleted ? (
                       <CheckCircle2 className="h-6 w-6 text-green-500" />
                     ) : (
-                      <Circle className="h-6 w-6 text-zinc-600" />
+                      <Circle className="h-6 w-6 text-muted-foreground" />
                     )}
                   </button>
 
                   <div className="flex-1">
-                    <h3 className={`font-medium ${isCompleted ? "text-zinc-500 line-through" : ""}`}>
+                    <h3 className={`font-medium ${isCompleted ? "text-muted-foreground line-through" : ""}`}>
                       {step.title}
                     </h3>
-                    <p className="text-sm text-zinc-400">{step.description}</p>
+                    <p className="text-sm text-muted-foreground">{step.description}</p>
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="text-sm text-zinc-500">{step.duration} min</span>
+                    <span className="text-sm text-muted-foreground">{step.duration} min</span>
                     {!isCompleted && !isCurrent && (
                       <Button
                         size="sm"
                         variant="outline"
                         onClick={() => startStep(step.id, step.duration)}
-                        className="border-zinc-700"
+                        className="border-border"
                       >
                         <Play className="h-4 w-4" />
                       </Button>
@@ -207,7 +207,7 @@ export default function MorningRitualPage() {
             <CardContent className="p-6">
               <CheckCircle2 className="h-12 w-12 text-green-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-green-400">Ritual Complete!</h3>
-              <p className="text-zinc-400 mt-2">You&apos;re ready to conquer the day.</p>
+              <p className="text-muted-foreground mt-2">You&apos;re ready to conquer the day.</p>
               <Link href="/">
                 <Button className="mt-4 bg-green-600 hover:bg-green-700">
                   Back to Dashboard

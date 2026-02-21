@@ -14,6 +14,8 @@ import {
   Flame,
   Briefcase,
   Building2,
+  Rocket,
+  Kanban,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -44,6 +46,19 @@ const navigation = [
     name: "PE Buy & Build",
     href: "/pe",
     icon: Building2,
+  },
+];
+
+const fundOperations = [
+  {
+    name: "Fund Builder",
+    href: "/fund-builder",
+    icon: Rocket,
+  },
+  {
+    name: "LP Pipeline",
+    href: "/pipeline",
+    icon: Kanban,
   },
 ];
 
@@ -82,7 +97,7 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
       {/* Logo */}
       <div className="flex h-16 items-center gap-2 px-6 border-b border-zinc-800">
         <BarChart3 className="h-6 w-6 text-orange-500" />
-        <span className="font-semibold text-lg">CEO Platform</span>
+        <span className="font-semibold text-lg text-zinc-100">CEO Platform</span>
       </div>
 
       <ScrollArea className="flex-1 px-3 py-4">
@@ -91,6 +106,34 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
           {navigation.map((item) => {
             const isActive = pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={cn(
+                  "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                  isActive
+                    ? "bg-orange-500/10 text-orange-500"
+                    : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-100"
+                )}
+              >
+                <item.icon className="h-5 w-5" />
+                {item.name}
+              </Link>
+            );
+          })}
+        </div>
+
+        <Separator className="my-4 bg-zinc-800" />
+
+        {/* Fund Operations */}
+        <div className="space-y-1">
+          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+            Fund Operations
+          </p>
+          {fundOperations.map((item) => {
+            const isActive = pathname === item.href ||
+              (pathname.startsWith(item.href) && item.href !== "/");
             return (
               <Link
                 key={item.name}
@@ -146,7 +189,7 @@ export function Sidebar({ streak = 0 }: SidebarProps) {
               <p className="text-sm font-medium text-orange-500">
                 {streak} Day Streak
               </p>
-              <p className="text-xs text-zinc-500">Keep it going!</p>
+              <p className="text-xs text-zinc-400">Keep it going!</p>
             </div>
           </div>
         </div>
