@@ -28,7 +28,7 @@ const navigation = [
   { name: "Mentor Curriculum", href: "/mentor", icon: Users },
   { name: "Case Studies", href: "/cases", icon: Briefcase },
   { name: "PE Buy & Build", href: "/pe", icon: Building2 },
-  { name: "Elite Etiquette", href: "/mba/11", icon: Crown },
+  { name: "Elite Etiquette", href: "/etiquette", icon: Crown },
   { name: "Morning Ritual", href: "/rituals/morning", icon: Sun },
   { name: "Evening Reflection", href: "/rituals/evening", icon: Moon },
   { name: "Reading List", href: "/books", icon: BookOpen },

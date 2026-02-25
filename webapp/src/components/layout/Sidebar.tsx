@@ -50,7 +50,7 @@ const navigation = [
   },
   {
     name: "Elite Etiquette",
-    href: "/mba/11",
+    href: "/etiquette",
     icon: Crown,
   },
 ];

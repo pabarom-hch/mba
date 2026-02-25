@@ -730,10 +730,13 @@ class Migrator {
     // 3. Create MBA structure (phases -> modules -> lessons)
     await this.createMbaStructure();
 
-    // 4. Create Mentor structure (quarters -> weeks -> lessons)
+    // 4. Create Elite Etiquette structure (from phase-11 content)
+    await this.createEtiquetteStructure();
+
+    // 5. Create Mentor structure (quarters -> weeks -> lessons)
     await this.createMentorStructure();
 
-    // 5. Create standalone lessons (rituals, principles)
+    // 6. Create standalone lessons (rituals, principles)
     await this.createStandaloneLessons();
 
     console.log("\nMigration complete!");
@@ -756,6 +759,13 @@ class Migrator {
         description:
           "A 52-week journey through the wisdom of 8 legendary mentors, organized into 4 quarters: Think, Build, Be, and Lead.",
         total_weeks: 52,
+      },
+      {
+        slug: "elite-etiquette",
+        name: "Elite Etiquette",
+        description:
+          "Navigate elite social and business environments with confidence, authenticity, and grace. Master formal protocols, build authentic relationships, and understand the codes of high-net-worth circles.",
+        total_weeks: 4,
       },
     ];
 
@@ -808,6 +818,12 @@ class Migrator {
 
     for (let phaseIndex = 0; phaseIndex < phases.length; phaseIndex++) {
       const phaseDir = phases[phaseIndex];
+
+      // Skip phase-11 - it's handled separately as Elite Etiquette curriculum
+      if (phaseDir.startsWith("phase-11")) {
+        console.log("  Skipping " + phaseDir + " (handled as Elite Etiquette curriculum)");
+        continue;
+      }
       const phaseMeta = PHASE_METADATA[phaseDir] || {
         name: phaseDir,
         duration_weeks: 4,
@@ -925,6 +941,136 @@ class Migrator {
 
         console.log("      Added " + allLessonFiles.length + " lessons");
       }
+    }
+  }
+
+  private async createEtiquetteStructure() {
+    console.log("\nCreating Elite Etiquette curriculum structure...");
+
+    const etiquetteCurriculumId = this.curriculumIds["elite-etiquette"];
+    const phaseDir = "phase-11-social-capital";
+
+    // Check if the phase directory exists
+    const phasePath = path.join(MBA_DIR, phaseDir);
+    if (!fs.existsSync(phasePath)) {
+      console.log("  Phase directory not found: " + phaseDir);
+      return;
+    }
+
+    // Create single phase for Elite Etiquette
+    const phase: Partial<Phase> = {
+      curriculum_id: etiquetteCurriculumId,
+      number: 1,
+      name: "Social Capital & Elite Networks",
+      description:
+        "Navigate elite social and business environments with confidence, authenticity, and grace. Master etiquette, build authentic relationships, and understand old money dynamics.",
+      duration_weeks: 4,
+      sort_order: 0,
+    };
+
+    const { data: phaseData, error: phaseError } = await this.supabase
+      .from("phases")
+      .upsert(phase as Phase, { onConflict: "curriculum_id,number" })
+      .select()
+      .single();
+
+    if (phaseError) {
+      console.error("Error creating etiquette phase:", phaseError);
+      return;
+    }
+
+    console.log("  Phase 1: Social Capital & Elite Networks");
+
+    // Module number mapping (30->1, 31->2, 32->3, 33->4)
+    const moduleNumberMap: Record<number, number> = {
+      30: 1,
+      31: 2,
+      32: 3,
+      33: 4,
+    };
+
+    // Create modules
+    const modules = findModulesInPhase(phaseDir);
+    for (let modIndex = 0; modIndex < modules.length; modIndex++) {
+      const moduleDir = modules[modIndex];
+      const modulePath = path.join(MBA_DIR, phaseDir, moduleDir);
+
+      // Read README for module description
+      const readmePath = path.join(modulePath, "README.md");
+      let moduleDescription = "";
+      let learningObjectives: string[] = [];
+      if (fs.existsSync(readmePath)) {
+        const readmeContent = fs.readFileSync(readmePath, "utf-8");
+        moduleDescription = extractSummary(readmeContent);
+        learningObjectives = extractLearningObjectives(readmeContent);
+      }
+
+      // Extract module name and number
+      const modNumMatch = moduleDir.match(/module-(\d+)-(.+)/);
+      const originalModuleNumber = modNumMatch
+        ? parseInt(modNumMatch[1], 10)
+        : modIndex;
+      const moduleNumber = moduleNumberMap[originalModuleNumber] || modIndex + 1;
+      const moduleName = modNumMatch
+        ? modNumMatch[2]
+            .split("-")
+            .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+            .join(" ")
+        : moduleDir;
+
+      const module: Partial<Module> = {
+        phase_id: phaseData.id,
+        number: moduleNumber,
+        name: moduleName,
+        slug: slugify(moduleName),
+        description: moduleDescription,
+        learning_objectives: learningObjectives,
+        estimated_hours: null,
+        sort_order: modIndex,
+      };
+
+      const { data: moduleData, error: moduleError } = await this.supabase
+        .from("modules")
+        .upsert(module as Module, { onConflict: "phase_id,number" })
+        .select()
+        .single();
+
+      if (moduleError) {
+        console.error("Error creating etiquette module " + moduleDir + ":", moduleError);
+        continue;
+      }
+
+      console.log("    Module " + moduleNumber + ": " + moduleName);
+
+      // Create lessons
+      const lessonFiles = findLessonsInModule(phaseDir, moduleDir);
+      const caseFiles = findCasesInModule(phaseDir, moduleDir);
+      const allLessonFiles = [...lessonFiles, ...caseFiles];
+
+      for (const lessonFile of allLessonFiles) {
+        const lessonPath = path.join(modulePath, lessonFile);
+        const lessonData = parseMbaLesson(lessonPath, etiquetteCurriculumId);
+        lessonData.module_id = moduleData.id;
+
+        const { error: lessonError } = await this.supabase
+          .from("lessons")
+          .insert({
+            ...lessonData,
+            module_id: moduleData.id,
+          } as Lesson);
+
+        if (lessonError) {
+          console.error("Error creating etiquette lesson " + lessonFile + ":", lessonError);
+          continue;
+        }
+
+        // Extract and store books
+        if (lessonData.further_reading && lessonData.further_reading.length > 0) {
+          await this.createBooks(lessonData.further_reading);
+        }
+      }
+
+      console.log("      Added " + allLessonFiles.length + " lessons");
     }
   }
 
