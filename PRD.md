@@ -51,7 +51,9 @@ Upon completion, the learner will be able to:
 | 7 | Operations & Analytics | 2 | 4 weeks |
 | 8 | Leadership & Organization | 4 | 6 weeks |
 | 9 | CEO Mastery | 3 | 4 weeks |
-| **Total** | | **25 Modules** | **44 weeks** |
+| 10 | — | — | — |
+| 11 | Social Capital & Elite Networks | 4 | 4 weeks |
+| **Total** | | **29 Modules** | **48 weeks** |
 
 ### 2.2 Phase Breakdown
 
@@ -127,6 +129,37 @@ Upon completion, the learner will be able to:
 - Module 22: Corporate Governance
 - Module 23: Ethics & Corporate Responsibility
 - Module 24: CEO Communication & Presence
+
+#### Phase 11: Social Capital & Elite Networks
+**Purpose:** Navigate elite social and business environments
+
+- Module 30: Foundations of Elite Etiquette
+  - Sociology of wealth and class
+  - Cultural codes and signals
+  - Understatement and discretion
+  - Introductions and forms of address
+  - Building reputation
+
+- Module 31: Business Etiquette Mastery
+  - Formal dining protocol
+  - Wine service and toasting
+  - International business customs
+  - Written correspondence
+  - Private club conduct
+
+- Module 32: Social Settings & Lifestyle
+  - Dress codes decoded
+  - Charity galas and fundraising
+  - Art world navigation
+  - Estate visits and weekend invitations
+  - Social media and privacy
+
+- Module 33: Building Authentic Relationships
+  - From networking to relationship building
+  - Genuine curiosity and reciprocity
+  - Old money relationship dynamics
+  - Maintaining relationships over decades
+  - Legacy and reputation
 
 ---
 
@@ -505,6 +538,72 @@ Upon completion, the learner will be able to:
 │           ├── case-01-earnings-miss.md
 │           └── case-02-product-recall.md
 │
+├── phase-11-social-capital/
+│   ├── README.md                          # Phase overview
+│   ├── PRD.md                             # Phase-specific PRD
+│   │
+│   ├── module-30-foundations-elite-etiquette/
+│   │   ├── README.md
+│   │   ├── 01-sociology-of-wealth.md
+│   │   ├── 02-cultural-codes-signals.md
+│   │   ├── 03-understatement-power.md
+│   │   ├── 04-introductions-elite-settings.md
+│   │   ├── 05-forms-of-address.md
+│   │   ├── 06-discretion-confidentiality.md
+│   │   ├── 07-building-reputation.md
+│   │   ├── 08-common-elite-etiquette-mistakes.md
+│   │   ├── assessment.md
+│   │   └── cases/
+│   │       ├── case-01-new-money-old-money.md
+│   │       └── case-02-the-networking-event.md
+│   │
+│   ├── module-31-business-etiquette/
+│   │   ├── README.md
+│   │   ├── 01-formal-dining-overview.md
+│   │   ├── 02-multi-course-meals.md
+│   │   ├── 03-wine-service-toasting.md
+│   │   ├── 04-business-cards-introductions.md
+│   │   ├── 05-meeting-etiquette.md
+│   │   ├── 06-written-correspondence.md
+│   │   ├── 07-gift-giving.md
+│   │   ├── 08-hosting-events.md
+│   │   ├── 09-private-club-conduct.md
+│   │   ├── 10-international-business-etiquette.md
+│   │   ├── assessment.md
+│   │   └── cases/
+│   │       ├── case-01-fundraising-dinner.md
+│   │       └── case-02-week-at-augusta.md
+│   │
+│   ├── module-32-social-settings-lifestyle/
+│   │   ├── README.md
+│   │   ├── 01-dress-codes-decoded.md
+│   │   ├── 02-charity-galas-fundraising.md
+│   │   ├── 03-art-world-etiquette.md
+│   │   ├── 04-clubs-country-yacht-athletic.md
+│   │   ├── 05-estate-visits-weekend-invitations.md
+│   │   ├── 06-social-calendar-key-events.md
+│   │   ├── 07-conversation-skills-elite-settings.md
+│   │   ├── 08-social-media-privacy.md
+│   │   ├── assessment.md
+│   │   └── cases/
+│   │       ├── case-01-christies-evening-sale.md
+│   │       └── case-02-hamptons-weekend.md
+│   │
+│   └── module-33-authentic-relationships/
+│       ├── README.md
+│       ├── 01-networking-to-relationship.md
+│       ├── 02-genuine-curiosity.md
+│       ├── 03-art-of-reciprocity.md
+│       ├── 04-old-money-dynamics.md
+│       ├── 05-wealth-differentials.md
+│       ├── 06-personal-board.md
+│       ├── 07-maintaining-relationships.md
+│       ├── 08-legacy-reputation.md
+│       ├── assessment.md
+│       └── cases/
+│           ├── case-01-multi-decade-relationship.md
+│           └── case-02-wealth-transition.md
+│
 ├── capstone/
 │   ├── README.md
 │   ├── integrated-case-01-company-turnaround.md
@@ -792,7 +891,11 @@ Every module includes:
 | 22 | Corporate Governance | 6 | 2 |
 | 23 | Ethics | 5 | 2 |
 | 24 | CEO Communication | 5 | 2 |
-| **Total** | | **172 topics** | **50 cases** |
+| 30 | Foundations of Elite Etiquette | 8 | 2 |
+| 31 | Business Etiquette Mastery | 10 | 2 |
+| 32 | Social Settings & Lifestyle | 8 | 2 |
+| 33 | Building Authentic Relationships | 8 | 2 |
+| **Total** | | **206 topics** | **58 cases** |
 
 Plus 3 integrated capstone cases and comprehensive resources.
 
