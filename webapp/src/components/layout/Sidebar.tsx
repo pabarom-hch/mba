@@ -16,6 +16,7 @@ import {
   Building2,
   Rocket,
   Kanban,
+  Crown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -46,6 +47,11 @@ const navigation = [
     name: "PE Buy & Build",
     href: "/pe",
     icon: Building2,
+  },
+  {
+    name: "Elite Etiquette",
+    href: "/mba/11",
+    icon: Crown,
   },
 ];
 
