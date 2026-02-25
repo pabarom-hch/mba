@@ -196,6 +196,12 @@ const PHASE_METADATA: Record<
     description:
       "Integrate all learning into executive-level decision making.",
   },
+  "phase-11-social-capital": {
+    name: "Social Capital & Elite Networks",
+    duration_weeks: 4,
+    description:
+      "Navigate elite social and business environments with confidence, authenticity, and grace. Master etiquette, build authentic relationships, and understand old money dynamics.",
+  },
 };
 
 // Quarter metadata
